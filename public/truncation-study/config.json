@@ -1,14 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Axis Truncation Study",
+    "title": "Visualization Study",
     "version": "pilot",
     "authors": [
       "Oen McKinley",
       "Alvitta Ottley"
     ],
     "date": "2025-06-05",
-    "description": "A simple questionnaire study",
+    "description": "A study to test the empirical effectiveness of truncating the y-axis of bar or line charts.",
     "organizations": [
       "Washington University in St. Louis"
     ]
@@ -16,10 +16,10 @@
   "uiConfig": {
     "contactEmail": "m.oen@wustl.edu",
     "helpTextPath": "truncation-study/assets/help.md",
-    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "logoPath": "truncation-study/assets/logo_b.png",
     "withProgressBar": true,
     "autoDownloadStudy": false,
-    "sidebar": true
+    "sidebar": false
   },
   "components": {
     "introduction": {
@@ -27,50 +27,4892 @@
       "path": "truncation-study/assets/introduction.md",
       "response": []
     },
-    "first-question-set": {
-      "type": "questionnaire",
+    "ret-val-tut": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val-tut-1.png",
+      "style": {
+        "width": "800px"
+      },
       "response": [
         {
-          "id": "q1-name",
-          "prompt": "What is your first name?",
+          "id": "ret-val-tut-1",
+          "prompt": "What was the average rainfall in City T in Jan?",
           "required": true,
-          "location": "aboveStimulus",
-          "type": "longText",
-          "placeholder": "Please enter your first name"
-        },
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "q2-color",
-          "prompt": "What is your favorite color?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "dropdown",
-          "placeholder": "Please choose your favorite color",
-          "options": ["Red", "Blue", "My favorite color is not shown here."]
+          "id": "ret-val-tut-1",
+          "answer": 1.5
         }
       ]
     },
-    "second-question-set": {
-      "type": "questionnaire",
+    "find-ext-tut": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext-tut-1.png",
+      "style": {
+        "width": "800px"
+      },
       "response": [
         {
-          "id": "q3-satisfaction",
-          "prompt": "Rate your satisfaction with this survey from 1 (not enjoyable) to 5 (very enjoyable).",
+          "id": "find-ext-tut-1",
+          "prompt": "What was the month with the lowest average rainfall in City U?",
           "required": true,
-          "location": "aboveStimulus",
-          "type": "likert",
-          "leftLabel": "Not Enjoyable",
-          "rightLabel": "Very Enjoyable",
-          "numItems": 5
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-tut-1",
+          "answer": "Feb"
+        }
+      ]
+    },
+    "det-ran-tut": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran-tut-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran-tut-1",
+          "prompt": "What is the range of average rainfall in City I?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran-tut-1",
+          "answer": [
+            2.0,
+            3.7
+          ]
+        }
+      ]
+    },
+    "make-comp-tut": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp-tut-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp-tut-1",
+          "prompt": "What is the difference between average rainfall in City F in Dec and Mar?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp-tut-1",
+          "answer": 1.0
+        }
+      ]
+    },
+    "filter-tut": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter-tut-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter-tut-1",
+          "prompt": "Which month(s) had average rainfall between 1 and 3 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter-tut-1",
+          "answer": [
+            "Jan",
+            "Feb",
+            "Aug",
+            "Oct"
+          ]
+        }
+      ]
+    },
+    "order-tut": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order-tut-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order-tut-1",
+          "prompt": "Select the option that orders the months from lowest to highest average rainfall.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Aug, Sep, Jul, Oct, Jun, Feb, Mar, Nov, May, Dec, Apr",
+            "Nov, Jun, May, Mar, Aug, Jul, Dec, Sep, Oct, Apr, Jan, Feb",
+            "Sep, May, Jul, Mar, Dec, Jan, Jun, Apr, Feb, Aug, Oct, Nov",
+            "Apr, Dec, May, Nov, Mar, Feb, Jun, Oct, Jul, Sep, Aug, Jan"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order-tut-1",
+          "answer": "Jan, Aug, Sep, Jul, Oct, Jun, Feb, Mar, Nov, May, Dec, Apr"
+        }
+      ]
+    },
+    "ratio-tut": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio-tut-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio-tut-1",
+          "prompt": "What is the proportion of average rainfall in City P in Oct to Jun? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio-tut-1",
+          "answer": 62.5
+        }
+      ]
+    },
+    "ret-val1-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val1-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val1-1",
+          "prompt": "What was the profit made by Company I in Mar?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val1-1",
+          "answer": 79493
+        }
+      ]
+    },
+    "ret-val1-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val1-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val1-2",
+          "prompt": "What was the profit made by Company I in Mar?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val1-2",
+          "answer": 79493
+        }
+      ]
+    },
+    "ret-val2-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val2-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val2-1",
+          "prompt": "What was the profit made by Company B in Jun?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val2-1",
+          "answer": 95616
+        }
+      ]
+    },
+    "ret-val2-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val2-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val2-2",
+          "prompt": "What was the profit made by Company B in Jun?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val2-2",
+          "answer": 95616
+        }
+      ]
+    },
+    "ret-val3-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val3-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ret-val3-1",
+          "prompt": "What was the price of Stock C on 11/19?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val3-1",
+          "answer": 5.14
+        }
+      ]
+    },
+    "ret-val3-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val3-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ret-val3-2",
+          "prompt": "What was the price of Stock C on 11/19?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val3-2",
+          "answer": 5.14
+        }
+      ]
+    },
+    "ret-val4-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val4-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ret-val4-1",
+          "prompt": "What was the price of Stock K on 10/12?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val4-1",
+          "answer": 4.21
+        }
+      ]
+    },
+    "ret-val4-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val4-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ret-val4-2",
+          "prompt": "What was the price of Stock K on 10/12?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val4-2",
+          "answer": 4.21
+        }
+      ]
+    },
+    "ret-val5-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val5-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val5-1",
+          "prompt": "What was the average temperature in Country W in Jul?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val5-1",
+          "answer": 27.7
+        }
+      ]
+    },
+    "ret-val5-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val5-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val5-2",
+          "prompt": "What was the average temperature in Country W in Jul?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val5-2",
+          "answer": 27.7
+        }
+      ]
+    },
+    "ret-val6-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val6-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val6-1",
+          "prompt": "What was the average temperature in Country J in Feb?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val6-1",
+          "answer": 17.3
+        }
+      ]
+    },
+    "ret-val6-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val6-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val6-2",
+          "prompt": "What was the average temperature in Country J in Feb?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val6-2",
+          "answer": 17.3
+        }
+      ]
+    },
+    "ret-val7-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val7-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val7-1",
+          "prompt": "What was the average rainfall in City K in May?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val7-1",
+          "answer": 5.4
+        }
+      ]
+    },
+    "ret-val7-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val7-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val7-2",
+          "prompt": "What was the average rainfall in City K in May?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val7-2",
+          "answer": 5.4
+        }
+      ]
+    },
+    "ret-val8-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val8-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val8-1",
+          "prompt": "What was the average rainfall in City I in Nov?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val8-1",
+          "answer": 3.7
+        }
+      ]
+    },
+    "ret-val8-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val8-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val8-2",
+          "prompt": "What was the average rainfall in City I in Nov?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val8-2",
+          "answer": 3.7
+        }
+      ]
+    },
+    "ret-val9-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val9-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val9-1",
+          "prompt": "What was the number of steps taken by Person N on Sun?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val9-1",
+          "answer": 9583
+        }
+      ]
+    },
+    "ret-val9-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val9-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val9-2",
+          "prompt": "What was the number of steps taken by Person N on Sun?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val9-2",
+          "answer": 9583
+        }
+      ]
+    },
+    "ret-val10-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val10-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val10-1",
+          "prompt": "What was the number of steps taken by Person F on Wed?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val10-1",
+          "answer": 6542
+        }
+      ]
+    },
+    "ret-val10-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ret-val10-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ret-val10-2",
+          "prompt": "What was the number of steps taken by Person F on Wed?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val10-2",
+          "answer": 6542
+        }
+      ]
+    },
+    "find-ext1-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext1-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext1-1",
+          "prompt": "What was the month with the lowest profit made by Company P?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext1-1",
+          "answer": "Feb"
+        }
+      ]
+    },
+    "find-ext1-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext1-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext1-2",
+          "prompt": "What was the month with the lowest profit made by Company P?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext1-2",
+          "answer": "Feb"
+        }
+      ]
+    },
+    "find-ext2-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext2-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext2-1",
+          "prompt": "What was the month with the lowest profit made by Company T?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext2-1",
+          "answer": "Oct"
+        }
+      ]
+    },
+    "find-ext2-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext2-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext2-2",
+          "prompt": "What was the month with the lowest profit made by Company T?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext2-2",
+          "answer": "Oct"
+        }
+      ]
+    },
+    "find-ext3-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext3-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "find-ext3-1",
+          "prompt": "What was the date with the lowest price of Stock G?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select dates",
+          "options": [
+            "9/1",
+            "9/2",
+            "9/3",
+            "9/4",
+            "9/5",
+            "9/6",
+            "9/7",
+            "9/8",
+            "9/9",
+            "9/10",
+            "9/11",
+            "9/12",
+            "9/13",
+            "9/14",
+            "9/15",
+            "9/16",
+            "9/17",
+            "9/18",
+            "9/19",
+            "9/20",
+            "9/21",
+            "9/22",
+            "9/23",
+            "9/24",
+            "9/25",
+            "9/26",
+            "9/27",
+            "9/28",
+            "9/29",
+            "9/30"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext3-1",
+          "answer": "9/23"
+        }
+      ]
+    },
+    "find-ext3-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext3-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "find-ext3-2",
+          "prompt": "What was the date with the lowest price of Stock G?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select dates",
+          "options": [
+            "9/1",
+            "9/2",
+            "9/3",
+            "9/4",
+            "9/5",
+            "9/6",
+            "9/7",
+            "9/8",
+            "9/9",
+            "9/10",
+            "9/11",
+            "9/12",
+            "9/13",
+            "9/14",
+            "9/15",
+            "9/16",
+            "9/17",
+            "9/18",
+            "9/19",
+            "9/20",
+            "9/21",
+            "9/22",
+            "9/23",
+            "9/24",
+            "9/25",
+            "9/26",
+            "9/27",
+            "9/28",
+            "9/29",
+            "9/30"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext3-2",
+          "answer": "9/23"
+        }
+      ]
+    },
+    "find-ext4-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext4-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "find-ext4-1",
+          "prompt": "What was the date with the highest price of Stock Q?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select dates",
+          "options": [
+            "10/1",
+            "10/2",
+            "10/3",
+            "10/4",
+            "10/5",
+            "10/6",
+            "10/7",
+            "10/8",
+            "10/9",
+            "10/10",
+            "10/11",
+            "10/12",
+            "10/13",
+            "10/14",
+            "10/15",
+            "10/16",
+            "10/17",
+            "10/18",
+            "10/19",
+            "10/20",
+            "10/21",
+            "10/22",
+            "10/23",
+            "10/24",
+            "10/25",
+            "10/26",
+            "10/27",
+            "10/28",
+            "10/29",
+            "10/30",
+            "10/31"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext4-1",
+          "answer": "10/6"
+        }
+      ]
+    },
+    "find-ext4-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext4-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "find-ext4-2",
+          "prompt": "What was the date with the highest price of Stock Q?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select dates",
+          "options": [
+            "10/1",
+            "10/2",
+            "10/3",
+            "10/4",
+            "10/5",
+            "10/6",
+            "10/7",
+            "10/8",
+            "10/9",
+            "10/10",
+            "10/11",
+            "10/12",
+            "10/13",
+            "10/14",
+            "10/15",
+            "10/16",
+            "10/17",
+            "10/18",
+            "10/19",
+            "10/20",
+            "10/21",
+            "10/22",
+            "10/23",
+            "10/24",
+            "10/25",
+            "10/26",
+            "10/27",
+            "10/28",
+            "10/29",
+            "10/30",
+            "10/31"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext4-2",
+          "answer": "10/6"
+        }
+      ]
+    },
+    "find-ext5-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext5-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext5-1",
+          "prompt": "What was the month with the highest average temperature in Country G?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext5-1",
+          "answer": "Aug"
+        }
+      ]
+    },
+    "find-ext5-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext5-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext5-2",
+          "prompt": "What was the month with the highest average temperature in Country G?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext5-2",
+          "answer": "Aug"
+        }
+      ]
+    },
+    "find-ext6-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext6-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext6-1",
+          "prompt": "What was the month with the lowest average temperature in Country D?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext6-1",
+          "answer": "Dec"
+        }
+      ]
+    },
+    "find-ext6-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext6-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext6-2",
+          "prompt": "What was the month with the lowest average temperature in Country D?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext6-2",
+          "answer": "Dec"
+        }
+      ]
+    },
+    "find-ext7-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext7-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext7-1",
+          "prompt": "What was the month with the highest average rainfall in City B?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext7-1",
+          "answer": "May"
+        }
+      ]
+    },
+    "find-ext7-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext7-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext7-2",
+          "prompt": "What was the month with the highest average rainfall in City B?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext7-2",
+          "answer": "May"
+        }
+      ]
+    },
+    "find-ext8-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext8-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext8-1",
+          "prompt": "What was the month with the lowest average rainfall in City H?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext8-1",
+          "answer": "Sep"
+        }
+      ]
+    },
+    "find-ext8-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext8-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext8-2",
+          "prompt": "What was the month with the lowest average rainfall in City H?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext8-2",
+          "answer": "Sep"
+        }
+      ]
+    },
+    "find-ext9-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext9-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext9-1",
+          "prompt": "What was the day with the highest number of steps taken by Person I?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select days",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext9-1",
+          "answer": "Tue"
+        }
+      ]
+    },
+    "find-ext9-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext9-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext9-2",
+          "prompt": "What was the day with the highest number of steps taken by Person I?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select days",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext9-2",
+          "answer": "Tue"
+        }
+      ]
+    },
+    "find-ext10-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext10-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext10-1",
+          "prompt": "What was the day with the highest number of steps taken by Person I?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select days",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext10-1",
+          "answer": "Sat"
+        }
+      ]
+    },
+    "find-ext10-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/find-ext10-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "find-ext10-2",
+          "prompt": "What was the day with the highest number of steps taken by Person I?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select days",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext10-2",
+          "answer": "Sat"
+        }
+      ]
+    },
+    "det-ran1-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran1-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran1-1",
+          "prompt": "What is the range of profit made by Company K?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran1-1",
+          "answer": [
+            85791,
+            112559
+          ]
+        }
+      ]
+    },
+    "det-ran1-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran1-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran1-2",
+          "prompt": "What is the range of profit made by Company K?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran1-2",
+          "answer": [
+            85791,
+            112559
+          ]
+        }
+      ]
+    },
+    "det-ran2-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran2-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran2-1",
+          "prompt": "What is the range of profit made by Company E?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran2-1",
+          "answer": [
+            71900,
+            87507
+          ]
+        }
+      ]
+    },
+    "det-ran2-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran2-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran2-2",
+          "prompt": "What is the range of profit made by Company E?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran2-2",
+          "answer": [
+            71900,
+            87507
+          ]
+        }
+      ]
+    },
+    "det-ran3-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran3-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "det-ran3-1",
+          "prompt": "What is the range of price of Stock R?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran3-1",
+          "answer": [
+            1.16,
+            5.47
+          ]
+        }
+      ]
+    },
+    "det-ran3-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran3-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "det-ran3-2",
+          "prompt": "What is the range of price of Stock R?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran3-2",
+          "answer": [
+            1.16,
+            5.47
+          ]
+        }
+      ]
+    },
+    "det-ran4-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran4-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "det-ran4-1",
+          "prompt": "What is the range of price of Stock Z?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran4-1",
+          "answer": [
+            2.05,
+            4.73
+          ]
+        }
+      ]
+    },
+    "det-ran4-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran4-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "det-ran4-2",
+          "prompt": "What is the range of price of Stock Z?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran4-2",
+          "answer": [
+            2.05,
+            4.73
+          ]
+        }
+      ]
+    },
+    "det-ran5-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran5-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran5-1",
+          "prompt": "What is the range of average temperature in Country F?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran5-1",
+          "answer": [
+            15.4,
+            21.0
+          ]
+        }
+      ]
+    },
+    "det-ran5-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran5-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran5-2",
+          "prompt": "What is the range of average temperature in Country F?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran5-2",
+          "answer": [
+            15.4,
+            21.0
+          ]
+        }
+      ]
+    },
+    "det-ran6-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran6-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran6-1",
+          "prompt": "What is the range of average temperature in Country V?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran6-1",
+          "answer": [
+            18.8,
+            24.7
+          ]
+        }
+      ]
+    },
+    "det-ran6-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran6-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran6-2",
+          "prompt": "What is the range of average temperature in Country V?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran6-2",
+          "answer": [
+            18.8,
+            24.7
+          ]
+        }
+      ]
+    },
+    "det-ran7-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran7-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran7-1",
+          "prompt": "What is the range of average rainfall in City Z?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran7-1",
+          "answer": [
+            3.6,
+            4.5
+          ]
+        }
+      ]
+    },
+    "det-ran7-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran7-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran7-2",
+          "prompt": "What is the range of average rainfall in City Z?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran7-2",
+          "answer": [
+            3.6,
+            4.5
+          ]
+        }
+      ]
+    },
+    "det-ran8-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran8-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran8-1",
+          "prompt": "What is the range of average rainfall in City J?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran8-1",
+          "answer": [
+            2.1,
+            3.5
+          ]
+        }
+      ]
+    },
+    "det-ran8-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran8-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran8-2",
+          "prompt": "What is the range of average rainfall in City J?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran8-2",
+          "answer": [
+            2.1,
+            3.5
+          ]
+        }
+      ]
+    },
+    "det-ran9-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran9-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran9-1",
+          "prompt": "What is the range of number of steps taken by Person Q?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran9-1",
+          "answer": [
+            5672,
+            8241
+          ]
+        }
+      ]
+    },
+    "det-ran9-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran9-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran9-2",
+          "prompt": "What is the range of number of steps taken by Person Q?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran9-2",
+          "answer": [
+            5672,
+            8241
+          ]
+        }
+      ]
+    },
+    "det-ran10-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran10-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran10-1",
+          "prompt": "What is the range of number of steps taken by Person D?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran10-1",
+          "answer": [
+            5484,
+            10207
+          ]
+        }
+      ]
+    },
+    "det-ran10-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/det-ran10-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "det-ran10-2",
+          "prompt": "What is the range of number of steps taken by Person D?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "[minimum value] - [maximum value]"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran10-2",
+          "answer": [
+            5484,
+            10207
+          ]
+        }
+      ]
+    },
+    "make-comp1-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp1-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp1-1",
+          "prompt": "What is the difference between profit made by Company L in Feb and Dec?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp1-1",
+          "answer": 7679
+        }
+      ]
+    },
+    "make-comp1-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp1-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp1-2",
+          "prompt": "What is the difference between profit made by Company L in Feb and Dec?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp1-2",
+          "answer": 7679
+        }
+      ]
+    },
+    "make-comp2-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp2-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp2-1",
+          "prompt": "What is the difference between profit made by Company V in Oct and Aug?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp2-1",
+          "answer": 6599
+        }
+      ]
+    },
+    "make-comp2-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp2-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp2-2",
+          "prompt": "What is the difference between profit made by Company V in Oct and Aug?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp2-2",
+          "answer": 6599
+        }
+      ]
+    },
+    "make-comp3-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp3-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "make-comp3-1",
+          "prompt": "What is the difference between price of Stock C on 1/6 and 1/12?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp3-1",
+          "answer": 3.8799999999999994
+        }
+      ]
+    },
+    "make-comp3-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp3-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "make-comp3-2",
+          "prompt": "What is the difference between price of Stock C on 1/6 and 1/12?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp3-2",
+          "answer": 3.8799999999999994
+        }
+      ]
+    },
+    "make-comp4-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp4-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "make-comp4-1",
+          "prompt": "What is the difference between price of Stock F on 3/11 and 3/2?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp4-1",
+          "answer": 0.38000000000000034
+        }
+      ]
+    },
+    "make-comp4-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp4-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "make-comp4-2",
+          "prompt": "What is the difference between price of Stock F on 3/11 and 3/2?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp4-2",
+          "answer": 0.38000000000000034
+        }
+      ]
+    },
+    "make-comp5-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp5-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp5-1",
+          "prompt": "What is the difference between average temperature in Country M in Jan and Aug?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp5-1",
+          "answer": 5.5
+        }
+      ]
+    },
+    "make-comp5-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp5-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp5-2",
+          "prompt": "What is the difference between average temperature in Country M in Jan and Aug?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp5-2",
+          "answer": 5.5
+        }
+      ]
+    },
+    "make-comp6-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp6-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp6-1",
+          "prompt": "What is the difference between average temperature in Country Z in Nov and May?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp6-1",
+          "answer": 12.4
+        }
+      ]
+    },
+    "make-comp6-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp6-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp6-2",
+          "prompt": "What is the difference between average temperature in Country Z in Nov and May?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp6-2",
+          "answer": 12.4
+        }
+      ]
+    },
+    "make-comp7-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp7-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp7-1",
+          "prompt": "What is the difference between average rainfall in City C in May and Nov?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp7-1",
+          "answer": 0.1
+        }
+      ]
+    },
+    "make-comp7-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp7-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp7-2",
+          "prompt": "What is the difference between average rainfall in City C in May and Nov?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp7-2",
+          "answer": 0.1
+        }
+      ]
+    },
+    "make-comp8-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp8-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp8-1",
+          "prompt": "What is the difference between average rainfall in City G in Aug and Mar?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp8-1",
+          "answer": 3.2
+        }
+      ]
+    },
+    "make-comp8-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp8-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp8-2",
+          "prompt": "What is the difference between average rainfall in City G in Aug and Mar?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp8-2",
+          "answer": 3.2
+        }
+      ]
+    },
+    "make-comp9-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp9-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp9-1",
+          "prompt": "What is the difference between number of steps taken by Person E on Sun and Tue?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp9-1",
+          "answer": 3650
+        }
+      ]
+    },
+    "make-comp9-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp9-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp9-2",
+          "prompt": "What is the difference between number of steps taken by Person E on Sun and Tue?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp9-2",
+          "answer": 3650
+        }
+      ]
+    },
+    "make-comp10-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp10-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp10-1",
+          "prompt": "What is the difference between number of steps taken by Person G on Thu and Tue?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp10-1",
+          "answer": 2192
+        }
+      ]
+    },
+    "make-comp10-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/make-comp10-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "make-comp10-2",
+          "prompt": "What is the difference between number of steps taken by Person G on Thu and Tue?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp10-2",
+          "answer": 2192
+        }
+      ]
+    },
+    "filter1-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter1-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter1-1",
+          "prompt": "Which month(s) had profit between 103608 and 114573 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter1-1",
+          "answer": [
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Sep"
+          ]
+        }
+      ]
+    },
+    "filter1-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter1-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter1-2",
+          "prompt": "Which month(s) had profit between 103608 and 114573 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter1-2",
+          "answer": [
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Sep"
+          ]
+        }
+      ]
+    },
+    "filter2-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter2-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter2-1",
+          "prompt": "Which month(s) had profit between 77632 and 97448 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter2-1",
+          "answer": [
+            "Feb",
+            "Mar",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter2-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter2-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter2-2",
+          "prompt": "Which month(s) had profit between 77632 and 97448 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter2-2",
+          "answer": [
+            "Feb",
+            "Mar",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter3-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter3-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "filter3-1",
+          "prompt": "Which date(s) had price between 4 and 5 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "2/1",
+            "2/2",
+            "2/3",
+            "2/4",
+            "2/5",
+            "2/6",
+            "2/7",
+            "2/8",
+            "2/9",
+            "2/10",
+            "2/11",
+            "2/12",
+            "2/13",
+            "2/14",
+            "2/15",
+            "2/16",
+            "2/17",
+            "2/18",
+            "2/19",
+            "2/20",
+            "2/21",
+            "2/22",
+            "2/23",
+            "2/24",
+            "2/25",
+            "2/26",
+            "2/27",
+            "2/28"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter3-1",
+          "answer": [
+            "2/5",
+            "2/6",
+            "2/7",
+            "2/8",
+            "2/9",
+            "2/10",
+            "2/11",
+            "2/15",
+            "2/18",
+            "2/19",
+            "2/20",
+            "2/21",
+            "2/22",
+            "2/23",
+            "2/24",
+            "2/25"
+          ]
+        }
+      ]
+    },
+    "filter3-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter3-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "filter3-2",
+          "prompt": "Which date(s) had price between 4 and 5 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "2/1",
+            "2/2",
+            "2/3",
+            "2/4",
+            "2/5",
+            "2/6",
+            "2/7",
+            "2/8",
+            "2/9",
+            "2/10",
+            "2/11",
+            "2/12",
+            "2/13",
+            "2/14",
+            "2/15",
+            "2/16",
+            "2/17",
+            "2/18",
+            "2/19",
+            "2/20",
+            "2/21",
+            "2/22",
+            "2/23",
+            "2/24",
+            "2/25",
+            "2/26",
+            "2/27",
+            "2/28"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter3-2",
+          "answer": [
+            "2/5",
+            "2/6",
+            "2/7",
+            "2/8",
+            "2/9",
+            "2/10",
+            "2/11",
+            "2/15",
+            "2/18",
+            "2/19",
+            "2/20",
+            "2/21",
+            "2/22",
+            "2/23",
+            "2/24",
+            "2/25"
+          ]
+        }
+      ]
+    },
+    "filter4-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter4-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "filter4-1",
+          "prompt": "Which date(s) had price between 4 and 5 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "3/1",
+            "3/2",
+            "3/3",
+            "3/4",
+            "3/5",
+            "3/6",
+            "3/7",
+            "3/8",
+            "3/9",
+            "3/10",
+            "3/11",
+            "3/12",
+            "3/13",
+            "3/14",
+            "3/15",
+            "3/16",
+            "3/17",
+            "3/18",
+            "3/19",
+            "3/20",
+            "3/21",
+            "3/22",
+            "3/23",
+            "3/24",
+            "3/25",
+            "3/26",
+            "3/27",
+            "3/28",
+            "3/29",
+            "3/30",
+            "3/31"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter4-1",
+          "answer": [
+            "3/6",
+            "3/9",
+            "3/10",
+            "3/11",
+            "3/12",
+            "3/13",
+            "3/30",
+            "3/31"
+          ]
+        }
+      ]
+    },
+    "filter4-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter4-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "filter4-2",
+          "prompt": "Which date(s) had price between 4 and 5 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "3/1",
+            "3/2",
+            "3/3",
+            "3/4",
+            "3/5",
+            "3/6",
+            "3/7",
+            "3/8",
+            "3/9",
+            "3/10",
+            "3/11",
+            "3/12",
+            "3/13",
+            "3/14",
+            "3/15",
+            "3/16",
+            "3/17",
+            "3/18",
+            "3/19",
+            "3/20",
+            "3/21",
+            "3/22",
+            "3/23",
+            "3/24",
+            "3/25",
+            "3/26",
+            "3/27",
+            "3/28",
+            "3/29",
+            "3/30",
+            "3/31"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter4-2",
+          "answer": [
+            "3/6",
+            "3/9",
+            "3/10",
+            "3/11",
+            "3/12",
+            "3/13",
+            "3/30",
+            "3/31"
+          ]
+        }
+      ]
+    },
+    "filter5-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter5-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter5-1",
+          "prompt": "Which month(s) had average temperature between 18 and 21 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter5-1",
+          "answer": [
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Sep",
+            "Oct",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter5-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter5-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter5-2",
+          "prompt": "Which month(s) had average temperature between 18 and 21 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter5-2",
+          "answer": [
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Sep",
+            "Oct",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter6-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter6-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter6-1",
+          "prompt": "Which month(s) had average temperature between 22 and 26 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter6-1",
+          "answer": [
+            "Mar",
+            "Apr",
+            "Jun",
+            "Sep",
+            "Oct"
+          ]
+        }
+      ]
+    },
+    "filter6-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter6-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter6-2",
+          "prompt": "Which month(s) had average temperature between 22 and 26 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter6-2",
+          "answer": [
+            "Mar",
+            "Apr",
+            "Jun",
+            "Sep",
+            "Oct"
+          ]
+        }
+      ]
+    },
+    "filter7-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter7-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter7-1",
+          "prompt": "Which month(s) had average rainfall between 3 and 4 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter7-1",
+          "answer": [
+            "Jan",
+            "Feb",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct"
+          ]
+        }
+      ]
+    },
+    "filter7-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter7-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter7-2",
+          "prompt": "Which month(s) had average rainfall between 3 and 4 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter7-2",
+          "answer": [
+            "Jan",
+            "Feb",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct"
+          ]
+        }
+      ]
+    },
+    "filter8-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter8-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter8-1",
+          "prompt": "Which month(s) had average rainfall between 2 and 3 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter8-1",
+          "answer": [
+            "Feb",
+            "Jun",
+            "Sep",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter8-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter8-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter8-2",
+          "prompt": "Which month(s) had average rainfall between 2 and 3 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter8-2",
+          "answer": [
+            "Feb",
+            "Jun",
+            "Sep",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter9-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter9-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter9-1",
+          "prompt": "Which day(s) had number of steps between 8159 and 8676 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter9-1",
+          "answer": [
+            "Tue",
+            "Wed"
+          ]
+        }
+      ]
+    },
+    "filter9-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter9-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter9-2",
+          "prompt": "Which day(s) had number of steps between 8159 and 8676 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter9-2",
+          "answer": [
+            "Tue",
+            "Wed"
+          ]
+        }
+      ]
+    },
+    "filter10-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter10-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter10-1",
+          "prompt": "Which day(s) had number of steps between 7521 and 12146 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter10-1",
+          "answer": [
+            "Mon",
+            "Fri",
+            "Sat"
+          ]
+        }
+      ]
+    },
+    "filter10-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/filter10-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "filter10-2",
+          "prompt": "Which day(s) had number of steps between 7521 and 12146 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter10-2",
+          "answer": [
+            "Mon",
+            "Fri",
+            "Sat"
+          ]
+        }
+      ]
+    },
+    "order1-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order1-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order1-1",
+          "prompt": "Select the option that orders the months from lowest to highest profit.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Mar, Feb, Apr, Jul, Jun, May, Aug, Sep, Oct, Dec, Nov",
+            "May, Jan, Aug, Sep, Jun, Apr, Jul, Mar, Feb, Dec, Oct, Nov",
+            "May, Nov, Aug, Dec, Oct, Mar, Sep, Feb, Jul, Jun, Apr, Jan",
+            "Nov, Dec, Oct, Sep, Aug, May, Jun, Jul, Apr, Feb, Mar, Jan"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order1-1",
+          "answer": "Jan, Mar, Feb, Apr, Jul, Jun, May, Aug, Sep, Oct, Dec, Nov"
+
+        }
+      ]
+    },
+    "order1-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order1-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order1-2",
+          "prompt": "Select the option that orders the months from lowest to highest profit.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Mar, Feb, Apr, Jul, Jun, May, Aug, Sep, Oct, Dec, Nov",
+            "May, Jan, Aug, Sep, Jun, Apr, Jul, Mar, Feb, Dec, Oct, Nov",
+            "May, Nov, Aug, Dec, Oct, Mar, Sep, Feb, Jul, Jun, Apr, Jan",
+            "Nov, Dec, Oct, Sep, Aug, May, Jun, Jul, Apr, Feb, Mar, Jan"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order1-2",
+          "answer": "Jan, Mar, Feb, Apr, Jul, Jun, May, Aug, Sep, Oct, Dec, Nov"
+
+        }
+      ]
+    },
+    "order2-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order2-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order2-1",
+          "prompt": "Select the option that orders the months from lowest to highest profit.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Apr, Oct, Feb, Mar, Jun, Jan, Nov, Dec, Sep, Jul, May, Aug",
+            "Nov, Mar, Apr, Feb, Sep, Aug, Jan, Jul, May, Jun, Oct, Dec",
+            "Dec, Nov, Oct, Sep, Aug, Jul, May, Jun, Apr, Mar, Jan, Feb",
+            "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order2-1",
+          "answer": "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
+        }
+      ]
+    },
+    "order2-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order2-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order2-2",
+          "prompt": "Select the option that orders the months from lowest to highest profit.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Apr, Oct, Feb, Mar, Jun, Jan, Nov, Dec, Sep, Jul, May, Aug",
+            "Nov, Mar, Apr, Feb, Sep, Aug, Jan, Jul, May, Jun, Oct, Dec",
+            "Dec, Nov, Oct, Sep, Aug, Jul, May, Jun, Apr, Mar, Jan, Feb",
+            "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order2-2",
+          "answer": "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
+        }
+      ]
+    },
+    "order3-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order3-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "order3-1",
+          "prompt": "Select the option that orders the dates from lowest to highest price.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "7/11, 7/2, 7/22, 7/18, 7/13, 7/15, 7/14, 7/8, 7/31, 7/26, 7/6, 7/12, 7/27, 7/9, 7/30, 7/17, 7/25, 7/1, 7/28, 7/21, 7/29, 7/16, 7/20, 7/3, 7/7, 7/23, 7/24, 7/10, 7/4, 7/19, 7/5",
+            "7/25, 7/9, 7/16, 7/28, 7/6, 7/10, 7/11, 7/14, 7/13, 7/19, 7/27, 7/5, 7/24, 7/18, 7/20, 7/26, 7/15, 7/30, 7/29, 7/1, 7/17, 7/23, 7/2, 7/4, 7/7, 7/3, 7/22, 7/21, 7/12, 7/8, 7/31",
+            "7/31, 7/5, 7/18, 7/30, 7/9, 7/7, 7/16, 7/6, 7/4, 7/10, 7/21, 7/22, 7/19, 7/29, 7/17, 7/27, 7/28, 7/11, 7/8, 7/20, 7/3, 7/14, 7/2, 7/15, 7/13, 7/12, 7/26, 7/1, 7/24, 7/25, 7/23",
+            "7/23, 7/25, 7/24, 7/1, 7/26, 7/12, 7/13, 7/15, 7/2, 7/14, 7/3, 7/20, 7/8, 7/11, 7/28, 7/27, 7/17, 7/29, 7/19, 7/22, 7/21, 7/10, 7/4, 7/6, 7/16, 7/7, 7/9, 7/30, 7/18, 7/5, 7/31"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order3-1",
+          "answer": "7/31, 7/5, 7/18, 7/30, 7/9, 7/7, 7/16, 7/6, 7/4, 7/10, 7/21, 7/22, 7/19, 7/29, 7/17, 7/27, 7/28, 7/11, 7/8, 7/20, 7/3, 7/14, 7/2, 7/15, 7/13, 7/12, 7/26, 7/1, 7/24, 7/25, 7/23"
+        }
+      ]
+    },
+    "order3-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order3-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "order3-2",
+          "prompt": "Select the option that orders the dates from lowest to highest price.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "7/11, 7/2, 7/22, 7/18, 7/13, 7/15, 7/14, 7/8, 7/31, 7/26, 7/6, 7/12, 7/27, 7/9, 7/30, 7/17, 7/25, 7/1, 7/28, 7/21, 7/29, 7/16, 7/20, 7/3, 7/7, 7/23, 7/24, 7/10, 7/4, 7/19, 7/5",
+            "7/25, 7/9, 7/16, 7/28, 7/6, 7/10, 7/11, 7/14, 7/13, 7/19, 7/27, 7/5, 7/24, 7/18, 7/20, 7/26, 7/15, 7/30, 7/29, 7/1, 7/17, 7/23, 7/2, 7/4, 7/7, 7/3, 7/22, 7/21, 7/12, 7/8, 7/31",
+            "7/31, 7/5, 7/18, 7/30, 7/9, 7/7, 7/16, 7/6, 7/4, 7/10, 7/21, 7/22, 7/19, 7/29, 7/17, 7/27, 7/28, 7/11, 7/8, 7/20, 7/3, 7/14, 7/2, 7/15, 7/13, 7/12, 7/26, 7/1, 7/24, 7/25, 7/23",
+            "7/23, 7/25, 7/24, 7/1, 7/26, 7/12, 7/13, 7/15, 7/2, 7/14, 7/3, 7/20, 7/8, 7/11, 7/28, 7/27, 7/17, 7/29, 7/19, 7/22, 7/21, 7/10, 7/4, 7/6, 7/16, 7/7, 7/9, 7/30, 7/18, 7/5, 7/31"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order3-2",
+          "answer": "7/31, 7/5, 7/18, 7/30, 7/9, 7/7, 7/16, 7/6, 7/4, 7/10, 7/21, 7/22, 7/19, 7/29, 7/17, 7/27, 7/28, 7/11, 7/8, 7/20, 7/3, 7/14, 7/2, 7/15, 7/13, 7/12, 7/26, 7/1, 7/24, 7/25, 7/23"
+        }
+      ]
+    },
+    "order4-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order4-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "order4-1",
+          "prompt": "Select the option that orders the dates from lowest to highest price.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "5/29, 5/11, 5/12, 5/13, 5/31, 5/10, 5/28, 5/30, 5/14, 5/9, 5/26, 5/7, 5/17, 5/25, 5/6, 5/8, 5/3, 5/23, 5/16, 5/27, 5/15, 5/5, 5/4, 5/18, 5/22, 5/24, 5/19, 5/2, 5/20, 5/21, 5/1",
+            "5/4, 5/2, 5/18, 5/23, 5/11, 5/26, 5/30, 5/10, 5/31, 5/27, 5/20, 5/14, 5/29, 5/21, 5/17, 5/13, 5/28, 5/6, 5/25, 5/22, 5/16, 5/15, 5/8, 5/24, 5/5, 5/19, 5/12, 5/9, 5/1, 5/3, 5/7",
+            "5/1, 5/21, 5/20, 5/2, 5/19, 5/24, 5/22, 5/18, 5/4, 5/5, 5/15, 5/27, 5/16, 5/23, 5/3, 5/8, 5/6, 5/25, 5/17, 5/7, 5/26, 5/9, 5/14, 5/30, 5/28, 5/10, 5/31, 5/13, 5/12, 5/11, 5/29",
+            "5/20, 5/22, 5/14, 5/24, 5/9, 5/4, 5/17, 5/2, 5/15, 5/3, 5/13, 5/6, 5/31, 5/12, 5/29, 5/18, 5/23, 5/8, 5/25, 5/27, 5/30, 5/21, 5/26, 5/5, 5/16, 5/7, 5/28, 5/19, 5/1, 5/11, 5/10"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order4-1",
+          "answer": "5/29, 5/11, 5/12, 5/13, 5/31, 5/10, 5/28, 5/30, 5/14, 5/9, 5/26, 5/7, 5/17, 5/25, 5/6, 5/8, 5/3, 5/23, 5/16, 5/27, 5/15, 5/5, 5/4, 5/18, 5/22, 5/24, 5/19, 5/2, 5/20, 5/21, 5/1"
+        }
+      ]
+    },
+    "order4-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order4-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "order4-2",
+          "prompt": "Select the option that orders the dates from lowest to highest price.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "5/29, 5/11, 5/12, 5/13, 5/31, 5/10, 5/28, 5/30, 5/14, 5/9, 5/26, 5/7, 5/17, 5/25, 5/6, 5/8, 5/3, 5/23, 5/16, 5/27, 5/15, 5/5, 5/4, 5/18, 5/22, 5/24, 5/19, 5/2, 5/20, 5/21, 5/1",
+            "5/4, 5/2, 5/18, 5/23, 5/11, 5/26, 5/30, 5/10, 5/31, 5/27, 5/20, 5/14, 5/29, 5/21, 5/17, 5/13, 5/28, 5/6, 5/25, 5/22, 5/16, 5/15, 5/8, 5/24, 5/5, 5/19, 5/12, 5/9, 5/1, 5/3, 5/7",
+            "5/1, 5/21, 5/20, 5/2, 5/19, 5/24, 5/22, 5/18, 5/4, 5/5, 5/15, 5/27, 5/16, 5/23, 5/3, 5/8, 5/6, 5/25, 5/17, 5/7, 5/26, 5/9, 5/14, 5/30, 5/28, 5/10, 5/31, 5/13, 5/12, 5/11, 5/29",
+            "5/20, 5/22, 5/14, 5/24, 5/9, 5/4, 5/17, 5/2, 5/15, 5/3, 5/13, 5/6, 5/31, 5/12, 5/29, 5/18, 5/23, 5/8, 5/25, 5/27, 5/30, 5/21, 5/26, 5/5, 5/16, 5/7, 5/28, 5/19, 5/1, 5/11, 5/10"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order4-2",
+          "answer": "5/29, 5/11, 5/12, 5/13, 5/31, 5/10, 5/28, 5/30, 5/14, 5/9, 5/26, 5/7, 5/17, 5/25, 5/6, 5/8, 5/3, 5/23, 5/16, 5/27, 5/15, 5/5, 5/4, 5/18, 5/22, 5/24, 5/19, 5/2, 5/20, 5/21, 5/1"
+        }
+      ]
+    },
+    "order5-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order5-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order5-1",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Apr, Sep, Jul, Nov, May, Mar, Jan, Dec, Oct, Aug, Jun, Feb",
+            "Jan, Dec, Oct, Mar, Feb, Nov, Sep, Apr, Jun, Aug, May, Jul",
+            "Jul, May, Apr, Jun, Sep, Nov, Dec, Jan, Feb, Oct, Aug, Mar",
+            "Jul, May, Aug, Jun, Apr, Sep, Nov, Feb, Mar, Oct, Dec, Jan"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order5-1",
+          "answer": "Jan, Dec, Oct, Mar, Feb, Nov, Sep, Apr, Jun, Aug, May, Jul"
+        }
+      ]
+    },
+    "order5-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order5-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order5-2",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Apr, Sep, Jul, Nov, May, Mar, Jan, Dec, Oct, Aug, Jun, Feb",
+            "Jan, Dec, Oct, Mar, Feb, Nov, Sep, Apr, Jun, Aug, May, Jul",
+            "Jul, May, Apr, Jun, Sep, Nov, Dec, Jan, Feb, Oct, Aug, Mar",
+            "Jul, May, Aug, Jun, Apr, Sep, Nov, Feb, Mar, Oct, Dec, Jan"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order5-2",
+          "answer": "Jan, Dec, Oct, Mar, Feb, Nov, Sep, Apr, Jun, Aug, May, Jul"
+        }
+      ]
+    },
+    "order6-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order6-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order6-1",
+          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Dec, Jan, Nov, Mar, Oct, Sep, Feb, Apr, May, Aug, Jul, Jun",
+            "Jun, Jul, Aug, May, Apr, Feb, Sep, Oct, Mar, Nov, Jan, Dec",
+            "Mar, Aug, Nov, Dec, Jun, Jul, Sep, May, Oct, Feb, Apr, Jan",
+            "Feb, Oct, May, Dec, Apr, Mar, Aug, Nov, Sep, Jun, Jul, Jan"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order6-1",
+          "answer": "Jun, Jul, Aug, May, Apr, Feb, Sep, Oct, Mar, Nov, Jan, Dec"
+        }
+      ]
+    },
+    "order6-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order6-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order6-2",
+          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Dec, Jan, Nov, Mar, Oct, Sep, Feb, Apr, May, Aug, Jul, Jun",
+            "Jun, Jul, Aug, May, Apr, Feb, Sep, Oct, Mar, Nov, Jan, Dec",
+            "Mar, Aug, Nov, Dec, Jun, Jul, Sep, May, Oct, Feb, Apr, Jan",
+            "Feb, Oct, May, Dec, Apr, Mar, Aug, Nov, Sep, Jun, Jul, Jan"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order6-2",
+          "answer": "Jun, Jul, Aug, May, Apr, Feb, Sep, Oct, Mar, Nov, Jan, Dec"
+        }
+      ]
+    },
+    "order7-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order7-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order7-1",
+          "prompt": "Select the option that orders the months from highest to lowest average rainfall.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Dec, Feb, Mar, Jul, Nov, Oct, Jun, Sep, Apr, May, Aug",
+            "Aug, Sep, Jan, Oct, Jul, Feb, May, Dec, Mar, Nov, Jun, Apr",
+            "Apr, Jun, Nov, Mar, Dec, May, Feb, Jul, Oct, Jan, Sep, Aug",
+            "Apr, Feb, Sep, Jan, Jul, Nov, Jun, May, Aug, Mar, Dec, Oct"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order7-1",
+          "answer": "Apr, Jun, Nov, Mar, Dec, May, Feb, Jul, Oct, Jan, Sep, Aug"
+        }
+      ]
+    },
+    "order7-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order7-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order7-2",
+          "prompt": "Select the option that orders the months from highest to lowest average rainfall.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Dec, Feb, Mar, Jul, Nov, Oct, Jun, Sep, Apr, May, Aug",
+            "Aug, Sep, Jan, Oct, Jul, Feb, May, Dec, Mar, Nov, Jun, Apr",
+            "Apr, Jun, Nov, Mar, Dec, May, Feb, Jul, Oct, Jan, Sep, Aug",
+            "Apr, Feb, Sep, Jan, Jul, Nov, Jun, May, Aug, Mar, Dec, Oct"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order7-2",
+          "answer": "Apr, Jun, Nov, Mar, Dec, May, Feb, Jul, Oct, Jan, Sep, Aug"
+        }
+      ]
+    },
+    "order8-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order8-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order8-1",
+          "prompt": "Select the option that orders the months from highest to lowest average rainfall.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Aug, Jul, Feb, Sep, Oct, Mar, Nov, Jun, Apr, May, Dec",
+            "May, Jul, Sep, Nov, Apr, Jan, Jun, Dec, Feb, Aug, Oct, Mar",
+            "Dec, May, Apr, Jun, Nov, Mar, Oct, Sep, Feb, Jul, Aug, Jan",
+            "Aug, Feb, Dec, Apr, Sep, Nov, Jul, May, Mar, Oct, Jan, Jun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order8-1",
+          "answer": "Dec, May, Apr, Jun, Nov, Mar, Oct, Sep, Feb, Jul, Aug, Jan"
+        }
+      ]
+    },
+    "order8-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order8-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order8-2",
+          "prompt": "Select the option that orders the months from highest to lowest average rainfall.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Aug, Jul, Feb, Sep, Oct, Mar, Nov, Jun, Apr, May, Dec",
+            "May, Jul, Sep, Nov, Apr, Jan, Jun, Dec, Feb, Aug, Oct, Mar",
+            "Dec, May, Apr, Jun, Nov, Mar, Oct, Sep, Feb, Jul, Aug, Jan",
+            "Aug, Feb, Dec, Apr, Sep, Nov, Jul, May, Mar, Oct, Jan, Jun"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order8-2",
+          "answer": "Dec, May, Apr, Jun, Nov, Mar, Oct, Sep, Feb, Jul, Aug, Jan"
+        }
+      ]
+    },
+    "order9-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order9-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order9-1",
+          "prompt": "Select the option that orders the days from lowest to highest number of steps.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Wed, Mon, Thu, Sat, Tue, Fri, Sun",
+            "Sun, Fri, Mon, Tue, Thu, Wed, Sat",
+            "Tue, Sat, Sun, Mon, Wed, Fri, Thu",
+            "Thu, Fri, Wed, Mon, Sun, Sat, Tue"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order9-1",
+          "answer": "Tue, Sat, Sun, Mon, Wed, Fri, Thu"
+        }
+      ]
+    },
+    "order9-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order9-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order9-2",
+          "prompt": "Select the option that orders the days from lowest to highest number of steps.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Wed, Mon, Thu, Sat, Tue, Fri, Sun",
+            "Sun, Fri, Mon, Tue, Thu, Wed, Sat",
+            "Tue, Sat, Sun, Mon, Wed, Fri, Thu",
+            "Thu, Fri, Wed, Mon, Sun, Sat, Tue"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order9-2",
+          "answer": "Tue, Sat, Sun, Mon, Wed, Fri, Thu"
+        }
+      ]
+    },
+    "order10-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order10-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order10-1",
+          "prompt": "Select the option that orders the days from lowest to highest number of steps.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Sat, Wed, Sun, Fri, Tue, Thu, Mon",
+            "Tue, Sun, Thu, Mon, Sat, Fri, Wed",
+            "Wed, Fri, Sat, Mon, Thu, Sun, Tue",
+            "Sat, Mon, Sun, Thu, Fri, Tue, Wed"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order10-1",
+          "answer": [
+            "Wed, Fri, Sat, Mon, Thu, Sun, Tue"
+          ]
+        }
+      ]
+    },
+    "order10-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/order10-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "order10-2",
+          "prompt": "Select the option that orders the days from lowest to highest number of steps.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Sat, Wed, Sun, Fri, Tue, Thu, Mon",
+            "Tue, Sun, Thu, Mon, Sat, Fri, Wed",
+            "Wed, Fri, Sat, Mon, Thu, Sun, Tue",
+            "Sat, Mon, Sun, Thu, Fri, Tue, Wed"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order10-2",
+          "answer": [
+            "Wed, Fri, Sat, Mon, Thu, Sun, Tue"
+          ]
+        }
+      ]
+    },
+    "ratio1-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio1-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio1-1",
+          "prompt": "What is the proportion of profit made by Company Y in Jul to Nov? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio1-1",
+          "answer": 97.01929307497753
+        }
+      ]
+    },
+    "ratio1-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio1-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio1-2",
+          "prompt": "What is the proportion of profit made by Company Y in Jul to Nov? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio1-2",
+          "answer": 97.01929307497753
+        }
+      ]
+    },
+    "ratio2-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio2-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio2-1",
+          "prompt": "What is the proportion of profit made by Company N in Dec to Jun? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio2-1",
+          "answer": 93.43112310592404
+        }
+      ]
+    },
+    "ratio2-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio2-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio2-2",
+          "prompt": "What is the proportion of profit made by Company N in Dec to Jun? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio2-2",
+          "answer": 93.43112310592404
+        }
+      ]
+    },
+    "ratio3-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio3-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ratio3-1",
+          "prompt": "What is the proportion of price of Stock P on 1/22 to 1/28? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio3-1",
+          "answer": 89.25233644859813
+        }
+      ]
+    },
+    "ratio3-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio3-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ratio3-2",
+          "prompt": "What is the proportion of price of Stock P on 1/22 to 1/28? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio3-2",
+          "answer": 89.25233644859813
+        }
+      ]
+    },
+    "ratio4-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio4-1.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ratio4-1",
+          "prompt": "What is the proportion of price of Stock F on 2/10 to 2/18? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio4-1",
+          "answer": 52.46153846153846
+        }
+      ]
+    },
+    "ratio4-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio4-2.png",
+      "style": {
+        "width": "1600px"
+      },
+      "response": [
+        {
+          "id": "ratio4-2",
+          "prompt": "What is the proportion of price of Stock F on 2/10 to 2/18? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio4-2",
+          "answer": 52.46153846153846
+        }
+      ]
+    },
+    "ratio5-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio5-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio5-1",
+          "prompt": "What is the proportion of average temperature in Country S in Apr to Sep? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio5-1",
+          "answer": 77.32558139534885
+        }
+      ]
+    },
+    "ratio5-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio5-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio5-2",
+          "prompt": "What is the proportion of average temperature in Country S in Apr to Sep? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio5-2",
+          "answer": 77.32558139534885
+        }
+      ]
+    },
+    "ratio6-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio6-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio6-1",
+          "prompt": "What is the proportion of average temperature in Country I in Jun to Jan? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio6-1",
+          "answer": 59.62962962962962
+        }
+      ]
+    },
+    "ratio6-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio6-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio6-2",
+          "prompt": "What is the proportion of average temperature in Country I in Jun to Jan? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio6-2",
+          "answer": 59.62962962962962
+        }
+      ]
+    },
+    "ratio7-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio7-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio7-1",
+          "prompt": "What is the proportion of average rainfall in City W in Mar to Sep? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio7-1",
+          "answer": 80.0
+        }
+      ]
+    },
+    "ratio7-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio7-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio7-2",
+          "prompt": "What is the proportion of average rainfall in City W in Mar to Sep? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio7-2",
+          "answer": 80.0
+        }
+      ]
+    },
+    "ratio8-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio8-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio8-1",
+          "prompt": "What is the proportion of average rainfall in City B in Apr to Jul? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio8-1",
+          "answer": 77.77777777777779
+        }
+      ]
+    },
+    "ratio8-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio8-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio8-2",
+          "prompt": "What is the proportion of average rainfall in City B in Apr to Jul? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio8-2",
+          "answer": 77.77777777777779
+        }
+      ]
+    },
+    "ratio9-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio9-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio9-1",
+          "prompt": "What is the proportion of number of steps taken by Person R on Sat to Thu? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio9-1",
+          "answer": 93.66479550922213
+        }
+      ]
+    },
+    "ratio9-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio9-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio9-2",
+          "prompt": "What is the proportion of number of steps taken by Person R on Sat to Thu? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio9-2",
+          "answer": 93.66479550922213
+        }
+      ]
+    },
+    "ratio10-1": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio10-1.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio10-1",
+          "prompt": "What is the proportion of number of steps taken by Person F on Thu to Tue? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio10-1",
+          "answer": 90.4094132817537
+        }
+      ]
+    },
+    "ratio10-2": {
+      "type": "image",
+      "path": "truncation-study/assets/img/ratio10-2.png",
+      "style": {
+        "width": "800px"
+      },
+      "response": [
+        {
+          "id": "ratio10-2",
+          "prompt": "What is the proportion of number of steps taken by Person F on Thu to Tue? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio10-2",
+          "answer": 90.4094132817537
         }
       ]
     }
   },
   "sequence": {
-    "order": "fixed",
     "components": [
       "introduction",
-      "first-question-set",
-      "second-question-set"
-    ]
+      {
+        "components": [
+          {
+            "components": [
+              "ret-val-tut",
+              {
+                "components": [
+                  {
+                    "components": [
+                      "ret-val1-1",
+                      "ret-val1-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val2-1",
+                      "ret-val2-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val3-1",
+                      "ret-val3-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val4-1",
+                      "ret-val4-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val5-1",
+                      "ret-val5-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val6-1",
+                      "ret-val6-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val7-1",
+                      "ret-val7-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val8-1",
+                      "ret-val8-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val9-1",
+                      "ret-val9-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ret-val10-1",
+                      "ret-val10-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  }
+                ],
+                "order": "random"
+              }
+            ],
+            "order": "fixed"
+          },
+          {
+            "components": [
+              "find-ext-tut",
+              {
+                "components": [
+                  {
+                    "components": [
+                      "find-ext1-1",
+                      "find-ext1-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext2-1",
+                      "find-ext2-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext3-1",
+                      "find-ext3-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext4-1",
+                      "find-ext4-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext5-1",
+                      "find-ext5-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext6-1",
+                      "find-ext6-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext7-1",
+                      "find-ext7-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext8-1",
+                      "find-ext8-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext9-1",
+                      "find-ext9-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "find-ext10-1",
+                      "find-ext10-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  }
+                ],
+                "order": "random"
+              }
+            ],
+            "order": "fixed"
+          },
+          {
+            "components": [
+              "det-ran-tut",
+              {
+                "components": [
+                  {
+                    "components": [
+                      "det-ran1-1",
+                      "det-ran1-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran2-1",
+                      "det-ran2-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran3-1",
+                      "det-ran3-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran4-1",
+                      "det-ran4-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran5-1",
+                      "det-ran5-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran6-1",
+                      "det-ran6-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran7-1",
+                      "det-ran7-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran8-1",
+                      "det-ran8-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran9-1",
+                      "det-ran9-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "det-ran10-1",
+                      "det-ran10-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  }
+                ],
+                "order": "random"
+              }
+            ],
+            "order": "fixed"
+          },
+          {
+            "components": [
+              "make-comp-tut",
+              {
+                "components": [
+                  {
+                    "components": [
+                      "make-comp1-1",
+                      "make-comp1-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp2-1",
+                      "make-comp2-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp3-1",
+                      "make-comp3-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp4-1",
+                      "make-comp4-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp5-1",
+                      "make-comp5-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp6-1",
+                      "make-comp6-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp7-1",
+                      "make-comp7-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp8-1",
+                      "make-comp8-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp9-1",
+                      "make-comp9-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "make-comp10-1",
+                      "make-comp10-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  }
+                ],
+                "order": "random"
+              }
+            ],
+            "order": "fixed"
+          },
+          {
+            "components": [
+              "filter-tut",
+              {
+                "components": [
+                  {
+                    "components": [
+                      "filter1-1",
+                      "filter1-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter2-1",
+                      "filter2-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter3-1",
+                      "filter3-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter4-1",
+                      "filter4-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter5-1",
+                      "filter5-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter6-1",
+                      "filter6-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter7-1",
+                      "filter7-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter8-1",
+                      "filter8-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter9-1",
+                      "filter9-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "filter10-1",
+                      "filter10-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  }
+                ],
+                "order": "random"
+              }
+            ],
+            "order": "fixed"
+          },
+          {
+            "components": [
+              "order-tut",
+              {
+                "components": [
+                  {
+                    "components": [
+                      "order1-1",
+                      "order1-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order2-1",
+                      "order2-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order3-1",
+                      "order3-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order4-1",
+                      "order4-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order5-1",
+                      "order5-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order6-1",
+                      "order6-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order7-1",
+                      "order7-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order8-1",
+                      "order8-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order9-1",
+                      "order9-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "order10-1",
+                      "order10-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  }
+                ],
+                "order": "random"
+              }
+            ],
+            "order": "fixed"
+          },
+          {
+            "components": [
+              "ratio-tut",
+              {
+                "components": [
+                  {
+                    "components": [
+                      "ratio1-1",
+                      "ratio1-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio2-1",
+                      "ratio2-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio3-1",
+                      "ratio3-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio4-1",
+                      "ratio4-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio5-1",
+                      "ratio5-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio6-1",
+                      "ratio6-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio7-1",
+                      "ratio7-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio8-1",
+                      "ratio8-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio9-1",
+                      "ratio9-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  },
+                  {
+                    "components": [
+                      "ratio10-1",
+                      "ratio10-2"
+                    ],
+                    "order": "random",
+                    "numSamples": 1
+                  }
+                ],
+                "order": "random"
+              }
+            ],
+            "order": "fixed"
+          }
+        ],
+        "order": "latinSquare",
+        "numSamples": 1
+      }
+    ],
+    "order": "fixed"
   }
 }
