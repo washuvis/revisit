@@ -29,7 +29,7 @@
     },
     "ret-val-tut": {
       "type": "image",
-      "path": "truncation-study/assets/img/ret-val-tut-1.png",
+      "path": "truncation-study/assets/img/ret-val-tut.png",
       "style": {
         "width": "800px"
       },
@@ -51,7 +51,7 @@
     },
     "find-ext-tut": {
       "type": "image",
-      "path": "truncation-study/assets/img/find-ext-tut-1.png",
+      "path": "truncation-study/assets/img/find-ext-tut.png",
       "style": {
         "width": "800px"
       },
@@ -87,7 +87,7 @@
     },
     "det-ran-tut": {
       "type": "image",
-      "path": "truncation-study/assets/img/det-ran-tut-1.png",
+      "path": "truncation-study/assets/img/det-ran-tut.png",
       "style": {
         "width": "800px"
       },
@@ -112,7 +112,7 @@
     },
     "make-comp-tut": {
       "type": "image",
-      "path": "truncation-study/assets/img/make-comp-tut-1.png",
+      "path": "truncation-study/assets/img/make-comp-tut.png",
       "style": {
         "width": "800px"
       },
@@ -134,7 +134,7 @@
     },
     "filter-tut": {
       "type": "image",
-      "path": "truncation-study/assets/img/filter-tut-1.png",
+      "path": "truncation-study/assets/img/filter-tut.png",
       "style": {
         "width": "800px"
       },
@@ -174,7 +174,7 @@
     },
     "order-tut": {
       "type": "image",
-      "path": "truncation-study/assets/img/order-tut-1.png",
+      "path": "truncation-study/assets/img/order-tut.png",
       "style": {
         "width": "800px"
       },
@@ -201,7 +201,7 @@
     },
     "ratio-tut": {
       "type": "image",
-      "path": "truncation-study/assets/img/ratio-tut-1.png",
+      "path": "truncation-study/assets/img/ratio-tut.png",
       "style": {
         "width": "800px"
       },
