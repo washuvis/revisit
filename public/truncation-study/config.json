@@ -308,12 +308,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val1-q1",
-          "answer": 79493
-        }
       ]
     },
     "ret-val1-2": {
@@ -329,12 +323,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val1-q2",
-          "answer": 79493
         }
       ]
     },
@@ -352,12 +340,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val2-q1",
-          "answer": 95616
-        }
       ]
     },
     "ret-val2-2": {
@@ -373,12 +355,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val2-q2",
-          "answer": 95616
         }
       ]
     },
@@ -396,12 +372,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val3-q1",
-          "answer": 5.14
-        }
       ]
     },
     "ret-val3-2": {
@@ -417,12 +387,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val3-q2",
-          "answer": 5.14
         }
       ]
     },
@@ -440,12 +404,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val4-q1",
-          "answer": 4.21
-        }
       ]
     },
     "ret-val4-2": {
@@ -461,12 +419,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val4-q2",
-          "answer": 4.21
         }
       ]
     },
@@ -484,12 +436,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val5-q1",
-          "answer": 27.7
-        }
       ]
     },
     "ret-val5-2": {
@@ -505,12 +451,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val5-q2",
-          "answer": 27.7
         }
       ]
     },
@@ -528,12 +468,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val6-q1",
-          "answer": 17.3
-        }
       ]
     },
     "ret-val6-2": {
@@ -549,12 +483,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val6-q2",
-          "answer": 17.3
         }
       ]
     },
@@ -572,12 +500,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val7-q1",
-          "answer": 5.4
-        }
       ]
     },
     "ret-val7-2": {
@@ -593,12 +515,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val7-q2",
-          "answer": 5.4
         }
       ]
     },
@@ -616,12 +532,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val8-q1",
-          "answer": 3.7
-        }
       ]
     },
     "ret-val8-2": {
@@ -637,12 +547,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val8-q2",
-          "answer": 3.7
         }
       ]
     },
@@ -660,12 +564,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val9-q1",
-          "answer": 9583
-        }
       ]
     },
     "ret-val9-2": {
@@ -681,12 +579,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val9-q2",
-          "answer": 9583
         }
       ]
     },
@@ -704,12 +596,6 @@
           "type": "shortText",
           "placeholder": "Value"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val10-q1",
-          "answer": 6542
-        }
       ]
     },
     "ret-val10-2": {
@@ -725,12 +611,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val10-q2",
-          "answer": 6542
         }
       ]
     },
@@ -762,12 +642,6 @@
             "Dec"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext1-q1",
-          "answer": "Feb"
-        }
       ]
     },
     "find-ext1-2": {
@@ -797,12 +671,6 @@
             "Nov",
             "Dec"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext1-q2",
-          "answer": "Feb"
         }
       ]
     },
@@ -834,12 +702,6 @@
             "Dec"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext2-q1",
-          "answer": "Oct"
-        }
       ]
     },
     "find-ext2-2": {
@@ -869,12 +731,6 @@
             "Nov",
             "Dec"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext2-q2",
-          "answer": "Oct"
         }
       ]
     },
@@ -924,12 +780,6 @@
             "9/30"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext3-q1",
-          "answer": "9/23"
-        }
       ]
     },
     "find-ext3-2": {
@@ -977,12 +827,6 @@
             "9/29",
             "9/30"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext3-q2",
-          "answer": "9/23"
         }
       ]
     },
@@ -1033,12 +877,6 @@
             "10/31"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext4-q1",
-          "answer": "10/6"
-        }
       ]
     },
     "find-ext4-2": {
@@ -1088,12 +926,6 @@
             "10/31"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext4-q2",
-          "answer": "10/6"
-        }
       ]
     },
     "find-ext5-1": {
@@ -1123,12 +955,6 @@
             "Nov",
             "Dec"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext5-q1",
-          "answer": "Aug"
         }
       ]
     },
@@ -1160,12 +986,6 @@
             "Dec"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext5-q2",
-          "answer": "Aug"
-        }
       ]
     },
     "find-ext6-1": {
@@ -1195,12 +1015,6 @@
             "Nov",
             "Dec"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext6-q1",
-          "answer": "Dec"
         }
       ]
     },
@@ -1232,12 +1046,6 @@
             "Dec"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext6-q2",
-          "answer": "Dec"
-        }
       ]
     },
     "find-ext7-1": {
@@ -1267,12 +1075,6 @@
             "Nov",
             "Dec"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext7-q1",
-          "answer": "May"
         }
       ]
     },
@@ -1304,12 +1106,6 @@
             "Dec"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext7-q2",
-          "answer": "May"
-        }
       ]
     },
     "find-ext8-1": {
@@ -1339,12 +1135,6 @@
             "Nov",
             "Dec"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext8-q1",
-          "answer": "Sep"
         }
       ]
     },
@@ -1376,12 +1166,6 @@
             "Dec"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext8-q2",
-          "answer": "Sep"
-        }
       ]
     },
     "find-ext9-1": {
@@ -1406,12 +1190,6 @@
             "Sat",
             "Sun"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext9-q1",
-          "answer": "Tue"
         }
       ]
     },
@@ -1438,12 +1216,6 @@
             "Sun"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext9-q2",
-          "answer": "Tue"
-        }
       ]
     },
     "find-ext10-1": {
@@ -1469,12 +1241,6 @@
             "Sun"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext10-q1",
-          "answer": "Sat"
-        }
       ]
     },
     "find-ext10-2": {
@@ -1499,12 +1265,6 @@
             "Sat",
             "Sun"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext10-q2",
-          "answer": "Sat"
         }
       ]
     },
@@ -2022,12 +1782,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp1-q1",
-          "answer": 7679
-        }
       ]
     },
     "make-comp1-2": {
@@ -2043,12 +1797,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp1-q2",
-          "answer": 7679
         }
       ]
     },
@@ -2066,12 +1814,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp2-q1",
-          "answer": 6599
-        }
       ]
     },
     "make-comp2-2": {
@@ -2087,12 +1829,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp2-q2",
-          "answer": 6599
         }
       ]
     },
@@ -2110,12 +1846,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp3-q1",
-          "answer": 3.8799999999999994
-        }
       ]
     },
     "make-comp3-2": {
@@ -2131,12 +1861,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp3-q2",
-          "answer": 3.8799999999999994
         }
       ]
     },
@@ -2154,12 +1878,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp4-q1",
-          "answer": 0.38000000000000034
-        }
       ]
     },
     "make-comp4-2": {
@@ -2175,12 +1893,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp4-q2",
-          "answer": 0.38000000000000034
         }
       ]
     },
@@ -2198,12 +1910,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp5-q1",
-          "answer": 5.5
-        }
       ]
     },
     "make-comp5-2": {
@@ -2219,12 +1925,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp5-q2",
-          "answer": 5.5
         }
       ]
     },
@@ -2242,12 +1942,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp6-q1",
-          "answer": 12.4
-        }
       ]
     },
     "make-comp6-2": {
@@ -2263,12 +1957,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp6-q2",
-          "answer": 12.4
         }
       ]
     },
@@ -2286,12 +1974,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp7-q1",
-          "answer": 0.1
-        }
       ]
     },
     "make-comp7-2": {
@@ -2307,12 +1989,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp7-q2",
-          "answer": 0.1
         }
       ]
     },
@@ -2330,12 +2006,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp8-q1",
-          "answer": 3.2
-        }
       ]
     },
     "make-comp8-2": {
@@ -2351,12 +2021,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp8-q2",
-          "answer": 3.2
         }
       ]
     },
@@ -2374,12 +2038,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp9-q1",
-          "answer": 3650
-        }
       ]
     },
     "make-comp9-2": {
@@ -2395,12 +2053,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp9-q2",
-          "answer": 3650
         }
       ]
     },
@@ -2418,12 +2070,6 @@
           "type": "shortText",
           "placeholder": "Difference"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp10-q1",
-          "answer": 2192
-        }
       ]
     },
     "make-comp10-2": {
@@ -2439,12 +2085,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp10-q2",
-          "answer": 2192
         }
       ]
     },
@@ -3427,12 +3067,6 @@
             "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order2-q1",
-          "answer": "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
-        }
       ]
     },
     "order2-2": {
@@ -3453,12 +3087,6 @@
             "Dec, Nov, Oct, Sep, Aug, Jul, May, Jun, Apr, Mar, Jan, Feb",
             "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order2-q2",
-          "answer": "Feb, Jan, Mar, Apr, Jun, May, Jul, Aug, Sep, Oct, Nov, Dec"
         }
       ]
     },
@@ -3481,12 +3109,6 @@
             "7/23, 7/25, 7/24, 7/1, 7/26, 7/12, 7/13, 7/15, 7/2, 7/14, 7/3, 7/20, 7/8, 7/11, 7/28, 7/27, 7/17, 7/29, 7/19, 7/22, 7/21, 7/10, 7/4, 7/6, 7/16, 7/7, 7/9, 7/30, 7/18, 7/5, 7/31"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order3-q1",
-          "answer": "7/31, 7/5, 7/18, 7/30, 7/9, 7/7, 7/16, 7/6, 7/4, 7/10, 7/21, 7/22, 7/19, 7/29, 7/17, 7/27, 7/28, 7/11, 7/8, 7/20, 7/3, 7/14, 7/2, 7/15, 7/13, 7/12, 7/26, 7/1, 7/24, 7/25, 7/23"
-        }
       ]
     },
     "order3-2": {
@@ -3507,12 +3129,6 @@
             "7/31, 7/5, 7/18, 7/30, 7/9, 7/7, 7/16, 7/6, 7/4, 7/10, 7/21, 7/22, 7/19, 7/29, 7/17, 7/27, 7/28, 7/11, 7/8, 7/20, 7/3, 7/14, 7/2, 7/15, 7/13, 7/12, 7/26, 7/1, 7/24, 7/25, 7/23",
             "7/23, 7/25, 7/24, 7/1, 7/26, 7/12, 7/13, 7/15, 7/2, 7/14, 7/3, 7/20, 7/8, 7/11, 7/28, 7/27, 7/17, 7/29, 7/19, 7/22, 7/21, 7/10, 7/4, 7/6, 7/16, 7/7, 7/9, 7/30, 7/18, 7/5, 7/31"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order3-q2",
-          "answer": "7/31, 7/5, 7/18, 7/30, 7/9, 7/7, 7/16, 7/6, 7/4, 7/10, 7/21, 7/22, 7/19, 7/29, 7/17, 7/27, 7/28, 7/11, 7/8, 7/20, 7/3, 7/14, 7/2, 7/15, 7/13, 7/12, 7/26, 7/1, 7/24, 7/25, 7/23"
         }
       ]
     },
@@ -3535,12 +3151,6 @@
             "5/20, 5/22, 5/14, 5/24, 5/9, 5/4, 5/17, 5/2, 5/15, 5/3, 5/13, 5/6, 5/31, 5/12, 5/29, 5/18, 5/23, 5/8, 5/25, 5/27, 5/30, 5/21, 5/26, 5/5, 5/16, 5/7, 5/28, 5/19, 5/1, 5/11, 5/10"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order4-q1",
-          "answer": "5/29, 5/11, 5/12, 5/13, 5/31, 5/10, 5/28, 5/30, 5/14, 5/9, 5/26, 5/7, 5/17, 5/25, 5/6, 5/8, 5/3, 5/23, 5/16, 5/27, 5/15, 5/5, 5/4, 5/18, 5/22, 5/24, 5/19, 5/2, 5/20, 5/21, 5/1"
-        }
       ]
     },
     "order4-2": {
@@ -3561,12 +3171,6 @@
             "5/1, 5/21, 5/20, 5/2, 5/19, 5/24, 5/22, 5/18, 5/4, 5/5, 5/15, 5/27, 5/16, 5/23, 5/3, 5/8, 5/6, 5/25, 5/17, 5/7, 5/26, 5/9, 5/14, 5/30, 5/28, 5/10, 5/31, 5/13, 5/12, 5/11, 5/29",
             "5/20, 5/22, 5/14, 5/24, 5/9, 5/4, 5/17, 5/2, 5/15, 5/3, 5/13, 5/6, 5/31, 5/12, 5/29, 5/18, 5/23, 5/8, 5/25, 5/27, 5/30, 5/21, 5/26, 5/5, 5/16, 5/7, 5/28, 5/19, 5/1, 5/11, 5/10"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order4-q2",
-          "answer": "5/29, 5/11, 5/12, 5/13, 5/31, 5/10, 5/28, 5/30, 5/14, 5/9, 5/26, 5/7, 5/17, 5/25, 5/6, 5/8, 5/3, 5/23, 5/16, 5/27, 5/15, 5/5, 5/4, 5/18, 5/22, 5/24, 5/19, 5/2, 5/20, 5/21, 5/1"
         }
       ]
     },
@@ -3589,12 +3193,6 @@
             "Jul, May, Aug, Jun, Apr, Sep, Nov, Feb, Mar, Oct, Dec, Jan"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order5-q1",
-          "answer": "Jan, Dec, Oct, Mar, Feb, Nov, Sep, Apr, Jun, Aug, May, Jul"
-        }
       ]
     },
     "order5-2": {
@@ -3615,12 +3213,6 @@
             "Jul, May, Apr, Jun, Sep, Nov, Dec, Jan, Feb, Oct, Aug, Mar",
             "Jul, May, Aug, Jun, Apr, Sep, Nov, Feb, Mar, Oct, Dec, Jan"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order5-q2",
-          "answer": "Jan, Dec, Oct, Mar, Feb, Nov, Sep, Apr, Jun, Aug, May, Jul"
         }
       ]
     },
@@ -3643,12 +3235,6 @@
             "Feb, Oct, May, Dec, Apr, Mar, Aug, Nov, Sep, Jun, Jul, Jan"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order6-q1",
-          "answer": "Jun, Jul, Aug, May, Apr, Feb, Sep, Oct, Mar, Nov, Jan, Dec"
-        }
       ]
     },
     "order6-2": {
@@ -3669,12 +3255,6 @@
             "Mar, Aug, Nov, Dec, Jun, Jul, Sep, May, Oct, Feb, Apr, Jan",
             "Feb, Oct, May, Dec, Apr, Mar, Aug, Nov, Sep, Jun, Jul, Jan"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order6-q2",
-          "answer": "Jun, Jul, Aug, May, Apr, Feb, Sep, Oct, Mar, Nov, Jan, Dec"
         }
       ]
     },
@@ -3697,12 +3277,6 @@
             "Apr, Feb, Sep, Jan, Jul, Nov, Jun, May, Aug, Mar, Dec, Oct"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order7-q1",
-          "answer": "Apr, Jun, Nov, Mar, Dec, May, Feb, Jul, Oct, Jan, Sep, Aug"
-        }
       ]
     },
     "order7-2": {
@@ -3723,12 +3297,6 @@
             "Apr, Jun, Nov, Mar, Dec, May, Feb, Jul, Oct, Jan, Sep, Aug",
             "Apr, Feb, Sep, Jan, Jul, Nov, Jun, May, Aug, Mar, Dec, Oct"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order7-q2",
-          "answer": "Apr, Jun, Nov, Mar, Dec, May, Feb, Jul, Oct, Jan, Sep, Aug"
         }
       ]
     },
@@ -3751,12 +3319,6 @@
             "Aug, Feb, Dec, Apr, Sep, Nov, Jul, May, Mar, Oct, Jan, Jun"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order8-q1",
-          "answer": "Dec, May, Apr, Jun, Nov, Mar, Oct, Sep, Feb, Jul, Aug, Jan"
-        }
       ]
     },
     "order8-2": {
@@ -3777,12 +3339,6 @@
             "Dec, May, Apr, Jun, Nov, Mar, Oct, Sep, Feb, Jul, Aug, Jan",
             "Aug, Feb, Dec, Apr, Sep, Nov, Jul, May, Mar, Oct, Jan, Jun"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order8-q2",
-          "answer": "Dec, May, Apr, Jun, Nov, Mar, Oct, Sep, Feb, Jul, Aug, Jan"
         }
       ]
     },
@@ -3805,12 +3361,6 @@
             "Thu, Fri, Wed, Mon, Sun, Sat, Tue"
           ]
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order9-q1",
-          "answer": "Tue, Sat, Sun, Mon, Wed, Fri, Thu"
-        }
       ]
     },
     "order9-2": {
@@ -3831,12 +3381,6 @@
             "Tue, Sat, Sun, Mon, Wed, Fri, Thu",
             "Thu, Fri, Wed, Mon, Sun, Sat, Tue"
           ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order9-q2",
-          "answer": "Tue, Sat, Sun, Mon, Wed, Fri, Thu"
         }
       ]
     },
@@ -3912,12 +3456,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio1-q1",
-          "answer": 97.01929307497753
-        }
       ]
     },
     "ratio1-2": {
@@ -3933,12 +3471,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio1-q2",
-          "answer": 97.01929307497753
         }
       ]
     },
@@ -3956,12 +3488,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio2-q1",
-          "answer": 93.43112310592404
-        }
       ]
     },
     "ratio2-2": {
@@ -3977,12 +3503,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio2-q2",
-          "answer": 93.43112310592404
         }
       ]
     },
@@ -4000,12 +3520,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio3-q1",
-          "answer": 89.25233644859813
-        }
       ]
     },
     "ratio3-2": {
@@ -4021,12 +3535,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio3-q2",
-          "answer": 89.25233644859813
         }
       ]
     },
@@ -4044,12 +3552,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio4-q1",
-          "answer": 52.46153846153846
-        }
       ]
     },
     "ratio4-2": {
@@ -4065,12 +3567,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio4-q2",
-          "answer": 52.46153846153846
         }
       ]
     },
@@ -4088,12 +3584,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio5-q1",
-          "answer": 77.32558139534885
-        }
       ]
     },
     "ratio5-2": {
@@ -4109,12 +3599,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio5-q2",
-          "answer": 77.32558139534885
         }
       ]
     },
@@ -4132,12 +3616,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio6-q1",
-          "answer": 59.62962962962962
-        }
       ]
     },
     "ratio6-2": {
@@ -4153,12 +3631,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio6-q2",
-          "answer": 59.62962962962962
         }
       ]
     },
@@ -4176,12 +3648,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio7-q1",
-          "answer": 80.0
-        }
       ]
     },
     "ratio7-2": {
@@ -4197,12 +3663,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio7-q2",
-          "answer": 80.0
         }
       ]
     },
@@ -4220,12 +3680,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio8-q1",
-          "answer": 77.77777777777779
-        }
       ]
     },
     "ratio8-2": {
@@ -4241,12 +3695,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio8-q2",
-          "answer": 77.77777777777779
         }
       ]
     },
@@ -4264,12 +3712,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio9-q1",
-          "answer": 93.66479550922213
-        }
       ]
     },
     "ratio9-2": {
@@ -4285,12 +3727,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio9-q2",
-          "answer": 93.66479550922213
         }
       ]
     },
@@ -4308,12 +3744,6 @@
           "type": "shortText",
           "placeholder": "50.0"
         }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio10-q1",
-          "answer": 90.4094132817537
-        }
       ]
     },
     "ratio10-2": {
@@ -4329,12 +3759,6 @@
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio10-q2",
-          "answer": 90.4094132817537
         }
       ]
     }
