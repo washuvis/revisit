@@ -35,19 +35,30 @@
       },
       "response": [
         {
+          "id": "ret-val-tut-agree",
+          "prompt": "<h2>This is a practice round!<h2><h3>You will be asked to perform a \"Retrieve Value\" task with the following visualizations. For each page, there will be a bar chart followed by a prompt. The prompt will ask you for the Y value associated with a given X value. For example, below, the prompt asks to find average monthly rainfall for a given month (in this case, Jan). According to the chart, this is \"1.5\", which should then be typed into the \"Value\" field. There is no need to include units or any information outside of the numerical value of the data point. Check the box to confirm that you understand the task, then complete the below prompt to begin the survey.<h3>",
+          "required": true,
+          "type": "radio",
+          "options": ["I understand the task"],
+          "location": "aboveStimulus"
+        },
+        {
           "id": "ret-val-tut-1",
           "prompt": "What was the average rainfall in City T in Jan?",
           "required": true,
           "type": "shortText",
-          "placeholder": "Value"
+          "placeholder": "1.5"
         }
       ],
       "correctAnswer": [
         {
           "id": "ret-val-tut-1",
-          "answer": 1.5
+          "answer": "1.5"
         }
-      ]
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 4
     },
     "find-ext-tut": {
       "type": "image",
@@ -57,11 +68,18 @@
       },
       "response": [
         {
+          "id": "find-ext-tut-agree",
+          "prompt": "<h2>This is a practice round!<h2><h3>You will be asked to perform a \"Find Extremum\" task with the following visualizations. For each page, there will be a bar chart followed by a prompt. The prompt will ask you for the X value of the chart that has either the highest or lowest Y value. For example, below, the prompt asks to find the month with the lowest rainfall. According to the chart, this is \"Feb\". Check the box to confirm that you understand the task, then complete the below task to begin the survey.<h3>",
+          "required": true,
+          "type": "radio",
+          "options": ["I understand the task"],
+          "location": "aboveStimulus"
+        },
+        {
           "id": "find-ext-tut-1",
           "prompt": "What was the month with the lowest average rainfall in City U?",
           "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
+          "type": "radio",
           "options": [
             "Jan",
             "Feb",
@@ -83,7 +101,10 @@
           "id": "find-ext-tut-1",
           "answer": "Feb"
         }
-      ]
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 4
     },
     "det-ran-tut": {
       "type": "image",
@@ -93,22 +114,30 @@
       },
       "response": [
         {
+          "id": "det-ran-tut-agree",
+          "prompt": "<h2>This is a practice round!<h2><h3>You will be asked to perform a \"Determine Range\" task with the following visualizations. For each page, there will be a bar chart followed by a prompt. The prompt will ask you for the data range of the visualization. This means that you should include the minimum and maximum value of the data. For example, below, the prompt asks to find the range of average rainfall for the months in the chart. According to the chart, the minimum value is 2.0 (in Feb and Sep) and the maximum value is 3.7 (in May). Therefore, the answer should be given as \"2.0-3.7\". Check the box to confirm that you understand the task, then complete the below task to begin the survey.<h3>",
+          "required": true,
+          "type": "radio",
+          "options": ["I understand the task"],
+          "location": "aboveStimulus"
+        },
+        {
           "id": "det-ran-tut-1",
           "prompt": "What is the range of average rainfall in City I?",
           "required": true,
           "type": "shortText",
-          "placeholder": "[minimum value] - [maximum value]"
+          "placeholder": "2.0-3.7"
         }
       ],
       "correctAnswer": [
         {
           "id": "det-ran-tut-1",
-          "answer": [
-            2.0,
-            3.7
-          ]
+          "answer": "2.0-3.7"
         }
-      ]
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 4
     },
     "make-comp-tut": {
       "type": "image",
@@ -118,19 +147,30 @@
       },
       "response": [
         {
+          "id": "make-comp-tut-agree",
+          "prompt": "<h2>This is a practice round!<h2><h3>You will be asked to perform a \"Make Comparison\" task with the following visualizations. For each page, there will be a bar chart followed by a prompt. The prompt will ask you for the difference between the Y values of two different X values on the chart. For example, below, the prompt asks to find the difference in average rainfall between Dec and Mar. According to the chart, Dec has average rainfall of 5.8 and Mar has an average rainfall of 4.8. Therefore, the correct solution is \"1.0\". Check the box to confirm that you understand the task, then complete the below task to begin the survey.<h3>",
+          "required": true,
+          "type": "radio",
+          "options": ["I understand the task"],
+          "location": "aboveStimulus"
+        },
+        {
           "id": "make-comp-tut-1",
           "prompt": "What is the difference between average rainfall in City F in Dec and Mar?",
           "required": true,
           "type": "shortText",
-          "placeholder": "Difference"
+          "placeholder": "1.0"
         }
       ],
       "correctAnswer": [
         {
           "id": "make-comp-tut-1",
-          "answer": 1.0
+          "answer": "1.0"
         }
-      ]
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 4
     },
     "filter-tut": {
       "type": "image",
@@ -139,6 +179,14 @@
         "width": "800px"
       },
       "response": [
+        {
+          "id": "filter-tut-agree",
+          "prompt": "<h2>This is a practice round!<h2><h3>You will be asked to perform a \"Filter\" task with the following visualizations. For each page, there will be a bar chart followed by a prompt. The prompt will ask you for all of the X values with a Y value within the given range (inclusive). For example, below, the prompt asks to find the month(s) with average rainfall between 1 and 3 (including any bars with exactly 1 or 3). According to the chart, the answers should be \"Jan\", \"Feb\", \"Aug\", and \"Oct\". Check this box to confirm that you understand the task, then complete the below task to begin the survey.<h3>",
+          "required": true,
+          "type": "radio",
+          "options": ["I understand the task"],
+          "location": "aboveStimulus"
+        },
         {
           "id": "filter-tut-1",
           "prompt": "Which month(s) had average rainfall between 1 and 3 (inclusive)?",
@@ -170,7 +218,10 @@
             "Oct"
           ]
         }
-      ]
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 4
     },
     "order-tut": {
       "type": "image",
@@ -179,6 +230,14 @@
         "width": "800px"
       },
       "response": [
+        {
+          "id": "order-tut-agree",
+          "prompt": "<h2>This is a practice round!<h2><h3>You will be asked to perform an \"Order\" task with the following visualizations. For each page, there will be a bar chart followed by a prompt. The prompt will ask you to select the order of X values that either goes from lowest to highest or highest to lowest Y value. For example, below, the prompt asks to order the months from lowest to highest average rainfall. According to the chart, this would be \"Jan, Aug, Sep, Jul, Oct, Jun, Feb, Mar, Nov, May, Dec, Apr\". Check the box to confirm that you understand the task, then complete the below task to begin the survey.<h3>",
+          "required": true,
+          "type": "radio",
+          "options": ["I understand the task"],
+          "location": "aboveStimulus"
+        },
         {
           "id": "order-tut-1",
           "prompt": "Select the option that orders the months from lowest to highest average rainfall.",
@@ -197,7 +256,10 @@
           "id": "order-tut-1",
           "answer": "Jan, Aug, Sep, Jul, Oct, Jun, Feb, Mar, Nov, May, Dec, Apr"
         }
-      ]
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 4
     },
     "ratio-tut": {
       "type": "image",
@@ -207,19 +269,30 @@
       },
       "response": [
         {
+          "id": "ratio-tut-agree",
+          "prompt": "<h2>This is a practice round!<h2><h3>You will be asked to perform a \"Ratio\" task with the following visualizations. For each page, there will be a bar chart followed by a prompt. The prompt will ask you for the proportion of the Y value of one X value to that of a different X value. This should be given as a percentage, with the smaller number divided by the larger number. For example, below, the prompt asks to find the proportion of average rainfall from Oct to Jun. The average rainfall is 2.5 for Oct and 4.0 for Jun, and therefore the proportion is \"62.5\"%. Please do not include the \"%\" symbol in your answer. Check the box to confirm that you understand the task, then complete the below task to begin the survey.<h3>",
+          "required": true,
+          "type": "radio",
+          "options": ["I understand the task"],
+          "location": "aboveStimulus"
+        },
+        {
           "id": "ratio-tut-1",
           "prompt": "What is the proportion of average rainfall in City P in Oct to Jun? (in %)",
           "required": true,
           "type": "shortText",
-          "placeholder": "50.0"
+          "placeholder": "62.5"
         }
       ],
       "correctAnswer": [
         {
           "id": "ratio-tut-1",
-          "answer": 62.5
+          "answer": "62.5"
         }
-      ]
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 4
     },
     "ret-val1-1": {
       "type": "image",
@@ -4910,7 +4983,7 @@
           }
         ],
         "order": "latinSquare",
-        "numSamples": 1
+        "numSamples": 2
       }
     ],
     "order": "fixed"
