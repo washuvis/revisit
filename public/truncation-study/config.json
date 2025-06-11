@@ -650,7 +650,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ret-val9-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -672,7 +672,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ret-val9-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -694,7 +694,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ret-val10-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -716,7 +716,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ret-val10-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1388,7 +1388,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/find-ext9-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1419,7 +1419,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/find-ext9-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1450,7 +1450,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/find-ext10-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1481,7 +1481,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/find-ext10-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1912,7 +1912,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/det-ran9-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1937,7 +1937,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/det-ran9-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1962,7 +1962,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/det-ran10-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -1987,7 +1987,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/det-ran10-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -2364,7 +2364,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/make-comp9-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -2386,7 +2386,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/make-comp9-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -2408,7 +2408,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/make-comp10-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -2430,7 +2430,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/make-comp10-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3222,7 +3222,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/filter9-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3255,7 +3255,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/filter9-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3288,7 +3288,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/filter10-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3322,7 +3322,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/filter10-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3790,7 +3790,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/order9-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3817,7 +3817,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/order9-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3844,7 +3844,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/order10-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -3873,7 +3873,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/order10-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -4254,7 +4254,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ratio9-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -4276,7 +4276,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ratio9-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -4298,7 +4298,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ratio10-1.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
@@ -4320,7 +4320,7 @@
       "type": "image",
       "path": "truncation-study/assets/img/ratio10-2.png",
       "style": {
-        "width": "800px"
+        "width": "450px"
       },
       "response": [
         {
