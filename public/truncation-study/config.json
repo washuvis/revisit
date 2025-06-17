@@ -3899,15 +3899,104 @@
       ]
     },
     "ratio1-1": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio1-1.png",
-      "style": {
-        "width": "800px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-7d758ede8016b6fd4e9f29e74a8d291d"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits [$]",
+            "scale": {
+              "domainMax": 118394.1
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company X",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-7d758ede8016b6fd4e9f29e74a8d291d": [
+            {
+              "Months": "Jan",
+              "Profits [$]": 83564
+            },
+            {
+              "Months": "Feb",
+              "Profits [$]": 82408
+            },
+            {
+              "Months": "Mar",
+              "Profits [$]": 84793
+            },
+            {
+              "Months": "Apr",
+              "Profits [$]": 82546
+            },
+            {
+              "Months": "May",
+              "Profits [$]": 88448
+            },
+            {
+              "Months": "Jun",
+              "Profits [$]": 86950
+            },
+            {
+              "Months": "Jul",
+              "Profits [$]": 92992
+            },
+            {
+              "Months": "Aug",
+              "Profits [$]": 94998
+            },
+            {
+              "Months": "Sep",
+              "Profits [$]": 100674
+            },
+            {
+              "Months": "Oct",
+              "Profits [$]": 104361
+            },
+            {
+              "Months": "Nov",
+              "Profits [$]": 107631
+            },
+            {
+              "Months": "Dec",
+              "Profits [$]": 106365
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio1-q1",
-          "prompt": "What is the proportion of profit made by Company Y in Jul to Nov? (in %)",
+          "id": "ratio1-1",
+          "prompt": "What is the proportion of profit made by Company X in Sep to Mar? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -3915,21 +4004,113 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio1-q1",
-          "answer": 97.01929307497753
+          "id": "ratio1-1",
+          "answer": 84.22532133420744
         }
       ]
     },
     "ratio1-2": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio1-2.png",
-      "style": {
-        "width": "800px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-7d758ede8016b6fd4e9f29e74a8d291d"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits [$]",
+            "scale": {
+              "zero": false,
+              "domainMin": 76102.25,
+              "domainMax": 113936.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company X",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-7d758ede8016b6fd4e9f29e74a8d291d": [
+            {
+              "Months": "Jan",
+              "Profits [$]": 83564
+            },
+            {
+              "Months": "Feb",
+              "Profits [$]": 82408
+            },
+            {
+              "Months": "Mar",
+              "Profits [$]": 84793
+            },
+            {
+              "Months": "Apr",
+              "Profits [$]": 82546
+            },
+            {
+              "Months": "May",
+              "Profits [$]": 88448
+            },
+            {
+              "Months": "Jun",
+              "Profits [$]": 86950
+            },
+            {
+              "Months": "Jul",
+              "Profits [$]": 92992
+            },
+            {
+              "Months": "Aug",
+              "Profits [$]": 94998
+            },
+            {
+              "Months": "Sep",
+              "Profits [$]": 100674
+            },
+            {
+              "Months": "Oct",
+              "Profits [$]": 104361
+            },
+            {
+              "Months": "Nov",
+              "Profits [$]": 107631
+            },
+            {
+              "Months": "Dec",
+              "Profits [$]": 106365
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio1-q2",
-          "prompt": "What is the proportion of profit made by Company Y in Jul to Nov? (in %)",
+          "id": "ratio1-2",
+          "prompt": "What is the proportion of profit made by Company X in Sep to Mar? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -3937,21 +4118,110 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio1-q2",
-          "answer": 97.01929307497753
+          "id": "ratio1-2",
+          "answer": 84.22532133420744
         }
       ]
     },
     "ratio2-1": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio2-1.png",
-      "style": {
-        "width": "800px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-90faa6eb6104b70364e1dbcae14a103c"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits [$]",
+            "scale": {
+              "domainMax": 108493.00000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company X",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-90faa6eb6104b70364e1dbcae14a103c": [
+            {
+              "Months": "Jan",
+              "Profits [$]": 76852
+            },
+            {
+              "Months": "Feb",
+              "Profits [$]": 76422
+            },
+            {
+              "Months": "Mar",
+              "Profits [$]": 77102
+            },
+            {
+              "Months": "Apr",
+              "Profits [$]": 91072
+            },
+            {
+              "Months": "May",
+              "Profits [$]": 78033
+            },
+            {
+              "Months": "Jun",
+              "Profits [$]": 90683
+            },
+            {
+              "Months": "Jul",
+              "Profits [$]": 91193
+            },
+            {
+              "Months": "Aug",
+              "Profits [$]": 94651
+            },
+            {
+              "Months": "Sep",
+              "Profits [$]": 95909
+            },
+            {
+              "Months": "Oct",
+              "Profits [$]": 97978
+            },
+            {
+              "Months": "Nov",
+              "Profits [$]": 98184
+            },
+            {
+              "Months": "Dec",
+              "Profits [$]": 98630
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio2-q1",
-          "prompt": "What is the proportion of profit made by Company N in Dec to Jun? (in %)",
+          "id": "ratio2-1",
+          "prompt": "What is the proportion of profit made by Company X in Aug to Mar? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -3959,21 +4229,113 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio2-q1",
-          "answer": 93.43112310592404
+          "id": "ratio2-1",
+          "answer": 81.45925558102925
         }
       ]
     },
     "ratio2-2": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio2-2.png",
-      "style": {
-        "width": "800px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-90faa6eb6104b70364e1dbcae14a103c"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits [$]",
+            "scale": {
+              "zero": false,
+              "domainMin": 70870.0,
+              "domainMax": 104182.0
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company X",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-90faa6eb6104b70364e1dbcae14a103c": [
+            {
+              "Months": "Jan",
+              "Profits [$]": 76852
+            },
+            {
+              "Months": "Feb",
+              "Profits [$]": 76422
+            },
+            {
+              "Months": "Mar",
+              "Profits [$]": 77102
+            },
+            {
+              "Months": "Apr",
+              "Profits [$]": 91072
+            },
+            {
+              "Months": "May",
+              "Profits [$]": 78033
+            },
+            {
+              "Months": "Jun",
+              "Profits [$]": 90683
+            },
+            {
+              "Months": "Jul",
+              "Profits [$]": 91193
+            },
+            {
+              "Months": "Aug",
+              "Profits [$]": 94651
+            },
+            {
+              "Months": "Sep",
+              "Profits [$]": 95909
+            },
+            {
+              "Months": "Oct",
+              "Profits [$]": 97978
+            },
+            {
+              "Months": "Nov",
+              "Profits [$]": 98184
+            },
+            {
+              "Months": "Dec",
+              "Profits [$]": 98630
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio2-q2",
-          "prompt": "What is the proportion of profit made by Company N in Dec to Jun? (in %)",
+          "id": "ratio2-2",
+          "prompt": "What is the proportion of profit made by Company X in Aug to Mar? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -3981,21 +4343,182 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio2-q2",
-          "answer": 93.43112310592404
+          "id": "ratio2-2",
+          "answer": 81.45925558102925
         }
       ]
     },
     "ratio3-1": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio3-1.png",
-      "style": {
-        "width": "1600px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-6eee0ea8bc2940986c0859fec8fe3922"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Date",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Stock Price [$]",
+            "scale": {
+              "domainMax": 4.345
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Stock Price for Company P",
+        "width": 1200,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-6eee0ea8bc2940986c0859fec8fe3922": [
+            {
+              "Date": "9/1",
+              "Stock Price [$]": 2.33
+            },
+            {
+              "Date": "9/2",
+              "Stock Price [$]": 1.2200000000000002
+            },
+            {
+              "Date": "9/3",
+              "Stock Price [$]": 2.19
+            },
+            {
+              "Date": "9/4",
+              "Stock Price [$]": 2.38
+            },
+            {
+              "Date": "9/5",
+              "Stock Price [$]": 3.7600000000000002
+            },
+            {
+              "Date": "9/6",
+              "Stock Price [$]": 3.9499999999999997
+            },
+            {
+              "Date": "9/7",
+              "Stock Price [$]": 3.62
+            },
+            {
+              "Date": "9/8",
+              "Stock Price [$]": 3.27
+            },
+            {
+              "Date": "9/9",
+              "Stock Price [$]": 3.25
+            },
+            {
+              "Date": "9/10",
+              "Stock Price [$]": 2.34
+            },
+            {
+              "Date": "9/11",
+              "Stock Price [$]": 1.17
+            },
+            {
+              "Date": "9/12",
+              "Stock Price [$]": 2.44
+            },
+            {
+              "Date": "9/13",
+              "Stock Price [$]": 1.31
+            },
+            {
+              "Date": "9/14",
+              "Stock Price [$]": 2.03
+            },
+            {
+              "Date": "9/15",
+              "Stock Price [$]": 2.54
+            },
+            {
+              "Date": "9/16",
+              "Stock Price [$]": 3.2
+            },
+            {
+              "Date": "9/17",
+              "Stock Price [$]": 3.24
+            },
+            {
+              "Date": "9/18",
+              "Stock Price [$]": 3.52
+            },
+            {
+              "Date": "9/19",
+              "Stock Price [$]": 3.54
+            },
+            {
+              "Date": "9/20",
+              "Stock Price [$]": 3.7
+            },
+            {
+              "Date": "9/21",
+              "Stock Price [$]": 3.21
+            },
+            {
+              "Date": "9/22",
+              "Stock Price [$]": 2.83
+            },
+            {
+              "Date": "9/23",
+              "Stock Price [$]": 1.8199999999999998
+            },
+            {
+              "Date": "9/24",
+              "Stock Price [$]": 1.18
+            },
+            {
+              "Date": "9/25",
+              "Stock Price [$]": 2.1999999999999997
+            },
+            {
+              "Date": "9/26",
+              "Stock Price [$]": 2.52
+            },
+            {
+              "Date": "9/27",
+              "Stock Price [$]": 1.3599999999999999
+            },
+            {
+              "Date": "9/28",
+              "Stock Price [$]": 2.77
+            },
+            {
+              "Date": "9/29",
+              "Stock Price [$]": 3.35
+            },
+            {
+              "Date": "9/30",
+              "Stock Price [$]": 3.43
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio3-q1",
-          "prompt": "What is the proportion of price of Stock P on 1/22 to 1/28? (in %)",
+          "id": "ratio3-1",
+          "prompt": "What is the proportion of price of Stock P on 9/23 to 9/8? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -4003,21 +4526,185 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio3-q1",
-          "answer": 89.25233644859813
+          "id": "ratio3-1",
+          "answer": 55.65749235474006
         }
       ]
     },
     "ratio3-2": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio3-2.png",
-      "style": {
-        "width": "1600px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-6eee0ea8bc2940986c0859fec8fe3922"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Date",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Stock Price [$]",
+            "scale": {
+              "zero": false,
+              "domainMin": 0.475,
+              "domainMax": 4.645
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Stock Price for Company P",
+        "width": 1200,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-6eee0ea8bc2940986c0859fec8fe3922": [
+            {
+              "Date": "9/1",
+              "Stock Price [$]": 2.33
+            },
+            {
+              "Date": "9/2",
+              "Stock Price [$]": 1.2200000000000002
+            },
+            {
+              "Date": "9/3",
+              "Stock Price [$]": 2.19
+            },
+            {
+              "Date": "9/4",
+              "Stock Price [$]": 2.38
+            },
+            {
+              "Date": "9/5",
+              "Stock Price [$]": 3.7600000000000002
+            },
+            {
+              "Date": "9/6",
+              "Stock Price [$]": 3.9499999999999997
+            },
+            {
+              "Date": "9/7",
+              "Stock Price [$]": 3.62
+            },
+            {
+              "Date": "9/8",
+              "Stock Price [$]": 3.27
+            },
+            {
+              "Date": "9/9",
+              "Stock Price [$]": 3.25
+            },
+            {
+              "Date": "9/10",
+              "Stock Price [$]": 2.34
+            },
+            {
+              "Date": "9/11",
+              "Stock Price [$]": 1.17
+            },
+            {
+              "Date": "9/12",
+              "Stock Price [$]": 2.44
+            },
+            {
+              "Date": "9/13",
+              "Stock Price [$]": 1.31
+            },
+            {
+              "Date": "9/14",
+              "Stock Price [$]": 2.03
+            },
+            {
+              "Date": "9/15",
+              "Stock Price [$]": 2.54
+            },
+            {
+              "Date": "9/16",
+              "Stock Price [$]": 3.2
+            },
+            {
+              "Date": "9/17",
+              "Stock Price [$]": 3.24
+            },
+            {
+              "Date": "9/18",
+              "Stock Price [$]": 3.52
+            },
+            {
+              "Date": "9/19",
+              "Stock Price [$]": 3.54
+            },
+            {
+              "Date": "9/20",
+              "Stock Price [$]": 3.7
+            },
+            {
+              "Date": "9/21",
+              "Stock Price [$]": 3.21
+            },
+            {
+              "Date": "9/22",
+              "Stock Price [$]": 2.83
+            },
+            {
+              "Date": "9/23",
+              "Stock Price [$]": 1.8199999999999998
+            },
+            {
+              "Date": "9/24",
+              "Stock Price [$]": 1.18
+            },
+            {
+              "Date": "9/25",
+              "Stock Price [$]": 2.1999999999999997
+            },
+            {
+              "Date": "9/26",
+              "Stock Price [$]": 2.52
+            },
+            {
+              "Date": "9/27",
+              "Stock Price [$]": 1.3599999999999999
+            },
+            {
+              "Date": "9/28",
+              "Stock Price [$]": 2.77
+            },
+            {
+              "Date": "9/29",
+              "Stock Price [$]": 3.35
+            },
+            {
+              "Date": "9/30",
+              "Stock Price [$]": 3.43
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio3-q2",
-          "prompt": "What is the proportion of price of Stock P on 1/22 to 1/28? (in %)",
+          "id": "ratio3-2",
+          "prompt": "What is the proportion of price of Stock P on 9/23 to 9/8? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -4025,21 +4712,186 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio3-q2",
-          "answer": 89.25233644859813
+          "id": "ratio3-2",
+          "answer": 55.65749235474006
         }
       ]
     },
     "ratio4-1": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio4-1.png",
-      "style": {
-        "width": "1600px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-3a293d48343ba764ef7dc2d04a0065c4"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Date",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Stock Price [$]",
+            "scale": {
+              "domainMax": 6.039000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Stock Price for Company J",
+        "width": 1240,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-3a293d48343ba764ef7dc2d04a0065c4": [
+            {
+              "Date": "5/1",
+              "Stock Price [$]": 5.29
+            },
+            {
+              "Date": "5/2",
+              "Stock Price [$]": 4.7
+            },
+            {
+              "Date": "5/3",
+              "Stock Price [$]": 3.23
+            },
+            {
+              "Date": "5/4",
+              "Stock Price [$]": 4.69
+            },
+            {
+              "Date": "5/5",
+              "Stock Price [$]": 4.0
+            },
+            {
+              "Date": "5/6",
+              "Stock Price [$]": 4.109999999999999
+            },
+            {
+              "Date": "5/7",
+              "Stock Price [$]": 4.12
+            },
+            {
+              "Date": "5/8",
+              "Stock Price [$]": 4.19
+            },
+            {
+              "Date": "5/9",
+              "Stock Price [$]": 4.67
+            },
+            {
+              "Date": "5/10",
+              "Stock Price [$]": 5.34
+            },
+            {
+              "Date": "5/11",
+              "Stock Price [$]": 5.390000000000001
+            },
+            {
+              "Date": "5/12",
+              "Stock Price [$]": 4.22
+            },
+            {
+              "Date": "5/13",
+              "Stock Price [$]": 4.37
+            },
+            {
+              "Date": "5/14",
+              "Stock Price [$]": 4.03
+            },
+            {
+              "Date": "5/15",
+              "Stock Price [$]": 3.48
+            },
+            {
+              "Date": "5/16",
+              "Stock Price [$]": 3.8000000000000003
+            },
+            {
+              "Date": "5/17",
+              "Stock Price [$]": 3.42
+            },
+            {
+              "Date": "5/18",
+              "Stock Price [$]": 3.71
+            },
+            {
+              "Date": "5/19",
+              "Stock Price [$]": 5.4799999999999995
+            },
+            {
+              "Date": "5/20",
+              "Stock Price [$]": 5.369999999999999
+            },
+            {
+              "Date": "5/21",
+              "Stock Price [$]": 4.340000000000001
+            },
+            {
+              "Date": "5/22",
+              "Stock Price [$]": 5.33
+            },
+            {
+              "Date": "5/23",
+              "Stock Price [$]": 3.97
+            },
+            {
+              "Date": "5/24",
+              "Stock Price [$]": 4.98
+            },
+            {
+              "Date": "5/25",
+              "Stock Price [$]": 3.3600000000000003
+            },
+            {
+              "Date": "5/26",
+              "Stock Price [$]": 3.32
+            },
+            {
+              "Date": "5/27",
+              "Stock Price [$]": 3.2199999999999998
+            },
+            {
+              "Date": "5/28",
+              "Stock Price [$]": 4.62
+            },
+            {
+              "Date": "5/29",
+              "Stock Price [$]": 4.28
+            },
+            {
+              "Date": "5/30",
+              "Stock Price [$]": 5.49
+            },
+            {
+              "Date": "5/31",
+              "Stock Price [$]": 4.550000000000001
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio4-q1",
-          "prompt": "What is the proportion of price of Stock F on 2/10 to 2/18? (in %)",
+          "id": "ratio4-1",
+          "prompt": "What is the proportion of price of Stock J on 5/9 to 5/29? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -4047,21 +4899,189 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio4-q1",
-          "answer": 52.46153846153846
+          "id": "ratio4-1",
+          "answer": 91.64882226980728
         }
       ]
     },
     "ratio4-2": {
-      "type": "image",
-      "path": "truncation-study/assets/img/ratio4-2.png",
-      "style": {
-        "width": "1600px"
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-3a293d48343ba764ef7dc2d04a0065c4"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Date",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Stock Price [$]",
+            "scale": {
+              "zero": false,
+              "domainMin": 2.6525,
+              "domainMax": 6.0575
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Stock Price for Company J",
+        "width": 1240,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-3a293d48343ba764ef7dc2d04a0065c4": [
+            {
+              "Date": "5/1",
+              "Stock Price [$]": 5.29
+            },
+            {
+              "Date": "5/2",
+              "Stock Price [$]": 4.7
+            },
+            {
+              "Date": "5/3",
+              "Stock Price [$]": 3.23
+            },
+            {
+              "Date": "5/4",
+              "Stock Price [$]": 4.69
+            },
+            {
+              "Date": "5/5",
+              "Stock Price [$]": 4.0
+            },
+            {
+              "Date": "5/6",
+              "Stock Price [$]": 4.109999999999999
+            },
+            {
+              "Date": "5/7",
+              "Stock Price [$]": 4.12
+            },
+            {
+              "Date": "5/8",
+              "Stock Price [$]": 4.19
+            },
+            {
+              "Date": "5/9",
+              "Stock Price [$]": 4.67
+            },
+            {
+              "Date": "5/10",
+              "Stock Price [$]": 5.34
+            },
+            {
+              "Date": "5/11",
+              "Stock Price [$]": 5.390000000000001
+            },
+            {
+              "Date": "5/12",
+              "Stock Price [$]": 4.22
+            },
+            {
+              "Date": "5/13",
+              "Stock Price [$]": 4.37
+            },
+            {
+              "Date": "5/14",
+              "Stock Price [$]": 4.03
+            },
+            {
+              "Date": "5/15",
+              "Stock Price [$]": 3.48
+            },
+            {
+              "Date": "5/16",
+              "Stock Price [$]": 3.8000000000000003
+            },
+            {
+              "Date": "5/17",
+              "Stock Price [$]": 3.42
+            },
+            {
+              "Date": "5/18",
+              "Stock Price [$]": 3.71
+            },
+            {
+              "Date": "5/19",
+              "Stock Price [$]": 5.4799999999999995
+            },
+            {
+              "Date": "5/20",
+              "Stock Price [$]": 5.369999999999999
+            },
+            {
+              "Date": "5/21",
+              "Stock Price [$]": 4.340000000000001
+            },
+            {
+              "Date": "5/22",
+              "Stock Price [$]": 5.33
+            },
+            {
+              "Date": "5/23",
+              "Stock Price [$]": 3.97
+            },
+            {
+              "Date": "5/24",
+              "Stock Price [$]": 4.98
+            },
+            {
+              "Date": "5/25",
+              "Stock Price [$]": 3.3600000000000003
+            },
+            {
+              "Date": "5/26",
+              "Stock Price [$]": 3.32
+            },
+            {
+              "Date": "5/27",
+              "Stock Price [$]": 3.2199999999999998
+            },
+            {
+              "Date": "5/28",
+              "Stock Price [$]": 4.62
+            },
+            {
+              "Date": "5/29",
+              "Stock Price [$]": 4.28
+            },
+            {
+              "Date": "5/30",
+              "Stock Price [$]": 5.49
+            },
+            {
+              "Date": "5/31",
+              "Stock Price [$]": 4.550000000000001
+            }
+          ]
+        }
       },
       "response": [
         {
-          "id": "ratio4-q2",
-          "prompt": "What is the proportion of price of Stock F on 2/10 to 2/18? (in %)",
+          "id": "ratio4-2",
+          "prompt": "What is the proportion of price of Stock J on 5/9 to 5/29? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -4069,8 +5089,8 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio4-q2",
-          "answer": 52.46153846153846
+          "id": "ratio4-2",
+          "answer": 91.64882226980728
         }
       ]
     },
