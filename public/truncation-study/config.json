@@ -21,11 +21,63 @@
     "autoDownloadStudy": false,
     "sidebar": false
   },
+  "importedLibraries": ["mini-vlat"],
   "components": {
     "introduction": {
       "type": "markdown",
       "path": "truncation-study/assets/introduction.md",
       "response": []
+    },
+    "demographic": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "age",
+          "prompt": "Age",
+          "location": "aboveStimulus",
+          "type": "shortText",
+          "placeholder": "",
+          "withDivider": true
+        },
+        {
+          "id": "sex",
+          "prompt": "Sex",
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Male",
+            "Female",
+            "Non-binary or third gender",
+            "Prefer not to say"
+          ],
+          "withDivider": true
+        },
+        {
+          "id": "edu",
+          "prompt": "Highest Level of Education",
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Less than High School",
+            "High School or GED",
+            "Some College",
+            "Associate's Degree (or equivalent)",
+            "Bachelor's Degree (or equivalent)",
+            "Professional Degree (or equivalent)",
+            "Doctorate (or equivalent)"
+          ],
+          "withDivider": true
+        },
+        {
+          "id": "exp",
+          "prompt": "How experienced are you with designing data visualizations?",
+          "location": "aboveStimulus",
+          "type": "likert",
+          "leftLabel": "No Experience",
+          "rightLabel": "A Lot of Experience",
+          "numItems": 7
+        }
+      ]
     },
     "ret-val1-1": {
       "type": "vega",
@@ -3369,7 +3421,9 @@
           "ratio2-2"
         ],
         "order": "latinSquare"
-      }
+      },
+      "$mini-vlat.se.full",
+      "demographics"
     ],
     "order": "fixed"
   }
