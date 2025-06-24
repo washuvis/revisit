@@ -28,7 +28,7 @@
       "path": "truncation-study/assets/introduction.md",
       "response": []
     },
-    "demographic": {
+    "demographics": {
       "type": "questionnaire",
       "response": [
         {
