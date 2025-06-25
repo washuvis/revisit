@@ -12,7 +12,7 @@
 
 <p style="font-size: 13px">There are no known risks from being in this study. You will not benefit personally. However, we hope that others may benefit in the future from what we learn as a result of this study. You will not have any costs for being in this research study.</p>
 
-<p style="font-size: 13px">You will be paid for being in this research study. You will receive a pay of $X for completing this quiz. At the end of the study, copy your survey code back to Prolific to receive your payment.</p>
+<p style="font-size: 13px">You will be paid for being in this research study. You will receive a pay of $3 for completing this quiz.</p>
 
 <p style="font-size: 13px">This survey is completely anonymous; we will not collect any personally identifiable information. We will only have access to your Prolific ID, which we will use solely for payment purposes.</p>
 
