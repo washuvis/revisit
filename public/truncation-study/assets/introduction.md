@@ -24,4 +24,4 @@
 
 <p style="font-size: 13px">We encourage you to ask questions. If you have any questions about the research study itself or if you feel you have been harmed from being in the study, please contact: Alvitta Ottley (alvitta@wustl.edu). If you have questions, concerns, or complaints about your rights as a research participant, please contact the Human Research Protection Office at 1-(800)-438-0445 or email hrpo@wustl.edu. General information about being a research participant can be found on the Human Research Protection Office website, http://hrpo.wustl.edu. To offer input about your experiences as a research participant or to speak to someone other than the research staff, call the Human Research Protection Office at the number above.</p>
 
-<p style="font-size: 13px">Thank you very much for your consideration of this research study.</p>
+<p style="font-size: 13px">Thank you very much for your consideration of this research study.</p> 
