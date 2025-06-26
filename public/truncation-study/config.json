@@ -43,7 +43,7 @@
           }
         },
         "data": {
-          "name": "data-6f7da139af97033039e674b98e9a5cb0"
+          "name": "data-ce5a1c4dc0fb981f7461fc07a07fff51"
         },
         "mark": {
           "type": "bar"
@@ -64,63 +64,63 @@
             },
             "field": "Profits ($)",
             "scale": {
-              "domainMax": 138221.6
+              "domainMax": 123931.50000000001
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company U",
+        "title": "Profits for Company P",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-6f7da139af97033039e674b98e9a5cb0": [
+          "data-ce5a1c4dc0fb981f7461fc07a07fff51": [
             {
               "Months": "Jan",
-              "Profits ($)": 125656
+              "Profits ($)": 71934
             },
             {
               "Months": "Feb",
-              "Profits ($)": 121937
+              "Profits ($)": 76188
             },
             {
               "Months": "Mar",
-              "Profits ($)": 118425
+              "Profits ($)": 74065
             },
             {
               "Months": "Apr",
-              "Profits ($)": 121953
+              "Profits ($)": 78651
             },
             {
               "Months": "May",
-              "Profits ($)": 120367
+              "Profits ($)": 80375
             },
             {
               "Months": "Jun",
-              "Profits ($)": 111993
+              "Profits ($)": 84877
             },
             {
               "Months": "Jul",
-              "Profits ($)": 116061
+              "Profits ($)": 88941
             },
             {
               "Months": "Aug",
-              "Profits ($)": 109453
+              "Profits ($)": 104607
             },
             {
               "Months": "Sep",
-              "Profits ($)": 106958
+              "Profits ($)": 99579
             },
             {
               "Months": "Oct",
-              "Profits ($)": 94247
+              "Profits ($)": 111340
             },
             {
               "Months": "Nov",
-              "Profits ($)": 92332
+              "Profits ($)": 112665
             },
             {
               "Months": "Dec",
-              "Profits ($)": 91532
+              "Profits ($)": 108828
             }
           ]
         }
@@ -128,7 +128,7 @@
       "response": [
         {
           "id": "ret-val1-bar-1",
-          "prompt": "What was the profit made by Company U in Nov?",
+          "prompt": "What was the profit made by Company P in Oct?",
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
@@ -137,7 +137,7 @@
       "correctAnswer": [
         {
           "id": "ret-val1-bar-1",
-          "answer": 92332
+          "answer": 111340
         }
       ]
     },
@@ -154,7 +154,7 @@
           }
         },
         "data": {
-          "name": "data-6f7da139af97033039e674b98e9a5cb0"
+          "name": "data-ce5a1c4dc0fb981f7461fc07a07fff51"
         },
         "mark": {
           "type": "bar",
@@ -177,64 +177,64 @@
             "field": "Profits ($)",
             "scale": {
               "zero": false,
-              "domainMin": 83001.0,
-              "domainMax": 134187.0
+              "domainMin": 61751.25,
+              "domainMax": 122847.75
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company U",
+        "title": "Profits for Company P",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-6f7da139af97033039e674b98e9a5cb0": [
+          "data-ce5a1c4dc0fb981f7461fc07a07fff51": [
             {
               "Months": "Jan",
-              "Profits ($)": 125656
+              "Profits ($)": 71934
             },
             {
               "Months": "Feb",
-              "Profits ($)": 121937
+              "Profits ($)": 76188
             },
             {
               "Months": "Mar",
-              "Profits ($)": 118425
+              "Profits ($)": 74065
             },
             {
               "Months": "Apr",
-              "Profits ($)": 121953
+              "Profits ($)": 78651
             },
             {
               "Months": "May",
-              "Profits ($)": 120367
+              "Profits ($)": 80375
             },
             {
               "Months": "Jun",
-              "Profits ($)": 111993
+              "Profits ($)": 84877
             },
             {
               "Months": "Jul",
-              "Profits ($)": 116061
+              "Profits ($)": 88941
             },
             {
               "Months": "Aug",
-              "Profits ($)": 109453
+              "Profits ($)": 104607
             },
             {
               "Months": "Sep",
-              "Profits ($)": 106958
+              "Profits ($)": 99579
             },
             {
               "Months": "Oct",
-              "Profits ($)": 94247
+              "Profits ($)": 111340
             },
             {
               "Months": "Nov",
-              "Profits ($)": 92332
+              "Profits ($)": 112665
             },
             {
               "Months": "Dec",
-              "Profits ($)": 91532
+              "Profits ($)": 108828
             }
           ]
         }
@@ -242,7 +242,7 @@
       "response": [
         {
           "id": "ret-val1-bar-2",
-          "prompt": "What was the profit made by Company U in Nov?",
+          "prompt": "What was the profit made by Company P in Oct?",
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
@@ -251,7 +251,7 @@
       "correctAnswer": [
         {
           "id": "ret-val1-bar-2",
-          "answer": 92332
+          "answer": 111340
         }
       ]
     },
@@ -268,963 +268,7 @@
           }
         },
         "data": {
-          "name": "data-80fb6469afc23ca37f4a5a81c44480ea"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "domainMax": 5.61
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City D",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-80fb6469afc23ca37f4a5a81c44480ea": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 1.2
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 4.4
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 5.1
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 5.0
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 4.3
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 2.0
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 3.5
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 1.3
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 2.4
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 4.2
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 3.2
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val2-bar-1",
-          "prompt": "What was the average rainfall in City D in Feb?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val2-bar-1",
-          "answer": 3.1
-        }
-      ]
-    },
-    "ret-val2-bar-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-80fb6469afc23ca37f4a5a81c44480ea"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "zero": false,
-              "domainMin": 0.2250000000000001,
-              "domainMax": 6.074999999999999
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City D",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-80fb6469afc23ca37f4a5a81c44480ea": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 1.2
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 4.4
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 5.1
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 5.0
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 4.3
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 2.0
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 3.5
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 1.3
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 2.4
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 4.2
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 3.2
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val2-bar-2",
-          "prompt": "What was the average rainfall in City D in Feb?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val2-bar-2",
-          "answer": 3.1
-        }
-      ]
-    },
-    "find-ext1-bar-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-e1375cd35af5a1b542b53ec9b8e5a401"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Profits ($)",
-            "scale": {
-              "domainMax": 105800.20000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company B",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-e1375cd35af5a1b542b53ec9b8e5a401": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 75840
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 76666
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 80468
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 81048
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 89749
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 93069
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 84217
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 91894
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 92363
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 91418
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 96182
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 95715
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext1-bar-1",
-          "prompt": "What was the month with the highest profit made by Company B?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext1-bar-1",
-          "answer": "Nov"
-        }
-      ]
-    },
-    "find-ext1-bar-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-e1375cd35af5a1b542b53ec9b8e5a401"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Profits ($)",
-            "scale": {
-              "zero": false,
-              "domainMin": 70754.5,
-              "domainMax": 101267.5
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company B",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-e1375cd35af5a1b542b53ec9b8e5a401": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 75840
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 76666
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 80468
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 81048
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 89749
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 93069
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 84217
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 91894
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 92363
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 91418
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 96182
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 95715
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext1-bar-2",
-          "prompt": "What was the month with the highest profit made by Company B?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext1-bar-2",
-          "answer": "Nov"
-        }
-      ]
-    },
-    "find-ext2-bar-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-cd9c0ce9e9c0b51c24bbb4a2bc95a4de"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "domainMax": 6.38
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City K",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-cd9c0ce9e9c0b51c24bbb4a2bc95a4de": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 2.2
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 5.8
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 5.5
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 2.3
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 2.8
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 2.6
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 4.3
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 3.4
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 5.6
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext2-bar-1",
-          "prompt": "What was the month with the lowest average rainfall in City K?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext2-bar-1",
-          "answer": "Jan"
-        }
-      ]
-    },
-    "find-ext2-bar-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-cd9c0ce9e9c0b51c24bbb4a2bc95a4de"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "zero": false,
-              "domainMin": 1.3000000000000003,
-              "domainMax": 6.699999999999999
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City K",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-cd9c0ce9e9c0b51c24bbb4a2bc95a4de": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 2.2
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 5.8
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 5.5
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 2.3
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 2.8
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 2.6
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 4.3
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 3.4
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 5.6
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext2-bar-2",
-          "prompt": "What was the month with the lowest average rainfall in City K?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext2-bar-2",
-          "answer": "Jan"
-        }
-      ]
-    },
-    "make-comp1-bar-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-7366f9a39cb51089b1d183a305f9b797"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Profits ($)",
-            "scale": {
-              "domainMax": 98225.6
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company G",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-7366f9a39cb51089b1d183a305f9b797": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 73601
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 74012
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 75071
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 75272
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 78576
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 81769
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 85290
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 86632
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 88572
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 87008
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 88498
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 89296
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp1-bar-1",
-          "prompt": "What is the difference between profit made by Company G in Dec and Jul?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp1-bar-1",
-          "answer": 4006
-        }
-      ]
-    },
-    "make-comp1-bar-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-7366f9a39cb51089b1d183a305f9b797"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Profits ($)",
-            "scale": {
-              "zero": false,
-              "domainMin": 69677.25,
-              "domainMax": 93219.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company G",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-7366f9a39cb51089b1d183a305f9b797": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 73601
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 74012
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 75071
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 75272
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 78576
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 81769
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 85290
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 86632
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 88572
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 87008
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 88498
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 89296
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp1-bar-2",
-          "prompt": "What is the difference between profit made by Company G in Dec and Jul?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp1-bar-2",
-          "answer": 4006
-        }
-      ]
-    },
-    "make-comp2-bar-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0a48e7cf22d504a0ab5a0b784fd632df"
+          "name": "data-37fe648608e3eb123c512d474b3b6476"
         },
         "mark": {
           "type": "bar"
@@ -1250,54 +294,54 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City Z",
+        "title": "Average Monthly Rainfall in City E",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-0a48e7cf22d504a0ab5a0b784fd632df": [
+          "data-37fe648608e3eb123c512d474b3b6476": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 3.3
+              "Rainfall (inches)": 2.2
             },
             {
               "Months": "Feb",
-              "Rainfall (inches)": 3.5
+              "Rainfall (inches)": 2.8
             },
             {
               "Months": "Mar",
-              "Rainfall (inches)": 4.2
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 4.6
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 4.4
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 4.0
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 3.4
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Oct",
               "Rainfall (inches)": 3.9
             },
             {
+              "Months": "Apr",
+              "Rainfall (inches)": 3.1
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.6
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 2.9
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 2.3
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.0
+            },
+            {
               "Months": "Nov",
-              "Rainfall (inches)": 4.3
+              "Rainfall (inches)": 4.0
             },
             {
               "Months": "Dec",
@@ -1308,21 +352,21 @@
       },
       "response": [
         {
-          "id": "make-comp2-bar-1",
-          "prompt": "What is the difference between average rainfall in City Z in Apr and Jan?",
+          "id": "ret-val2-bar-1",
+          "prompt": "What was the average rainfall in City E in Apr?",
           "required": true,
           "type": "shortText",
-          "placeholder": "Difference"
+          "placeholder": "Value"
         }
       ],
       "correctAnswer": [
         {
-          "id": "make-comp2-bar-1",
-          "answer": 1.2999999999999998
+          "id": "ret-val2-bar-1",
+          "answer": 3.1
         }
       ]
     },
-    "make-comp2-bar-2": {
+    "ret-val2-bar-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -1335,7 +379,7 @@
           }
         },
         "data": {
-          "name": "data-0a48e7cf22d504a0ab5a0b784fd632df"
+          "name": "data-37fe648608e3eb123c512d474b3b6476"
         },
         "mark": {
           "type": "bar",
@@ -1358,60 +402,60 @@
             "field": "Rainfall (inches)",
             "scale": {
               "zero": false,
-              "domainMin": 2.9499999999999997,
-              "domainMax": 5.050000000000001
+              "domainMin": 1.5750000000000002,
+              "domainMax": 5.325
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City Z",
+        "title": "Average Monthly Rainfall in City E",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-0a48e7cf22d504a0ab5a0b784fd632df": [
+          "data-37fe648608e3eb123c512d474b3b6476": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 3.3
+              "Rainfall (inches)": 2.2
             },
             {
               "Months": "Feb",
-              "Rainfall (inches)": 3.5
+              "Rainfall (inches)": 2.8
             },
             {
               "Months": "Mar",
-              "Rainfall (inches)": 4.2
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 4.6
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 4.4
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 4.0
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 3.4
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Oct",
               "Rainfall (inches)": 3.9
             },
             {
+              "Months": "Apr",
+              "Rainfall (inches)": 3.1
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.6
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 2.9
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 2.3
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.0
+            },
+            {
               "Months": "Nov",
-              "Rainfall (inches)": 4.3
+              "Rainfall (inches)": 4.0
             },
             {
               "Months": "Dec",
@@ -1422,21 +466,21 @@
       },
       "response": [
         {
-          "id": "make-comp2-bar-2",
-          "prompt": "What is the difference between average rainfall in City Z in Apr and Jan?",
+          "id": "ret-val2-bar-2",
+          "prompt": "What was the average rainfall in City E in Apr?",
           "required": true,
           "type": "shortText",
-          "placeholder": "Difference"
+          "placeholder": "Value"
         }
       ],
       "correctAnswer": [
         {
-          "id": "make-comp2-bar-2",
-          "answer": 1.2999999999999998
+          "id": "ret-val2-bar-2",
+          "answer": 3.1
         }
       ]
     },
-    "filter1-bar-1": {
+    "find-ext1-bar-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -1449,7 +493,7 @@
           }
         },
         "data": {
-          "name": "data-9899aaaf81be0ef497804ac86c0029ce"
+          "name": "data-0dbda237ab5e5ccf912bb3dd83018b39"
         },
         "mark": {
           "type": "bar"
@@ -1470,63 +514,1019 @@
             },
             "field": "Profits ($)",
             "scale": {
-              "domainMax": 94685.8
+              "domainMax": 140243.40000000002
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company C",
+        "title": "Profits for Company D",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-9899aaaf81be0ef497804ac86c0029ce": [
+          "data-0dbda237ab5e5ccf912bb3dd83018b39": [
             {
               "Months": "Jan",
-              "Profits ($)": 71094
+              "Profits ($)": 96934
             },
             {
               "Months": "Feb",
-              "Profits ($)": 71172
+              "Profits ($)": 93541
             },
             {
               "Months": "Mar",
-              "Profits ($)": 72213
+              "Profits ($)": 99131
             },
             {
               "Months": "Apr",
-              "Profits ($)": 73312
+              "Profits ($)": 96063
             },
             {
               "Months": "May",
-              "Profits ($)": 76007
+              "Profits ($)": 101559
             },
             {
               "Months": "Jun",
-              "Profits ($)": 76179
+              "Profits ($)": 97854
             },
             {
               "Months": "Jul",
-              "Profits ($)": 78736
+              "Profits ($)": 110323
             },
             {
               "Months": "Aug",
-              "Profits ($)": 81641
+              "Profits ($)": 111134
             },
             {
               "Months": "Sep",
-              "Profits ($)": 81295
+              "Profits ($)": 106128
             },
             {
               "Months": "Oct",
-              "Profits ($)": 83913
+              "Profits ($)": 112399
             },
             {
               "Months": "Nov",
-              "Profits ($)": 84799
+              "Profits ($)": 123356
             },
             {
               "Months": "Dec",
-              "Profits ($)": 86078
+              "Profits ($)": 127494
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext1-bar-1",
+          "prompt": "What was the month with the highest profit made by Company D?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext1-bar-1",
+          "answer": "Dec"
+        }
+      ]
+    },
+    "find-ext1-bar-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0dbda237ab5e5ccf912bb3dd83018b39"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits ($)",
+            "scale": {
+              "zero": false,
+              "domainMin": 85052.75,
+              "domainMax": 135982.25
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company D",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0dbda237ab5e5ccf912bb3dd83018b39": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 96934
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 93541
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 99131
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 96063
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 101559
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 97854
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 110323
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 111134
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 106128
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 112399
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 123356
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 127494
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext1-bar-2",
+          "prompt": "What was the month with the highest profit made by Company D?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext1-bar-2",
+          "answer": "Dec"
+        }
+      ]
+    },
+    "find-ext2-bar-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-1fe009e5ce67b0eedc58a914052577ae"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "domainMax": 6.490000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City N",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-1fe009e5ce67b0eedc58a914052577ae": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.8
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.6
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 5.3
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 4.2
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 5.9
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext2-bar-1",
+          "prompt": "What was the month with the lowest average rainfall in City N?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext2-bar-1",
+          "answer": "Oct"
+        }
+      ]
+    },
+    "find-ext2-bar-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-1fe009e5ce67b0eedc58a914052577ae"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "zero": false,
+              "domainMin": 2.5250000000000004,
+              "domainMax": 6.575
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City N",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-1fe009e5ce67b0eedc58a914052577ae": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.8
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.6
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 5.3
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 4.2
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 5.9
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext2-bar-2",
+          "prompt": "What was the month with the lowest average rainfall in City N?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext2-bar-2",
+          "answer": "Oct"
+        }
+      ]
+    },
+    "make-comp1-bar-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-243939461cf92f36522d9bb2d471fd6b"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits ($)",
+            "scale": {
+              "domainMax": 136942.30000000002
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company A",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-243939461cf92f36522d9bb2d471fd6b": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 124493
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 122016
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 123317
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 103057
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 110098
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 109538
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 99789
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 98921
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 97144
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 102165
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 91286
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 86910
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "make-comp1-bar-1",
+          "prompt": "What is the difference between profit made by Company A in Jul and Oct?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp1-bar-1",
+          "answer": 2376
+        }
+      ]
+    },
+    "make-comp1-bar-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-243939461cf92f36522d9bb2d471fd6b"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits ($)",
+            "scale": {
+              "zero": false,
+              "domainMin": 77514.25,
+              "domainMax": 133888.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company A",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-243939461cf92f36522d9bb2d471fd6b": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 124493
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 122016
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 123317
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 103057
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 110098
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 109538
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 99789
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 98921
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 97144
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 102165
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 91286
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 86910
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "make-comp1-bar-2",
+          "prompt": "What is the difference between profit made by Company A in Jul and Oct?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp1-bar-2",
+          "answer": 2376
+        }
+      ]
+    },
+    "make-comp2-bar-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-a5bfdfef65a765b6ecce7b804c61a689"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "domainMax": 6.38
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City B",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-a5bfdfef65a765b6ecce7b804c61a689": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 5.2
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 5.7
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 5.8
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 4.4
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 5.5
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.9
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 5.6
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 4.9
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "make-comp2-bar-1",
+          "prompt": "What is the difference between average rainfall in City B in Dec and Jun?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp2-bar-1",
+          "answer": 0.5
+        }
+      ]
+    },
+    "make-comp2-bar-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-a5bfdfef65a765b6ecce7b804c61a689"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "zero": false,
+              "domainMin": 2.675,
+              "domainMax": 6.425
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City B",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-a5bfdfef65a765b6ecce7b804c61a689": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 5.2
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 5.7
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 5.8
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 4.4
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 5.5
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.9
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 5.6
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 4.9
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "make-comp2-bar-2",
+          "prompt": "What is the difference between average rainfall in City B in Dec and Jun?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp2-bar-2",
+          "answer": 0.5
+        }
+      ]
+    },
+    "filter1-bar-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-51eeb9ff54e9f16f71c2d74b0b495643"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Profits ($)",
+            "scale": {
+              "domainMax": 107081.70000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company Y",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-51eeb9ff54e9f16f71c2d74b0b495643": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 81493
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 80669
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 87018
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 88001
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 89372
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 90777
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 93457
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 93262
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 96052
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 95681
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 97186
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 97347
             }
           ]
         }
@@ -1534,7 +1534,7 @@
       "response": [
         {
           "id": "filter1-bar-1",
-          "prompt": "Which month(s) had profit between 72512 and 76525 (inclusive)?",
+          "prompt": "Which month(s) had profit between 91323 and 94691 (inclusive)?",
           "required": true,
           "type": "checkbox",
           "options": [
@@ -1557,9 +1557,8 @@
         {
           "id": "filter1-bar-1",
           "answer": [
-            "Apr",
-            "May",
-            "Jun"
+            "Jul",
+            "Aug"
           ]
         }
       ]
@@ -1577,7 +1576,7 @@
           }
         },
         "data": {
-          "name": "data-9899aaaf81be0ef497804ac86c0029ce"
+          "name": "data-51eeb9ff54e9f16f71c2d74b0b495643"
         },
         "mark": {
           "type": "bar",
@@ -1600,64 +1599,64 @@
             "field": "Profits ($)",
             "scale": {
               "zero": false,
-              "domainMin": 67348.0,
-              "domainMax": 89824.0
+              "domainMin": 76499.5,
+              "domainMax": 101516.5
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company C",
+        "title": "Profits for Company Y",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-9899aaaf81be0ef497804ac86c0029ce": [
+          "data-51eeb9ff54e9f16f71c2d74b0b495643": [
             {
               "Months": "Jan",
-              "Profits ($)": 71094
+              "Profits ($)": 81493
             },
             {
               "Months": "Feb",
-              "Profits ($)": 71172
+              "Profits ($)": 80669
             },
             {
               "Months": "Mar",
-              "Profits ($)": 72213
+              "Profits ($)": 87018
             },
             {
               "Months": "Apr",
-              "Profits ($)": 73312
+              "Profits ($)": 88001
             },
             {
               "Months": "May",
-              "Profits ($)": 76007
+              "Profits ($)": 89372
             },
             {
               "Months": "Jun",
-              "Profits ($)": 76179
+              "Profits ($)": 90777
             },
             {
               "Months": "Jul",
-              "Profits ($)": 78736
+              "Profits ($)": 93457
             },
             {
               "Months": "Aug",
-              "Profits ($)": 81641
+              "Profits ($)": 93262
             },
             {
               "Months": "Sep",
-              "Profits ($)": 81295
+              "Profits ($)": 96052
             },
             {
               "Months": "Oct",
-              "Profits ($)": 83913
+              "Profits ($)": 95681
             },
             {
               "Months": "Nov",
-              "Profits ($)": 84799
+              "Profits ($)": 97186
             },
             {
               "Months": "Dec",
-              "Profits ($)": 86078
+              "Profits ($)": 97347
             }
           ]
         }
@@ -1665,7 +1664,7 @@
       "response": [
         {
           "id": "filter1-bar-2",
-          "prompt": "Which month(s) had profit between 72512 and 76525 (inclusive)?",
+          "prompt": "Which month(s) had profit between 91323 and 94691 (inclusive)?",
           "required": true,
           "type": "checkbox",
           "options": [
@@ -1688,9 +1687,8 @@
         {
           "id": "filter1-bar-2",
           "answer": [
-            "Apr",
-            "May",
-            "Jun"
+            "Jul",
+            "Aug"
           ]
         }
       ]
@@ -1708,7 +1706,7 @@
           }
         },
         "data": {
-          "name": "data-ca6e9422d627cb8de02f5c3f26bc0351"
+          "name": "data-d1a1d718bc84af9cb01f2c2cda76e47e"
         },
         "mark": {
           "type": "bar"
@@ -1729,63 +1727,63 @@
             },
             "field": "Rainfall (inches)",
             "scale": {
-              "domainMax": 3.08
+              "domainMax": 5.28
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City L",
+        "title": "Average Monthly Rainfall in City Y",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-ca6e9422d627cb8de02f5c3f26bc0351": [
+          "data-d1a1d718bc84af9cb01f2c2cda76e47e": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.2
+              "Rainfall (inches)": 3.0
             },
             {
               "Months": "Feb",
-              "Rainfall (inches)": 1.9
+              "Rainfall (inches)": 3.8
             },
             {
               "Months": "Mar",
-              "Rainfall (inches)": 2.7
+              "Rainfall (inches)": 4.3
             },
             {
               "Months": "Apr",
-              "Rainfall (inches)": 2.0
+              "Rainfall (inches)": 4.8
             },
             {
               "Months": "May",
-              "Rainfall (inches)": 2.5
+              "Rainfall (inches)": 4.2
             },
             {
               "Months": "Jun",
-              "Rainfall (inches)": 2.1
+              "Rainfall (inches)": 4.6
             },
             {
               "Months": "Jul",
-              "Rainfall (inches)": 1.7
+              "Rainfall (inches)": 3.9
             },
             {
               "Months": "Aug",
-              "Rainfall (inches)": 1.1
+              "Rainfall (inches)": 3.3
             },
             {
               "Months": "Sep",
-              "Rainfall (inches)": 1.6
+              "Rainfall (inches)": 3.1
             },
             {
               "Months": "Oct",
-              "Rainfall (inches)": 2.6
+              "Rainfall (inches)": 4.4
             },
             {
               "Months": "Nov",
-              "Rainfall (inches)": 2.2
+              "Rainfall (inches)": 4.1
             },
             {
               "Months": "Dec",
-              "Rainfall (inches)": 2.8
+              "Rainfall (inches)": 4.7
             }
           ]
         }
@@ -1793,7 +1791,7 @@
       "response": [
         {
           "id": "filter2-bar-1",
-          "prompt": "Which month(s) had average rainfall between 1 and 3 (inclusive)?",
+          "prompt": "Which month(s) had average rainfall between 3 and 4 (inclusive)?",
           "required": true,
           "type": "checkbox",
           "options": [
@@ -1818,16 +1816,9 @@
           "answer": [
             "Jan",
             "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
             "Jul",
             "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
+            "Sep"
           ]
         }
       ]
@@ -1845,7 +1836,7 @@
           }
         },
         "data": {
-          "name": "data-ca6e9422d627cb8de02f5c3f26bc0351"
+          "name": "data-d1a1d718bc84af9cb01f2c2cda76e47e"
         },
         "mark": {
           "type": "bar",
@@ -1868,64 +1859,64 @@
             "field": "Rainfall (inches)",
             "scale": {
               "zero": false,
-              "domainMin": 0.6750000000000002,
-              "domainMax": 3.2249999999999996
+              "domainMin": 2.55,
+              "domainMax": 5.25
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City L",
+        "title": "Average Monthly Rainfall in City Y",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-ca6e9422d627cb8de02f5c3f26bc0351": [
+          "data-d1a1d718bc84af9cb01f2c2cda76e47e": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.2
+              "Rainfall (inches)": 3.0
             },
             {
               "Months": "Feb",
-              "Rainfall (inches)": 1.9
+              "Rainfall (inches)": 3.8
             },
             {
               "Months": "Mar",
-              "Rainfall (inches)": 2.7
+              "Rainfall (inches)": 4.3
             },
             {
               "Months": "Apr",
-              "Rainfall (inches)": 2.0
+              "Rainfall (inches)": 4.8
             },
             {
               "Months": "May",
-              "Rainfall (inches)": 2.5
+              "Rainfall (inches)": 4.2
             },
             {
               "Months": "Jun",
-              "Rainfall (inches)": 2.1
+              "Rainfall (inches)": 4.6
             },
             {
               "Months": "Jul",
-              "Rainfall (inches)": 1.7
+              "Rainfall (inches)": 3.9
             },
             {
               "Months": "Aug",
-              "Rainfall (inches)": 1.1
+              "Rainfall (inches)": 3.3
             },
             {
               "Months": "Sep",
-              "Rainfall (inches)": 1.6
+              "Rainfall (inches)": 3.1
             },
             {
               "Months": "Oct",
-              "Rainfall (inches)": 2.6
+              "Rainfall (inches)": 4.4
             },
             {
               "Months": "Nov",
-              "Rainfall (inches)": 2.2
+              "Rainfall (inches)": 4.1
             },
             {
               "Months": "Dec",
-              "Rainfall (inches)": 2.8
+              "Rainfall (inches)": 4.7
             }
           ]
         }
@@ -1933,7 +1924,7 @@
       "response": [
         {
           "id": "filter2-bar-2",
-          "prompt": "Which month(s) had average rainfall between 1 and 3 (inclusive)?",
+          "prompt": "Which month(s) had average rainfall between 3 and 4 (inclusive)?",
           "required": true,
           "type": "checkbox",
           "options": [
@@ -1958,16 +1949,9 @@
           "answer": [
             "Jan",
             "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
             "Jul",
             "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
+            "Sep"
           ]
         }
       ]
@@ -1985,7 +1969,7 @@
           }
         },
         "data": {
-          "name": "data-7796e1d7ef8373c043cfa127d7d2d5d7"
+          "name": "data-259ef7f39de1590c6b2b79bf42fff284"
         },
         "mark": {
           "type": "bar"
@@ -2006,63 +1990,63 @@
             },
             "field": "Profits ($)",
             "scale": {
-              "domainMax": 108559.00000000001
+              "domainMax": 96772.50000000001
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company U",
+        "title": "Profits for Company C",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-7796e1d7ef8373c043cfa127d7d2d5d7": [
+          "data-259ef7f39de1590c6b2b79bf42fff284": [
             {
               "Months": "Jan",
-              "Profits ($)": 97605
+              "Profits ($)": 87975
             },
             {
               "Months": "Feb",
-              "Profits ($)": 98690
+              "Profits ($)": 87894
             },
             {
               "Months": "Mar",
-              "Profits ($)": 97000
+              "Profits ($)": 79014
             },
             {
               "Months": "Apr",
-              "Profits ($)": 90042
+              "Profits ($)": 77349
             },
             {
               "Months": "May",
-              "Profits ($)": 92492
+              "Profits ($)": 73565
             },
             {
               "Months": "Jun",
-              "Profits ($)": 86281
+              "Profits ($)": 74512
             },
             {
               "Months": "Jul",
-              "Profits ($)": 85750
+              "Profits ($)": 73089
             },
             {
               "Months": "Aug",
-              "Profits ($)": 84142
+              "Profits ($)": 73419
             },
             {
               "Months": "Sep",
-              "Profits ($)": 79880
+              "Profits ($)": 73443
             },
             {
               "Months": "Oct",
-              "Profits ($)": 85569
+              "Profits ($)": 70948
             },
             {
               "Months": "Nov",
-              "Profits ($)": 75535
+              "Profits ($)": 73355
             },
             {
               "Months": "Dec",
-              "Profits ($)": 75195
+              "Profits ($)": 71195
             }
           ]
         }
@@ -2070,7 +2054,7 @@
       "response": [
         {
           "id": "ratio1-bar-1",
-          "prompt": "What is the proportion of profit made by Company U in Jun to Oct? (in %)",
+          "prompt": "What is the proportion of profit made by Company C in Dec to Nov? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -2079,7 +2063,7 @@
       "correctAnswer": [
         {
           "id": "ratio1-bar-1",
-          "answer": 99.175
+          "answer": 97.055
         }
       ]
     },
@@ -2096,7 +2080,7 @@
           }
         },
         "data": {
-          "name": "data-7796e1d7ef8373c043cfa127d7d2d5d7"
+          "name": "data-259ef7f39de1590c6b2b79bf42fff284"
         },
         "mark": {
           "type": "bar",
@@ -2119,64 +2103,64 @@
             "field": "Profits ($)",
             "scale": {
               "zero": false,
-              "domainMin": 69321.25,
-              "domainMax": 104563.75
+              "domainMin": 66691.25,
+              "domainMax": 92231.75
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company U",
+        "title": "Profits for Company C",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-7796e1d7ef8373c043cfa127d7d2d5d7": [
+          "data-259ef7f39de1590c6b2b79bf42fff284": [
             {
               "Months": "Jan",
-              "Profits ($)": 97605
+              "Profits ($)": 87975
             },
             {
               "Months": "Feb",
-              "Profits ($)": 98690
+              "Profits ($)": 87894
             },
             {
               "Months": "Mar",
-              "Profits ($)": 97000
+              "Profits ($)": 79014
             },
             {
               "Months": "Apr",
-              "Profits ($)": 90042
+              "Profits ($)": 77349
             },
             {
               "Months": "May",
-              "Profits ($)": 92492
+              "Profits ($)": 73565
             },
             {
               "Months": "Jun",
-              "Profits ($)": 86281
+              "Profits ($)": 74512
             },
             {
               "Months": "Jul",
-              "Profits ($)": 85750
+              "Profits ($)": 73089
             },
             {
               "Months": "Aug",
-              "Profits ($)": 84142
+              "Profits ($)": 73419
             },
             {
               "Months": "Sep",
-              "Profits ($)": 79880
+              "Profits ($)": 73443
             },
             {
               "Months": "Oct",
-              "Profits ($)": 85569
+              "Profits ($)": 70948
             },
             {
               "Months": "Nov",
-              "Profits ($)": 75535
+              "Profits ($)": 73355
             },
             {
               "Months": "Dec",
-              "Profits ($)": 75195
+              "Profits ($)": 71195
             }
           ]
         }
@@ -2184,7 +2168,7 @@
       "response": [
         {
           "id": "ratio1-bar-2",
-          "prompt": "What is the proportion of profit made by Company U in Jun to Oct? (in %)",
+          "prompt": "What is the proportion of profit made by Company C in Dec to Nov? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -2193,7 +2177,7 @@
       "correctAnswer": [
         {
           "id": "ratio1-bar-2",
-          "answer": 99.175
+          "answer": 97.055
         }
       ]
     },
@@ -2210,7 +2194,7 @@
           }
         },
         "data": {
-          "name": "data-d2e327a44d018b57d54f38ca34d6dba2"
+          "name": "data-211b662eb15cf4c31787888a7fd8b656"
         },
         "mark": {
           "type": "bar"
@@ -2231,63 +2215,63 @@
             },
             "field": "Rainfall (inches)",
             "scale": {
-              "domainMax": 4.18
+              "domainMax": 5.940000000000001
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City O",
+        "title": "Average Monthly Rainfall in City T",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-d2e327a44d018b57d54f38ca34d6dba2": [
+          "data-211b662eb15cf4c31787888a7fd8b656": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.9
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 2.4
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 2.8
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 2.3
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 1.4
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 1.3
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 2.2
-            },
-            {
-              "Months": "Nov",
               "Rainfall (inches)": 3.7
             },
             {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 5.3
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 3.8
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 5.1
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 4.1
+            },
+            {
               "Months": "Dec",
-              "Rainfall (inches)": 2.6
+              "Rainfall (inches)": 5.4
             }
           ]
         }
@@ -2295,7 +2279,7 @@
       "response": [
         {
           "id": "ratio2-bar-1",
-          "prompt": "What is the proportion of average rainfall in City O in Sep to May? (in %)",
+          "prompt": "What is the proportion of average rainfall in City T in Nov to Jul? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -2304,7 +2288,7 @@
       "correctAnswer": [
         {
           "id": "ratio2-bar-1",
-          "answer": 41.935
+          "answer": 85.366
         }
       ]
     },
@@ -2321,7 +2305,7 @@
           }
         },
         "data": {
-          "name": "data-d2e327a44d018b57d54f38ca34d6dba2"
+          "name": "data-211b662eb15cf4c31787888a7fd8b656"
         },
         "mark": {
           "type": "bar",
@@ -2344,64 +2328,64 @@
             "field": "Rainfall (inches)",
             "scale": {
               "zero": false,
-              "domainMin": 0.675,
-              "domainMax": 4.425
+              "domainMin": 2.6500000000000004,
+              "domainMax": 5.95
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City O",
+        "title": "Average Monthly Rainfall in City T",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-d2e327a44d018b57d54f38ca34d6dba2": [
+          "data-211b662eb15cf4c31787888a7fd8b656": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.9
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 2.4
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 2.8
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 2.3
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 1.4
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 1.3
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 2.2
-            },
-            {
-              "Months": "Nov",
               "Rainfall (inches)": 3.7
             },
             {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 5.3
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 3.8
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 5.1
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 4.1
+            },
+            {
               "Months": "Dec",
-              "Rainfall (inches)": 2.6
+              "Rainfall (inches)": 5.4
             }
           ]
         }
@@ -2409,7 +2393,7 @@
       "response": [
         {
           "id": "ratio2-bar-2",
-          "prompt": "What is the proportion of average rainfall in City O in Sep to May? (in %)",
+          "prompt": "What is the proportion of average rainfall in City T in Nov to Jul? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -2418,7 +2402,7 @@
       "correctAnswer": [
         {
           "id": "ratio2-bar-2",
-          "answer": 41.935
+          "answer": 85.366
         }
       ]
     },
@@ -2432,7 +2416,7 @@
           }
         },
         "data": {
-          "name": "data-eeb609ba51dd794f53b66d16bce13dce"
+          "name": "data-dd8a82f7a131a6676db7f5ce37470d41"
         },
         "mark": {
           "type": "line"
@@ -2449,74 +2433,74 @@
           "y": {
             "field": "Profits ($)",
             "scale": {
-              "domainMax": 118807.8
+              "domainMax": 100366.3
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company N",
+        "title": "Profits for Company I",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-eeb609ba51dd794f53b66d16bce13dce": [
+          "data-dd8a82f7a131a6676db7f5ce37470d41": [
             {
               "Months": "Jan",
-              "Profits ($)": 117325,
+              "Profits ($)": 83104,
               "Line": "Line1"
             },
             {
               "Months": "Feb",
-              "Profits ($)": 113961,
+              "Profits ($)": 83685,
               "Line": "Line1"
             },
             {
               "Months": "Mar",
-              "Profits ($)": 116975,
+              "Profits ($)": 89093,
               "Line": "Line1"
             },
             {
               "Months": "Apr",
-              "Profits ($)": 111724,
+              "Profits ($)": 92401,
               "Line": "Line1"
             },
             {
               "Months": "May",
-              "Profits ($)": 112208,
+              "Profits ($)": 92306,
               "Line": "Line1"
             },
             {
               "Months": "Jun",
-              "Profits ($)": 111818,
+              "Profits ($)": 93356,
               "Line": "Line1"
             },
             {
               "Months": "Jul",
-              "Profits ($)": 107554,
+              "Profits ($)": 93254,
               "Line": "Line1"
             },
             {
               "Months": "Aug",
-              "Profits ($)": 109650,
+              "Profits ($)": 93337,
               "Line": "Line1"
             },
             {
               "Months": "Sep",
-              "Profits ($)": 108109,
+              "Profits ($)": 96765,
               "Line": "Line1"
             },
             {
               "Months": "Oct",
-              "Profits ($)": 105501,
+              "Profits ($)": 96546,
               "Line": "Line1"
             },
             {
               "Months": "Nov",
-              "Profits ($)": 102497,
+              "Profits ($)": 96254,
               "Line": "Line1"
             },
             {
               "Months": "Dec",
-              "Profits ($)": 105031,
+              "Profits ($)": 98797,
               "Line": "Line1"
             }
           ]
@@ -2525,7 +2509,7 @@
       "response": [
         {
           "id": "ret-val1-line-1",
-          "prompt": "What was the profit made by Company N in Apr?",
+          "prompt": "What was the profit made by Company I in Jan?",
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
@@ -2534,7 +2518,7 @@
       "correctAnswer": [
         {
           "id": "ret-val1-line-1",
-          "answer": 111724
+          "answer": 83104
         }
       ]
     },
@@ -2548,7 +2532,7 @@
           }
         },
         "data": {
-          "name": "data-eeb609ba51dd794f53b66d16bce13dce"
+          "name": "data-dd8a82f7a131a6676db7f5ce37470d41"
         },
         "mark": {
           "type": "line",
@@ -2567,75 +2551,75 @@
             "field": "Profits ($)",
             "scale": {
               "zero": false,
-              "domainMin": 98790.0,
-              "domainMax": 121032.0
+              "domainMin": 79180.75,
+              "domainMax": 102720.25
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company N",
+        "title": "Profits for Company I",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-eeb609ba51dd794f53b66d16bce13dce": [
+          "data-dd8a82f7a131a6676db7f5ce37470d41": [
             {
               "Months": "Jan",
-              "Profits ($)": 117325,
+              "Profits ($)": 83104,
               "Line": "Line1"
             },
             {
               "Months": "Feb",
-              "Profits ($)": 113961,
+              "Profits ($)": 83685,
               "Line": "Line1"
             },
             {
               "Months": "Mar",
-              "Profits ($)": 116975,
+              "Profits ($)": 89093,
               "Line": "Line1"
             },
             {
               "Months": "Apr",
-              "Profits ($)": 111724,
+              "Profits ($)": 92401,
               "Line": "Line1"
             },
             {
               "Months": "May",
-              "Profits ($)": 112208,
+              "Profits ($)": 92306,
               "Line": "Line1"
             },
             {
               "Months": "Jun",
-              "Profits ($)": 111818,
+              "Profits ($)": 93356,
               "Line": "Line1"
             },
             {
               "Months": "Jul",
-              "Profits ($)": 107554,
+              "Profits ($)": 93254,
               "Line": "Line1"
             },
             {
               "Months": "Aug",
-              "Profits ($)": 109650,
+              "Profits ($)": 93337,
               "Line": "Line1"
             },
             {
               "Months": "Sep",
-              "Profits ($)": 108109,
+              "Profits ($)": 96765,
               "Line": "Line1"
             },
             {
               "Months": "Oct",
-              "Profits ($)": 105501,
+              "Profits ($)": 96546,
               "Line": "Line1"
             },
             {
               "Months": "Nov",
-              "Profits ($)": 102497,
+              "Profits ($)": 96254,
               "Line": "Line1"
             },
             {
               "Months": "Dec",
-              "Profits ($)": 105031,
+              "Profits ($)": 98797,
               "Line": "Line1"
             }
           ]
@@ -2644,7 +2628,7 @@
       "response": [
         {
           "id": "ret-val1-line-2",
-          "prompt": "What was the profit made by Company N in Apr?",
+          "prompt": "What was the profit made by Company I in Jan?",
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
@@ -2653,7 +2637,7 @@
       "correctAnswer": [
         {
           "id": "ret-val1-line-2",
-          "answer": 111724
+          "answer": 83104
         }
       ]
     },
@@ -2670,7 +2654,7 @@
           }
         },
         "data": {
-          "name": "data-8777bd6b95a118ea121300c5a21adf74"
+          "name": "data-27c919fc685852801f2abf1394a670df"
         },
         "mark": {
           "type": "bar"
@@ -2691,31 +2675,31 @@
             },
             "field": "Rainfall (inches)",
             "scale": {
-              "domainMax": 5.390000000000001
+              "domainMax": 5.170000000000001
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City L",
+        "title": "Average Monthly Rainfall in City J",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-8777bd6b95a118ea121300c5a21adf74": [
+          "data-27c919fc685852801f2abf1394a670df": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 3.2
-            },
-            {
-              "Months": "Feb",
               "Rainfall (inches)": 3.7
             },
             {
+              "Months": "Feb",
+              "Rainfall (inches)": 2.6
+            },
+            {
               "Months": "Mar",
-              "Rainfall (inches)": 4.2
+              "Rainfall (inches)": 4.1
             },
             {
               "Months": "Apr",
-              "Rainfall (inches)": 4.9
+              "Rainfall (inches)": 4.5
             },
             {
               "Months": "May",
@@ -2723,31 +2707,31 @@
             },
             {
               "Months": "Jun",
-              "Rainfall (inches)": 4.3
-            },
-            {
-              "Months": "Jul",
               "Rainfall (inches)": 3.8
             },
             {
+              "Months": "Jul",
+              "Rainfall (inches)": 4.3
+            },
+            {
               "Months": "Aug",
-              "Rainfall (inches)": 3.6
+              "Rainfall (inches)": 2.5
             },
             {
               "Months": "Sep",
-              "Rainfall (inches)": 3.1
+              "Rainfall (inches)": 2.3
             },
             {
               "Months": "Oct",
-              "Rainfall (inches)": 3.5
+              "Rainfall (inches)": 3.1
             },
             {
               "Months": "Nov",
-              "Rainfall (inches)": 4.1
+              "Rainfall (inches)": 4.4
             },
             {
               "Months": "Dec",
-              "Rainfall (inches)": 4.6
+              "Rainfall (inches)": 4.2
             }
           ]
         }
@@ -2755,7 +2739,7 @@
       "response": [
         {
           "id": "ret-val2-line-1",
-          "prompt": "What was the average rainfall in City L in Nov?",
+          "prompt": "What was the average rainfall in City J in May?",
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
@@ -2764,7 +2748,7 @@
       "correctAnswer": [
         {
           "id": "ret-val2-line-1",
-          "answer": 4.1
+          "answer": 4.7
         }
       ]
     },
@@ -2781,7 +2765,7 @@
           }
         },
         "data": {
-          "name": "data-8777bd6b95a118ea121300c5a21adf74"
+          "name": "data-27c919fc685852801f2abf1394a670df"
         },
         "mark": {
           "type": "bar",
@@ -2804,32 +2788,32 @@
             "field": "Rainfall (inches)",
             "scale": {
               "zero": false,
-              "domainMin": 2.65,
-              "domainMax": 5.3500000000000005
+              "domainMin": 1.6999999999999997,
+              "domainMax": 5.300000000000001
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City L",
+        "title": "Average Monthly Rainfall in City J",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-8777bd6b95a118ea121300c5a21adf74": [
+          "data-27c919fc685852801f2abf1394a670df": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 3.2
-            },
-            {
-              "Months": "Feb",
               "Rainfall (inches)": 3.7
             },
             {
+              "Months": "Feb",
+              "Rainfall (inches)": 2.6
+            },
+            {
               "Months": "Mar",
-              "Rainfall (inches)": 4.2
+              "Rainfall (inches)": 4.1
             },
             {
               "Months": "Apr",
-              "Rainfall (inches)": 4.9
+              "Rainfall (inches)": 4.5
             },
             {
               "Months": "May",
@@ -2837,31 +2821,31 @@
             },
             {
               "Months": "Jun",
-              "Rainfall (inches)": 4.3
-            },
-            {
-              "Months": "Jul",
               "Rainfall (inches)": 3.8
             },
             {
+              "Months": "Jul",
+              "Rainfall (inches)": 4.3
+            },
+            {
               "Months": "Aug",
-              "Rainfall (inches)": 3.6
+              "Rainfall (inches)": 2.5
             },
             {
               "Months": "Sep",
-              "Rainfall (inches)": 3.1
+              "Rainfall (inches)": 2.3
             },
             {
               "Months": "Oct",
-              "Rainfall (inches)": 3.5
+              "Rainfall (inches)": 3.1
             },
             {
               "Months": "Nov",
-              "Rainfall (inches)": 4.1
+              "Rainfall (inches)": 4.4
             },
             {
               "Months": "Dec",
-              "Rainfall (inches)": 4.6
+              "Rainfall (inches)": 4.2
             }
           ]
         }
@@ -2869,7 +2853,7 @@
       "response": [
         {
           "id": "ret-val2-line-2",
-          "prompt": "What was the average rainfall in City L in Nov?",
+          "prompt": "What was the average rainfall in City J in May?",
           "required": true,
           "type": "shortText",
           "placeholder": "Value"
@@ -2878,7 +2862,7 @@
       "correctAnswer": [
         {
           "id": "ret-val2-line-2",
-          "answer": 4.1
+          "answer": 4.7
         }
       ]
     },
@@ -2892,7 +2876,7 @@
           }
         },
         "data": {
-          "name": "data-0c22da1dc7640553f9133c6bc6b186e4"
+          "name": "data-64a191059161b0981cd1d4d4c7800458"
         },
         "mark": {
           "type": "line"
@@ -2909,7 +2893,7 @@
           "y": {
             "field": "Profits ($)",
             "scale": {
-              "domainMax": 121112.6
+              "domainMax": 119177.2
             },
             "type": "quantitative"
           }
@@ -2918,65 +2902,65 @@
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-0c22da1dc7640553f9133c6bc6b186e4": [
+          "data-64a191059161b0981cd1d4d4c7800458": [
             {
               "Months": "Jan",
-              "Profits ($)": 117450,
+              "Profits ($)": 100530,
               "Line": "Line1"
             },
             {
               "Months": "Feb",
-              "Profits ($)": 119223,
+              "Profits ($)": 100548,
               "Line": "Line1"
             },
             {
               "Months": "Mar",
-              "Profits ($)": 116467,
+              "Profits ($)": 101317,
               "Line": "Line1"
             },
             {
               "Months": "Apr",
-              "Profits ($)": 116098,
+              "Profits ($)": 101708,
               "Line": "Line1"
             },
             {
               "Months": "May",
-              "Profits ($)": 110464,
+              "Profits ($)": 105737,
               "Line": "Line1"
             },
             {
               "Months": "Jun",
-              "Profits ($)": 110539,
+              "Profits ($)": 108141,
               "Line": "Line1"
             },
             {
               "Months": "Jul",
-              "Profits ($)": 106235,
+              "Profits ($)": 115662,
               "Line": "Line1"
             },
             {
               "Months": "Aug",
-              "Profits ($)": 105866,
+              "Profits ($)": 114027,
               "Line": "Line1"
             },
             {
               "Months": "Sep",
-              "Profits ($)": 106138,
+              "Profits ($)": 117482,
               "Line": "Line1"
             },
             {
               "Months": "Oct",
-              "Profits ($)": 103649,
+              "Profits ($)": 116928,
               "Line": "Line1"
             },
             {
               "Months": "Nov",
-              "Profits ($)": 100327,
+              "Profits ($)": 116937,
               "Line": "Line1"
             },
             {
               "Months": "Dec",
-              "Profits ($)": 101940,
+              "Profits ($)": 116559,
               "Line": "Line1"
             }
           ]
@@ -2985,7 +2969,7 @@
       "response": [
         {
           "id": "find-ext1-line-1",
-          "prompt": "What was the month with the lowest profit made by Company Z?",
+          "prompt": "What was the month with the highest profit made by Company Z?",
           "required": true,
           "type": "dropdown",
           "placeholder": "Select months",
@@ -3008,7 +2992,7 @@
       "correctAnswer": [
         {
           "id": "find-ext1-line-1",
-          "answer": "Nov"
+          "answer": "Sep"
         }
       ]
     },
@@ -3022,7 +3006,7 @@
           }
         },
         "data": {
-          "name": "data-0c22da1dc7640553f9133c6bc6b186e4"
+          "name": "data-64a191059161b0981cd1d4d4c7800458"
         },
         "mark": {
           "type": "line",
@@ -3041,8 +3025,8 @@
             "field": "Profits ($)",
             "scale": {
               "zero": false,
-              "domainMin": 95603.0,
-              "domainMax": 123947.0
+              "domainMin": 96292.0,
+              "domainMax": 121720.0
             },
             "type": "quantitative"
           }
@@ -3051,65 +3035,65 @@
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-0c22da1dc7640553f9133c6bc6b186e4": [
+          "data-64a191059161b0981cd1d4d4c7800458": [
             {
               "Months": "Jan",
-              "Profits ($)": 117450,
+              "Profits ($)": 100530,
               "Line": "Line1"
             },
             {
               "Months": "Feb",
-              "Profits ($)": 119223,
+              "Profits ($)": 100548,
               "Line": "Line1"
             },
             {
               "Months": "Mar",
-              "Profits ($)": 116467,
+              "Profits ($)": 101317,
               "Line": "Line1"
             },
             {
               "Months": "Apr",
-              "Profits ($)": 116098,
+              "Profits ($)": 101708,
               "Line": "Line1"
             },
             {
               "Months": "May",
-              "Profits ($)": 110464,
+              "Profits ($)": 105737,
               "Line": "Line1"
             },
             {
               "Months": "Jun",
-              "Profits ($)": 110539,
+              "Profits ($)": 108141,
               "Line": "Line1"
             },
             {
               "Months": "Jul",
-              "Profits ($)": 106235,
+              "Profits ($)": 115662,
               "Line": "Line1"
             },
             {
               "Months": "Aug",
-              "Profits ($)": 105866,
+              "Profits ($)": 114027,
               "Line": "Line1"
             },
             {
               "Months": "Sep",
-              "Profits ($)": 106138,
+              "Profits ($)": 117482,
               "Line": "Line1"
             },
             {
               "Months": "Oct",
-              "Profits ($)": 103649,
+              "Profits ($)": 116928,
               "Line": "Line1"
             },
             {
               "Months": "Nov",
-              "Profits ($)": 100327,
+              "Profits ($)": 116937,
               "Line": "Line1"
             },
             {
               "Months": "Dec",
-              "Profits ($)": 101940,
+              "Profits ($)": 116559,
               "Line": "Line1"
             }
           ]
@@ -3118,7 +3102,7 @@
       "response": [
         {
           "id": "find-ext1-line-2",
-          "prompt": "What was the month with the lowest profit made by Company Z?",
+          "prompt": "What was the month with the highest profit made by Company Z?",
           "required": true,
           "type": "dropdown",
           "placeholder": "Select months",
@@ -3141,7 +3125,7 @@
       "correctAnswer": [
         {
           "id": "find-ext1-line-2",
-          "answer": "Nov"
+          "answer": "Sep"
         }
       ]
     },
@@ -3158,1001 +3142,7 @@
           }
         },
         "data": {
-          "name": "data-05e474d4105f43205c40f87650a67eb2"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "domainMax": 4.4
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City G",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-05e474d4105f43205c40f87650a67eb2": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 3.4
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 3.9
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 3.5
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 2.6
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 2.5
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 3.3
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 4.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext2-line-1",
-          "prompt": "What was the month with the highest average rainfall in City G?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext2-line-1",
-          "answer": "Dec"
-        }
-      ]
-    },
-    "find-ext2-line-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-05e474d4105f43205c40f87650a67eb2"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "zero": false,
-              "domainMin": 2.125,
-              "domainMax": 4.375
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City G",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-05e474d4105f43205c40f87650a67eb2": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 3.4
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 3.9
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 3.5
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 2.6
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 2.5
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 3.3
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 4.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext2-line-2",
-          "prompt": "What was the month with the highest average rainfall in City G?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext2-line-2",
-          "answer": "Dec"
-        }
-      ]
-    },
-    "make-comp1-line-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          }
-        },
-        "data": {
-          "name": "data-78f2d3c5e711a2b4806af6a6a35f8d10"
-        },
-        "mark": {
-          "type": "line"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "Profits ($)",
-            "scale": {
-              "domainMax": 126346.7
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company K",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-78f2d3c5e711a2b4806af6a6a35f8d10": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 72527,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 76444,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 73778,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 83678,
-              "Line": "Line1"
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 99250,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 85183,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 96686,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 105983,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 106884,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 114523,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 117515,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 121454,
-              "Line": "Line1"
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp1-line-1",
-          "prompt": "What is the difference between profit made by Company K in May and Aug?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp1-line-1",
-          "answer": 6733
-        }
-      ]
-    },
-    "make-comp1-line-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          }
-        },
-        "data": {
-          "name": "data-78f2d3c5e711a2b4806af6a6a35f8d10"
-        },
-        "mark": {
-          "type": "line",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "Profits ($)",
-            "scale": {
-              "zero": false,
-              "domainMin": 60295.25,
-              "domainMax": 133685.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company K",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-78f2d3c5e711a2b4806af6a6a35f8d10": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 72527,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 76444,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 73778,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 83678,
-              "Line": "Line1"
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 99250,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 85183,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 96686,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 105983,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 106884,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 114523,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 117515,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 121454,
-              "Line": "Line1"
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp1-line-2",
-          "prompt": "What is the difference between profit made by Company K in May and Aug?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp1-line-2",
-          "answer": 6733
-        }
-      ]
-    },
-    "make-comp2-line-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f0ab20585ff48fb158df1a6700c73197"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "domainMax": 4.95
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City J",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f0ab20585ff48fb158df1a6700c73197": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 3.2
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 4.1
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.9
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 4.5
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 3.5
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 3.3
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 4.0
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 4.2
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp2-line-1",
-          "prompt": "What is the difference between average rainfall in City J in Oct and Jul?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp2-line-1",
-          "answer": 0.10000000000000009
-        }
-      ]
-    },
-    "make-comp2-line-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f0ab20585ff48fb158df1a6700c73197"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Rainfall (inches)",
-            "scale": {
-              "zero": false,
-              "domainMin": 2.75,
-              "domainMax": 4.85
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Rainfall in City J",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f0ab20585ff48fb158df1a6700c73197": [
-            {
-              "Months": "Jan",
-              "Rainfall (inches)": 3.2
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 4.1
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 3.8
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.9
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 4.5
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 3.5
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 3.3
-            },
-            {
-              "Months": "Sep",
-              "Rainfall (inches)": 3.1
-            },
-            {
-              "Months": "Oct",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Nov",
-              "Rainfall (inches)": 4.0
-            },
-            {
-              "Months": "Dec",
-              "Rainfall (inches)": 4.2
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp2-line-2",
-          "prompt": "What is the difference between average rainfall in City J in Oct and Jul?",
-          "required": true,
-          "type": "shortText",
-          "placeholder": "Difference"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp2-line-2",
-          "answer": 0.10000000000000009
-        }
-      ]
-    },
-    "filter1-line-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          }
-        },
-        "data": {
-          "name": "data-886923352d58ef2244c2ad2bdcf73325"
-        },
-        "mark": {
-          "type": "line"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "Profits ($)",
-            "scale": {
-              "domainMax": 114287.5
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company A",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-886923352d58ef2244c2ad2bdcf73325": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 85275,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 86183,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 86313,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 91300,
-              "Line": "Line1"
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 91575,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 93778,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 98072,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 100987,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 101259,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 109768,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 110763,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 111650,
-              "Line": "Line1"
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter1-line-1",
-          "prompt": "Which month(s) had profit between 85338 and 109995 (inclusive)?",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter1-line-1",
-          "answer": [
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct"
-          ]
-        }
-      ]
-    },
-    "filter1-line-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          }
-        },
-        "data": {
-          "name": "data-886923352d58ef2244c2ad2bdcf73325"
-        },
-        "mark": {
-          "type": "line",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "field": "Profits ($)",
-            "scale": {
-              "zero": false,
-              "domainMin": 78681.25,
-              "domainMax": 118243.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Profits for Company A",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-886923352d58ef2244c2ad2bdcf73325": [
-            {
-              "Months": "Jan",
-              "Profits ($)": 85275,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Feb",
-              "Profits ($)": 86183,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Mar",
-              "Profits ($)": 86313,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Apr",
-              "Profits ($)": 91300,
-              "Line": "Line1"
-            },
-            {
-              "Months": "May",
-              "Profits ($)": 91575,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jun",
-              "Profits ($)": 93778,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Jul",
-              "Profits ($)": 98072,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Aug",
-              "Profits ($)": 100987,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Sep",
-              "Profits ($)": 101259,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Oct",
-              "Profits ($)": 109768,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Nov",
-              "Profits ($)": 110763,
-              "Line": "Line1"
-            },
-            {
-              "Months": "Dec",
-              "Profits ($)": 111650,
-              "Line": "Line1"
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter1-line-2",
-          "prompt": "Which month(s) had profit between 85338 and 109995 (inclusive)?",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter1-line-2",
-          "answer": [
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct"
-          ]
-        }
-      ]
-    },
-    "filter2-line-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-481ff2a4a77261f74852337493313062"
+          "name": "data-f6ce6e12cee6e052412ce28b7839c514"
         },
         "mark": {
           "type": "bar"
@@ -4178,50 +3168,50 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City F",
+        "title": "Average Monthly Rainfall in City Q",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-481ff2a4a77261f74852337493313062": [
+          "data-f6ce6e12cee6e052412ce28b7839c514": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.8
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 2.1
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.2
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 1.7
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 2.4
-            },
-            {
-              "Months": "Sep",
               "Rainfall (inches)": 1.4
             },
             {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 2.3
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 2.4
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 1.1
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 1.3
+            },
+            {
               "Months": "Oct",
-              "Rainfall (inches)": 2.5
+              "Rainfall (inches)": 2.2
             },
             {
               "Months": "Nov",
@@ -4236,10 +3226,11 @@
       },
       "response": [
         {
-          "id": "filter2-line-1",
-          "prompt": "Which month(s) had average rainfall between 2 and 3 (inclusive)?",
+          "id": "find-ext2-line-1",
+          "prompt": "What was the month with the highest average rainfall in City Q?",
           "required": true,
-          "type": "checkbox",
+          "type": "dropdown",
+          "placeholder": "Select months",
           "options": [
             "Jan",
             "Feb",
@@ -4258,18 +3249,12 @@
       ],
       "correctAnswer": [
         {
-          "id": "filter2-line-1",
-          "answer": [
-            "Feb",
-            "Mar",
-            "Aug",
-            "Oct",
-            "Nov"
-          ]
+          "id": "find-ext2-line-1",
+          "answer": "Jul"
         }
       ]
     },
-    "filter2-line-2": {
+    "find-ext2-line-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -4282,7 +3267,7 @@
           }
         },
         "data": {
-          "name": "data-481ff2a4a77261f74852337493313062"
+          "name": "data-f6ce6e12cee6e052412ce28b7839c514"
         },
         "mark": {
           "type": "bar",
@@ -4305,56 +3290,56 @@
             "field": "Rainfall (inches)",
             "scale": {
               "zero": false,
-              "domainMin": 0.8249999999999998,
-              "domainMax": 4.275
+              "domainMin": 0.45000000000000007,
+              "domainMax": 4.3500000000000005
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City F",
+        "title": "Average Monthly Rainfall in City Q",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-481ff2a4a77261f74852337493313062": [
+          "data-f6ce6e12cee6e052412ce28b7839c514": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.8
-            },
-            {
-              "Months": "Feb",
-              "Rainfall (inches)": 2.1
-            },
-            {
-              "Months": "Mar",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 3.7
-            },
-            {
-              "Months": "May",
-              "Rainfall (inches)": 3.6
-            },
-            {
-              "Months": "Jun",
-              "Rainfall (inches)": 3.2
-            },
-            {
-              "Months": "Jul",
-              "Rainfall (inches)": 1.7
-            },
-            {
-              "Months": "Aug",
-              "Rainfall (inches)": 2.4
-            },
-            {
-              "Months": "Sep",
               "Rainfall (inches)": 1.4
             },
             {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 2.3
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 2.4
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 1.1
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 1.3
+            },
+            {
               "Months": "Oct",
-              "Rainfall (inches)": 2.5
+              "Rainfall (inches)": 2.2
             },
             {
               "Months": "Nov",
@@ -4369,10 +3354,11 @@
       },
       "response": [
         {
-          "id": "filter2-line-2",
-          "prompt": "Which month(s) had average rainfall between 2 and 3 (inclusive)?",
+          "id": "find-ext2-line-2",
+          "prompt": "What was the month with the highest average rainfall in City Q?",
           "required": true,
-          "type": "checkbox",
+          "type": "dropdown",
+          "placeholder": "Select months",
           "options": [
             "Jan",
             "Feb",
@@ -4391,18 +3377,12 @@
       ],
       "correctAnswer": [
         {
-          "id": "filter2-line-2",
-          "answer": [
-            "Feb",
-            "Mar",
-            "Aug",
-            "Oct",
-            "Nov"
-          ]
+          "id": "find-ext2-line-2",
+          "answer": "Jul"
         }
       ]
     },
-    "ratio1-line-1": {
+    "make-comp1-line-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -4412,7 +3392,7 @@
           }
         },
         "data": {
-          "name": "data-773e7637b8dac4c8f7af7c98463e8c47"
+          "name": "data-446039ab34c8c5cd289013f033aa316f"
         },
         "mark": {
           "type": "line"
@@ -4429,74 +3409,74 @@
           "y": {
             "field": "Profits ($)",
             "scale": {
-              "domainMax": 117170.9
+              "domainMax": 120915.8
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company I",
+        "title": "Profits for Company W",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-773e7637b8dac4c8f7af7c98463e8c47": [
+          "data-446039ab34c8c5cd289013f033aa316f": [
             {
               "Months": "Jan",
-              "Profits ($)": 112979,
+              "Profits ($)": 102339,
               "Line": "Line1"
             },
             {
               "Months": "Feb",
-              "Profits ($)": 112723,
+              "Profits ($)": 102864,
               "Line": "Line1"
             },
             {
               "Months": "Mar",
-              "Profits ($)": 111449,
+              "Profits ($)": 104838,
               "Line": "Line1"
             },
             {
               "Months": "Apr",
-              "Profits ($)": 112457,
+              "Profits ($)": 104928,
               "Line": "Line1"
             },
             {
               "Months": "May",
-              "Profits ($)": 106908,
+              "Profits ($)": 106057,
               "Line": "Line1"
             },
             {
               "Months": "Jun",
-              "Profits ($)": 106037,
+              "Profits ($)": 107413,
               "Line": "Line1"
             },
             {
               "Months": "Jul",
-              "Profits ($)": 107115,
+              "Profits ($)": 111606,
               "Line": "Line1"
             },
             {
               "Months": "Aug",
-              "Profits ($)": 104711,
+              "Profits ($)": 114046,
               "Line": "Line1"
             },
             {
               "Months": "Sep",
-              "Profits ($)": 97185,
+              "Profits ($)": 113944,
               "Line": "Line1"
             },
             {
               "Months": "Oct",
-              "Profits ($)": 94612,
+              "Profits ($)": 115133,
               "Line": "Line1"
             },
             {
               "Months": "Nov",
-              "Profits ($)": 71060,
+              "Profits ($)": 116189,
               "Line": "Line1"
             },
             {
               "Months": "Dec",
-              "Profits ($)": 98443,
+              "Profits ($)": 119227,
               "Line": "Line1"
             }
           ]
@@ -4504,21 +3484,21 @@
       },
       "response": [
         {
-          "id": "ratio1-line-1",
-          "prompt": "What is the proportion of profit made by Company I in Oct to Mar? (in %)",
+          "id": "make-comp1-line-1",
+          "prompt": "What is the difference between profit made by Company W in Dec and May?",
           "required": true,
           "type": "shortText",
-          "placeholder": "50.0"
+          "placeholder": "Difference"
         }
       ],
       "correctAnswer": [
         {
-          "id": "ratio1-line-1",
-          "answer": 84.893
+          "id": "make-comp1-line-1",
+          "answer": 13170
         }
       ]
     },
-    "ratio1-line-2": {
+    "make-comp1-line-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -4528,7 +3508,7 @@
           }
         },
         "data": {
-          "name": "data-773e7637b8dac4c8f7af7c98463e8c47"
+          "name": "data-446039ab34c8c5cd289013f033aa316f"
         },
         "mark": {
           "type": "line",
@@ -4547,75 +3527,75 @@
             "field": "Profits ($)",
             "scale": {
               "zero": false,
-              "domainMin": 60580.25,
-              "domainMax": 123458.75
+              "domainMin": 98117.0,
+              "domainMax": 123449.0
             },
             "type": "quantitative"
           }
         },
-        "title": "Profits for Company I",
+        "title": "Profits for Company W",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-773e7637b8dac4c8f7af7c98463e8c47": [
+          "data-446039ab34c8c5cd289013f033aa316f": [
             {
               "Months": "Jan",
-              "Profits ($)": 112979,
+              "Profits ($)": 102339,
               "Line": "Line1"
             },
             {
               "Months": "Feb",
-              "Profits ($)": 112723,
+              "Profits ($)": 102864,
               "Line": "Line1"
             },
             {
               "Months": "Mar",
-              "Profits ($)": 111449,
+              "Profits ($)": 104838,
               "Line": "Line1"
             },
             {
               "Months": "Apr",
-              "Profits ($)": 112457,
+              "Profits ($)": 104928,
               "Line": "Line1"
             },
             {
               "Months": "May",
-              "Profits ($)": 106908,
+              "Profits ($)": 106057,
               "Line": "Line1"
             },
             {
               "Months": "Jun",
-              "Profits ($)": 106037,
+              "Profits ($)": 107413,
               "Line": "Line1"
             },
             {
               "Months": "Jul",
-              "Profits ($)": 107115,
+              "Profits ($)": 111606,
               "Line": "Line1"
             },
             {
               "Months": "Aug",
-              "Profits ($)": 104711,
+              "Profits ($)": 114046,
               "Line": "Line1"
             },
             {
               "Months": "Sep",
-              "Profits ($)": 97185,
+              "Profits ($)": 113944,
               "Line": "Line1"
             },
             {
               "Months": "Oct",
-              "Profits ($)": 94612,
+              "Profits ($)": 115133,
               "Line": "Line1"
             },
             {
               "Months": "Nov",
-              "Profits ($)": 71060,
+              "Profits ($)": 116189,
               "Line": "Line1"
             },
             {
               "Months": "Dec",
-              "Profits ($)": 98443,
+              "Profits ($)": 119227,
               "Line": "Line1"
             }
           ]
@@ -4623,21 +3603,21 @@
       },
       "response": [
         {
-          "id": "ratio1-line-2",
-          "prompt": "What is the proportion of profit made by Company I in Oct to Mar? (in %)",
+          "id": "make-comp1-line-2",
+          "prompt": "What is the difference between profit made by Company W in Dec and May?",
           "required": true,
           "type": "shortText",
-          "placeholder": "50.0"
+          "placeholder": "Difference"
         }
       ],
       "correctAnswer": [
         {
-          "id": "ratio1-line-2",
-          "answer": 84.893
+          "id": "make-comp1-line-2",
+          "answer": 13170
         }
       ]
     },
-    "ratio2-line-1": {
+    "make-comp2-line-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -4650,7 +3630,7 @@
           }
         },
         "data": {
-          "name": "data-4ee202fa24cf1dfae43320c830a83876"
+          "name": "data-4ef296d6736562745c951e099abfb0ab"
         },
         "mark": {
           "type": "bar"
@@ -4671,84 +3651,84 @@
             },
             "field": "Rainfall (inches)",
             "scale": {
-              "domainMax": 3.08
+              "domainMax": 5.06
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City P",
+        "title": "Average Monthly Rainfall in City Q",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-4ee202fa24cf1dfae43320c830a83876": [
+          "data-4ef296d6736562745c951e099abfb0ab": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.1
+              "Rainfall (inches)": 2.0
             },
             {
               "Months": "Feb",
-              "Rainfall (inches)": 1.7
+              "Rainfall (inches)": 3.4
             },
             {
               "Months": "Mar",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 2.3
-            },
-            {
-              "Months": "May",
               "Rainfall (inches)": 2.8
             },
             {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.6
+            },
+            {
               "Months": "Jun",
-              "Rainfall (inches)": 2.6
+              "Rainfall (inches)": 4.2
             },
             {
               "Months": "Jul",
-              "Rainfall (inches)": 1.8
+              "Rainfall (inches)": 2.9
             },
             {
               "Months": "Aug",
-              "Rainfall (inches)": 1.3
+              "Rainfall (inches)": 2.3
             },
             {
               "Months": "Sep",
-              "Rainfall (inches)": 1.0
+              "Rainfall (inches)": 2.2
             },
             {
               "Months": "Oct",
-              "Rainfall (inches)": 2.4
+              "Rainfall (inches)": 2.7
             },
             {
               "Months": "Nov",
-              "Rainfall (inches)": 1.2
+              "Rainfall (inches)": 4.4
             },
             {
               "Months": "Dec",
-              "Rainfall (inches)": 2.5
+              "Rainfall (inches)": 3.5
             }
           ]
         }
       },
       "response": [
         {
-          "id": "ratio2-line-1",
-          "prompt": "What is the proportion of average rainfall in City P in Mar to May? (in %)",
+          "id": "make-comp2-line-1",
+          "prompt": "What is the difference between average rainfall in City Q in Mar and Jul?",
           "required": true,
           "type": "shortText",
-          "placeholder": "50.0"
+          "placeholder": "Difference"
         }
       ],
       "correctAnswer": [
         {
-          "id": "ratio2-line-1",
-          "answer": 96.429
+          "id": "make-comp2-line-1",
+          "answer": 0.10000000000000009
         }
       ]
     },
-    "ratio2-line-2": {
+    "make-comp2-line-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -4761,7 +3741,7 @@
           }
         },
         "data": {
-          "name": "data-4ee202fa24cf1dfae43320c830a83876"
+          "name": "data-4ef296d6736562745c951e099abfb0ab"
         },
         "mark": {
           "type": "bar",
@@ -4784,64 +3764,1074 @@
             "field": "Rainfall (inches)",
             "scale": {
               "zero": false,
-              "domainMin": 0.55,
-              "domainMax": 3.25
+              "domainMin": 1.35,
+              "domainMax": 5.25
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Rainfall in City P",
+        "title": "Average Monthly Rainfall in City Q",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-4ee202fa24cf1dfae43320c830a83876": [
+          "data-4ef296d6736562745c951e099abfb0ab": [
             {
               "Months": "Jan",
-              "Rainfall (inches)": 1.1
+              "Rainfall (inches)": 2.0
             },
             {
               "Months": "Feb",
-              "Rainfall (inches)": 1.7
+              "Rainfall (inches)": 3.4
             },
             {
               "Months": "Mar",
-              "Rainfall (inches)": 2.7
-            },
-            {
-              "Months": "Apr",
-              "Rainfall (inches)": 2.3
-            },
-            {
-              "Months": "May",
               "Rainfall (inches)": 2.8
             },
             {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.6
+            },
+            {
               "Months": "Jun",
-              "Rainfall (inches)": 2.6
+              "Rainfall (inches)": 4.2
             },
             {
               "Months": "Jul",
-              "Rainfall (inches)": 1.8
+              "Rainfall (inches)": 2.9
             },
             {
               "Months": "Aug",
-              "Rainfall (inches)": 1.3
+              "Rainfall (inches)": 2.3
             },
             {
               "Months": "Sep",
-              "Rainfall (inches)": 1.0
+              "Rainfall (inches)": 2.2
             },
             {
               "Months": "Oct",
-              "Rainfall (inches)": 2.4
+              "Rainfall (inches)": 2.7
             },
             {
               "Months": "Nov",
-              "Rainfall (inches)": 1.2
+              "Rainfall (inches)": 4.4
             },
             {
               "Months": "Dec",
-              "Rainfall (inches)": 2.5
+              "Rainfall (inches)": 3.5
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "make-comp2-line-2",
+          "prompt": "What is the difference between average rainfall in City Q in Mar and Jul?",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "Difference"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp2-line-2",
+          "answer": 0.10000000000000009
+        }
+      ]
+    },
+    "filter1-line-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          }
+        },
+        "data": {
+          "name": "data-702aac2f7fa907091ff145b5d39b4e69"
+        },
+        "mark": {
+          "type": "line"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Profits ($)",
+            "scale": {
+              "domainMax": 120709.4
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company L",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-702aac2f7fa907091ff145b5d39b4e69": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 71458,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 76231,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 87036,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 87106,
+              "Line": "Line1"
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 95385,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 87469,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 93595,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 102476,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 108877,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 107307,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 113141,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 116232,
+              "Line": "Line1"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter1-line-1",
+          "prompt": "Which month(s) had profit between 94858 and 113538 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter1-line-1",
+          "answer": [
+            "May",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter1-line-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          }
+        },
+        "data": {
+          "name": "data-702aac2f7fa907091ff145b5d39b4e69"
+        },
+        "mark": {
+          "type": "line",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Profits ($)",
+            "scale": {
+              "zero": false,
+              "domainMin": 60264.5,
+              "domainMax": 127425.5
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company L",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-702aac2f7fa907091ff145b5d39b4e69": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 71458,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 76231,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 87036,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 87106,
+              "Line": "Line1"
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 95385,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 87469,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 93595,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 102476,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 108877,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 107307,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 113141,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 116232,
+              "Line": "Line1"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter1-line-2",
+          "prompt": "Which month(s) had profit between 94858 and 113538 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter1-line-2",
+          "answer": [
+            "May",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter2-line-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-bf5a679a85131997cd729445b5697b92"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "domainMax": 5.06
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City A",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-bf5a679a85131997cd729445b5697b92": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.9
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 4.5
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.4
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 4.2
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.1
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.0
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 4.1
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 4.6
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter2-line-1",
+          "prompt": "Which month(s) had average rainfall between 3 and 5 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter2-line-1",
+          "answer": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ]
+    },
+    "filter2-line-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-bf5a679a85131997cd729445b5697b92"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "zero": false,
+              "domainMin": 2.6,
+              "domainMax": 5.0
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City A",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-bf5a679a85131997cd729445b5697b92": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 3.6
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.9
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 4.5
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.4
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 4.2
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.1
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 3.5
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 3.0
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.7
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 4.1
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 4.6
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter2-line-2",
+          "prompt": "Which month(s) had average rainfall between 3 and 5 (inclusive)?",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter2-line-2",
+          "answer": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ]
+    },
+    "ratio1-line-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          }
+        },
+        "data": {
+          "name": "data-05ed329510d07f5f7b26d01ac29ec9f8"
+        },
+        "mark": {
+          "type": "line"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Profits ($)",
+            "scale": {
+              "domainMax": 104568.0
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company W",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-05ed329510d07f5f7b26d01ac29ec9f8": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 102547,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 102506,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 98111,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 90634,
+              "Line": "Line1"
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 87230,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 89554,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 91582,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 85420,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 86095,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 83169,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 84160,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 82337,
+              "Line": "Line1"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ratio1-line-1",
+          "prompt": "What is the proportion of profit made by Company W in Jan to Aug? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio1-line-1",
+          "answer": 83.298
+        }
+      ]
+    },
+    "ratio1-line-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          }
+        },
+        "data": {
+          "name": "data-05ed329510d07f5f7b26d01ac29ec9f8"
+        },
+        "mark": {
+          "type": "line",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Profits ($)",
+            "scale": {
+              "zero": false,
+              "domainMin": 77284.5,
+              "domainMax": 107599.5
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Profits for Company W",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-05ed329510d07f5f7b26d01ac29ec9f8": [
+            {
+              "Months": "Jan",
+              "Profits ($)": 102547,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Feb",
+              "Profits ($)": 102506,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Mar",
+              "Profits ($)": 98111,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Apr",
+              "Profits ($)": 90634,
+              "Line": "Line1"
+            },
+            {
+              "Months": "May",
+              "Profits ($)": 87230,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jun",
+              "Profits ($)": 89554,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Jul",
+              "Profits ($)": 91582,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Aug",
+              "Profits ($)": 85420,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Sep",
+              "Profits ($)": 86095,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Oct",
+              "Profits ($)": 83169,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Nov",
+              "Profits ($)": 84160,
+              "Line": "Line1"
+            },
+            {
+              "Months": "Dec",
+              "Profits ($)": 82337,
+              "Line": "Line1"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ratio1-line-2",
+          "prompt": "What is the proportion of profit made by Company W in Jan to Aug? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio1-line-2",
+          "answer": 83.298
+        }
+      ]
+    },
+    "ratio2-line-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-dc6603ed9ba05902c31b1d7c2d1ea451"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "domainMax": 4.95
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City D",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-dc6603ed9ba05902c31b1d7c2d1ea451": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 2.2
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.0
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.4
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 3.1
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.8
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 2.7
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 2.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 4.5
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ratio2-line-1",
+          "prompt": "What is the proportion of average rainfall in City D in Jul to Aug? (in %)",
+          "required": true,
+          "type": "shortText",
+          "placeholder": "50.0"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio2-line-1",
+          "answer": 71.053
+        }
+      ]
+    },
+    "ratio2-line-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-dc6603ed9ba05902c31b1d7c2d1ea451"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Rainfall (inches)",
+            "scale": {
+              "zero": false,
+              "domainMin": 1.6250000000000002,
+              "domainMax": 5.075
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Rainfall in City D",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-dc6603ed9ba05902c31b1d7c2d1ea451": [
+            {
+              "Months": "Jan",
+              "Rainfall (inches)": 2.2
+            },
+            {
+              "Months": "Feb",
+              "Rainfall (inches)": 3.0
+            },
+            {
+              "Months": "Mar",
+              "Rainfall (inches)": 3.3
+            },
+            {
+              "Months": "Apr",
+              "Rainfall (inches)": 4.4
+            },
+            {
+              "Months": "May",
+              "Rainfall (inches)": 4.3
+            },
+            {
+              "Months": "Jun",
+              "Rainfall (inches)": 3.1
+            },
+            {
+              "Months": "Jul",
+              "Rainfall (inches)": 3.8
+            },
+            {
+              "Months": "Aug",
+              "Rainfall (inches)": 2.7
+            },
+            {
+              "Months": "Sep",
+              "Rainfall (inches)": 2.3
+            },
+            {
+              "Months": "Oct",
+              "Rainfall (inches)": 3.2
+            },
+            {
+              "Months": "Nov",
+              "Rainfall (inches)": 3.4
+            },
+            {
+              "Months": "Dec",
+              "Rainfall (inches)": 4.5
             }
           ]
         }
@@ -4849,7 +4839,7 @@
       "response": [
         {
           "id": "ratio2-line-2",
-          "prompt": "What is the proportion of average rainfall in City P in Mar to May? (in %)",
+          "prompt": "What is the proportion of average rainfall in City D in Jul to Aug? (in %)",
           "required": true,
           "type": "shortText",
           "placeholder": "50.0"
@@ -4858,7 +4848,7 @@
       "correctAnswer": [
         {
           "id": "ratio2-line-2",
-          "answer": 96.429
+          "answer": 71.053
         }
       ]
     },
@@ -5890,7 +5880,8 @@
                 "order": "latinSquare"
               }
             ],
-            "order": "latinSquare"
+            "order": "latinSquare",
+            "numSamples": 1
           }
         ],
         "order": "latinSquare",
