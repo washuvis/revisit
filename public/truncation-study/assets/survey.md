@@ -8,9 +8,9 @@
 
 <p style="font-size: 13px">The 7 kinds of questions are detailed below, each referring to this example:</p> 
 
-<img src="example.png" alt="Example Chart" width="500"/>
+<img src="assets/example.png" alt="Example Chart" width="500"/>
 
-## Retrieve Value
+### Retrieve Value
 
 <p style="font-size: 13px">This task requires you to retrieve the value associated with a specific bar. For instance:</p>
 
@@ -18,7 +18,7 @@
 
 <p style="font-size: 13px"><strong>Answer:</strong> 2</p>
 
-## Find Extreme
+### Find Extreme
 
 <p style="font-size: 13px">This task requires you to retrieve either the highest or lowest value. For instance:</p>
 
@@ -26,7 +26,7 @@
 
 <p style="font-size: 13px"><strong>Answer:</strong> May</p>
 
-## Determine Range
+### Determine Range
 
 <p style="font-size: 13px">This task asks you for the range of the data (given by the minimum and maximum values). There will be an input for both Minimum and Maximum. For instance:</p>
 
@@ -36,7 +36,7 @@
 <p style="font-size: 13px"><strong>Minimum:</strong> 2</p>
 <p style="font-size: 13px"><strong>Maximum:</strong> 3.7</p>
 
-## Make Comparison
+### Make Comparison
 
 <p style="font-size: 13px">This task asks you which bar is larger. For instance:</p>
 
@@ -44,7 +44,7 @@
 
 <p style="font-size: 13px"><strong>Answer:</strong> Nov</p>
 
-## Filter
+### Filter
 
 <p style="font-size: 13px">This task asks you to select all of the bars that fall within a specific range (inclusive). For instance:</p>
 
@@ -52,7 +52,7 @@
 
 <p style="font-size: 13px"><strong>Answer:</strong> Jan, Jun, Jul, Nov</p>
 
-## Order
+### Order
 
 <p style="font-size: 13px">This task asks you to select the order of bars which is either lowest to highest or highest to lowest. For instance:</p>
 
@@ -60,7 +60,7 @@
 
 <p style="font-size: 13px"><strong>Answer:</strong> May, Mar, Dec, Apr, Nov, Jun, Jan, Jul, Oct, Aug, Feb, Sep</p>
 
-## Ratio
+### Ratio
 
 <p style="font-size: 13px">This task asks you for the proportion of one bar to another. In other words, it asks what percentage of one bar's value is given by another bar. For instance:</p>
 
