@@ -1,3 +1,3 @@
 # Part 1 Instructions
 
-<p style="font-size: 13px">You will now begin Part 1 of this survey. In Part 1, you will be shown 14 bar charts, each with one of 7 specific questions about the underlying data. Please answer all questions to the best of your ability. After completing these 14 tasks, Part 2 will contain another short quiz with 12 different data visualizations and a brief demographic questionnaire.</p>
+<p style="font-size: 16px">You will now begin Part 1 of this survey. In Part 1, you will be shown 14 bar charts, each with one of 7 specific questions about the underlying data. Please answer all questions to the best of your ability. After completing these 14 tasks, Part 2 will contain another short quiz with 12 different data visualizations and a brief demographic questionnaire.</p>
