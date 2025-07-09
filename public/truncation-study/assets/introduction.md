@@ -8,15 +8,15 @@ We invite you to participate in a research study being conducted by investigator
 If you agree to participate, we would like you to review a set of data visualizations and answer questions about them. You may also be asked to complete personality surveys. You are free to skip any questions that you prefer not to answer. It will take approximately 15 minutes.
 
 You will receive a base pay of rate of $15 per hour.
+
 </div>
-<br>
 
 ### Data Collection
 
 <div style="font-size: 16px">
 We will not collect your name or any identifying information about you.  It will not be possible to link you to your responses on the survey.
+
 </div>
-<br>
 
 ### Voluntary Participation
 
@@ -24,15 +24,15 @@ We will not collect your name or any identifying information about you.  It will
 Taking part in this research study is completely voluntary.  You may choose not to take part at all.  If you decide to be in this study, you may stop participating at any time. Any data that was collected as part of your participation in the study will remain as part of the study records and cannot be removed.
 
 If you do not wish to participate in this study or want to end your participation in the study, simply close the browser. You will not be penalized or lose any benefits for which you otherwise qualify.
+
 </div>
-<br>
 
 ### Benefits or Risks
 
 <div style="font-size: 16px">
 There are no known risks from being in this study. You will not benefit personally. However, we hope that others may benefit in the future from what we learn as a result of this study.
+
 </div>
-<br>
 
 ### Contact Us
 
