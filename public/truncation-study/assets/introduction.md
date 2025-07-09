@@ -5,7 +5,7 @@
 <div style="font-size: 16px">
 We invite you to participate in a research study being conducted by investigators from Washington University in St. Louis.  The purpose of the study is to evaluate how visual aids impact decision-making. 
 
-If you agree to participate, we would like you to review a set of data visualizations and answer questions about them. You may also be asked to complete personality surveys. You are free to skip any questions that you prefer not to answer. It will take approximately 30 minutes.
+If you agree to participate, we would like you to review a set of data visualizations and answer questions about them. You may also be asked to complete personality surveys. You are free to skip any questions that you prefer not to answer. It will take approximately 15 minutes.
 
 You will receive a base pay of rate of $15 per hour.
 </div>
