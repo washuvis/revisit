@@ -9,12 +9,14 @@ If you agree to participate, we would like you to review a set of data visualiza
 
 You will receive a base pay of rate of $15 per hour.
 </div>
+<br>
 
 ### Data Collection
 
 <div style="font-size: 16px">
 We will not collect your name or any identifying information about you.  It will not be possible to link you to your responses on the survey.
 </div>
+<br>
 
 ### Voluntary Participation
 
@@ -23,12 +25,14 @@ Taking part in this research study is completely voluntary.  You may choose not 
 
 If you do not wish to participate in this study or want to end your participation in the study, simply close the browser. You will not be penalized or lose any benefits for which you otherwise qualify.
 </div>
+<br>
 
 ### Benefits or Risks
 
 <div style="font-size: 16px">
 There are no known risks from being in this study. You will not benefit personally. However, we hope that others may benefit in the future from what we learn as a result of this study.
 </div>
+<br>
 
 ### Contact Us
 
