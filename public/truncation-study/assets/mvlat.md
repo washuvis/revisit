@@ -1,6 +1,7 @@
 # Part 2 Instructions
 
-<div style="font-size: 16px;max-width: 1000px">
+<div style="font-size: 16px; margin: auto;max-width: 1000px">
+
 <p>You will now begin <strong>Part 2 of this survey</strong>.</p>
 
 <li>Part 2 consists of <strong>12 different data visualizations</strong> with <strong>multiple-choice</strong> questions.</p>

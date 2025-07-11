@@ -1,6 +1,7 @@
 # Part 1 Instructions
 
-<div style="font-size: 16px;max-width: 1000px">
+<div style="font-size: 16px; margin: auto;max-width: 1000px">
+
 <p>You will now begin the <strong>first of two parts</strong> of this survey.</p>
 <p>In <strong>Part 1</strong>:</p>
 <li>You will be presented specific questions about <strong>14 bar charts</strong> and their underlying data.</li>
