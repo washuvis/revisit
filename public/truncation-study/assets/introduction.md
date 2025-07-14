@@ -1,4 +1,4 @@
-<div style="font-size: 16px; margin: auto;max-width: 1000px">
+<div style="font-size: 16px; margin: auto;max-width: 900px">
 
 # Introduction
 
