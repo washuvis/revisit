@@ -106,7 +106,7 @@ export function StudyEnd() {
         {completed || !dataCollectionEnabled
           ? (studyConfig.uiConfig.studyEndMsg
             ? <ReactMarkdownWrapper text={studyConfig.uiConfig.studyEndMsg} />
-            : <Text size="xl" display="block">Thank you for completing the study. If you are from Prolific, your completion code is C15GWY6D. Please copy this code into Prolific as proof of completion. You may now close this window.</Text>)
+                : <Text size="xl" display="block">Thank you for completing the study.</Text><Text size="xl" display="block">If you are from Prolific, your completion code is C15GWY6D. Please copy this code into Prolific as proof of completion.</Text><Text size="xl" display="block">You may now close this window.</Text>)
           : (
             <>
               <Text size="xl" display="block">Please wait while your answers are uploaded.</Text>
