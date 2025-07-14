@@ -107,7 +107,7 @@ export function StudyEnd() {
           ? (studyConfig.uiConfig.studyEndMsg
             ? <ReactMarkdownWrapper text={studyConfig.uiConfig.studyEndMsg} />
             : (
-              <div style={"text-align: center"}>
+              <div style='"text-align": "center"'>
                 <Text size="xl" display="block">Thank you for completing the study.</Text>
                 <Text size="xl" display="block">The Prolific completion code is C15GWY6D. Please copy this code into Prolific as proof of completion.</Text>
                 <Text size="xl" display="block">You may now close this window.</Text>
