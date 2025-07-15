@@ -4,9 +4,9 @@
 
 <p>You will now begin <strong>Part 2 of this survey</strong>.</p>
 
-<li>Part 2 consists of <strong>12 different data visualizations</strong> with <strong>multiple-choice</strong> questions.</p>
+<li>Part 2 consists of <strong>12 different data visualizations</strong> with <strong>multiple-choice</strong> questions. The visualizations will be of <strong>various types</strong>, not just bar charts.</p>
 <li>Please answer the questions to the best of your ability. If you are unsure of the answer, <strong>you may skip</strong> instead of guessing.</p>
-<li><strong>You will have 25 seconds to answer each of these 12 questions</strong>, with a countdown as the limit approaches.</p>
+<li><strong>You will have 25 seconds to answer each of these 12 questions</strong>. There will be a countdown for the last 10 seconds.</p>
 
 <p>Once you are done with the 12 timed questions, you will be asked to please provide some basic demographic information. The demographic questionnaire is not timed.</p>
 
