@@ -1,6 +1,6 @@
-# Part 1 Instructions
-
 <div style="font-size: 16px; margin: auto;max-width: 900px">
+
+# Part 1 Instructions
 
 <p>You will now begin the <strong>first of two parts</strong> of this survey.</p>
 <p>In <strong>Part 1</strong>:</p>
