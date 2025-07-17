@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "truncation-study",
+    "truncation-study2",
     "tutorial",
     "example-brush-interactions",
     "example-cleveland",
@@ -39,6 +40,9 @@
   "configs": {
     "truncation-study": {
       "path": "truncation-study/config.json"
+    },
+    "truncation-study2": {
+      "path": "truncation-study2/config.json"
     },
     "tutorial": {
       "path": "tutorial/config.json"
