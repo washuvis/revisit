@@ -54,7 +54,7 @@
       "path": "truncation-study/assets/mvlat.md",
       "response": []
     },
-    "ret-val-10-1": {
+    "ret-val-5-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -67,7 +67,7 @@
           }
         },
         "data": {
-          "name": "data-c00ac1d738a7beebde1976c388ccca2e"
+          "name": "data-10e93909eb1acd0696dada18804931a0"
         },
         "mark": {
           "type": "bar"
@@ -88,71 +88,71 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 93.50000000000001
+              "domainMax": 92.4
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country V",
+        "title": "Average Monthly Temperatures for Country H",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-c00ac1d738a7beebde1976c388ccca2e": [
+          "data-10e93909eb1acd0696dada18804931a0": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 78.8
+              "Temperature (°F)": 76.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 77.5
+              "Temperature (°F)": 78.2
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 80.8
+              "Temperature (°F)": 78.3
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 80.2
+              "Temperature (°F)": 80.8
             },
             {
               "Months": "May",
-              "Temperature (°F)": 85.0
+              "Temperature (°F)": 82.6
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 81.1
+              "Temperature (°F)": 83.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 83.3
+              "Temperature (°F)": 84.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 80.7
+              "Temperature (°F)": 82.8
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 80.0
+              "Temperature (°F)": 80.9
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 79.4
+              "Temperature (°F)": 80.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 77.9
+              "Temperature (°F)": 79.4
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 77.0
+              "Temperature (°F)": 78.1
             }
           ]
         }
       },
       "response": [
         {
-          "id": "ret-val-10-1",
-          "prompt": "What was the average temperature in Country V in Jun?",
+          "id": "ret-val-5-1",
+          "prompt": "What was the average temperature in Country H in Aug?",
           "required": true,
           "type": "numerical",
           "placeholder": "Value"
@@ -160,12 +160,12 @@
       ],
       "correctAnswer": [
         {
-          "id": "ret-val-10-1",
-          "answer": 81.1
+          "id": "ret-val-5-1",
+          "answer": 82.8
         }
       ]
     },
-    "ret-val-10-2": {
+    "ret-val-5-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -178,7 +178,7 @@
           }
         },
         "data": {
-          "name": "data-c00ac1d738a7beebde1976c388ccca2e"
+          "name": "data-10e93909eb1acd0696dada18804931a0"
         },
         "mark": {
           "type": "bar",
@@ -201,64 +201,289 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 75.0,
-              "domainMax": 87.0
+              "domainMin": 74.0,
+              "domainMax": 86.0
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country V",
+        "title": "Average Monthly Temperatures for Country H",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-c00ac1d738a7beebde1976c388ccca2e": [
+          "data-10e93909eb1acd0696dada18804931a0": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 78.8
+              "Temperature (°F)": 76.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 77.5
+              "Temperature (°F)": 78.2
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 80.8
+              "Temperature (°F)": 78.3
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 80.2
+              "Temperature (°F)": 80.8
             },
             {
               "Months": "May",
-              "Temperature (°F)": 85.0
+              "Temperature (°F)": 82.6
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 81.1
+              "Temperature (°F)": 83.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 83.3
+              "Temperature (°F)": 84.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 80.7
+              "Temperature (°F)": 82.8
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 80.0
+              "Temperature (°F)": 80.9
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 79.4
+              "Temperature (°F)": 80.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 77.9
+              "Temperature (°F)": 79.4
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 77.0
+              "Temperature (°F)": 78.1
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ret-val-5-2",
+          "prompt": "What was the average temperature in Country H in Aug?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val-5-2",
+          "answer": 82.8
+        }
+      ]
+    },
+    "ret-val-10-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-2888e05b55bbec9c55d506244fdb00a9"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 91.30000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country F",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-2888e05b55bbec9c55d506244fdb00a9": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 69.6
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 76.7
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 73.6
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 78.5
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 78.1
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 81.6
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 83.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 78.2
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 76.2
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 74.9
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 68.0
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 72.1
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ret-val-10-1",
+          "prompt": "What was the average temperature in Country F in Feb?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val-10-1",
+          "answer": 76.7
+        }
+      ]
+    },
+    "ret-val-10-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-2888e05b55bbec9c55d506244fdb00a9"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 64.25,
+              "domainMax": 86.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country F",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-2888e05b55bbec9c55d506244fdb00a9": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 69.6
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 76.7
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 73.6
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 78.5
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 78.1
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 81.6
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 83.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 78.2
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 76.2
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 74.9
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 68.0
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 72.1
             }
           ]
         }
@@ -266,7 +491,7 @@
       "response": [
         {
           "id": "ret-val-10-2",
-          "prompt": "What was the average temperature in Country V in Jun?",
+          "prompt": "What was the average temperature in Country F in Feb?",
           "required": true,
           "type": "numerical",
           "placeholder": "Value"
@@ -275,7 +500,7 @@
       "correctAnswer": [
         {
           "id": "ret-val-10-2",
-          "answer": 81.1
+          "answer": 76.7
         }
       ]
     },
@@ -292,7 +517,738 @@
           }
         },
         "data": {
-          "name": "data-bf158618b3bd32abd2acfe77d103725e"
+          "name": "data-472e5cb9baf0ab0abdd44efe6e24df57"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 83.60000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country Q",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-472e5cb9baf0ab0abdd44efe6e24df57": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 44.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 56.4
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 41.4
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 69.0
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 69.5
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 76.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 72.7
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 67.2
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 61.9
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 56.2
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 44.8
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 38.0
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ret-val-33-1",
+          "prompt": "What was the average temperature in Country Q in Sep?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val-33-1",
+          "answer": 61.9
+        }
+      ]
+    },
+    "ret-val-33-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-472e5cb9baf0ab0abdd44efe6e24df57"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 28.5,
+              "domainMax": 85.5
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country Q",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-472e5cb9baf0ab0abdd44efe6e24df57": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 44.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 56.4
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 41.4
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 69.0
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 69.5
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 76.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 72.7
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 67.2
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 61.9
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 56.2
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 44.8
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 38.0
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ret-val-33-2",
+          "prompt": "What was the average temperature in Country Q in Sep?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val-33-2",
+          "answer": 61.9
+        }
+      ]
+    },
+    "find-ext-5-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0a4f6bb576b81001fd3ac541638fd609"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 83.60000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country I",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0a4f6bb576b81001fd3ac541638fd609": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 73.6
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 73.5
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 69.7
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 74.3
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 74.8
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 76.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 75.5
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 75.0
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 74.0
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 72.8
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 69.5
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 69.0
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-5-1",
+          "prompt": "What was the month with the lowest average temperature in Country I?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-5-1",
+          "answer": "Dec"
+        }
+      ]
+    },
+    "find-ext-5-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0a4f6bb576b81001fd3ac541638fd609"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 67.25,
+              "domainMax": 77.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country I",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0a4f6bb576b81001fd3ac541638fd609": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 73.6
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 73.5
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 69.7
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 74.3
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 74.8
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 76.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 75.5
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 75.0
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 74.0
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 72.8
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 69.5
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 69.0
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-5-2",
+          "prompt": "What was the month with the lowest average temperature in Country I?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-5-2",
+          "answer": "Dec"
+        }
+      ]
+    },
+    "find-ext-10-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-d6e34364ca189c2106727528dd5f85a9"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 77.0
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country S",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-d6e34364ca189c2106727528dd5f85a9": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 57.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 60.0
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 63.8
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 66.5
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 69.3
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 70.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 68.6
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 67.1
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 68.3
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 67.4
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 63.0
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 58.9
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-10-1",
+          "prompt": "What was the month with the lowest average temperature in Country S?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-10-1",
+          "answer": "Jan"
+        }
+      ]
+    },
+    "find-ext-10-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-d6e34364ca189c2106727528dd5f85a9"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 53.75,
+              "domainMax": 73.25
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country S",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-d6e34364ca189c2106727528dd5f85a9": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 57.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 60.0
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 63.8
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 66.5
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 69.3
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 70.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 68.6
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 67.1
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 68.3
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 67.4
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 63.0
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 58.9
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-10-2",
+          "prompt": "What was the month with the lowest average temperature in Country S?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-10-2",
+          "answer": "Jan"
+        }
+      ]
+    },
+    "find-ext-33-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-b56c93919fe5ba5b685c16859b859f75"
         },
         "mark": {
           "type": "bar"
@@ -318,79 +1274,93 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country U",
+        "title": "Average Monthly Temperatures for Country W",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-bf158618b3bd32abd2acfe77d103725e": [
+          "data-b56c93919fe5ba5b685c16859b859f75": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 66.1
+              "Temperature (°F)": 47.2
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 70.1
+              "Temperature (°F)": 43.3
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 73.0
+              "Temperature (°F)": 58.2
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 71.7
+              "Temperature (°F)": 77.2
             },
             {
               "Months": "May",
-              "Temperature (°F)": 73.4
+              "Temperature (°F)": 76.8
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 80.0
+              "Temperature (°F)": 77.5
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 73.5
+              "Temperature (°F)": 80.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 74.8
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 71.3
+              "Temperature (°F)": 57.0
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 70.6
+              "Temperature (°F)": 56.2
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 66.5
+              "Temperature (°F)": 42.4
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 65.0
+              "Temperature (°F)": 40.0
             }
           ]
         }
       },
       "response": [
         {
-          "id": "ret-val-33-1",
-          "prompt": "What was the average temperature in Country U in Jan?",
+          "id": "find-ext-33-1",
+          "prompt": "What was the month with the highest average temperature in Country W?",
           "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "ret-val-33-1",
-          "answer": 66.1
+          "id": "find-ext-33-1",
+          "answer": "Jul"
         }
       ]
     },
-    "ret-val-33-2": {
+    "find-ext-33-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -403,7 +1373,7 @@
           }
         },
         "data": {
-          "name": "data-bf158618b3bd32abd2acfe77d103725e"
+          "name": "data-b56c93919fe5ba5b685c16859b859f75"
         },
         "mark": {
           "type": "bar",
@@ -426,85 +1396,99 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 61.25,
-              "domainMax": 83.75
+              "domainMin": 30.0,
+              "domainMax": 90.0
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country U",
+        "title": "Average Monthly Temperatures for Country W",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-bf158618b3bd32abd2acfe77d103725e": [
+          "data-b56c93919fe5ba5b685c16859b859f75": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 66.1
+              "Temperature (°F)": 47.2
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 70.1
+              "Temperature (°F)": 43.3
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 73.0
+              "Temperature (°F)": 58.2
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 71.7
+              "Temperature (°F)": 77.2
             },
             {
               "Months": "May",
-              "Temperature (°F)": 73.4
+              "Temperature (°F)": 76.8
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 80.0
+              "Temperature (°F)": 77.5
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 73.5
+              "Temperature (°F)": 80.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 74.8
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 71.3
+              "Temperature (°F)": 57.0
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 70.6
+              "Temperature (°F)": 56.2
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 66.5
+              "Temperature (°F)": 42.4
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 65.0
+              "Temperature (°F)": 40.0
             }
           ]
         }
       },
       "response": [
         {
-          "id": "ret-val-33-2",
-          "prompt": "What was the average temperature in Country U in Jan?",
+          "id": "find-ext-33-2",
+          "prompt": "What was the month with the highest average temperature in Country W?",
           "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "ret-val-33-2",
-          "answer": 66.1
+          "id": "find-ext-33-2",
+          "answer": "Jul"
         }
       ]
     },
-    "ret-val-50-1": {
+    "det-ran-5-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -517,7 +1501,501 @@
           }
         },
         "data": {
-          "name": "data-22579a8910d168265a9881a8af4b451c"
+          "name": "data-67814423000d5a33f5e194b5b9716ab3"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 78.10000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country Q",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-67814423000d5a33f5e194b5b9716ab3": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 64.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 66.3
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 68.0
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 67.9
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 70.5
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 69.7
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 71.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 70.6
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 67.2
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 68.1
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 66.7
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 65.3
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "det-ran-5-1-min",
+          "prompt": "What is the range of average temperature in Country Q?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Minimum"
+        },
+        {
+          "id": "det-ran-5-1-max",
+          "prompt": "",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Maximum"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran-5-1",
+          "answer": 64.0
+        },
+        {
+          "id": "det-ran-5-1",
+          "answer": 71.0
+        }
+      ]
+    },
+    "det-ran-5-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-67814423000d5a33f5e194b5b9716ab3"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 62.25,
+              "domainMax": 72.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country Q",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-67814423000d5a33f5e194b5b9716ab3": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 64.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 66.3
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 68.0
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 67.9
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 70.5
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 69.7
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 71.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 70.6
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 67.2
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 68.1
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 66.7
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 65.3
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "det-ran-5-2-min",
+          "prompt": "What is the range of average temperature in Country Q?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Minimum"
+        },
+        {
+          "id": "det-ran-5-2-max",
+          "prompt": "",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Maximum"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran-5-2",
+          "answer": 64.0
+        },
+        {
+          "id": "det-ran-5-2",
+          "answer": 71.0
+        }
+      ]
+    },
+    "det-ran-10-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f3d4df4f8590d1a486dc6d39d0039018"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 82.5
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country B",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f3d4df4f8590d1a486dc6d39d0039018": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 64.7
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 65.3
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 69.6
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 72.7
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 73.4
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 75.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 73.7
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 71.9
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 71.0
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 63.9
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 61.0
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 66.4
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "det-ran-10-1-min",
+          "prompt": "What is the range of average temperature in Country B?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Minimum"
+        },
+        {
+          "id": "det-ran-10-1-max",
+          "prompt": "",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Maximum"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran-10-1",
+          "answer": 61.0
+        },
+        {
+          "id": "det-ran-10-1",
+          "answer": 75.0
+        }
+      ]
+    },
+    "det-ran-10-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f3d4df4f8590d1a486dc6d39d0039018"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 57.5,
+              "domainMax": 78.5
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country B",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f3d4df4f8590d1a486dc6d39d0039018": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 64.7
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 65.3
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 69.6
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 72.7
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 73.4
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 75.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 73.7
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 71.9
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 71.0
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 63.9
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 61.0
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 66.4
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "det-ran-10-2-min",
+          "prompt": "What is the range of average temperature in Country B?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Minimum"
+        },
+        {
+          "id": "det-ran-10-2-max",
+          "prompt": "",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Maximum"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "det-ran-10-2",
+          "answer": 61.0
+        },
+        {
+          "id": "det-ran-10-2",
+          "answer": 75.0
+        }
+      ]
+    },
+    "det-ran-33-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-38f59f1b8f949d1db8932db286920609"
         },
         "mark": {
           "type": "bar"
@@ -543,79 +2021,90 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country Z",
+        "title": "Average Monthly Temperatures for Country S",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-22579a8910d168265a9881a8af4b451c": [
+          "data-38f59f1b8f949d1db8932db286920609": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 39.0
+              "Temperature (°F)": 40.1
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 43.7
+              "Temperature (°F)": 40.7
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 49.3
+              "Temperature (°F)": 53.6
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 68.8
+              "Temperature (°F)": 44.7
             },
             {
               "Months": "May",
-              "Temperature (°F)": 66.8
+              "Temperature (°F)": 67.0
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 74.7
-            },
-            {
-              "Months": "Jul",
               "Temperature (°F)": 77.0
             },
             {
+              "Months": "Jul",
+              "Temperature (°F)": 47.1
+            },
+            {
               "Months": "Aug",
-              "Temperature (°F)": 69.3
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 68.3
-            },
-            {
-              "Months": "Oct",
               "Temperature (°F)": 64.7
             },
             {
+              "Months": "Sep",
+              "Temperature (°F)": 44.1
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 47.8
+            },
+            {
               "Months": "Nov",
-              "Temperature (°F)": 46.9
+              "Temperature (°F)": 39.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 52.9
+              "Temperature (°F)": 42.5
             }
           ]
         }
       },
       "response": [
         {
-          "id": "ret-val-50-1",
-          "prompt": "What was the average temperature in Country Z in Oct?",
+          "id": "det-ran-33-1-min",
+          "prompt": "What is the range of average temperature in Country S?",
           "required": true,
           "type": "numerical",
-          "placeholder": "Value"
+          "placeholder": "Minimum"
+        },
+        {
+          "id": "det-ran-33-1-max",
+          "prompt": "",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Maximum"
         }
       ],
       "correctAnswer": [
         {
-          "id": "ret-val-50-1",
-          "answer": 64.7
+          "id": "det-ran-33-1",
+          "answer": 39.0
+        },
+        {
+          "id": "det-ran-33-1",
+          "answer": 77.0
         }
       ]
     },
-    "ret-val-50-2": {
+    "det-ran-33-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -628,7 +2117,7 @@
           }
         },
         "data": {
-          "name": "data-22579a8910d168265a9881a8af4b451c"
+          "name": "data-38f59f1b8f949d1db8932db286920609"
         },
         "mark": {
           "type": "bar",
@@ -657,1300 +2146,58 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country Z",
+        "title": "Average Monthly Temperatures for Country S",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-22579a8910d168265a9881a8af4b451c": [
+          "data-38f59f1b8f949d1db8932db286920609": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 39.0
+              "Temperature (°F)": 40.1
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 43.7
+              "Temperature (°F)": 40.7
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 49.3
+              "Temperature (°F)": 53.6
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 68.8
+              "Temperature (°F)": 44.7
             },
             {
               "Months": "May",
-              "Temperature (°F)": 66.8
+              "Temperature (°F)": 67.0
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 74.7
-            },
-            {
-              "Months": "Jul",
               "Temperature (°F)": 77.0
             },
             {
+              "Months": "Jul",
+              "Temperature (°F)": 47.1
+            },
+            {
               "Months": "Aug",
-              "Temperature (°F)": 69.3
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 68.3
-            },
-            {
-              "Months": "Oct",
               "Temperature (°F)": 64.7
             },
             {
-              "Months": "Nov",
-              "Temperature (°F)": 46.9
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 52.9
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val-50-2",
-          "prompt": "What was the average temperature in Country Z in Oct?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val-50-2",
-          "answer": 64.7
-        }
-      ]
-    },
-    "find-ext-10-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-48fd81186c51ec7cd887b67185baac56"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 85.80000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country A",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-48fd81186c51ec7cd887b67185baac56": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 71.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 72.1
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 72.8
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 73.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 74.9
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 76.9
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 78.0
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 76.4
-            },
-            {
               "Months": "Sep",
-              "Temperature (°F)": 73.0
+              "Temperature (°F)": 44.1
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 74.6
+              "Temperature (°F)": 47.8
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 71.3
+              "Temperature (°F)": 39.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 73.2
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext-10-1",
-          "prompt": "What was the month with the highest average temperature in Country A?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext-10-1",
-          "answer": "Jul"
-        }
-      ]
-    },
-    "find-ext-10-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-48fd81186c51ec7cd887b67185baac56"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 69.25,
-              "domainMax": 79.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country A",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-48fd81186c51ec7cd887b67185baac56": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 71.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 72.1
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 72.8
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 73.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 74.9
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 76.9
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 78.0
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 76.4
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 73.0
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 74.6
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 71.3
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 73.2
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext-10-2",
-          "prompt": "What was the month with the highest average temperature in Country A?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext-10-2",
-          "answer": "Jul"
-        }
-      ]
-    },
-    "find-ext-33-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-8e779f2b856e0c32f8c181f4b3787027"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 78.10000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country X",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-8e779f2b856e0c32f8c181f4b3787027": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 58.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 59.5
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 65.0
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 62.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 68.2
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 71.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 70.6
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 61.5
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 68.1
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 60.2
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 60.0
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 59.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext-33-1",
-          "prompt": "What was the month with the highest average temperature in Country X?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext-33-1",
-          "answer": "Jun"
-        }
-      ]
-    },
-    "find-ext-33-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-8e779f2b856e0c32f8c181f4b3787027"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 54.75,
-              "domainMax": 74.25
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country X",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-8e779f2b856e0c32f8c181f4b3787027": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 58.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 59.5
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 65.0
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 62.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 68.2
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 71.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 70.6
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 61.5
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 68.1
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 60.2
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 60.0
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 59.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext-33-2",
-          "prompt": "What was the month with the highest average temperature in Country X?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext-33-2",
-          "answer": "Jun"
-        }
-      ]
-    },
-    "find-ext-50-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f692f61394687984c9bc63d3666a217c"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 92.4
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country O",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f692f61394687984c9bc63d3666a217c": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 47.4
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 49.5
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 61.8
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 62.4
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 84.0
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 83.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 82.9
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 69.9
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 60.4
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 50.7
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 42.0
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 48.5
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext-50-1",
-          "prompt": "What was the month with the highest average temperature in Country O?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext-50-1",
-          "answer": "May"
-        }
-      ]
-    },
-    "find-ext-50-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f692f61394687984c9bc63d3666a217c"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 31.5,
-              "domainMax": 94.5
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country O",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f692f61394687984c9bc63d3666a217c": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 47.4
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 49.5
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 61.8
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 62.4
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 84.0
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 83.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 82.9
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 69.9
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 60.4
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 50.7
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 42.0
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 48.5
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext-50-2",
-          "prompt": "What was the month with the highest average temperature in Country O?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext-50-2",
-          "answer": "May"
-        }
-      ]
-    },
-    "det-ran-10-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f31075a3c43cbd9835f8f538434ef3ab"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 90.2
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country X",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f31075a3c43cbd9835f8f538434ef3ab": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 75.5
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 75.8
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 76.5
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 78.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 81.8
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 81.5
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 80.1
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 82.0
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 78.3
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 77.1
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 74.9
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 74.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "det-ran-10-1-min",
-          "prompt": "What is the range of average temperature in Country X?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Minimum"
-        },
-        {
-          "id": "det-ran-10-1-max",
-          "prompt": "",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Maximum"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "det-ran-10-1",
-          "answer": 74.0
-        },
-        {
-          "id": "det-ran-10-1",
-          "answer": 82.0
-        }
-      ]
-    },
-    "det-ran-10-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f31075a3c43cbd9835f8f538434ef3ab"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 72.0,
-              "domainMax": 84.0
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country X",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f31075a3c43cbd9835f8f538434ef3ab": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 75.5
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 75.8
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 76.5
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 78.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 81.8
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 81.5
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 80.1
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 82.0
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 78.3
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 77.1
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 74.9
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 74.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "det-ran-10-2-min",
-          "prompt": "What is the range of average temperature in Country X?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Minimum"
-        },
-        {
-          "id": "det-ran-10-2-max",
-          "prompt": "",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Maximum"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "det-ran-10-2",
-          "answer": 74.0
-        },
-        {
-          "id": "det-ran-10-2",
-          "answer": 82.0
-        }
-      ]
-    },
-    "det-ran-33-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-03b6690a041949a7089d8393f908aee9"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 89.10000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country H",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-03b6690a041949a7089d8393f908aee9": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 66.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 68.3
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 69.3
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 71.8
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 78.7
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 78.8
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 76.8
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 81.0
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 77.8
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 72.1
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 69.4
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 67.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "det-ran-33-1-min",
-          "prompt": "What is the range of average temperature in Country H?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Minimum"
-        },
-        {
-          "id": "det-ran-33-1-max",
-          "prompt": "",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Maximum"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "det-ran-33-1",
-          "answer": 66.0
-        },
-        {
-          "id": "det-ran-33-1",
-          "answer": 81.0
-        }
-      ]
-    },
-    "det-ran-33-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-03b6690a041949a7089d8393f908aee9"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 62.25,
-              "domainMax": 84.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country H",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-03b6690a041949a7089d8393f908aee9": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 66.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 68.3
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 69.3
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 71.8
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 78.7
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 78.8
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 76.8
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 81.0
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 77.8
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 72.1
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 69.4
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 67.0
+              "Temperature (°F)": 42.5
             }
           ]
         }
@@ -1958,7 +2205,7 @@
       "response": [
         {
           "id": "det-ran-33-2-min",
-          "prompt": "What is the range of average temperature in Country H?",
+          "prompt": "What is the range of average temperature in Country S?",
           "required": true,
           "type": "numerical",
           "placeholder": "Minimum"
@@ -1974,15 +2221,15 @@
       "correctAnswer": [
         {
           "id": "det-ran-33-2",
-          "answer": 66.0
+          "answer": 39.0
         },
         {
           "id": "det-ran-33-2",
-          "answer": 81.0
+          "answer": 77.0
         }
       ]
     },
-    "det-ran-50-1": {
+    "make-comp-5-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -1995,7 +2242,7 @@
           }
         },
         "data": {
-          "name": "data-2d70b94e84af296f0f12437cca7aaa02"
+          "name": "data-fd6245581fb295242680eaebb5dd88d5"
         },
         "mark": {
           "type": "bar"
@@ -2016,95 +2263,87 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 86.9
+              "domainMax": 82.5
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country J",
+        "title": "Average Monthly Temperatures for Country D",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-2d70b94e84af296f0f12437cca7aaa02": [
+          "data-fd6245581fb295242680eaebb5dd88d5": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 40.0
+              "Temperature (°F)": 68.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 41.5
+              "Temperature (°F)": 70.2
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 53.7
+              "Temperature (°F)": 70.3
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 57.0
+              "Temperature (°F)": 70.0
             },
             {
               "Months": "May",
-              "Temperature (°F)": 75.4
+              "Temperature (°F)": 72.1
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 67.4
+              "Temperature (°F)": 73.1
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 69.1
+              "Temperature (°F)": 75.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 79.0
+              "Temperature (°F)": 73.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 66.4
+              "Temperature (°F)": 70.7
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 58.0
+              "Temperature (°F)": 70.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 52.2
+              "Temperature (°F)": 71.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 40.7
+              "Temperature (°F)": 68.8
             }
           ]
         }
       },
       "response": [
         {
-          "id": "det-ran-50-1-min",
-          "prompt": "What is the range of average temperature in Country J?",
+          "id": "make-comp-5-1",
+          "prompt": "Was the average temperature in Aug higher or lower than in Apr?",
           "required": true,
-          "type": "numerical",
-          "placeholder": "Minimum"
-        },
-        {
-          "id": "det-ran-50-1-max",
-          "prompt": "",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Maximum"
+          "type": "radio",
+          "options": [
+            "Lower",
+            "Higher"
+          ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "det-ran-50-1",
-          "answer": 40.0
-        },
-        {
-          "id": "det-ran-50-1",
-          "answer": 79.0
+          "id": "make-comp-5-1",
+          "answer": "Higher"
         }
       ]
     },
-    "det-ran-50-2": {
+    "make-comp-5-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -2117,7 +2356,7 @@
           }
         },
         "data": {
-          "name": "data-2d70b94e84af296f0f12437cca7aaa02"
+          "name": "data-fd6245581fb295242680eaebb5dd88d5"
         },
         "mark": {
           "type": "bar",
@@ -2140,92 +2379,84 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 30.25,
-              "domainMax": 88.75
+              "domainMin": 66.25,
+              "domainMax": 76.75
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country J",
+        "title": "Average Monthly Temperatures for Country D",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-2d70b94e84af296f0f12437cca7aaa02": [
+          "data-fd6245581fb295242680eaebb5dd88d5": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 40.0
+              "Temperature (°F)": 68.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 41.5
+              "Temperature (°F)": 70.2
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 53.7
+              "Temperature (°F)": 70.3
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 57.0
+              "Temperature (°F)": 70.0
             },
             {
               "Months": "May",
-              "Temperature (°F)": 75.4
+              "Temperature (°F)": 72.1
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 67.4
+              "Temperature (°F)": 73.1
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 69.1
+              "Temperature (°F)": 75.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 79.0
+              "Temperature (°F)": 73.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 66.4
+              "Temperature (°F)": 70.7
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 58.0
+              "Temperature (°F)": 70.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 52.2
+              "Temperature (°F)": 71.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 40.7
+              "Temperature (°F)": 68.8
             }
           ]
         }
       },
       "response": [
         {
-          "id": "det-ran-50-2-min",
-          "prompt": "What is the range of average temperature in Country J?",
+          "id": "make-comp-5-2",
+          "prompt": "Was the average temperature in Aug higher or lower than in Apr?",
           "required": true,
-          "type": "numerical",
-          "placeholder": "Minimum"
-        },
-        {
-          "id": "det-ran-50-2-max",
-          "prompt": "",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Maximum"
+          "type": "radio",
+          "options": [
+            "Lower",
+            "Higher"
+          ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "det-ran-50-2",
-          "answer": 40.0
-        },
-        {
-          "id": "det-ran-50-2",
-          "answer": 79.0
+          "id": "make-comp-5-2",
+          "answer": "Higher"
         }
       ]
     },
@@ -2242,7 +2473,7 @@
           }
         },
         "data": {
-          "name": "data-66bf312bf86c08fb256619202716a03e"
+          "name": "data-27ca286fa04745e551f397c6a20d1cc9"
         },
         "mark": {
           "type": "bar"
@@ -2263,63 +2494,63 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 84.7
+              "domainMax": 81.4
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country D",
+        "title": "Average Monthly Temperatures for Country M",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-66bf312bf86c08fb256619202716a03e": [
+          "data-27ca286fa04745e551f397c6a20d1cc9": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 70.0
+              "Temperature (°F)": 63.1
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 70.3
+              "Temperature (°F)": 65.8
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 70.2
+              "Temperature (°F)": 63.9
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 73.5
+              "Temperature (°F)": 66.4
             },
             {
               "Months": "May",
-              "Temperature (°F)": 73.1
+              "Temperature (°F)": 68.3
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 77.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 76.3
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 73.2
-            },
-            {
-              "Months": "Sep",
               "Temperature (°F)": 73.0
             },
             {
+              "Months": "Jul",
+              "Temperature (°F)": 74.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 66.0
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 66.8
+            },
+            {
               "Months": "Oct",
-              "Temperature (°F)": 70.1
+              "Temperature (°F)": 65.9
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 70.7
+              "Temperature (°F)": 61.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 70.8
+              "Temperature (°F)": 63.6
             }
           ]
         }
@@ -2327,7 +2558,7 @@
       "response": [
         {
           "id": "make-comp-10-1",
-          "prompt": "Was the average temperature in May higher or lower than in Feb?",
+          "prompt": "Was the average temperature in May higher or lower than in Aug?",
           "required": true,
           "type": "radio",
           "options": [
@@ -2356,7 +2587,7 @@
           }
         },
         "data": {
-          "name": "data-66bf312bf86c08fb256619202716a03e"
+          "name": "data-27ca286fa04745e551f397c6a20d1cc9"
         },
         "mark": {
           "type": "bar",
@@ -2379,64 +2610,64 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 68.25,
-              "domainMax": 78.75
+              "domainMin": 57.75,
+              "domainMax": 77.25
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country D",
+        "title": "Average Monthly Temperatures for Country M",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-66bf312bf86c08fb256619202716a03e": [
+          "data-27ca286fa04745e551f397c6a20d1cc9": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 70.0
+              "Temperature (°F)": 63.1
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 70.3
+              "Temperature (°F)": 65.8
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 70.2
+              "Temperature (°F)": 63.9
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 73.5
+              "Temperature (°F)": 66.4
             },
             {
               "Months": "May",
-              "Temperature (°F)": 73.1
+              "Temperature (°F)": 68.3
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 77.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 76.3
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 73.2
-            },
-            {
-              "Months": "Sep",
               "Temperature (°F)": 73.0
             },
             {
+              "Months": "Jul",
+              "Temperature (°F)": 74.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 66.0
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 66.8
+            },
+            {
               "Months": "Oct",
-              "Temperature (°F)": 70.1
+              "Temperature (°F)": 65.9
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 70.7
+              "Temperature (°F)": 61.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 70.8
+              "Temperature (°F)": 63.6
             }
           ]
         }
@@ -2444,7 +2675,7 @@
       "response": [
         {
           "id": "make-comp-10-2",
-          "prompt": "Was the average temperature in May higher or lower than in Feb?",
+          "prompt": "Was the average temperature in May higher or lower than in Aug?",
           "required": true,
           "type": "radio",
           "options": [
@@ -2473,7 +2704,7 @@
           }
         },
         "data": {
-          "name": "data-eb4cfa82315e1f5688aaaa95a6301914"
+          "name": "data-23750aeb1ccb2d86cb04b5487855b00d"
         },
         "mark": {
           "type": "bar"
@@ -2494,63 +2725,63 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 89.10000000000001
+              "domainMax": 91.30000000000001
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country L",
+        "title": "Average Monthly Temperatures for Country F",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-eb4cfa82315e1f5688aaaa95a6301914": [
+          "data-23750aeb1ccb2d86cb04b5487855b00d": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 67.2
+              "Temperature (°F)": 54.3
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 67.9
+              "Temperature (°F)": 50.9
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 71.7
+              "Temperature (°F)": 61.9
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 75.1
+              "Temperature (°F)": 73.6
             },
             {
               "Months": "May",
-              "Temperature (°F)": 81.0
+              "Temperature (°F)": 78.3
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 79.0
+              "Temperature (°F)": 71.4
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 79.7
+              "Temperature (°F)": 83.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 80.8
+              "Temperature (°F)": 75.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 78.5
+              "Temperature (°F)": 73.1
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 70.7
+              "Temperature (°F)": 58.2
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 71.1
+              "Temperature (°F)": 51.8
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 66.0
+              "Temperature (°F)": 42.0
             }
           ]
         }
@@ -2558,7 +2789,7 @@
       "response": [
         {
           "id": "make-comp-33-1",
-          "prompt": "Was the average temperature in Dec higher or lower than in Sep?",
+          "prompt": "Was the average temperature in Nov higher or lower than in Oct?",
           "required": true,
           "type": "radio",
           "options": [
@@ -2587,7 +2818,7 @@
           }
         },
         "data": {
-          "name": "data-eb4cfa82315e1f5688aaaa95a6301914"
+          "name": "data-23750aeb1ccb2d86cb04b5487855b00d"
         },
         "mark": {
           "type": "bar",
@@ -2610,64 +2841,64 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 62.25,
-              "domainMax": 84.75
+              "domainMin": 31.75,
+              "domainMax": 93.25
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country L",
+        "title": "Average Monthly Temperatures for Country F",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-eb4cfa82315e1f5688aaaa95a6301914": [
+          "data-23750aeb1ccb2d86cb04b5487855b00d": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 67.2
+              "Temperature (°F)": 54.3
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 67.9
+              "Temperature (°F)": 50.9
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 71.7
+              "Temperature (°F)": 61.9
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 75.1
+              "Temperature (°F)": 73.6
             },
             {
               "Months": "May",
-              "Temperature (°F)": 81.0
+              "Temperature (°F)": 78.3
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 79.0
+              "Temperature (°F)": 71.4
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 79.7
+              "Temperature (°F)": 83.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 80.8
+              "Temperature (°F)": 75.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 78.5
+              "Temperature (°F)": 73.1
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 70.7
+              "Temperature (°F)": 58.2
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 71.1
+              "Temperature (°F)": 51.8
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 66.0
+              "Temperature (°F)": 42.0
             }
           ]
         }
@@ -2675,7 +2906,7 @@
       "response": [
         {
           "id": "make-comp-33-2",
-          "prompt": "Was the average temperature in Dec higher or lower than in Sep?",
+          "prompt": "Was the average temperature in Nov higher or lower than in Oct?",
           "required": true,
           "type": "radio",
           "options": [
@@ -2691,7 +2922,7 @@
         }
       ]
     },
-    "make-comp-50-1": {
+    "filter-5-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -2704,7 +2935,7 @@
           }
         },
         "data": {
-          "name": "data-62a41724ed630c8f7f4d6ac67444cb52"
+          "name": "data-f6fd3c405bd4d33b842587f27b9b32b3"
         },
         "mark": {
           "type": "bar"
@@ -2725,87 +2956,103 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 85.80000000000001
+              "domainMax": 77.0
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country U",
+        "title": "Average Monthly Temperatures for Country L",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-62a41724ed630c8f7f4d6ac67444cb52": [
+          "data-f6fd3c405bd4d33b842587f27b9b32b3": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 39.0
+              "Temperature (°F)": 63.9
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 43.2
+              "Temperature (°F)": 67.8
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 66.8
+              "Temperature (°F)": 69.4
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 52.0
+              "Temperature (°F)": 69.5
             },
             {
               "Months": "May",
-              "Temperature (°F)": 70.7
+              "Temperature (°F)": 69.8
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 78.0
+              "Temperature (°F)": 69.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 76.7
+              "Temperature (°F)": 69.9
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 74.1
+              "Temperature (°F)": 69.7
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 67.0
+              "Temperature (°F)": 70.0
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 54.6
+              "Temperature (°F)": 68.7
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 40.0
+              "Temperature (°F)": 66.8
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 42.5
+              "Temperature (°F)": 63.0
             }
           ]
         }
       },
       "response": [
         {
-          "id": "make-comp-50-1",
-          "prompt": "Was the average temperature in Oct higher or lower than in Sep?",
+          "id": "filter-5-1",
+          "prompt": "Which month(s) had average temperature between 63 and 68 (inclusive)? Select all that apply.",
           "required": true,
-          "type": "radio",
+          "type": "checkbox",
           "options": [
-            "Lower",
-            "Higher"
-          ]
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
         }
       ],
       "correctAnswer": [
         {
-          "id": "make-comp-50-1",
-          "answer": "Lower"
+          "id": "filter-5-1",
+          "answer": [
+            "Jan",
+            "Feb",
+            "Nov",
+            "Dec"
+          ]
         }
       ]
     },
-    "make-comp-50-2": {
+    "filter-5-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -2818,7 +3065,7 @@
           }
         },
         "data": {
-          "name": "data-62a41724ed630c8f7f4d6ac67444cb52"
+          "name": "data-f6fd3c405bd4d33b842587f27b9b32b3"
         },
         "mark": {
           "type": "bar",
@@ -2841,84 +3088,100 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 29.25,
-              "domainMax": 87.75
+              "domainMin": 61.25,
+              "domainMax": 71.75
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country U",
+        "title": "Average Monthly Temperatures for Country L",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-62a41724ed630c8f7f4d6ac67444cb52": [
+          "data-f6fd3c405bd4d33b842587f27b9b32b3": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 39.0
+              "Temperature (°F)": 63.9
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 43.2
+              "Temperature (°F)": 67.8
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 66.8
+              "Temperature (°F)": 69.4
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 52.0
+              "Temperature (°F)": 69.5
             },
             {
               "Months": "May",
-              "Temperature (°F)": 70.7
+              "Temperature (°F)": 69.8
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 78.0
+              "Temperature (°F)": 69.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 76.7
+              "Temperature (°F)": 69.9
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 74.1
+              "Temperature (°F)": 69.7
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 67.0
+              "Temperature (°F)": 70.0
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 54.6
+              "Temperature (°F)": 68.7
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 40.0
+              "Temperature (°F)": 66.8
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 42.5
+              "Temperature (°F)": 63.0
             }
           ]
         }
       },
       "response": [
         {
-          "id": "make-comp-50-2",
-          "prompt": "Was the average temperature in Oct higher or lower than in Sep?",
+          "id": "filter-5-2",
+          "prompt": "Which month(s) had average temperature between 63 and 68 (inclusive)? Select all that apply.",
           "required": true,
-          "type": "radio",
+          "type": "checkbox",
           "options": [
-            "Lower",
-            "Higher"
-          ]
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
         }
       ],
       "correctAnswer": [
         {
-          "id": "make-comp-50-2",
-          "answer": "Lower"
+          "id": "filter-5-2",
+          "answer": [
+            "Jan",
+            "Feb",
+            "Nov",
+            "Dec"
+          ]
         }
       ]
     },
@@ -2935,7 +3198,7 @@
           }
         },
         "data": {
-          "name": "data-f3ebe5937eae37fd06a897c5ad2d834d"
+          "name": "data-7645a9faf05d06b6e01455eb82554006"
         },
         "mark": {
           "type": "bar"
@@ -2956,63 +3219,63 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 91.30000000000001
+              "domainMax": 93.50000000000001
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country S",
+        "title": "Average Monthly Temperatures for Country O",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-f3ebe5937eae37fd06a897c5ad2d834d": [
+          "data-7645a9faf05d06b6e01455eb82554006": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 75.0
+              "Temperature (°F)": 72.6
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 78.3
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 77.9
+              "Temperature (°F)": 75.6
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 78.7
+              "Temperature (°F)": 79.9
             },
             {
               "Months": "May",
-              "Temperature (°F)": 79.2
+              "Temperature (°F)": 85.0
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 79.6
+              "Temperature (°F)": 80.5
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 83.0
+              "Temperature (°F)": 83.1
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 79.7
+              "Temperature (°F)": 79.6
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 78.1
+              "Temperature (°F)": 78.5
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 78.4
+              "Temperature (°F)": 74.9
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 77.5
+              "Temperature (°F)": 72.5
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 75.6
+              "Temperature (°F)": 70.0
             }
           ]
         }
@@ -3020,7 +3283,7 @@
       "response": [
         {
           "id": "filter-10-1",
-          "prompt": "Which month(s) had average temperature between 79 and 81 (inclusive)? Select all that apply.",
+          "prompt": "Which month(s) had average temperature between 75 and 80 (inclusive)? Select all that apply.",
           "required": true,
           "type": "checkbox",
           "options": [
@@ -3044,9 +3307,10 @@
         {
           "id": "filter-10-1",
           "answer": [
-            "May",
-            "Jun",
-            "Aug"
+            "Mar",
+            "Apr",
+            "Aug",
+            "Sep"
           ]
         }
       ]
@@ -3064,7 +3328,7 @@
           }
         },
         "data": {
-          "name": "data-f3ebe5937eae37fd06a897c5ad2d834d"
+          "name": "data-7645a9faf05d06b6e01455eb82554006"
         },
         "mark": {
           "type": "bar",
@@ -3087,64 +3351,64 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 73.0,
-              "domainMax": 85.0
+              "domainMin": 66.25,
+              "domainMax": 88.75
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country S",
+        "title": "Average Monthly Temperatures for Country O",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-f3ebe5937eae37fd06a897c5ad2d834d": [
+          "data-7645a9faf05d06b6e01455eb82554006": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 75.0
+              "Temperature (°F)": 72.6
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 78.3
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 77.9
+              "Temperature (°F)": 75.6
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 78.7
+              "Temperature (°F)": 79.9
             },
             {
               "Months": "May",
-              "Temperature (°F)": 79.2
+              "Temperature (°F)": 85.0
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 79.6
+              "Temperature (°F)": 80.5
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 83.0
+              "Temperature (°F)": 83.1
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 79.7
+              "Temperature (°F)": 79.6
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 78.1
+              "Temperature (°F)": 78.5
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 78.4
+              "Temperature (°F)": 74.9
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 77.5
+              "Temperature (°F)": 72.5
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 75.6
+              "Temperature (°F)": 70.0
             }
           ]
         }
@@ -3152,7 +3416,7 @@
       "response": [
         {
           "id": "filter-10-2",
-          "prompt": "Which month(s) had average temperature between 79 and 81 (inclusive)? Select all that apply.",
+          "prompt": "Which month(s) had average temperature between 75 and 80 (inclusive)? Select all that apply.",
           "required": true,
           "type": "checkbox",
           "options": [
@@ -3176,9 +3440,10 @@
         {
           "id": "filter-10-2",
           "answer": [
-            "May",
-            "Jun",
-            "Aug"
+            "Mar",
+            "Apr",
+            "Aug",
+            "Sep"
           ]
         }
       ]
@@ -3196,7 +3461,7 @@
           }
         },
         "data": {
-          "name": "data-a60bd15914506f79640c273fd307eb6e"
+          "name": "data-7e2560c1fb9cfeef2cf8827fcdfb3aec"
         },
         "mark": {
           "type": "bar"
@@ -3222,58 +3487,58 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country Y",
+        "title": "Average Monthly Temperatures for Country N",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-a60bd15914506f79640c273fd307eb6e": [
+          "data-7e2560c1fb9cfeef2cf8827fcdfb3aec": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 67.0
+              "Temperature (°F)": 43.9
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 71.5
+              "Temperature (°F)": 48.9
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 67.8
+              "Temperature (°F)": 61.3
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 76.4
+              "Temperature (°F)": 67.4
             },
             {
               "Months": "May",
-              "Temperature (°F)": 79.5
+              "Temperature (°F)": 79.3
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 76.5
+              "Temperature (°F)": 78.0
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 80.5
-            },
-            {
-              "Months": "Aug",
               "Temperature (°F)": 82.0
             },
             {
+              "Months": "Aug",
+              "Temperature (°F)": 72.7
+            },
+            {
               "Months": "Sep",
-              "Temperature (°F)": 76.9
+              "Temperature (°F)": 58.7
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 73.5
+              "Temperature (°F)": 63.3
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 67.9
+              "Temperature (°F)": 50.8
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 68.5
+              "Temperature (°F)": 41.0
             }
           ]
         }
@@ -3281,7 +3546,7 @@
       "response": [
         {
           "id": "filter-33-1",
-          "prompt": "Which month(s) had average temperature between 68 and 79 (inclusive)? Select all that apply.",
+          "prompt": "Which month(s) had average temperature between 44 and 61 (inclusive)? Select all that apply.",
           "required": true,
           "type": "checkbox",
           "options": [
@@ -3306,11 +3571,8 @@
           "id": "filter-33-1",
           "answer": [
             "Feb",
-            "Apr",
-            "Jun",
             "Sep",
-            "Oct",
-            "Dec"
+            "Nov"
           ]
         }
       ]
@@ -3328,7 +3590,7 @@
           }
         },
         "data": {
-          "name": "data-a60bd15914506f79640c273fd307eb6e"
+          "name": "data-7e2560c1fb9cfeef2cf8827fcdfb3aec"
         },
         "mark": {
           "type": "bar",
@@ -3351,716 +3613,219 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 63.25,
-              "domainMax": 85.75
+              "domainMin": 30.75,
+              "domainMax": 92.25
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country Y",
+        "title": "Average Monthly Temperatures for Country N",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-a60bd15914506f79640c273fd307eb6e": [
+          "data-7e2560c1fb9cfeef2cf8827fcdfb3aec": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 43.9
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 48.9
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 61.3
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 67.4
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 79.3
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 78.0
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 82.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 72.7
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 58.7
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 63.3
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 50.8
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 41.0
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter-33-2",
+          "prompt": "Which month(s) had average temperature between 44 and 61 (inclusive)? Select all that apply.",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter-33-2",
+          "answer": [
+            "Feb",
+            "Sep",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "order-5-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-dbf61e39c2cb7a945d10f989c4531a6a"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 81.4
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country S",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-dbf61e39c2cb7a945d10f989c4531a6a": [
             {
               "Months": "Jan",
               "Temperature (°F)": 67.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 71.5
+              "Temperature (°F)": 68.0
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 67.8
+              "Temperature (°F)": 68.8
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 76.4
+              "Temperature (°F)": 70.8
             },
             {
               "Months": "May",
-              "Temperature (°F)": 79.5
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 76.5
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 80.5
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 82.0
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 76.9
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 73.5
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 67.9
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 68.5
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-33-2",
-          "prompt": "Which month(s) had average temperature between 68 and 79 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-33-2",
-          "answer": [
-            "Feb",
-            "Apr",
-            "Jun",
-            "Sep",
-            "Oct",
-            "Dec"
-          ]
-        }
-      ]
-    },
-    "filter-50-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-7ed8e5a5371e198b140bf9091a31b1be"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 92.4
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country E",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-7ed8e5a5371e198b140bf9091a31b1be": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 42.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 46.0
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 48.5
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 57.3
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 68.6
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 81.1
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 84.0
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 77.7
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 68.7
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 49.7
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 53.1
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 44.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-50-1",
-          "prompt": "Which month(s) had average temperature between 50 and 63 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-50-1",
-          "answer": [
-            "Apr",
-            "Nov"
-          ]
-        }
-      ]
-    },
-    "filter-50-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-7ed8e5a5371e198b140bf9091a31b1be"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 31.5,
-              "domainMax": 94.5
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country E",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-7ed8e5a5371e198b140bf9091a31b1be": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 42.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 46.0
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 48.5
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 57.3
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 68.6
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 81.1
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 84.0
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 77.7
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 68.7
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 49.7
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 53.1
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 44.0
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-50-2",
-          "prompt": "Which month(s) had average temperature between 50 and 63 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-50-2",
-          "answer": [
-            "Apr",
-            "Nov"
-          ]
-        }
-      ]
-    },
-    "order-10-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-346c86caa8a02409938e9eec2f433681"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 90.2
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country I",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-346c86caa8a02409938e9eec2f433681": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 74.4
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 75.5
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 74.9
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 78.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 80.3
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 82.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 81.6
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 79.3
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 79.5
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 74.0
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 74.2
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 74.8
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "order-10-1",
-          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Jun, Jul, May, Sep, Aug, Apr, Feb, Mar, Dec, Jan, Nov, Oct",
-            "Oct, Nov, Jan, Dec, Mar, Feb, Apr, Aug, Sep, May, Jul, Jun",
-            "Oct, May, Aug, Mar, Jun, Dec, Jul, Sep, Jan, Nov, Feb, Apr",
-            "Jul, Dec, Jan, Feb, May, Mar, Nov, Oct, Aug, Apr, Jun, Sep"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order-10-1",
-          "answer": "Jun, Jul, May, Sep, Aug, Apr, Feb, Mar, Dec, Jan, Nov, Oct"
-        }
-      ]
-    },
-    "order-10-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-346c86caa8a02409938e9eec2f433681"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 72.0,
-              "domainMax": 84.0
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country I",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-346c86caa8a02409938e9eec2f433681": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 74.4
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 75.5
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 74.9
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 78.7
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 80.3
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 82.0
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 81.6
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 79.3
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 79.5
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 74.0
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 74.2
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 74.8
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "order-10-2",
-          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Jun, Jul, May, Sep, Aug, Apr, Feb, Mar, Dec, Jan, Nov, Oct",
-            "Oct, Nov, Jan, Dec, Mar, Feb, Apr, Aug, Sep, May, Jul, Jun",
-            "Oct, May, Aug, Mar, Jun, Dec, Jul, Sep, Jan, Nov, Feb, Apr",
-            "Jul, Dec, Jan, Feb, May, Mar, Nov, Oct, Aug, Apr, Jun, Sep"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order-10-2",
-          "answer": "Jun, Jul, May, Sep, Aug, Apr, Feb, Mar, Dec, Jan, Nov, Oct"
-        }
-      ]
-    },
-    "order-33-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-7c636e05fc8dd898fa21dd0c0ff7329b"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 92.4
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country Z",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-7c636e05fc8dd898fa21dd0c0ff7329b": [
-            {
-              "Months": "Jan",
               "Temperature (°F)": 70.2
             },
             {
-              "Months": "Feb",
-              "Temperature (°F)": 72.7
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 75.3
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 84.0
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 81.5
-            },
-            {
               "Months": "Jun",
-              "Temperature (°F)": 82.5
+              "Temperature (°F)": 73.7
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 83.4
+              "Temperature (°F)": 74.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 78.6
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 82.7
+              "Temperature (°F)": 69.5
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 76.1
+              "Temperature (°F)": 71.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 72.5
+              "Temperature (°F)": 67.5
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 69.0
+              "Temperature (°F)": 69.4
             }
           ]
         }
       },
       "response": [
         {
-          "id": "order-33-1",
-          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "id": "order-5-1",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
           "required": true,
           "type": "radio",
           "options": [
-            "Dec, Jan, Nov, Feb, Mar, Oct, Aug, May, Jun, Sep, Jul, Apr",
-            "Oct, Nov, Jun, Jan, Dec, Mar, Jul, Sep, Apr, May, Aug, Feb",
-            "Apr, Jul, Sep, Jun, May, Aug, Oct, Mar, Feb, Nov, Jan, Dec",
-            "May, Feb, Oct, Apr, Sep, Jul, Mar, Jun, Aug, Jan, Dec, Nov"
+            "Jun, Jan, May, Apr, Oct, Nov, Feb, Aug, Dec, Jul, Mar, Sep",
+            "Jan, Nov, Feb, Mar, Dec, Sep, May, Apr, Oct, Aug, Jun, Jul",
+            "Jul, Jun, Aug, Oct, Apr, May, Sep, Dec, Mar, Feb, Nov, Jan",
+            "Oct, Feb, Aug, Apr, Jun, Sep, Jul, Jan, Mar, Dec, May, Nov"
           ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "order-33-1",
-          "answer": "Apr, Jul, Sep, Jun, May, Aug, Oct, Mar, Feb, Nov, Jan, Dec"
+          "id": "order-5-1",
+          "answer": "Jan, Nov, Feb, Mar, Dec, Sep, May, Apr, Oct, Aug, Jun, Jul"
         }
       ]
     },
-    "order-33-2": {
+    "order-5-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -4073,7 +3838,7 @@
           }
         },
         "data": {
-          "name": "data-7c636e05fc8dd898fa21dd0c0ff7329b"
+          "name": "data-dbf61e39c2cb7a945d10f989c4531a6a"
         },
         "mark": {
           "type": "bar",
@@ -4097,89 +3862,89 @@
             "scale": {
               "zero": false,
               "domainMin": 65.25,
-              "domainMax": 87.75
+              "domainMax": 75.75
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country Z",
+        "title": "Average Monthly Temperatures for Country S",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-7c636e05fc8dd898fa21dd0c0ff7329b": [
+          "data-dbf61e39c2cb7a945d10f989c4531a6a": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 70.2
+              "Temperature (°F)": 67.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 72.7
+              "Temperature (°F)": 68.0
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 75.3
+              "Temperature (°F)": 68.8
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 84.0
+              "Temperature (°F)": 70.8
             },
             {
               "Months": "May",
-              "Temperature (°F)": 81.5
+              "Temperature (°F)": 70.2
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 82.5
+              "Temperature (°F)": 73.7
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 83.4
+              "Temperature (°F)": 74.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 78.6
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 82.7
+              "Temperature (°F)": 69.5
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 76.1
+              "Temperature (°F)": 71.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 72.5
+              "Temperature (°F)": 67.5
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 69.0
+              "Temperature (°F)": 69.4
             }
           ]
         }
       },
       "response": [
         {
-          "id": "order-33-2",
-          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "id": "order-5-2",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
           "required": true,
           "type": "radio",
           "options": [
-            "Dec, Jan, Nov, Feb, Mar, Oct, Aug, May, Jun, Sep, Jul, Apr",
-            "Oct, Nov, Jun, Jan, Dec, Mar, Jul, Sep, Apr, May, Aug, Feb",
-            "Apr, Jul, Sep, Jun, May, Aug, Oct, Mar, Feb, Nov, Jan, Dec",
-            "May, Feb, Oct, Apr, Sep, Jul, Mar, Jun, Aug, Jan, Dec, Nov"
+            "Jun, Jan, May, Apr, Oct, Nov, Feb, Aug, Dec, Jul, Mar, Sep",
+            "Jan, Nov, Feb, Mar, Dec, Sep, May, Apr, Oct, Aug, Jun, Jul",
+            "Jul, Jun, Aug, Oct, Apr, May, Sep, Dec, Mar, Feb, Nov, Jan",
+            "Oct, Feb, Aug, Apr, Jun, Sep, Jul, Jan, Mar, Dec, May, Nov"
           ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "order-33-2",
-          "answer": "Apr, Jul, Sep, Jun, May, Aug, Oct, Mar, Feb, Nov, Jan, Dec"
+          "id": "order-5-2",
+          "answer": "Jan, Nov, Feb, Mar, Dec, Sep, May, Apr, Oct, Aug, Jun, Jul"
         }
       ]
     },
-    "order-50-1": {
+    "order-10-1": {
       "type": "vega",
       "config": {
         "config": {
@@ -4192,7 +3957,7 @@
           }
         },
         "data": {
-          "name": "data-1024709226b11e1151fc89cc5cd01bf6"
+          "name": "data-a2db24c1dc7f64f08d77c976b9cd4c5e"
         },
         "mark": {
           "type": "bar"
@@ -4213,89 +3978,89 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 92.4
+              "domainMax": 84.7
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country K",
+        "title": "Average Monthly Temperatures for Country N",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-1024709226b11e1151fc89cc5cd01bf6": [
+          "data-a2db24c1dc7f64f08d77c976b9cd4c5e": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 42.0
+              "Temperature (°F)": 63.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 44.2
+              "Temperature (°F)": 66.1
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 53.2
+              "Temperature (°F)": 71.2
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 64.9
+              "Temperature (°F)": 69.1
             },
             {
               "Months": "May",
-              "Temperature (°F)": 58.2
+              "Temperature (°F)": 75.0
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 74.5
+              "Temperature (°F)": 72.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 84.0
+              "Temperature (°F)": 77.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 68.5
+              "Temperature (°F)": 73.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 60.8
+              "Temperature (°F)": 72.7
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 58.4
+              "Temperature (°F)": 70.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 46.6
+              "Temperature (°F)": 69.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 48.5
+              "Temperature (°F)": 65.6
             }
           ]
         }
       },
       "response": [
         {
-          "id": "order-50-1",
-          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "id": "order-10-1",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
           "required": true,
           "type": "radio",
           "options": [
-            "Dec, Jun, Sep, Feb, Mar, Oct, Nov, Jul, Jan, May, Aug, Apr",
-            "Jan, Feb, Nov, Dec, Mar, May, Oct, Sep, Apr, Aug, Jun, Jul",
-            "Jul, Jun, Aug, Apr, Sep, Oct, May, Mar, Dec, Nov, Feb, Jan",
-            "Sep, Apr, Jul, Aug, Nov, Mar, Feb, Oct, May, Jan, Dec, Jun"
+            "Jan, Dec, Feb, Nov, Apr, Oct, Mar, Jun, Sep, Aug, May, Jul",
+            "May, Sep, Apr, Jan, Nov, Mar, Jul, Feb, Oct, Jun, Dec, Aug",
+            "Jul, May, Aug, Sep, Jun, Mar, Oct, Apr, Nov, Feb, Dec, Jan",
+            "Oct, May, Dec, Jul, Jan, Jun, Feb, Mar, Aug, Nov, Apr, Sep"
           ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "order-50-1",
-          "answer": "Jul, Jun, Aug, Apr, Sep, Oct, May, Mar, Dec, Nov, Feb, Jan"
+          "id": "order-10-1",
+          "answer": "Jan, Dec, Feb, Nov, Apr, Oct, Mar, Jun, Sep, Aug, May, Jul"
         }
       ]
     },
-    "order-50-2": {
+    "order-10-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -4308,7 +4073,7 @@
           }
         },
         "data": {
-          "name": "data-1024709226b11e1151fc89cc5cd01bf6"
+          "name": "data-a2db24c1dc7f64f08d77c976b9cd4c5e"
         },
         "mark": {
           "type": "bar",
@@ -4331,86 +4096,546 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 31.5,
-              "domainMax": 94.5
+              "domainMin": 59.5,
+              "domainMax": 80.5
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country K",
+        "title": "Average Monthly Temperatures for Country N",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-1024709226b11e1151fc89cc5cd01bf6": [
+          "data-a2db24c1dc7f64f08d77c976b9cd4c5e": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 42.0
+              "Temperature (°F)": 63.0
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 44.2
+              "Temperature (°F)": 66.1
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 53.2
+              "Temperature (°F)": 71.2
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 64.9
+              "Temperature (°F)": 69.1
             },
             {
               "Months": "May",
-              "Temperature (°F)": 58.2
+              "Temperature (°F)": 75.0
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 74.5
+              "Temperature (°F)": 72.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 84.0
+              "Temperature (°F)": 77.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 68.5
+              "Temperature (°F)": 73.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 60.8
+              "Temperature (°F)": 72.7
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 58.4
+              "Temperature (°F)": 70.1
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 46.6
+              "Temperature (°F)": 69.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 48.5
+              "Temperature (°F)": 65.6
             }
           ]
         }
       },
       "response": [
         {
-          "id": "order-50-2",
-          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "id": "order-10-2",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
           "required": true,
           "type": "radio",
           "options": [
-            "Dec, Jun, Sep, Feb, Mar, Oct, Nov, Jul, Jan, May, Aug, Apr",
-            "Jan, Feb, Nov, Dec, Mar, May, Oct, Sep, Apr, Aug, Jun, Jul",
-            "Jul, Jun, Aug, Apr, Sep, Oct, May, Mar, Dec, Nov, Feb, Jan",
-            "Sep, Apr, Jul, Aug, Nov, Mar, Feb, Oct, May, Jan, Dec, Jun"
+            "Jan, Dec, Feb, Nov, Apr, Oct, Mar, Jun, Sep, Aug, May, Jul",
+            "May, Sep, Apr, Jan, Nov, Mar, Jul, Feb, Oct, Jun, Dec, Aug",
+            "Jul, May, Aug, Sep, Jun, Mar, Oct, Apr, Nov, Feb, Dec, Jan",
+            "Oct, May, Dec, Jul, Jan, Jun, Feb, Mar, Aug, Nov, Apr, Sep"
           ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "order-50-2",
-          "answer": "Jul, Jun, Aug, Apr, Sep, Oct, May, Mar, Dec, Nov, Feb, Jan"
+          "id": "order-10-2",
+          "answer": "Jan, Dec, Feb, Nov, Apr, Oct, Mar, Jun, Sep, Aug, May, Jul"
+        }
+      ]
+    },
+    "order-33-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-2a7d050ac13abd3cff39f3ef9423988b"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 93.50000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country Z",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-2a7d050ac13abd3cff39f3ef9423988b": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 43.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 46.3
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 56.0
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 67.0
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 75.4
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 70.6
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 85.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 69.2
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 60.2
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 67.9
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 52.3
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 48.8
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "order-33-1",
+          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jul, May, Jun, Aug, Oct, Apr, Sep, Mar, Nov, Dec, Feb, Jan",
+            "Aug, Oct, Feb, Mar, May, Sep, Apr, Dec, Nov, Jun, Jan, Jul",
+            "Aug, Jul, Sep, Oct, Apr, Dec, Jun, Jan, May, Feb, Nov, Mar",
+            "Jan, Feb, Dec, Nov, Mar, Sep, Apr, Oct, Aug, Jun, May, Jul"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order-33-1",
+          "answer": "Jul, May, Jun, Aug, Oct, Apr, Sep, Mar, Nov, Dec, Feb, Jan"
+        }
+      ]
+    },
+    "order-33-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-2a7d050ac13abd3cff39f3ef9423988b"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 32.5,
+              "domainMax": 95.5
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country Z",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-2a7d050ac13abd3cff39f3ef9423988b": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 43.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 46.3
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 56.0
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 67.0
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 75.4
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 70.6
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 85.0
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 69.2
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 60.2
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 67.9
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 52.3
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 48.8
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "order-33-2",
+          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jul, May, Jun, Aug, Oct, Apr, Sep, Mar, Nov, Dec, Feb, Jan",
+            "Aug, Oct, Feb, Mar, May, Sep, Apr, Dec, Nov, Jun, Jan, Jul",
+            "Aug, Jul, Sep, Oct, Apr, Dec, Jun, Jan, May, Feb, Nov, Mar",
+            "Jan, Feb, Dec, Nov, Mar, Sep, Apr, Oct, Aug, Jun, May, Jul"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order-33-2",
+          "answer": "Jul, May, Jun, Aug, Oct, Apr, Sep, Mar, Nov, Dec, Feb, Jan"
+        }
+      ]
+    },
+    "ratio-5-1": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-5432fbbeda185dd5bbca337af8908b93"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "domainMax": 81.4
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country D",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-5432fbbeda185dd5bbca337af8908b93": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 67.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 69.1
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 69.7
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 70.1
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 72.9
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 72.6
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 72.5
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 74.0
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 72.4
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 69.3
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 69.6
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 68.3
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ratio-5-1",
+          "prompt": "Fill in the blank. The average temperature in Country D in Mar is __% of Sep?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Percentage"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio-5-1",
+          "answer": 96.271
+        }
+      ]
+    },
+    "ratio-5-2": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-5432fbbeda185dd5bbca337af8908b93"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Months",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "Temperature (°F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 65.25,
+              "domainMax": 75.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average Monthly Temperatures for Country D",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-5432fbbeda185dd5bbca337af8908b93": [
+            {
+              "Months": "Jan",
+              "Temperature (°F)": 67.0
+            },
+            {
+              "Months": "Feb",
+              "Temperature (°F)": 69.1
+            },
+            {
+              "Months": "Mar",
+              "Temperature (°F)": 69.7
+            },
+            {
+              "Months": "Apr",
+              "Temperature (°F)": 70.1
+            },
+            {
+              "Months": "May",
+              "Temperature (°F)": 72.9
+            },
+            {
+              "Months": "Jun",
+              "Temperature (°F)": 72.6
+            },
+            {
+              "Months": "Jul",
+              "Temperature (°F)": 72.5
+            },
+            {
+              "Months": "Aug",
+              "Temperature (°F)": 74.0
+            },
+            {
+              "Months": "Sep",
+              "Temperature (°F)": 72.4
+            },
+            {
+              "Months": "Oct",
+              "Temperature (°F)": 69.3
+            },
+            {
+              "Months": "Nov",
+              "Temperature (°F)": 69.6
+            },
+            {
+              "Months": "Dec",
+              "Temperature (°F)": 68.3
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ratio-5-2",
+          "prompt": "Fill in the blank. The average temperature in Country D in Mar is __% of Sep?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Percentage"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ratio-5-2",
+          "answer": 96.271
         }
       ]
     },
@@ -4427,7 +4652,7 @@
           }
         },
         "data": {
-          "name": "data-b1184904b3eaadc6ff3c56a9a095e228"
+          "name": "data-a7e13b3fd4e5146cdf358e36f42b71d9"
         },
         "mark": {
           "type": "bar"
@@ -4448,63 +4673,63 @@
             },
             "field": "Temperature (°F)",
             "scale": {
-              "domainMax": 90.2
+              "domainMax": 88.0
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country Z",
+        "title": "Average Monthly Temperatures for Country T",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-b1184904b3eaadc6ff3c56a9a095e228": [
+          "data-a7e13b3fd4e5146cdf358e36f42b71d9": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 74.0
+              "Temperature (°F)": 66.1
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 76.6
+              "Temperature (°F)": 65.9
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 75.3
+              "Temperature (°F)": 69.4
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 77.3
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "May",
-              "Temperature (°F)": 82.0
+              "Temperature (°F)": 77.1
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 80.4
+              "Temperature (°F)": 78.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 81.1
+              "Temperature (°F)": 80.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 79.2
+              "Temperature (°F)": 78.5
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 77.7
+              "Temperature (°F)": 74.1
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 75.1
+              "Temperature (°F)": 70.4
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 76.2
+              "Temperature (°F)": 65.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 74.4
+              "Temperature (°F)": 67.3
             }
           ]
         }
@@ -4512,7 +4737,7 @@
       "response": [
         {
           "id": "ratio-10-1",
-          "prompt": "Fill in the blank. The average temperature in Country Z in Mar is __% of Nov?",
+          "prompt": "Fill in the blank. The average temperature in Country T in Mar is __% of Apr?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -4521,7 +4746,7 @@
       "correctAnswer": [
         {
           "id": "ratio-10-1",
-          "answer": 98.819
+          "answer": 96.927
         }
       ]
     },
@@ -4538,7 +4763,7 @@
           }
         },
         "data": {
-          "name": "data-b1184904b3eaadc6ff3c56a9a095e228"
+          "name": "data-a7e13b3fd4e5146cdf358e36f42b71d9"
         },
         "mark": {
           "type": "bar",
@@ -4561,64 +4786,64 @@
             "field": "Temperature (°F)",
             "scale": {
               "zero": false,
-              "domainMin": 72.0,
-              "domainMax": 84.0
+              "domainMin": 61.25,
+              "domainMax": 83.75
             },
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country Z",
+        "title": "Average Monthly Temperatures for Country T",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-b1184904b3eaadc6ff3c56a9a095e228": [
+          "data-a7e13b3fd4e5146cdf358e36f42b71d9": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 74.0
+              "Temperature (°F)": 66.1
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 76.6
+              "Temperature (°F)": 65.9
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 75.3
+              "Temperature (°F)": 69.4
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 77.3
+              "Temperature (°F)": 71.6
             },
             {
               "Months": "May",
-              "Temperature (°F)": 82.0
+              "Temperature (°F)": 77.1
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 80.4
+              "Temperature (°F)": 78.6
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 81.1
+              "Temperature (°F)": 80.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 79.2
+              "Temperature (°F)": 78.5
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 77.7
+              "Temperature (°F)": 74.1
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 75.1
+              "Temperature (°F)": 70.4
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 76.2
+              "Temperature (°F)": 65.0
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 74.4
+              "Temperature (°F)": 67.3
             }
           ]
         }
@@ -4626,7 +4851,7 @@
       "response": [
         {
           "id": "ratio-10-2",
-          "prompt": "Fill in the blank. The average temperature in Country Z in Mar is __% of Nov?",
+          "prompt": "Fill in the blank. The average temperature in Country T in Mar is __% of Apr?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -4635,7 +4860,7 @@
       "correctAnswer": [
         {
           "id": "ratio-10-2",
-          "answer": 98.819
+          "answer": 96.927
         }
       ]
     },
@@ -4652,232 +4877,7 @@
           }
         },
         "data": {
-          "name": "data-dbeb687f1dbd521bc1894de2f1a6194a"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "domainMax": 90.2
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country H",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-dbeb687f1dbd521bc1894de2f1a6194a": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 67.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 70.3
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 69.0
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 76.4
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 80.8
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 75.4
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 82.0
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 79.2
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 76.5
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 72.7
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 68.5
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 68.3
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ratio-33-1",
-          "prompt": "Fill in the blank. The average temperature in Country H in Jun is __% of Aug?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Percentage"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio-33-1",
-          "answer": 95.202
-        }
-      ]
-    },
-    "ratio-33-2": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-dbeb687f1dbd521bc1894de2f1a6194a"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Months",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "Temperature (°F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 63.25,
-              "domainMax": 85.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average Monthly Temperatures for Country H",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-dbeb687f1dbd521bc1894de2f1a6194a": [
-            {
-              "Months": "Jan",
-              "Temperature (°F)": 67.0
-            },
-            {
-              "Months": "Feb",
-              "Temperature (°F)": 70.3
-            },
-            {
-              "Months": "Mar",
-              "Temperature (°F)": 69.0
-            },
-            {
-              "Months": "Apr",
-              "Temperature (°F)": 76.4
-            },
-            {
-              "Months": "May",
-              "Temperature (°F)": 80.8
-            },
-            {
-              "Months": "Jun",
-              "Temperature (°F)": 75.4
-            },
-            {
-              "Months": "Jul",
-              "Temperature (°F)": 82.0
-            },
-            {
-              "Months": "Aug",
-              "Temperature (°F)": 79.2
-            },
-            {
-              "Months": "Sep",
-              "Temperature (°F)": 76.5
-            },
-            {
-              "Months": "Oct",
-              "Temperature (°F)": 72.7
-            },
-            {
-              "Months": "Nov",
-              "Temperature (°F)": 68.5
-            },
-            {
-              "Months": "Dec",
-              "Temperature (°F)": 68.3
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ratio-33-2",
-          "prompt": "Fill in the blank. The average temperature in Country H in Jun is __% of Aug?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Percentage"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ratio-33-2",
-          "answer": 95.202
-        }
-      ]
-    },
-    "ratio-50-1": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-79f1f5a3033dfccc94e40c904f5f3219"
+          "name": "data-9532f49f9879b96bf6ab6d09e010b839"
         },
         "mark": {
           "type": "bar"
@@ -4903,66 +4903,66 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country F",
+        "title": "Average Monthly Temperatures for Country B",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-79f1f5a3033dfccc94e40c904f5f3219": [
+          "data-9532f49f9879b96bf6ab6d09e010b839": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 36.0
+              "Temperature (°F)": 36.3
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 51.3
+              "Temperature (°F)": 49.8
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 44.8
+              "Temperature (°F)": 36.0
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 59.2
+              "Temperature (°F)": 65.9
             },
             {
               "Months": "May",
-              "Temperature (°F)": 71.0
+              "Temperature (°F)": 51.8
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 63.0
+              "Temperature (°F)": 67.9
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 67.4
+              "Temperature (°F)": 71.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 65.0
+              "Temperature (°F)": 67.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 55.5
+              "Temperature (°F)": 63.6
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 44.1
+              "Temperature (°F)": 46.7
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 41.0
+              "Temperature (°F)": 37.7
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 38.8
+              "Temperature (°F)": 40.0
             }
           ]
         }
       },
       "response": [
         {
-          "id": "ratio-50-1",
-          "prompt": "Fill in the blank. The average temperature in Country F in Sep is __% of Jul?",
+          "id": "ratio-33-1",
+          "prompt": "Fill in the blank. The average temperature in Country B in May is __% of Jul?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -4970,12 +4970,12 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio-50-1",
-          "answer": 82.344
+          "id": "ratio-33-1",
+          "answer": 72.958
         }
       ]
     },
-    "ratio-50-2": {
+    "ratio-33-2": {
       "type": "vega",
       "config": {
         "config": {
@@ -4988,7 +4988,7 @@
           }
         },
         "data": {
-          "name": "data-79f1f5a3033dfccc94e40c904f5f3219"
+          "name": "data-9532f49f9879b96bf6ab6d09e010b839"
         },
         "mark": {
           "type": "bar",
@@ -5017,66 +5017,66 @@
             "type": "quantitative"
           }
         },
-        "title": "Average Monthly Temperatures for Country F",
+        "title": "Average Monthly Temperatures for Country B",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
-          "data-79f1f5a3033dfccc94e40c904f5f3219": [
+          "data-9532f49f9879b96bf6ab6d09e010b839": [
             {
               "Months": "Jan",
-              "Temperature (°F)": 36.0
+              "Temperature (°F)": 36.3
             },
             {
               "Months": "Feb",
-              "Temperature (°F)": 51.3
+              "Temperature (°F)": 49.8
             },
             {
               "Months": "Mar",
-              "Temperature (°F)": 44.8
+              "Temperature (°F)": 36.0
             },
             {
               "Months": "Apr",
-              "Temperature (°F)": 59.2
+              "Temperature (°F)": 65.9
             },
             {
               "Months": "May",
-              "Temperature (°F)": 71.0
+              "Temperature (°F)": 51.8
             },
             {
               "Months": "Jun",
-              "Temperature (°F)": 63.0
+              "Temperature (°F)": 67.9
             },
             {
               "Months": "Jul",
-              "Temperature (°F)": 67.4
+              "Temperature (°F)": 71.0
             },
             {
               "Months": "Aug",
-              "Temperature (°F)": 65.0
+              "Temperature (°F)": 67.3
             },
             {
               "Months": "Sep",
-              "Temperature (°F)": 55.5
+              "Temperature (°F)": 63.6
             },
             {
               "Months": "Oct",
-              "Temperature (°F)": 44.1
+              "Temperature (°F)": 46.7
             },
             {
               "Months": "Nov",
-              "Temperature (°F)": 41.0
+              "Temperature (°F)": 37.7
             },
             {
               "Months": "Dec",
-              "Temperature (°F)": 38.8
+              "Temperature (°F)": 40.0
             }
           ]
         }
       },
       "response": [
         {
-          "id": "ratio-50-2",
-          "prompt": "Fill in the blank. The average temperature in Country F in Sep is __% of Jul?",
+          "id": "ratio-33-2",
+          "prompt": "Fill in the blank. The average temperature in Country B in May is __% of Jul?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -5084,8 +5084,8 @@
       ],
       "correctAnswer": [
         {
-          "id": "ratio-50-2",
-          "answer": 82.344
+          "id": "ratio-33-2",
+          "answer": 72.958
         }
       ]
     },
@@ -5146,30 +5146,44 @@
         "components": [
           {
             "components": [
+              "ret-val-5-1",
+              "ret-val-5-2",
               "ret-val-10-1",
               "ret-val-10-2",
               "ret-val-33-1",
               "ret-val-33-2",
+              "find-ext-5-1",
+              "find-ext-5-2",
               "find-ext-10-1",
               "find-ext-10-2",
               "find-ext-33-1",
               "find-ext-33-2",
+              "det-ran-5-1",
+              "det-ran-5-2",
               "det-ran-10-1",
               "det-ran-10-2",
               "det-ran-33-1",
               "det-ran-33-2",
+              "make-comp-5-1",
+              "make-comp-5-2",
               "make-comp-10-1",
               "make-comp-10-2",
               "make-comp-33-1",
               "make-comp-33-2",
+              "filter-5-1",
+              "filter-5-2",
               "filter-10-1",
               "filter-10-2",
               "filter-33-1",
               "filter-33-2",
+              "order-5-1",
+              "order-5-2",
               "order-10-1",
               "order-10-2",
               "order-33-1",
               "order-33-2",
+              "ratio-5-1",
+              "ratio-5-2",
               "ratio-10-1",
               "ratio-10-2",
               "ratio-33-1",
