@@ -5189,7 +5189,7 @@
               "ratio-33-1",
               "ratio-33-2"
             ],
-            "order": "latinSquare"
+            "order": "fixed"
           }
         ],
         "order": "fixed",
