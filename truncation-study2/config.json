@@ -93,695 +93,6 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City Q",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val-saltlake-notrunc",
-          "prompt": "What was the average temperature in Country Q in Apr?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val-saltlake-notrunc",
-          "answer": 63
-        }
-      ]
-    },
-    "ret-val-saltlake-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 26.25,
-              "domainMax": 102.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City O",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val-saltlake-trunc",
-          "prompt": "What was the average temperature in Country O in Aug?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val-saltlake-trunc",
-          "answer": 89
-        }
-      ]
-    },
-    "ret-val-miami-notrunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f9b37e0689bef57948f25aad5786499a"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 94.60000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City Z",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f9b37e0689bef57948f25aad5786499a": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 74
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 75
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 76
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 84
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 76
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val-miami-notrunc",
-          "prompt": "What was the average temperature in Country Z in Jun?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val-miami-notrunc",
-          "answer": 84
-        }
-      ]
-    },
-    "ret-val-miami-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f9b37e0689bef57948f25aad5786499a"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 71.0,
-              "domainMax": 89.0
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City D",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f9b37e0689bef57948f25aad5786499a": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 74
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 75
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 76
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 84
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 76
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val-miami-trunc",
-          "prompt": "What was the average temperature in Country D in May?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val-miami-trunc",
-          "answer": 81
-        }
-      ]
-    },
-    "ret-val-fargo": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-510c07682a3bc0b86f035590c5a6f921"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 89.10000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City H",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-510c07682a3bc0b86f035590c5a6f921": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 16
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 23
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 37
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 55
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 69
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 77
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 36
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 23
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "ret-val-fargo",
-          "prompt": "What was the average temperature in Country H in Nov?",
-          "required": true,
-          "type": "numerical",
-          "placeholder": "Value"
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "ret-val-fargo",
-          "answer": 36
-        }
-      ]
-    },
-    "find-ext-saltlake-notrunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 99.00000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City A",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "find-ext-saltlake-notrunc",
-          "prompt": "What was the month with the lowest average temperature in Country A?",
-          "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "find-ext-saltlake-notrunc",
-          "answer": "Dec"
-        }
-      ]
-    },
-    "find-ext-saltlake-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 26.25,
-              "domainMax": 102.75
-            },
-            "type": "quantitative"
-          }
-        },
         "title": "Average High Temperatures in City E",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
@@ -840,35 +151,135 @@
       },
       "response": [
         {
-          "id": "find-ext-saltlake-trunc",
-          "prompt": "What was the month with the lowest average temperature in Country E?",
+          "id": "ret-val-saltlake-notrunc",
+          "prompt": "What was the average temperature in Country E in Nov?",
           "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
+          "type": "numerical",
+          "placeholder": "Value"
         }
       ],
       "correctAnswer": [
         {
-          "id": "find-ext-saltlake-trunc",
-          "answer": "Dec"
+          "id": "ret-val-saltlake-notrunc",
+          "answer": 51
         }
       ]
     },
-    "find-ext-miami-notrunc": {
+    "ret-val-saltlake-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 26.25,
+              "domainMax": 102.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City R",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "ret-val-saltlake-trunc",
+          "prompt": "What was the average temperature in Country R in Apr?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val-saltlake-trunc",
+          "answer": 63
+        }
+      ]
+    },
+    "ret-val-miami-notrunc": {
       "type": "vega",
       "config": {
         "config": {
@@ -907,7 +318,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City G",
+        "title": "Average High Temperatures in City J",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -965,35 +376,21 @@
       },
       "response": [
         {
-          "id": "find-ext-miami-notrunc",
-          "prompt": "What was the month with the highest average temperature in Country G?",
+          "id": "ret-val-miami-notrunc",
+          "prompt": "What was the average temperature in Country J in Feb?",
           "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
+          "type": "numerical",
+          "placeholder": "Value"
         }
       ],
       "correctAnswer": [
         {
-          "id": "find-ext-miami-notrunc",
-          "answer": "Sep"
+          "id": "ret-val-miami-notrunc",
+          "answer": 75
         }
       ]
     },
-    "find-ext-miami-trunc": {
+    "ret-val-miami-trunc": {
       "type": "vega",
       "config": {
         "config": {
@@ -1035,7 +432,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City F",
+        "title": "Average High Temperatures in City H",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -1093,35 +490,21 @@
       },
       "response": [
         {
-          "id": "find-ext-miami-trunc",
-          "prompt": "What was the month with the lowest average temperature in Country F?",
+          "id": "ret-val-miami-trunc",
+          "prompt": "What was the average temperature in Country H in Feb?",
           "required": true,
-          "type": "dropdown",
-          "placeholder": "Select months",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
+          "type": "numerical",
+          "placeholder": "Value"
         }
       ],
       "correctAnswer": [
         {
-          "id": "find-ext-miami-trunc",
-          "answer": "Jan"
+          "id": "ret-val-miami-trunc",
+          "answer": 75
         }
       ]
     },
-    "find-ext-fargo": {
+    "ret-val-fargo": {
       "type": "vega",
       "config": {
         "config": {
@@ -1218,8 +601,625 @@
       },
       "response": [
         {
+          "id": "ret-val-fargo",
+          "prompt": "What was the average temperature in Country Y in Aug?",
+          "required": true,
+          "type": "numerical",
+          "placeholder": "Value"
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "ret-val-fargo",
+          "answer": 81
+        }
+      ]
+    },
+    "find-ext-saltlake-notrunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 99.00000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City N",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-saltlake-notrunc",
+          "prompt": "What was the month with the lowest average temperature in Country N?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-saltlake-notrunc",
+          "answer": "Dec"
+        }
+      ]
+    },
+    "find-ext-saltlake-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 26.25,
+              "domainMax": 102.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City P",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-saltlake-trunc",
+          "prompt": "What was the month with the highest average temperature in Country P?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-saltlake-trunc",
+          "answer": "Jul"
+        }
+      ]
+    },
+    "find-ext-miami-notrunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f9b37e0689bef57948f25aad5786499a"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 94.60000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City W",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f9b37e0689bef57948f25aad5786499a": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 74
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 75
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 76
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 84
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 76
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-miami-notrunc",
+          "prompt": "What was the month with the lowest average temperature in Country W?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-miami-notrunc",
+          "answer": "Jan"
+        }
+      ]
+    },
+    "find-ext-miami-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f9b37e0689bef57948f25aad5786499a"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 71.0,
+              "domainMax": 89.0
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City Q",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f9b37e0689bef57948f25aad5786499a": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 74
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 75
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 76
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 84
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 76
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "find-ext-miami-trunc",
+          "prompt": "What was the month with the lowest average temperature in Country Q?",
+          "required": true,
+          "type": "dropdown",
+          "placeholder": "Select months",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "find-ext-miami-trunc",
+          "answer": "Jan"
+        }
+      ]
+    },
+    "find-ext-fargo": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-510c07682a3bc0b86f035590c5a6f921"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 89.10000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City L",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-510c07682a3bc0b86f035590c5a6f921": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 16
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 23
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 37
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 55
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 69
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 77
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 36
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 23
+            }
+          ]
+        }
+      },
+      "response": [
+        {
           "id": "find-ext-fargo",
-          "prompt": "What was the month with the lowest average temperature in Country Y?",
+          "prompt": "What was the month with the lowest average temperature in Country L?",
           "required": true,
           "type": "dropdown",
           "placeholder": "Select months",
@@ -1285,7 +1285,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City N",
+        "title": "Average High Temperatures in City K",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -1344,7 +1344,7 @@
       "response": [
         {
           "id": "det-ran-saltlake-notrunc-min",
-          "prompt": "What is the range of average temperature in Country N?",
+          "prompt": "What is the range of average temperature in Country K?",
           "required": true,
           "type": "numerical",
           "placeholder": "Minimum"
@@ -1410,7 +1410,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City G",
+        "title": "Average High Temperatures in City J",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -1469,7 +1469,7 @@
       "response": [
         {
           "id": "det-ran-saltlake-trunc-min",
-          "prompt": "What is the range of average temperature in Country G?",
+          "prompt": "What is the range of average temperature in Country J?",
           "required": true,
           "type": "numerical",
           "placeholder": "Minimum"
@@ -1532,7 +1532,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City P",
+        "title": "Average High Temperatures in City G",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -1591,7 +1591,7 @@
       "response": [
         {
           "id": "det-ran-miami-notrunc-min",
-          "prompt": "What is the range of average temperature in Country P?",
+          "prompt": "What is the range of average temperature in Country G?",
           "required": true,
           "type": "numerical",
           "placeholder": "Minimum"
@@ -1657,7 +1657,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City R",
+        "title": "Average High Temperatures in City K",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -1716,7 +1716,7 @@
       "response": [
         {
           "id": "det-ran-miami-trunc-min",
-          "prompt": "What is the range of average temperature in Country R?",
+          "prompt": "What is the range of average temperature in Country K?",
           "required": true,
           "type": "numerical",
           "placeholder": "Minimum"
@@ -1779,7 +1779,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City D",
+        "title": "Average High Temperatures in City G",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -1838,7 +1838,7 @@
       "response": [
         {
           "id": "det-ran-fargo-min",
-          "prompt": "What is the range of average temperature in Country D?",
+          "prompt": "What is the range of average temperature in Country G?",
           "required": true,
           "type": "numerical",
           "placeholder": "Minimum"
@@ -1901,1371 +1901,6 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City T",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp-saltlake-notrunc",
-          "prompt": "Was the average temperature in Dec higher or lower than in May?",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Lower",
-            "Higher"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp-saltlake-notrunc",
-          "answer": "Lower"
-        }
-      ]
-    },
-    "make-comp-saltlake-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 26.25,
-              "domainMax": 102.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City R",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp-saltlake-trunc",
-          "prompt": "Was the average temperature in Jan higher or lower than in Sep?",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Lower",
-            "Higher"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp-saltlake-trunc",
-          "answer": "Lower"
-        }
-      ]
-    },
-    "make-comp-miami-notrunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f9b37e0689bef57948f25aad5786499a"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 94.60000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City M",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f9b37e0689bef57948f25aad5786499a": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 74
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 75
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 76
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 84
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 76
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp-miami-notrunc",
-          "prompt": "Was the average temperature in Feb higher or lower than in Jan?",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Lower",
-            "Higher"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp-miami-notrunc",
-          "answer": "Higher"
-        }
-      ]
-    },
-    "make-comp-miami-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f9b37e0689bef57948f25aad5786499a"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 71.0,
-              "domainMax": 89.0
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City J",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f9b37e0689bef57948f25aad5786499a": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 74
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 75
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 76
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 84
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 76
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp-miami-trunc",
-          "prompt": "Was the average temperature in Dec higher or lower than in May?",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Lower",
-            "Higher"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp-miami-trunc",
-          "answer": "Lower"
-        }
-      ]
-    },
-    "make-comp-fargo": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-510c07682a3bc0b86f035590c5a6f921"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 89.10000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City D",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-510c07682a3bc0b86f035590c5a6f921": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 16
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 23
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 37
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 55
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 69
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 77
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 36
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 23
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "make-comp-fargo",
-          "prompt": "Was the average temperature in Dec higher or lower than in Mar?",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Lower",
-            "Higher"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "make-comp-fargo",
-          "answer": "Lower"
-        }
-      ]
-    },
-    "filter-saltlake-notrunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 99.00000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City I",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-saltlake-notrunc",
-          "prompt": "Which month(s) had average temperature between 45 and 75 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-saltlake-notrunc",
-          "answer": [
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Oct",
-            "Nov"
-          ]
-        }
-      ]
-    },
-    "filter-saltlake-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 26.25,
-              "domainMax": 102.75
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City J",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-saltlake-trunc",
-          "prompt": "Which month(s) had average temperature between 43 and 82 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-saltlake-trunc",
-          "answer": [
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Sep",
-            "Oct",
-            "Nov"
-          ]
-        }
-      ]
-    },
-    "filter-miami-notrunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f9b37e0689bef57948f25aad5786499a"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 94.60000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City F",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f9b37e0689bef57948f25aad5786499a": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 74
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 75
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 76
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 84
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 76
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-miami-notrunc",
-          "prompt": "Which month(s) had average temperature between 74 and 86 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-miami-notrunc",
-          "answer": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ]
-    },
-    "filter-miami-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-f9b37e0689bef57948f25aad5786499a"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 71.0,
-              "domainMax": 89.0
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City N",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-f9b37e0689bef57948f25aad5786499a": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 74
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 75
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 76
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 84
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 86
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 79
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 76
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-miami-trunc",
-          "prompt": "Which month(s) had average temperature between 75 and 80 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-miami-trunc",
-          "answer": [
-            "Feb",
-            "Mar",
-            "Apr",
-            "Nov",
-            "Dec"
-          ]
-        }
-      ]
-    },
-    "filter-fargo": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-510c07682a3bc0b86f035590c5a6f921"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 89.10000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City F",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-510c07682a3bc0b86f035590c5a6f921": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 16
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 23
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 37
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 55
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 69
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 77
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 81
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 36
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 23
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "filter-fargo",
-          "prompt": "Which month(s) had average temperature between 51 and 73 (inclusive)? Select all that apply.",
-          "required": true,
-          "type": "checkbox",
-          "options": [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
-          ],
-          "horizontal": true
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "filter-fargo",
-          "answer": [
-            "Apr",
-            "May",
-            "Sep",
-            "Oct"
-          ]
-        }
-      ]
-    },
-    "order-saltlake-notrunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar"
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "domainMax": 99.00000000000001
-            },
-            "type": "quantitative"
-          }
-        },
-        "title": "Average High Temperatures in City O",
-        "width": 480,
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-        "datasets": {
-          "data-0f031416745b60923c7b80afcbb2c672": [
-            {
-              "Month": "Jan",
-              "High Temps (F)": 40
-            },
-            {
-              "Month": "Feb",
-              "High Temps (F)": 45
-            },
-            {
-              "Month": "Mar",
-              "High Temps (F)": 56
-            },
-            {
-              "Month": "Apr",
-              "High Temps (F)": 63
-            },
-            {
-              "Month": "May",
-              "High Temps (F)": 72
-            },
-            {
-              "Month": "Jun",
-              "High Temps (F)": 83
-            },
-            {
-              "Month": "Jul",
-              "High Temps (F)": 90
-            },
-            {
-              "Month": "Aug",
-              "High Temps (F)": 89
-            },
-            {
-              "Month": "Sep",
-              "High Temps (F)": 78
-            },
-            {
-              "Month": "Oct",
-              "High Temps (F)": 66
-            },
-            {
-              "Month": "Nov",
-              "High Temps (F)": 51
-            },
-            {
-              "Month": "Dec",
-              "High Temps (F)": 39
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "order-saltlake-notrunc",
-          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
-          "required": true,
-          "type": "radio",
-          "options": [
-            "Dec, Jan, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul",
-            "Jan, Jun, Jul, Oct, Dec, May, Nov, Aug, Mar, Apr, Sep, Feb",
-            "Feb, Mar, Nov, Aug, Jul, Apr, Sep, Dec, Jan, May, Jun, Oct",
-            "Jul, Aug, Jun, Sep, May, Oct, Apr, Mar, Nov, Feb, Jan, Dec"
-          ]
-        }
-      ],
-      "correctAnswer": [
-        {
-          "id": "order-saltlake-notrunc",
-          "answer": "Dec, Jan, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul"
-        }
-      ]
-    },
-    "order-saltlake-trunc": {
-      "type": "vega",
-      "config": {
-        "config": {
-          "view": {
-            "continuousWidth": 300,
-            "continuousHeight": 300
-          },
-          "scale": {
-            "bandPaddingInner": 0.33
-          }
-        },
-        "data": {
-          "name": "data-0f031416745b60923c7b80afcbb2c672"
-        },
-        "mark": {
-          "type": "bar",
-          "clip": true
-        },
-        "encoding": {
-          "x": {
-            "axis": {
-              "labelAngle": 0
-            },
-            "field": "Month",
-            "sort": {},
-            "type": "ordinal"
-          },
-          "y": {
-            "axis": {
-              "domain": true,
-              "grid": true
-            },
-            "field": "High Temps (F)",
-            "scale": {
-              "zero": false,
-              "domainMin": 26.25,
-              "domainMax": 102.75
-            },
-            "type": "quantitative"
-          }
-        },
         "title": "Average High Temperatures in City B",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
@@ -3324,26 +1959,141 @@
       },
       "response": [
         {
-          "id": "order-saltlake-trunc",
-          "prompt": "Select the option that orders the months from highest to lowest average temperature.",
+          "id": "make-comp-saltlake-notrunc",
+          "prompt": "Was the average temperature in Jul higher or lower than in Oct?",
           "required": true,
           "type": "radio",
           "options": [
-            "Mar, Apr, Feb, May, Dec, Aug, Jun, Jan, Nov, Sep, Oct, Jul",
-            "Jul, Aug, Jun, Sep, May, Oct, Apr, Mar, Nov, Feb, Jan, Dec",
-            "Nov, Jan, Aug, Feb, Dec, Mar, May, Sep, Jun, Apr, Oct, Jul",
-            "Dec, Jan, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul"
+            "Lower",
+            "Higher"
           ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "order-saltlake-trunc",
-          "answer": "Jul, Aug, Jun, Sep, May, Oct, Apr, Mar, Nov, Feb, Jan, Dec"
+          "id": "make-comp-saltlake-notrunc",
+          "answer": "Higher"
         }
       ]
     },
-    "order-miami-notrunc": {
+    "make-comp-saltlake-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 26.25,
+              "domainMax": 102.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City Q",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "make-comp-saltlake-trunc",
+          "prompt": "Was the average temperature in Dec higher or lower than in Apr?",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Lower",
+            "Higher"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp-saltlake-trunc",
+          "answer": "Lower"
+        }
+      ]
+    },
+    "make-comp-miami-notrunc": {
       "type": "vega",
       "config": {
         "config": {
@@ -3382,7 +2132,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City S",
+        "title": "Average High Temperatures in City I",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -3440,26 +2190,24 @@
       },
       "response": [
         {
-          "id": "order-miami-notrunc",
-          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
+          "id": "make-comp-miami-notrunc",
+          "prompt": "Was the average temperature in Feb higher or lower than in Mar?",
           "required": true,
           "type": "radio",
           "options": [
-            "May, Aug, Nov, Feb, Jan, Apr, Jul, Mar, Jun, Dec, Sep, Oct",
-            "Jan, Feb, Dec, Mar, Apr, Nov, May, Oct, Jun, Aug, Jul, Sep",
-            "Sep, Jul, Aug, Jun, Oct, May, Nov, Apr, Mar, Dec, Feb, Jan",
-            "Feb, May, Jul, Oct, Apr, Sep, Dec, Aug, Mar, Jun, Nov, Jan"
+            "Lower",
+            "Higher"
           ]
         }
       ],
       "correctAnswer": [
         {
-          "id": "order-miami-notrunc",
-          "answer": "Jan, Feb, Dec, Mar, Apr, Nov, May, Oct, Jun, Aug, Jul, Sep"
+          "id": "make-comp-miami-notrunc",
+          "answer": "Lower"
         }
       ]
     },
-    "order-miami-trunc": {
+    "make-comp-miami-trunc": {
       "type": "vega",
       "config": {
         "config": {
@@ -3559,15 +2307,1257 @@
       },
       "response": [
         {
+          "id": "make-comp-miami-trunc",
+          "prompt": "Was the average temperature in Mar higher or lower than in Sep?",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Lower",
+            "Higher"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp-miami-trunc",
+          "answer": "Lower"
+        }
+      ]
+    },
+    "make-comp-fargo": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-510c07682a3bc0b86f035590c5a6f921"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 89.10000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City P",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-510c07682a3bc0b86f035590c5a6f921": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 16
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 23
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 37
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 55
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 69
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 77
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 36
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 23
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "make-comp-fargo",
+          "prompt": "Was the average temperature in Jun higher or lower than in Aug?",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Lower",
+            "Higher"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "make-comp-fargo",
+          "answer": "Lower"
+        }
+      ]
+    },
+    "filter-saltlake-notrunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 99.00000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City Q",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter-saltlake-notrunc",
+          "prompt": "Which month(s) had average temperature between 47 and 85 (inclusive)? Select all that apply.",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter-saltlake-notrunc",
+          "answer": [
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Sep",
+            "Oct",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter-saltlake-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 26.25,
+              "domainMax": 102.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City E",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter-saltlake-trunc",
+          "prompt": "Which month(s) had average temperature between 50 and 71 (inclusive)? Select all that apply.",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter-saltlake-trunc",
+          "answer": [
+            "Mar",
+            "Apr",
+            "Oct",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter-miami-notrunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f9b37e0689bef57948f25aad5786499a"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 94.60000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City C",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f9b37e0689bef57948f25aad5786499a": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 74
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 75
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 76
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 84
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 76
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter-miami-notrunc",
+          "prompt": "Which month(s) had average temperature between 79 and 84 (inclusive)? Select all that apply.",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter-miami-notrunc",
+          "answer": [
+            "Apr",
+            "May",
+            "Jun",
+            "Oct",
+            "Nov"
+          ]
+        }
+      ]
+    },
+    "filter-miami-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f9b37e0689bef57948f25aad5786499a"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 71.0,
+              "domainMax": 89.0
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City V",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f9b37e0689bef57948f25aad5786499a": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 74
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 75
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 76
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 84
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 76
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter-miami-trunc",
+          "prompt": "Which month(s) had average temperature between 76 and 81 (inclusive)? Select all that apply.",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter-miami-trunc",
+          "answer": [
+            "Mar",
+            "Apr",
+            "May",
+            "Nov",
+            "Dec"
+          ]
+        }
+      ]
+    },
+    "filter-fargo": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-510c07682a3bc0b86f035590c5a6f921"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 89.10000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City P",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-510c07682a3bc0b86f035590c5a6f921": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 16
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 23
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 37
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 55
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 69
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 77
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 36
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 23
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "filter-fargo",
+          "prompt": "Which month(s) had average temperature between 63 and 77 (inclusive)? Select all that apply.",
+          "required": true,
+          "type": "checkbox",
+          "options": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "horizontal": true
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "filter-fargo",
+          "answer": [
+            "May",
+            "Jun",
+            "Sep"
+          ]
+        }
+      ]
+    },
+    "order-saltlake-notrunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 99.00000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City M",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "order-saltlake-notrunc",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Dec, Jan, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul",
+            "Jul, Aug, Jun, Sep, May, Oct, Apr, Mar, Nov, Feb, Jan, Dec",
+            "Apr, Mar, May, Sep, Nov, Jan, Feb, Dec, Aug, Oct, Jul, Jun",
+            "Feb, May, Apr, Nov, Jan, Oct, Jul, Dec, Sep, Jun, Aug, Mar"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order-saltlake-notrunc",
+          "answer": "Dec, Jan, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul"
+        }
+      ]
+    },
+    "order-saltlake-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-0f031416745b60923c7b80afcbb2c672"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 26.25,
+              "domainMax": 102.75
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City M",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-0f031416745b60923c7b80afcbb2c672": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 40
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 45
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 56
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 63
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 72
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 90
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 89
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 78
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 66
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 51
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 39
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "order-saltlake-trunc",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jun, Mar, Oct, Jan, Nov, Feb, May, Jul, Sep, Apr, Dec, Aug",
+            "Dec, Jan, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul",
+            "Jul, Apr, Feb, May, Jan, Aug, Dec, Nov, Oct, Sep, Jun, Mar",
+            "Jul, Aug, Jun, Sep, May, Oct, Apr, Mar, Nov, Feb, Jan, Dec"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order-saltlake-trunc",
+          "answer": "Dec, Jan, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul"
+        }
+      ]
+    },
+    "order-miami-notrunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f9b37e0689bef57948f25aad5786499a"
+        },
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "domainMax": 94.60000000000001
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City M",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f9b37e0689bef57948f25aad5786499a": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 74
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 75
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 76
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 84
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 76
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "order-miami-notrunc",
+          "prompt": "Select the option that orders the months from lowest to highest average temperature.",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Jan, Feb, Dec, Mar, Apr, Nov, May, Oct, Jun, Aug, Jul, Sep",
+            "Sep, Jul, Aug, Jun, Oct, May, Nov, Apr, Mar, Dec, Feb, Jan",
+            "Dec, Feb, Mar, Oct, Jan, May, Sep, Aug, Nov, Jul, Apr, Jun",
+            "Aug, Jul, Apr, Mar, Jan, Oct, Dec, Jun, May, Nov, Feb, Sep"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "order-miami-notrunc",
+          "answer": "Jan, Feb, Dec, Mar, Apr, Nov, May, Oct, Jun, Aug, Jul, Sep"
+        }
+      ]
+    },
+    "order-miami-trunc": {
+      "type": "vega",
+      "config": {
+        "config": {
+          "view": {
+            "continuousWidth": 300,
+            "continuousHeight": 300
+          },
+          "scale": {
+            "bandPaddingInner": 0.33
+          }
+        },
+        "data": {
+          "name": "data-f9b37e0689bef57948f25aad5786499a"
+        },
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "axis": {
+              "labelAngle": 0
+            },
+            "field": "Month",
+            "sort": {},
+            "type": "ordinal"
+          },
+          "y": {
+            "axis": {
+              "domain": true,
+              "grid": true
+            },
+            "field": "High Temps (F)",
+            "scale": {
+              "zero": false,
+              "domainMin": 71.0,
+              "domainMax": 89.0
+            },
+            "type": "quantitative"
+          }
+        },
+        "title": "Average High Temperatures in City D",
+        "width": 480,
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "datasets": {
+          "data-f9b37e0689bef57948f25aad5786499a": [
+            {
+              "Month": "Jan",
+              "High Temps (F)": 74
+            },
+            {
+              "Month": "Feb",
+              "High Temps (F)": 75
+            },
+            {
+              "Month": "Mar",
+              "High Temps (F)": 76
+            },
+            {
+              "Month": "Apr",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "May",
+              "High Temps (F)": 81
+            },
+            {
+              "Month": "Jun",
+              "High Temps (F)": 84
+            },
+            {
+              "Month": "Jul",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Aug",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Sep",
+              "High Temps (F)": 86
+            },
+            {
+              "Month": "Oct",
+              "High Temps (F)": 83
+            },
+            {
+              "Month": "Nov",
+              "High Temps (F)": 79
+            },
+            {
+              "Month": "Dec",
+              "High Temps (F)": 76
+            }
+          ]
+        }
+      },
+      "response": [
+        {
           "id": "order-miami-trunc",
           "prompt": "Select the option that orders the months from highest to lowest average temperature.",
           "required": true,
           "type": "radio",
           "options": [
-            "Dec, Oct, Feb, Nov, Jan, Jun, Apr, Aug, Mar, Jul, May, Sep",
-            "Jan, Feb, Dec, Mar, Apr, Nov, May, Oct, Jun, Aug, Jul, Sep",
             "Sep, Jul, Aug, Jun, Oct, May, Nov, Apr, Mar, Dec, Feb, Jan",
-            "Sep, Oct, Jul, Dec, Mar, Jan, May, Jun, Nov, Aug, Feb, Apr"
+            "Oct, Jun, May, Feb, Nov, Mar, Dec, Apr, Sep, Jan, Jul, Aug",
+            "Jan, Feb, Dec, Mar, Apr, Nov, May, Oct, Jun, Aug, Jul, Sep",
+            "May, Jun, Jul, Sep, Feb, Nov, Oct, Mar, Apr, Jan, Aug, Dec"
           ]
         }
       ],
@@ -3680,10 +3670,10 @@
           "required": true,
           "type": "radio",
           "options": [
-            "Jan, Dec, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul",
-            "Aug, Dec, Sep, Jul, Mar, Feb, May, Oct, Jun, Jan, Apr, Nov",
+            "Feb, Oct, Dec, Jun, Aug, Sep, Apr, Mar, Nov, Jul, Jan, May",
+            "Oct, Aug, Dec, Mar, Jul, Jan, Sep, May, Feb, Apr, Nov, Jun",
             "Jul, Aug, Jun, Sep, May, Oct, Apr, Mar, Nov, Feb, Dec, Jan",
-            "Jan, Dec, May, Apr, Jun, Mar, Nov, Sep, Feb, Jul, Oct, Aug"
+            "Jan, Dec, Feb, Nov, Mar, Apr, Oct, May, Sep, Jun, Aug, Jul"
           ]
         }
       ],
@@ -3733,7 +3723,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City U",
+        "title": "Average High Temperatures in City K",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -3792,7 +3782,7 @@
       "response": [
         {
           "id": "ratio-saltlake-notrunc",
-          "prompt": "Fill in the blank. The average temperature in Country U in Feb is __% of Sep?",
+          "prompt": "Fill in the blank. The average temperature in Country K in Mar is __% of Sep?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -3801,7 +3791,7 @@
       "correctAnswer": [
         {
           "id": "ratio-saltlake-notrunc",
-          "answer": 57.692
+          "answer": 71.795
         }
       ]
     },
@@ -3847,7 +3837,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City Z",
+        "title": "Average High Temperatures in City Y",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -3906,7 +3896,7 @@
       "response": [
         {
           "id": "ratio-saltlake-trunc",
-          "prompt": "Fill in the blank. The average temperature in Country Z in Jan is __% of Mar?",
+          "prompt": "Fill in the blank. The average temperature in Country Y in Jan is __% of Sep?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -3915,7 +3905,7 @@
       "correctAnswer": [
         {
           "id": "ratio-saltlake-trunc",
-          "answer": 71.429
+          "answer": 51.282
         }
       ]
     },
@@ -3958,7 +3948,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City I",
+        "title": "Average High Temperatures in City K",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -4017,7 +4007,7 @@
       "response": [
         {
           "id": "ratio-miami-notrunc",
-          "prompt": "Fill in the blank. The average temperature in Country I in Mar is __% of Jun?",
+          "prompt": "Fill in the blank. The average temperature in Country K in Feb is __% of Sep?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -4026,7 +4016,7 @@
       "correctAnswer": [
         {
           "id": "ratio-miami-notrunc",
-          "answer": 90.476
+          "answer": 87.209
         }
       ]
     },
@@ -4072,7 +4062,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City U",
+        "title": "Average High Temperatures in City C",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -4131,7 +4121,7 @@
       "response": [
         {
           "id": "ratio-miami-trunc",
-          "prompt": "Fill in the blank. The average temperature in Country U in Jan is __% of Dec?",
+          "prompt": "Fill in the blank. The average temperature in Country C in Apr is __% of Jun?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -4140,7 +4130,7 @@
       "correctAnswer": [
         {
           "id": "ratio-miami-trunc",
-          "answer": 97.368
+          "answer": 94.048
         }
       ]
     },
@@ -4183,7 +4173,7 @@
             "type": "quantitative"
           }
         },
-        "title": "Average High Temperatures in City H",
+        "title": "Average High Temperatures in City K",
         "width": 480,
         "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
         "datasets": {
@@ -4242,7 +4232,7 @@
       "response": [
         {
           "id": "ratio-fargo",
-          "prompt": "Fill in the blank. The average temperature in Country H in Mar is __% of Apr?",
+          "prompt": "Fill in the blank. The average temperature in Country K in Sep is __% of Aug?",
           "required": true,
           "type": "numerical",
           "placeholder": "Percentage"
@@ -4251,7 +4241,7 @@
       "correctAnswer": [
         {
           "id": "ratio-fargo",
-          "answer": 67.273
+          "answer": 88.889
         }
       ]
     },
@@ -4316,30 +4306,37 @@
               "ret-val-saltlake-trunc",
               "ret-val-miami-notrunc",
               "ret-val-miami-trunc",
+              "ret-val-fargo",
               "find-ext-saltlake-notrunc",
               "find-ext-saltlake-trunc",
               "find-ext-miami-notrunc",
               "find-ext-miami-trunc",
+              "find-ext-fargo",
               "det-ran-saltlake-notrunc",
               "det-ran-saltlake-trunc",
               "det-ran-miami-notrunc",
               "det-ran-miami-trunc",
+              "det-ran-fargo",
               "make-comp-saltlake-notrunc",
               "make-comp-saltlake-trunc",
               "make-comp-miami-notrunc",
               "make-comp-miami-trunc",
+              "make-comp-fargo",
               "filter-saltlake-notrunc",
               "filter-saltlake-trunc",
               "filter-miami-notrunc",
               "filter-miami-trunc",
+              "filter-fargo",
               "order-saltlake-notrunc",
               "order-saltlake-trunc",
               "order-miami-notrunc",
               "order-miami-trunc",
+              "order-fargo",
               "ratio-saltlake-notrunc",
               "ratio-saltlake-trunc",
               "ratio-miami-notrunc",
-              "ratio-miami-trunc"
+              "ratio-miami-trunc",
+              "ratio-fargo"
             ],
             "order": "fixed"
           }
