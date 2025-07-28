@@ -3,6 +3,7 @@
   "configsList": [
     "truncation-study",
     "truncation-study2",
+    "truncation-study3",
     "tutorial",
     "example-brush-interactions",
     "example-cleveland",
@@ -43,6 +44,9 @@
     },
     "truncation-study2": {
       "path": "truncation-study2/config.json"
+    },
+    "truncation-study3": {
+      "path": "truncation-study3/config.json"
     },
     "tutorial": {
       "path": "tutorial/config.json"
