@@ -6,9 +6,11 @@
 
 <li>Part 2 consists of <strong>12 different data visualizations</strong> with <strong>multiple-choice</strong> questions. The visualizations will be of <strong>various types</strong>, not just bar charts.</p>
 <li>Please answer the questions to the best of your ability. If you are unsure of the answer, <strong>you may skip</strong> instead of guessing.</p>
-<li><strong>You will have 25 seconds to answer each of these 12 questions</strong>. There will be a countdown for the last 10 seconds.</p>
+<li><strong>You will have 25 seconds to answer each of these 12 questions</strong>. There will be a countdown <strong>for the last 10 seconds</strong>.</p>
 
-<p>Once you are done with the 12 timed questions, you will be asked to please provide some basic demographic information. The demographic questionnaire is not timed.</p>
+<br>
+
+<p>Once you are done with the 12 timed questions, you will be asked to provide some basic demographic information. The demographic questionnaire is not timed.</p>
 
 <p><strong>Important: You will have a time limit for each question in Part 2. If the time limit is exceeded, you will not be able to submit your answer for that question. You may skip questions instead of guessing if you are unsure.</strong></p>
 
