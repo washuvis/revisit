@@ -109,7 +109,8 @@ export function StudyEnd() {
             : (
               <div style={{ textAlign: 'center' }}>
                 <Text size="xl" display="block">Thank you for completing the study.</Text>
-                <Text size="xl" display="block">The Prolific completion code is C15GWY6D. Please copy this code into Prolific as proof of completion.</Text>
+                <Text size="xl" display="block">The Prolific completion code is C2B7CBPD</Text>
+                <Text size="xl" display="block">Please copy this code into Prolific as proof of completion.</Text>
                 <Text size="xl" display="block">You may now close this window.</Text>
               </div>
             )
