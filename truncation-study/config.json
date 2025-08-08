@@ -1231,11 +1231,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran1-bar-1",
+          "id": "det-ran1-bar-1-min",
           "answer": 75524
         },
         {
-          "id": "det-ran1-bar-1",
+          "id": "det-ran1-bar-1-max",
           "answer": 115793
         }
       ]
@@ -1368,11 +1368,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran1-bar-2",
+          "id": "det-ran1-bar-2-min",
           "answer": 75524
         },
         {
-          "id": "det-ran1-bar-2",
+          "id": "det-ran1-bar-2-max",
           "answer": 115793
         }
       ]
@@ -1502,11 +1502,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran2-bar-1",
+          "id": "det-ran2-bar-1-min",
           "answer": 2.4
         },
         {
-          "id": "det-ran2-bar-1",
+          "id": "det-ran2-bar-1-max",
           "answer": 4.9
         }
       ]
@@ -1639,11 +1639,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran2-bar-2",
+          "id": "det-ran2-bar-2-min",
           "answer": 2.4
         },
         {
-          "id": "det-ran2-bar-2",
+          "id": "det-ran2-bar-2-max",
           "answer": 4.9
         }
       ]
@@ -4864,11 +4864,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran1-line-1",
+          "id": "det-ran1-line-1-min",
           "answer": 75524
         },
         {
-          "id": "det-ran1-line-1",
+          "id": "det-ran1-line-1-max",
           "answer": 115793
         }
       ]
@@ -4994,11 +4994,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran1-line-2",
+          "id": "det-ran1-line-2-min",
           "answer": 75524
         },
         {
-          "id": "det-ran1-line-2",
+          "id": "det-ran1-line-2-max",
           "answer": 115793
         }
       ]
@@ -5121,11 +5121,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran2-line-1",
+          "id": "det-ran2-line-1-min",
           "answer": 2.4
         },
         {
-          "id": "det-ran2-line-1",
+          "id": "det-ran2-line-1-max",
           "answer": 4.9
         }
       ]
@@ -5251,11 +5251,11 @@
       ],
       "correctAnswer": [
         {
-          "id": "det-ran2-line-2",
+          "id": "det-ran2-line-2-min",
           "answer": 2.4
         },
         {
-          "id": "det-ran2-line-2",
+          "id": "det-ran2-line-2-max",
           "answer": 4.9
         }
       ]
