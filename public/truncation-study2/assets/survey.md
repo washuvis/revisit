@@ -5,7 +5,7 @@
 <p>You will now begin the <strong>first of two parts</strong> of this survey.</p>
 <p>In <strong>Part 1</strong>:</p>
 <li>You will be presented <strong>6 bar charts</strong> about global average temperatures in various countries, measured in Fahrenheit.</li>
-<li>You will be presented <strong>4 specific questions</strong> about each chart and its underlying data.</li>
+<li>You will be presented <strong>7 specific questions</strong> about each chart and its underlying data. The 7 questions will be the same for each visualization, but will be randomly ordered.</li>
 <li>Your <strong>completion time will be measured</strong>, but <strong>there is no time limit on your responses</strong>.</li>
 <li>Please answer all questions to the best of your ability.</li>
 <br>
