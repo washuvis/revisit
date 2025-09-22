@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Visualization Study",
+    "title": "Text Conversation Study",
     "version": "pilot",
     "authors": [
       "Oen McKinley",
@@ -72,15 +72,15 @@
         {
           "id": "cm-response",
           "prompt": "Answer:",
-          "location": "sidebar",
+          "location": "belowStimulus",
           "type": "numerical",
           "placeholder": "0-100",
           "max": 100,
           "min": 0
         }
       ],
-      "nextButtonLocation": "sidebar",
-      "instructionLocation": "sidebar"
+      "nextButtonLocation": "belowStimulus",
+      "instructionLocation": "belowStimulus"
     }
   },
   "sequence": {
