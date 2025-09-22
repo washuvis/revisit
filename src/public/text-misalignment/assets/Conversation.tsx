@@ -1,4 +1,6 @@
-import * as d3 from 'd3';
+//import * as d3 from 'd3';
+
+import { useNextStep } from '../../../store/hooks/useNextStep';
 import { useEffect, useState } from 'react';
 import { useChartDimensions } from './hooks/useChartDimensions';
 
@@ -11,15 +13,19 @@ const chartSettings = {
   height: 400,
 };
 
+var timeDefault = false;
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Conversation({ parameters }: { parameters: any }) {
   const [ref, dms] = useChartDimensions(chartSettings);
 
-  const [timeUp, setTimeUp] = useState(false);
+  const [timeUp, setTimeUp] = useState(timeDefault);
 
   useEffect(() => {
     const timer = setTimeout(() => {
+      timeDefault = true;
       setTimeUp(true);
+      useNextStep();
     }, 10000); // 10 seconds
 
     return () => clearTimeout(timer);
