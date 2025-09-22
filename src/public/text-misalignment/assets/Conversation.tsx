@@ -17,7 +17,7 @@ function Conversation({ parameters }: { parameters: any }) {
   const ret = useChartDimensions(chartSettings);
   const ref = ret[0];
   const [timeUp, setTimeUp] = useState(false);
-  const path = './logo.png'
+  const path = './logo.png';
 
   useEffect(() => {
     const timer = setTimeout(() => {
