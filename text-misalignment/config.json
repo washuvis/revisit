@@ -34,21 +34,60 @@
       "type": "markdown",
       "path": "text-misalignment/assets/introduction.md",
       "response": []
+    },
+    "conversation": {
+      "description": "A bubble chart with correct answer of 0.66",
+      "instruction": "Two values are marked with dots. \n\nWhat percentage do you believe the smaller value represents relative to the larger value?",
+      "type": "react-component",
+      "path": "text-misalignment/assets/Conversation.tsx",
+      "parameters": {
+        "data": [
+          {
+            "name": "A",
+            "value": "30"
+          },
+          {
+            "name": "B",
+            "value": "40"
+          },
+          {
+            "name": "C",
+            "value": "50"
+          },
+          {
+            "name": "D",
+            "value": "40"
+          },
+          {
+            "name": "E",
+            "value": "60"
+          }
+        ],
+        "selectedIndices": [
+          1,
+          4
+        ]
+      },
+      "response": [
+        {
+          "id": "cm-response",
+          "prompt": "Answer:",
+          "location": "sidebar",
+          "type": "numerical",
+          "placeholder": "0-100",
+          "max": 100,
+          "min": 0
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
     }
   },
   "sequence": {
     "order": "fixed",
     "components": [
       "introduction",
-      {
-        "id": "dynamicBlock",
-        "order": "dynamic",
-        "functionPath": "text-misalignment/dynamic.ts",
-        "parameters": {
-          "param1": "value1",
-          "param2": "value2"
-        }
-      },
+      "conversation",
       "post-study-survey"
     ]
   }
