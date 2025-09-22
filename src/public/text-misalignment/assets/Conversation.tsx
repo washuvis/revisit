@@ -41,6 +41,8 @@ function Conversation({ parameters }: { parameters: any }) {
     .domain([100, 0])
     .range([0, dms.boundedHeight]);
 
+  const stimulus = require('logo.png');
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const yAxisTickFilter = (ticks: any[]) => ticks.filter((t, i) => i === 0 || i === ticks.length - 1);
 
@@ -54,42 +56,7 @@ function Conversation({ parameters }: { parameters: any }) {
           <h2>Time is up! Please click Next.</h2>
         </div>
       ) : (
-        <svg width={dms.width} height={dms.height}>
-          <g
-            transform={`translate(${[dms.marginLeft, dms.marginTop].join(',')})`}
-          >
-            <g
-              transform={`translate(${[tickLength, dms.boundedHeight].join(
-                ',',
-              )})`}
-            >
-              <OrdinalAxisHWithDotMarks
-                domain={xScale.domain()}
-                range={xScale.range()}
-                withTick
-                tickLen={0}
-                tickFilter={xAxisTickFilter}
-              />
-            </g>
-            <g transform={`translate(${[0, 0].join(',')})`}>
-              <NumericAxisV
-                domain={yScale.domain()}
-                range={yScale.range()}
-                withTick
-                tickLen={tickLength}
-                tickFilter={yAxisTickFilter}
-              />
-            </g>
-            <g transform={`translate(${[0, 0].join(',')})`}>
-              <Bars
-                data={parameters.data}
-                xScale={xScale}
-                yScale={yScale}
-                height={dms.boundedHeight}
-              />
-            </g>
-          </g>
-        </svg>
+        <img alt='stimulus' style={{ width: 100 }} src={String(stimulus)} />
       )}
     </div>
   );

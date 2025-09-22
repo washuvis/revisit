@@ -68,19 +68,9 @@
           4
         ]
       },
-      "response": [
-        {
-          "id": "cm-response",
-          "prompt": "Answer:",
-          "location": "belowStimulus",
-          "type": "numerical",
-          "placeholder": "0-100",
-          "max": 100,
-          "min": 0
-        }
-      ],
+      "response": [],
       "nextButtonLocation": "belowStimulus",
-      "instructionLocation": "belowStimulus"
+      "instructionLocation": "aboveStimulus"
     }
   },
   "sequence": {
