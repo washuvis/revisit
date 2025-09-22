@@ -1,4 +1,5 @@
 import * as d3 from 'd3';
+import { useEffect, useState } from "react";
 import { useChartDimensions } from './hooks/useChartDimensions';
 import { Bars } from './chartcomponents/Bars';
 import { NumericAxisV } from './chartcomponents/NumericAxisV';
@@ -17,6 +18,16 @@ const chartSettings = {
 function Conversation({ parameters }: { parameters: any }) {
   const tickLength = 6;
   const [ref, dms] = useChartDimensions(chartSettings);
+
+  const [timeUp, setTimeUp] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeUp(true);
+    }, 10000); // 10 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const xScale = d3
     .scaleBand()
@@ -38,45 +49,42 @@ function Conversation({ parameters }: { parameters: any }) {
 
   return (
     <div className="Chart__wrapper" ref={ref} style={{ height: 400 }} >
-      <div id="timeout" display="none" onLoad="setTimeout(function () {document.getElementById('timeout').style.display='block'}, 10000); return false" >
-        <h2>Time is up! Please click "Next".</h2>
-      </div>
-      <svg width={dms.width} height={dms.height} id="main" onLoad="setTimeout(function () {document.getElementById('main').style.display='none'}, 10000); return false">
-        <g
-          transform={`translate(${[dms.marginLeft, dms.marginTop].join(',')})`}
-        >
-          <g
-            transform={`translate(${[tickLength, dms.boundedHeight].join(
-              ',',
-            )})`}
-          >
-            <OrdinalAxisHWithDotMarks
-              domain={xScale.domain()}
-              range={xScale.range()}
-              withTick
-              tickLen={0}
-              tickFilter={xAxisTickFilter}
-            />
-          </g>
-          <g transform={`translate(${[0, 0].join(',')})`}>
-            <NumericAxisV
-              domain={yScale.domain()}
-              range={yScale.range()}
-              withTick
-              tickLen={tickLength}
-              tickFilter={yAxisTickFilter}
-            />
-          </g>
-          <g transform={`translate(${[0, 0].join(',')})`}>
-            <Bars
-              data={parameters.data}
-              xScale={xScale}
-              yScale={yScale}
-              height={dms.boundedHeight}
-            />
-          </g>
-        </g>
-      </svg>
+      {timeUp ? (
+          <div id="timeout">
+            <h2>Time is up! Please click "Next".</h2>
+          </div>
+      ) : (
+          <svg width={dms.width} height={dms.height}>
+            <g transform={`translate(${[dms.marginLeft, dms.marginTop].join(",")})`}>
+              <g transform={`translate(${[tickLength, dms.boundedHeight].join(",")})`}>
+                <OrdinalAxisHWithDotMarks
+                    domain={xScale.domain()}
+                    range={xScale.range()}
+                    withTick
+                    tickLen={0}
+                    tickFilter={xAxisTickFilter}
+                />
+              </g>
+              <g transform={`translate(0,0)`}>
+                <NumericAxisV
+                    domain={yScale.domain()}
+                    range={yScale.range()}
+                    withTick
+                    tickLen={tickLength}
+                    tickFilter={yAxisTickFilter}
+                />
+              </g>
+              <g transform={`translate(0,0)`}>
+                <Bars
+                    data={parameters.data}
+                    xScale={xScale}
+                    yScale={yScale}
+                    height={dms.boundedHeight}
+                />
+              </g>
+            </g>
+          </svg>
+      )}
     </div>
   );
 }
