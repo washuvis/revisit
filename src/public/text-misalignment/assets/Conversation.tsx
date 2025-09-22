@@ -37,8 +37,11 @@ function Conversation({ parameters }: { parameters: any }) {
   const xAxisTickFilter = (ticks: any[]) => ticks.filter((t, i) => parameters.selectedIndices.includes(i));
 
   return (
-    <div className="Chart__wrapper" id="main" ref={ref} style={{ height: 400 }} onload="setTimeout(function () {document.getElementById('main').style.display='none'}, 10000); return false" >
-      <svg width={dms.width} height={dms.height}>
+    <div className="Chart__wrapper" ref={ref} style={{ height: 400 }} >
+      <div id="timeout" display="none" onLoad="setTimeout(function () {document.getElementById('timeout').style.display='block'}, 10000); return false" >
+        <h2>Time is up! Please click "Next".</h2>
+      </div>
+      <svg width={dms.width} height={dms.height} id="main" onLoad="setTimeout(function () {document.getElementById('main').style.display='none'}, 10000); return false">
         <g
           transform={`translate(${[dms.marginLeft, dms.marginTop].join(',')})`}
         >
@@ -74,9 +77,6 @@ function Conversation({ parameters }: { parameters: any }) {
           </g>
         </g>
       </svg>
-    </div>
-    <div id="timeout" display="none" onload="setTimeout(function () {document.getElementById('timeout').style.display='block'}, 10000); return false" >
-      <h2>Time is up! Please click "Next".</h2>
     </div>
   );
 }
