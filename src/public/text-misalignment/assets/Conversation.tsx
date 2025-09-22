@@ -1,7 +1,5 @@
-//import * as d3 from 'd3';
-
-import { useNextStep } from '../../../store/hooks/useNextStep';
 import { useEffect, useState } from 'react';
+import { useNextStep } from '../../../store/hooks/useNextStep';
 import { useChartDimensions } from './hooks/useChartDimensions';
 
 const chartSettings = {
@@ -13,25 +11,23 @@ const chartSettings = {
   height: 400,
 };
 
-var timeDefault = false;
+const { goToNextStep } = useNextStep();
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Conversation({ parameters }: { parameters: any }) {
-  const [ref, dms] = useChartDimensions(chartSettings);
-
-  const [timeUp, setTimeUp] = useState(timeDefault);
+  const ret = useChartDimensions(chartSettings);
+  const ref = ret[0]
+  const [timeUp, setTimeUp] = useState(false);
+  const path = './logo.png'
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      timeDefault = true;
       setTimeUp(true);
-      useNextStep();
-    }, 10000); // 10 seconds
+      goToNextStep();
+    }, parameters.waitSeconds*1000);
 
     return () => clearTimeout(timer);
   }, []);
-
-
 
   return (
     <div className="Chart__wrapper" ref={ref} style={{ height: 400 }}>
@@ -40,7 +36,7 @@ function Conversation({ parameters }: { parameters: any }) {
           <h2>Time is up! Please click Next.</h2>
         </div>
       ) : (
-        <img alt='stimulus' style={{ width: 100 }} src={'./logo.png'} />
+        <img alt='stimulus' style={{ width: 100 }} src={String(path)} />
       )}
     </div>
   );
