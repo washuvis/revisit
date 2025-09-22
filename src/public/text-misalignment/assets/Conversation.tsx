@@ -11,12 +11,11 @@ const chartSettings = {
   height: 400,
 };
 
-const { goToNextStep } = useNextStep();
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Conversation({ parameters }: { parameters: any }) {
+  const { goToNextStep } = useNextStep();
   const ret = useChartDimensions(chartSettings);
-  const ref = ret[0]
+  const ref = ret[0];
   const [timeUp, setTimeUp] = useState(false);
   const path = './logo.png'
 
@@ -24,7 +23,7 @@ function Conversation({ parameters }: { parameters: any }) {
     const timer = setTimeout(() => {
       setTimeUp(true);
       goToNextStep();
-    }, parameters.waitSeconds*1000);
+    }, parameters.waitSeconds * 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -36,7 +35,7 @@ function Conversation({ parameters }: { parameters: any }) {
           <h2>Time is up! Please click Next.</h2>
         </div>
       ) : (
-        <img alt='stimulus' style={{ width: 100 }} src={String(path)} />
+        <img alt="stimulus" style={{ width: 100 }} src={String(path)} />
       )}
     </div>
   );
