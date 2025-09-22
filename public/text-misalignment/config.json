@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Visualization Study",
+    "version": "pilot",
+    "authors": [
+      "Oen McKinley",
+      "Alvitta Ottley"
+    ],
+    "date": "2025-06-05",
+    "description": "A study to test the empirical effectiveness of truncating the y-axis of bar or line charts.",
+    "organizations": [
+      "Washington University in St. Louis"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "m.oen@wustl.edu",
+    "helpTextPath": "truncation-study/assets/help.md",
+    "logoPath": "truncation-study/assets/logo_b.png",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "sidebar": false
+  },
+  "importedLibraries": [
+    "mini-vlat"
+  ],
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "text-misalignment/assets/introduction.md",
+      "response": []
+    },
+    "post-study-survey": {
+      "type": "markdown",
+      "path": "text-misalignment/assets/introduction.md",
+      "response": []
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction",
+      {
+        "id": "dynamicBlock",
+        "order": "dynamic",
+        "functionPath": "text-misalignment/dynamic.ts",
+        "parameters": {
+          "param1": "value1",
+          "param2": "value2"
+        }
+      },
+      "post-study-survey"
+    ]
+  }
+}

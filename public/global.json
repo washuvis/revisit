@@ -39,6 +39,9 @@
 
   ],
   "configs": {
+    "text-misalignment": {
+      "path": "text-misalignment/config.json"
+    },
     "truncation-study": {
       "path": "truncation-study/config.json"
     },
