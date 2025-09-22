@@ -48,10 +48,10 @@ function Conversation({ parameters }: { parameters: any }) {
   const xAxisTickFilter = (ticks: any[]) => ticks.filter((t, i) => parameters.selectedIndices.includes(i));
 
   return (
-    <div className="Chart__wrapper" ref={ref} style={{height: 400}} >
+    <div className="Chart__wrapper" ref={ref} style={{ height: 400 }}>
       {timeUp ? (
         <div id="timeout">
-          <h2>Time is up! Please click "Next".</h2>
+          <h2>Time is up! Please click Next.</h2>
         </div>
       ) : (
         <svg width={dms.width} height={dms.height}>
