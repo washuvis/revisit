@@ -48,21 +48,21 @@ function Conversation({ parameters }: { parameters: any }) {
   const xAxisTickFilter = (ticks: any[]) => ticks.filter((t, i) => parameters.selectedIndices.includes(i));
 
   return (
-    <div className="Chart__wrapper" ref={ref} style={{height: 400}} >
+    <div className="Chart__wrapper" ref={ref} style={{ height: 400 }}>
       {timeUp ? (
         <div id="timeout">
-          <h2>Time is up! Please click "Next".</h2>
+          <h2>Time is up! Please click Next.</h2>
         </div>
       ) : (
         <svg width={dms.width} height={dms.height}>
-          <g transform={`translate(${[dms.marginLeft, dms.marginTop].join(",")})`}>
-            <g transform={`translate(${[tickLength, dms.boundedHeight].join(",")})`}>
+          <g transform={`translate(${[dms.marginLeft, dms.marginTop].join(',')})`}>
+            <g transform={`translate(${[tickLength, dms.boundedHeight].join(',')})`}>
               <OrdinalAxisHWithDotMarks
-                  domain={xScale.domain()}
-                  range={xScale.range()}
-                  withTick
-                  tickLen={0}
-                  tickFilter={xAxisTickFilter}
+                domain={xScale.domain()}
+                range={xScale.range()}
+                withTick
+                tickLen={0}
+                tickFilter={xAxisTickFilter}
               />
             </g>
             <g transform={`translate(0,0)`}>
