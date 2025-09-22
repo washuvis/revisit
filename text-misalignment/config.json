@@ -41,6 +41,7 @@
       "type": "react-component",
       "path": "text-misalignment/assets/Conversation.tsx",
       "parameters": {
+        "waitSeconds": 10,
         "data": [
           {
             "name": "A",
