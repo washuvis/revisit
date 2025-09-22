@@ -48,15 +48,21 @@ function Conversation({ parameters }: { parameters: any }) {
   const xAxisTickFilter = (ticks: any[]) => ticks.filter((t, i) => parameters.selectedIndices.includes(i));
 
   return (
-    <div className="Chart__wrapper" ref={ref} style={{ height: 400 }}>
+    <div className="Chart__wrapper" ref={ref} style={{height: 400}} >
       {timeUp ? (
         <div id="timeout">
-          <h2>Time is up! Please click Next.</h2>
+          <h2>Time is up! Please click "Next".</h2>
         </div>
       ) : (
         <svg width={dms.width} height={dms.height}>
-          <g transform={`translate(${[dms.marginLeft, dms.marginTop].join(',')})`}>
-            <g transform={`translate(${[tickLength, dms.boundedHeight].join(',')})`}>
+          <g
+            transform={`translate(${[dms.marginLeft, dms.marginTop].join(',')})`}
+          >
+            <g
+              transform={`translate(${[tickLength, dms.boundedHeight].join(
+                ',',
+              )})`}
+            >
               <OrdinalAxisHWithDotMarks
                 domain={xScale.domain()}
                 range={xScale.range()}
@@ -65,21 +71,21 @@ function Conversation({ parameters }: { parameters: any }) {
                 tickFilter={xAxisTickFilter}
               />
             </g>
-            <g transform={`translate(0,0)`}>
+            <g transform={`translate(${[0, 0].join(',')})`}>
               <NumericAxisV
-                  domain={yScale.domain()}
-                  range={yScale.range()}
-                  withTick
-                  tickLen={tickLength}
-                  tickFilter={yAxisTickFilter}
+                domain={yScale.domain()}
+                range={yScale.range()}
+                withTick
+                tickLen={tickLength}
+                tickFilter={yAxisTickFilter}
               />
             </g>
-            <g transform={`translate(0,0)`}>
+            <g transform={`translate(${[0, 0].join(',')})`}>
               <Bars
-                  data={parameters.data}
-                  xScale={xScale}
-                  yScale={yScale}
-                  height={dms.boundedHeight}
+                data={parameters.data}
+                xScale={xScale}
+                yScale={yScale}
+                height={dms.boundedHeight}
               />
             </g>
           </g>
