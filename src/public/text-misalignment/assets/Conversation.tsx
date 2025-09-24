@@ -16,7 +16,7 @@ function Conversation({ parameters }: { parameters: any }) {
   const { goToNextStep } = useNextStep();
   const ret = useChartDimensions(chartSettings);
   const ref = ret[0];
-  const path = 'public/text-misalignment/assets/logo.png';
+  const path = '../public/text-misalignment/assets/logo.png';
 
   useEffect(() => {
     const timer = setTimeout(() => {
