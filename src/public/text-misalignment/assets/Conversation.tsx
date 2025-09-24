@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useNextStep } from '../../../store/hooks/useNextStep';
 import { useChartDimensions } from './hooks/useChartDimensions';
 
