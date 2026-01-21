@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
+    "zoom-comparison-study",
     "text-misalignment",
     "truncation-study",
     "truncation-study2",
@@ -40,6 +41,9 @@
 
   ],
   "configs": {
+    "zoom-comparison-study": {
+      "path": "zoom-comparison-study/config.json"
+    }, 
     "text-misalignment": {
       "path": "text-misalignment/config.json"
     },
