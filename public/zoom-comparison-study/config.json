@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Basic Questionnaire Study",
+        "title": "Zoom Interaction Study",
         "version": "pilot",
         "authors": [
             "VIBE Lab"
@@ -25,6 +25,149 @@
             "type": "markdown",
             "path": "zoom-comparison-study/assets/introduction.md",
             "response": []
+        },
+        "tutorial": {
+            "meta": {
+            "difficulty": 0,
+            "zoom": "scroll"
+          },
+          "description": "A chart with correct answer of 0.66",
+          "instruction": "Find the as many peaks as you can",
+            "type": "react-component",
+            "path": "zoom-comparison-study/assets/TutorialEntry.tsx",
+            "parameters": {
+              "zoomMode": "scroll"
+            },
+            "nextButtonLocation": "sidebar",
+              "response": [
+                {
+                  "id": "accuracy",
+                  "prompt": "Your click distance to circle center",
+                  "required": true,
+                  "location": "sidebar",
+                  "type": "reactive"
+                }
+              ]
+        },
+        "chromatogram_scroll": {
+          "meta": {
+            "difficulty": 0,
+            "zoom": "scroll"
+          },
+          "description": "A chart with correct answer of 0.66",
+          "instruction": "Find the as many peaks as you can",
+          "type": "react-component",
+          "path": "zoom-comparison-study/assets/ChromatogramView.tsx",
+          "parameters": {
+            "dataPath": "zoom-comparison-study/assets/data/B-Casein_channel1364.json",
+            "zoomMode": "scroll"
+          }, 
+          "nextButtonLocation": "sidebar",
+          "response": [
+            {
+              "id": "accuracy",
+              "prompt": "Your click distance to circle center",
+              "required": true,
+              "location": "sidebar",
+              "type": "reactive"
+            }
+          ]
+        },
+        "chromatogram_clickToZoom": {
+          "meta": {
+            "difficulty": 0,
+            "zoom": "clickToZoom"
+          },
+          "description": "A chart with correct answer of 0.66",
+          "instruction": "Find the as many peaks as you can",
+          "type": "react-component",
+          "path": "zoom-comparison-study/assets/ChromatogramView.tsx",
+          "parameters": {
+            "dataPath": "zoom-comparison-study/assets/data/B-Casein_channel1364.json",
+            "zoomMode": "clickToZoom"
+          }, 
+          "nextButtonLocation": "sidebar",
+          "response": [
+            {
+              "id": "accuracy",
+              "prompt": "Your click distance to circle center",
+              "required": true,
+              "location": "sidebar",
+              "type": "reactive"
+            }
+          ]
+        },
+        "chromatogram_magnifier": {
+          "meta": {
+            "difficulty": 0,
+            "zoom": "magnifier"
+          },
+          "description": "A chart with correct answer of 0.66",
+          "instruction": "Find the as many peaks as you can",
+          "type": "react-component",
+          "path": "zoom-comparison-study/assets/ChromatogramView.tsx",
+          "parameters": {
+            "dataPath": "zoom-comparison-study/assets/data/B-Casein_channel1364.json",
+            "zoomMode": "magnifier"
+          }, 
+          "nextButtonLocation": "sidebar",
+          "response": [
+            {
+              "id": "accuracy",
+              "prompt": "Your click distance to circle center",
+              "required": true,
+              "location": "sidebar",
+              "type": "reactive"
+            }
+          ]
+        },
+        "chromatogram_boxZoom": {
+          "meta": {
+            "difficulty": 0,
+            "zoom": "boxZoom"
+          },
+          "description": "A chart with correct answer of 0.66",
+          "instruction": "Find the as many peaks as you can",
+          "type": "react-component",
+          "path": "zoom-comparison-study/assets/ChromatogramView.tsx",
+          "parameters": {
+            "dataPath": "zoom-comparison-study/assets/data/B-Casein_channel1364.json",
+            "zoomMode": "boxZoom"
+          }, 
+          "nextButtonLocation": "sidebar",
+          "response": [
+            {
+              "id": "accuracy",
+              "prompt": "Your click distance to circle center",
+              "required": true,
+              "location": "sidebar",
+              "type": "reactive"
+            }
+          ]
+        },
+        "chromatogram_rangeBrush": {
+          "meta": {
+            "difficulty": 0,
+            "zoom": "rangeBrush"
+          },
+          "description": "A chart with correct answer of 0.66",
+          "instruction": "Find the as many peaks as you can",
+          "type": "react-component",
+          "path": "zoom-comparison-study/assets/ChromatogramView.tsx",
+          "parameters": {
+            "dataPath": "zoom-comparison-study/assets/data/B-Casein_channel1364.json",
+            "zoomMode": "rangeBrush"
+          }, 
+          "nextButtonLocation": "sidebar",
+          "response": [
+            {
+              "id": "accuracy",
+              "prompt": "Your click distance to circle center",
+              "required": true,
+              "location": "sidebar",
+              "type": "reactive"
+            }
+          ]
         },
         "first-question-set": {
             "type": "questionnaire",
@@ -68,6 +211,12 @@
         "order": "fixed",
         "components": [
             "introduction",
+            "tutorial",
+            "chromatogram_scroll",
+            "chromatogram_clickToZoom",
+            "chromatogram_magnifier",
+            "chromatogram_boxZoom",
+            "chromatogram_rangeBrush",
             "first-question-set",
             "second-question-set"
         ]
