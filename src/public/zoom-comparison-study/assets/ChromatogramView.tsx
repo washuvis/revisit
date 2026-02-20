@@ -15,7 +15,6 @@ import React, {
  * 3) Delete “×” now actually deletes (was incorrectly starting a drag).
  * 4) Coordinate conversion unified: uses SVG bounding rect for peak interactions.
  */
-
 type Pt = { x: number; y: number };
 
 type ZoomMode = 'scroll' | 'clickToZoom' | 'magnifier' | 'boxZoom' | 'rangeBrush';
@@ -40,6 +39,26 @@ function isUndoKey(ev: KeyboardEvent) {
 function isResetKey(ev: KeyboardEvent) {
   // "r" as an explicit reset affordance across modes (avoids relying on double-click).
   return (ev.key === 'r' || ev.key === 'R') && !ev.metaKey && !ev.ctrlKey && !ev.altKey;
+}
+
+/** Runtime-safe number coercion (prevents `{}` from being assigned to number-typed vars). */
+function toNumber(v: unknown, fallback: number): number {
+  return typeof v === 'number' && Number.isFinite(v) ? v : fallback;
+}
+
+/** Runtime-safe string coercion. */
+function toString(v: unknown, fallback: string): string {
+  return typeof v === 'string' ? v : fallback;
+}
+
+/** Runtime-safe tuple coercion for [number, number] domains. */
+function toDomain(v: unknown): [number, number] | undefined {
+  if (!Array.isArray(v) || v.length !== 2) return undefined;
+  const a = v[0];
+  const b = v[1];
+  if (typeof a !== 'number' || typeof b !== 'number') return undefined;
+  if (!Number.isFinite(a) || !Number.isFinite(b)) return undefined;
+  return [a, b];
 }
 
 function clamp(v: number, lo: number, hi: number) {
@@ -137,32 +156,64 @@ function enforcePeakOrder(p: Peak): Peak {
   };
 }
 
-type EventMeta = Record<string, unknown>;
+type LogEvent = {
+  type: string;
+  t: number;
+  [key: string]: unknown;
+};
 
 type ZoomController = {
+  /** Current visible x-domain for the focus view. */
   domainX: [number, number];
+  /** Full x-domain spanning the entire dataset. */
   fullDomainX: [number, number];
-  setDomainX: (d: [number, number], meta?: EventMeta) => void;
-  zoomAtX: (anchorX: number, factor: number, meta?: EventMeta) => void;
-  panByPx: (dxPx: number, viewWidthPx: number, meta?: EventMeta) => void;
-  reset: (meta?: EventMeta) => void;
-  undo: (meta?: EventMeta) => void;
-  setDomainFromPixelSpan: (px0: number, px1: number, viewWidthPx: number, meta?: EventMeta) => void;
+
+  /**
+   * Set the focus domain directly (sanitized to fullDomainX + min window constraints).
+   * Use meta to tag the source (e.g., { source: "wheel", zoomMode }).
+   */
+  setDomainX: (d: [number, number], meta?: Record<string, unknown>) => void;
+
+  /**
+   * Zoom around an anchor x-value by a factor.
+   * factor > 1 zooms in, factor < 1 zooms out.
+   */
+  zoomAtX: (anchorX: number, factor: number, meta?: Record<string, unknown>) => void;
+
+  /**
+   * Pan the domain by a pixel delta (dxPx) given the view width in pixels.
+   * Positive dxPx pans right in pixel space (domain shifts left).
+   */
+  panByPx: (dxPx: number, viewWidthPx: number, meta?: Record<string, unknown>) => void;
+
+  /** Reset focus domain to the full domain. */
+  reset: (meta?: Record<string, unknown>) => void;
+
+  /**
+   * Set domain from a pixel span [px0, px1] across the view width.
+   * (Useful for simple box-zoom implementations.)
+   */
+  setDomainFromPixelSpan: (px0: number, px1: number, viewWidthPx: number, meta?: Record<string, unknown>) => void;
+
+  /**
+   * Undo to the previous domain if available; no-op if history is empty.
+   * Intended for “reversibility” in otherwise one-way interactions.
+   */
+  undo: (meta?: Record<string, unknown>) => void;
 };
 
 function useZoomController(opts: {
   data: Pt[];
   initialDomainX?: [number, number];
   minWindowFrac?: number;
-  onLogEvent?: (evt: Record<string, unknown>) => void;
+  onLogEvent?: (evt: LogEvent) => void;
 }): ZoomController {
   const {
-    data,
-    initialDomainX,
-    minWindowFrac = 0.002,
-    onLogEvent,
+    data, initialDomainX, minWindowFrac = 0.002, onLogEvent,
   } = opts;
+
   const fullDomainX = useMemo(() => extentX(data), [data]);
+
   const minWindow = useMemo(() => {
     const w = fullDomainX[1] - fullDomainX[0];
     return Math.max(w * minWindowFrac, Number.EPSILON);
@@ -170,35 +221,29 @@ function useZoomController(opts: {
 
   const [domainX, _setDomainX] = useState<[number, number]>(() => initialDomainX ?? fullDomainX);
 
-  const domainXRef = useRef<[number, number]>(initialDomainX ?? fullDomainX);
-  useEffect(() => {
-    domainXRef.current = domainX;
-  }, [domainX]);
-
-  const zoomHistoryRef = useRef<[number, number][]>([]);
-  const pushZoomHistory = useCallback((prevDomain: [number, number]) => {
-    const stack = zoomHistoryRef.current;
+  // Local history stack for undo.
+  const historyRef = useRef<[number, number][]>([]);
+  const pushHistory = useCallback((prev: [number, number]) => {
+    const stack = historyRef.current;
     const last = stack[stack.length - 1];
-    if (last && Math.abs(last[0] - prevDomain[0]) < 1e-12 && Math.abs(last[1] - prevDomain[1]) < 1e-12) return;
-    stack.push(prevDomain);
+    if (last && Math.abs(last[0] - prev[0]) < 1e-12 && Math.abs(last[1] - prev[1]) < 1e-12) return;
+    stack.push(prev);
     if (stack.length > 80) stack.splice(0, stack.length - 80);
-    onLogEvent?.({
-      type: 'zoom_history_push',
-      pushedDomainX: prevDomain,
-      stackDepth: stack.length,
-      t: performance.now(),
-    });
-  }, [onLogEvent]);
+  }, []);
 
+  /**
+   * Sanitize a proposed domain:
+   * - ensures [min,max] ordering
+   * - clamps to fullDomainX
+   * - enforces minimum window size
+   */
   const sanitize = useCallback(
     (d: [number, number]) => {
       let [a, b] = d[0] <= d[1] ? d : ([d[1], d[0]] as [number, number]);
       const fullW = fullDomainX[1] - fullDomainX[0];
 
-      // limit zoom out to viewport fill
       if (b - a >= fullW) return fullDomainX;
 
-      // min window
       if (b - a < minWindow) {
         const mid = (a + b) / 2;
         a = mid - minWindow / 2;
@@ -223,62 +268,41 @@ function useZoomController(opts: {
 
   const setDomainX = useCallback(
     (d: [number, number], meta: Record<string, unknown> = {}) => {
-      const preDomainX = domainXRef.current;
-      const postDomainX = sanitize(d);
+      // record history unless explicitly disabled
+      if (meta?.recordHistory !== false) pushHistory(domainX);
 
-      if (Math.abs(preDomainX[0] - postDomainX[0]) < 1e-12 && Math.abs(preDomainX[1] - postDomainX[1]) < 1e-12) return;
-
-      const source = meta.source ?? meta.type ?? 'setDomainX';
-      if (meta.pushHistory !== false) pushZoomHistory(preDomainX);
-
-      _setDomainX(postDomainX);
-
+      const sd = sanitize(d);
+      _setDomainX(sd);
       onLogEvent?.({
-        type: 'domain_change',
-        source,
-        preDomainX,
-        postDomainX,
-        anchorX: meta.anchorX,
-        factor: meta.factor,
-        zoomMode: meta.zoomMode,
-        t: performance.now(),
-      });
-
-      onLogEvent?.({
-        type: meta.type ?? 'domain_set',
-        domainX: postDomainX,
-        preDomainX,
-        postDomainX,
-        ...meta,
-        t: performance.now(),
+        type: 'domain_set', domainX: sd, ...meta, t: performance.now(),
       });
     },
-    [sanitize, onLogEvent, pushZoomHistory],
+    [domainX, onLogEvent, pushHistory, sanitize],
   );
 
   const reset = useCallback(
     (meta: Record<string, unknown> = {}) => {
-      const preDomainX = domainXRef.current;
-      const postDomainX = fullDomainX;
-      const source = meta.source ?? 'reset';
+      if (meta?.recordHistory !== false) pushHistory(domainX);
 
-      pushZoomHistory(preDomainX);
       _setDomainX(fullDomainX);
-
       onLogEvent?.({
-        type: 'domain_change',
-        source,
-        preDomainX,
-        postDomainX,
-        zoomMode: meta.zoomMode,
-        t: performance.now(),
-      });
-
-      onLogEvent?.({
-        type: 'reset', domainX: fullDomainX, preDomainX, postDomainX, ...meta, t: performance.now(),
+        type: 'reset', domainX: fullDomainX, ...meta, t: performance.now(),
       });
     },
-    [fullDomainX, onLogEvent, pushZoomHistory],
+    [domainX, fullDomainX, onLogEvent, pushHistory],
+  );
+
+  const undo = useCallback(
+    (meta: Record<string, unknown> = {}) => {
+      const prev = historyRef.current.pop();
+      if (!prev) return;
+      const sd = sanitize(prev);
+      _setDomainX(sd);
+      onLogEvent?.({
+        type: 'undo', domainX: sd, ...meta, t: performance.now(),
+      });
+    },
+    [onLogEvent, sanitize],
   );
 
   const zoomAtX = useCallback(
@@ -306,7 +330,6 @@ function useZoomController(opts: {
     [domainX, setDomainX],
   );
 
-  // Note: this helper is NOT used for focus box zoom anymore; we use focusXScale.inv so padding is respected.
   const setDomainFromPixelSpan = useCallback(
     (px0: number, px1: number, viewWidthPx: number, meta: Record<string, unknown> = {}) => {
       const [a, b] = domainX;
@@ -318,44 +341,13 @@ function useZoomController(opts: {
     [domainX, setDomainX],
   );
 
-  useEffect(
-    () => {
-      _setDomainX(
-        (d) => sanitize(d),
-      );
-    },
-    [fullDomainX[0], fullDomainX[1]],
-  );
+  useEffect(() => {
+    _setDomainX((d) => sanitize(d));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fullDomainX[0], fullDomainX[1]]);
 
-  // const undo = useCallback((meta: Record<string, unknown> = {}) => {
-  //   const stack = zoomHistoryRef.current;
-  //   if (!stack.length) return;
-
-  //   const preDomainX = domainXRef.current;
-  //   const postDomainX = stack.pop() as [number, number];
-
-  //   _setDomainX(postDomainX);
-
-  //   onLogEvent?.({
-  //     type: 'domain_change',
-  //     source: meta.source ?? 'undo',
-  //     preDomainX,
-  //     postDomainX,
-  //     zoomMode: meta.zoomMode,
-  //     t: performance.now(),
-  //   });
-
-  //   onLogEvent?.({
-  //     type: 'zoom_history_undo',
-  //     preDomainX,
-  //     postDomainX,
-  //     stackDepth: stack.length,
-  //     ...meta,
-  //     t: performance.now(),
-  //   });
-  // }, [onLogEvent]);
   return {
-    domainX, fullDomainX, setDomainX, zoomAtX, panByPx, reset, setDomainFromPixelSpan,
+    domainX, fullDomainX, setDomainX, zoomAtX, panByPx, reset, setDomainFromPixelSpan, undo,
   };
 }
 
@@ -369,6 +361,12 @@ type DrawOptions = {
   tickCountY?: number;
   lineWidth?: number;
   lineAlpha?: number;
+  /**
+   * Optional label overrides for convenience when callers accidentally pass labels
+   * in options instead of the dedicated `labels` argument.
+   */
+  x?: string;
+  y?: string;
 };
 
 function drawLineCanvas(
@@ -387,6 +385,11 @@ function drawLineCanvas(
   const showXLabel = options?.showXLabel ?? true;
   const showGrid = options?.showGrid ?? true;
   const fontSize = options?.fontSize ?? 12;
+
+  const effLabels = {
+    x: options?.x ?? labels.x,
+    y: options?.y ?? labels.y,
+  };
 
   const tickCountX = options?.tickCountX ?? 6;
   const tickCountY = options?.tickCountY ?? 5;
@@ -493,7 +496,7 @@ function drawLineCanvas(
 
   if (showXLabel) {
     ctx.textAlign = 'center';
-    ctx.fillText(labels.x ?? 'Time', padding.l + innerW / 2, h - 8);
+    ctx.fillText(effLabels.x ?? 'Time', padding.l + innerW / 2, h - 8);
   }
 
   if (showY && showYLabel) {
@@ -504,7 +507,7 @@ function drawLineCanvas(
     const yLabelY = padding.t + innerH / 2;
     ctx.translate(yLabelX, yLabelY);
     ctx.rotate(-Math.PI / 2);
-    ctx.fillText(labels.y ?? 'Intensity', 0, 0);
+    ctx.fillText(effLabels.y ?? 'Intensity', 0, 0);
     ctx.restore();
     ctx.textBaseline = 'alphabetic';
   }
@@ -530,12 +533,15 @@ function drawLineCanvas(
 }
 
 /**
- * Use SVG's boundingClientRect so we’re in the same coordinate system
- * as peak handle rendering.
+ * Convert a pointer event's clientX into SVG-local pixel coordinates.
+ * Uses the owning <svg>'s boundingClientRect so peak/handle math aligns with SVG rendering.
  */
 function clientXToSvgPx(e: React.PointerEvent): number {
-  const tgt = e.currentTarget as unknown;
-  const svg: SVGSVGElement | null = tgt.ownerSVGElement ?? (tgt.tagName === 'svg' ? tgt : null);
+  const tgt = e.currentTarget as Element;
+  const svg = tgt instanceof SVGSVGElement
+    ? tgt
+    : ((tgt as unknown as SVGGraphicsElement).ownerSVGElement ?? null);
+
   const rect = (svg ?? tgt).getBoundingClientRect();
   return e.clientX - rect.left;
 }
@@ -556,43 +562,51 @@ function modeLabel(m: ZoomMode) {
       return m;
   }
 }
+// type ChromatogramViewProps = {
+//   parameters?: {
+//     dataPath?: string;
+//     zoomMode?: ZoomMode;
+//     onLogEvent?: (evt: LogEvent) => void;
+//     [key: string]: unknown;
+//   };
+//   onLogEvent?: (evt: LogEvent) => void;
+//   data?: Pt[];
+//   dataPath?: string;
+//   width?: number;
+//   height?: number;
+//   zoomMode?: ZoomMode;
+//   initialDomainX?: [number, number];
+//   zoomStepFactor?: number;
+//   title?: string;
+//   subtitle?: string;
+//   xLabel?: string;
+//   yLabel?: string;
+// };
 
-type ChromatogramViewProps = {
-  parameters?: {
-    dataPath?: string;
-    zoomMode?: ZoomMode;
-    onLogEvent?: (evt: LogEvent) => void;
-    [key: string]: unknown;
-  };
-  onLogEvent?: (evt: LogEvent) => void;
-  data?: Pt[];
-  dataPath?: string;
-  width?: number;
-  height?: number;
-  zoomMode?: ZoomMode;
-  initialDomainX?: [number, number];
-  zoomStepFactor?: number;
-  title?: string;
-  subtitle?: string;
-  xLabel?: string;
-  yLabel?: string;
-};
+export default function ChromatogramView(rawProps: unknown) {
+  const rp = (rawProps ?? {}) as Record<string, unknown>;
+  const parameters = (rp.parameters ?? rp) as Record<string, unknown>;
 
-export default function ChromatogramView(rawProps: ChromatogramViewProps) {
-  const parameters = rawProps?.parameters ?? rawProps ?? {};
+  const width = toNumber(parameters.width ?? rp.width, 920);
+  const height = toNumber(parameters.height ?? rp.height, 420);
 
-  const width: number = parameters.width ?? rawProps.width ?? 920;
-  const height: number = parameters.height ?? rawProps.height ?? 420;
-  const zoomMode: ZoomMode = parameters.zoomMode ?? rawProps.zoomMode ?? 'scroll';
-  const initialDomainX: [number, number] | undefined = parameters.initialDomainX ?? rawProps.initialDomainX;
-  const onLogEvent: ((evt: Record<string, unknown>) => void) | undefined = parameters.onLogEvent ?? rawProps.onLogEvent;
-  const zoomStepFactor: number = parameters.zoomStepFactor ?? rawProps.zoomStepFactor ?? 1.5;
-  const dataPath: string | undefined = parameters.dataPath ?? rawProps.dataPath;
+  const zoomMode = (toString(parameters.zoomMode ?? rp.zoomMode, 'scroll') as ZoomMode) ?? 'scroll';
 
-  const title: string = parameters.title ?? rawProps.title ?? 'Chromatogram';
-  const subtitle: string = parameters.subtitle ?? rawProps.subtitle ?? '';
-  const xLabel: string = parameters.xLabel ?? rawProps.xLabel ?? 'Time';
-  const yLabel: string = parameters.yLabel ?? rawProps.yLabel ?? 'Intensity';
+  const initialDomainX = toDomain(parameters.initialDomainX ?? rp.initialDomainX) ?? undefined;
+
+  const onLogEvent = (typeof (parameters.onLogEvent ?? rp.onLogEvent) === 'function'
+    ? (parameters.onLogEvent ?? rp.onLogEvent)
+    : undefined) as ((evt: LogEvent) => void) | undefined;
+
+  const zoomStepFactor = toNumber(parameters.zoomStepFactor ?? rp.zoomStepFactor, 1.5);
+  const dataPath = (typeof (parameters.dataPath ?? rp.dataPath) === 'string'
+    ? (parameters.dataPath ?? rp.dataPath)
+    : undefined) as string | undefined;
+
+  const title = toString(parameters.title ?? rp.title, 'Chromatogram');
+  const subtitle = toString(parameters.subtitle ?? rp.subtitle, '');
+  const xLabel = toString(parameters.xLabel ?? rp.xLabel, 'Time');
+  const yLabel = toString(parameters.yLabel ?? rp.yLabel, 'Intensity');
 
   const [data, setData] = useState<Pt[]>(() => {
     const direct = (parameters.data ?? rawProps.data) as Pt[] | undefined;
@@ -1071,7 +1085,7 @@ export default function ChromatogramView(rawProps: ChromatogramViewProps) {
         const prev = zoomHistoryRef.current.pop();
         if (prev) {
           // zoom.setDomainX(prev, { source: 'undo', zoomMode });
-          undo({ source: 'mode_switch', zoomMode });
+          zoom.undo({ source: 'mode_switch', zoomMode });
           requestDraw();
         }
         ev.preventDefault();
@@ -1316,7 +1330,7 @@ export default function ChromatogramView(rawProps: ChromatogramViewProps) {
       dr.lastPx = px;
       zoom.panByPx(dx, width, { source: 'focus_drag_pan', zoomMode });
       requestDraw();
-    } else if (dr.kind === 'box') {
+    } else if (dr.kind === 'boxZoom') {
       dr.lastPx = px;
     }
   }, [editPeaks, focusXScale, placingPeak, padding.l, padding.r, requestDraw, width, zoom, zoomMode]);
@@ -1356,7 +1370,7 @@ export default function ChromatogramView(rawProps: ChromatogramViewProps) {
         return;
       }
       dragRef.current = {
-        kind: 'box',
+        kind: 'boxZoom',
         startPx: px,
         lastPx: px,
         isActive: true,
@@ -1369,6 +1383,7 @@ export default function ChromatogramView(rawProps: ChromatogramViewProps) {
       kind: 'pan',
       startPx: px,
       lastPx: px,
+      startDomainX: zoom.domainX,
       isActive: true,
     };
     onLogEvent?.({ type: 'pan_start', px, t: performance.now() });
@@ -1409,7 +1424,7 @@ export default function ChromatogramView(rawProps: ChromatogramViewProps) {
     const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
     const px = e.clientX - rect.left;
 
-    if (dr?.kind === 'box') {
+    if (dr?.kind === 'boxZoom') {
       const innerW = width - padding.l - padding.r;
 
       const x0 = clamp(dr.startPx, padding.l, padding.l + innerW);
@@ -1598,7 +1613,7 @@ export default function ChromatogramView(rawProps: ChromatogramViewProps) {
     // box zoom rubber band (read from dragRef)
     const dr = dragRef.current;
     let boxRect: { x: number; w: number } | null = null;
-    if (!editPeaks && zoomMode === 'boxZoom' && dr?.isActive && dr.kind === 'box') {
+    if (!editPeaks && zoomMode === 'boxZoom' && dr?.isActive && dr.kind === 'boxZoom') {
       const x0 = clamp(dr.startPx, padding.l, padding.l + innerW);
       const x1 = clamp(dr.lastPx, padding.l, padding.l + innerW);
       const left = Math.min(x0, x1);
@@ -2122,7 +2137,6 @@ export default function ChromatogramView(rawProps: ChromatogramViewProps) {
               borderRadius: 12,
               border: '1px solid rgba(17,24,39,0.12)',
               background: 'rgba(17,24,39,0.03)',
-              cursor: 'pointer',
               fontSize: 12,
               fontWeight: 600,
               color: 'rgba(17,24,39,0.75)',
