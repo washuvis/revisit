@@ -609,13 +609,15 @@ export default function ChromatogramView(rawProps: unknown) {
   const yLabel = toString(parameters.yLabel ?? rp.yLabel, 'Intensity');
 
   const [data, setData] = useState<Pt[]>(() => {
-    const direct = (parameters.data ?? rawProps.data) as Pt[] | undefined;
+    const direct = (parameters.data ?? rp.data) as Pt[] | undefined;
     return Array.isArray(direct) ? direct : [];
   });
+
   const [isLoading, setIsLoading] = useState<boolean>(() => {
-    const direct = (parameters.data ?? rawProps.data) as Pt[] | undefined;
+    const direct = (parameters.data ?? rp.data) as Pt[] | undefined;
     return !Array.isArray(direct) && !!dataPath;
   });
+
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -743,13 +745,32 @@ export default function ChromatogramView(rawProps: unknown) {
     startDomainX: [number, number];
   };
 
-  type OtherDrag =
-    | { kind: 'boxZoom'; startPx: number; startPy: number }
-    | { kind: 'pan'; startPx: number; startDomainX: [number, number] }
-    | { kind: 'peakHandle'; peakId: string; handle: 'start' | 'apex' | 'end' }
-    | { kind: 'peakMove'; peakId: string; startPx: number; startDomainX: [number, number] };
+  type PanDrag = {
+    kind: 'pan';
+    startPx: number;
+    lastPx: number;
+    startDomainX: [number, number];
+    isActive: boolean;
+  };
 
-  type DragState = ContextWindowDrag | OtherDrag;
+  type BoxZoomDrag = {
+    kind: 'boxZoom';
+    startPx: number;
+    startPy: number;
+    lastPx: number;
+    isActive: boolean;
+  };
+
+  type ContextWindowDrag = {
+    kind: 'contextWindow';
+    lastPx: number;
+    isActive: boolean;
+    nearLeft: boolean;
+    nearRight: boolean;
+    inside: boolean;
+  };
+
+  type DragState = PanDrag | BoxZoomDrag | ContextWindowDrag;
 
   const dragRef = useRef<DragState | null>(null);
 
@@ -870,8 +891,8 @@ export default function ChromatogramView(rawProps: unknown) {
       //   width,
       //   height,
       //   padding,
-      //   { x: xLabel, y: yLabel },
       //   { showY: true, showYLabel: true, showXLabel: true, showGrid: true, fontSize: 12, tickCountX: 6, tickCountY: 5 }
+      //   { x: xLabel, y: yLabel },
       // );
 
       // --- Focus draw via offscreen so magnifier can sample pixels ---
@@ -893,7 +914,6 @@ export default function ChromatogramView(rawProps: unknown) {
         width,
         height,
         padding,
-        { x: xLabel, y: yLabel },
         {
           showY: true,
           showYLabel: true,
@@ -903,6 +923,7 @@ export default function ChromatogramView(rawProps: unknown) {
           tickCountX: 6,
           tickCountY: 5,
         },
+        { x: xLabel, y: yLabel },
       );
 
       // copy offscreen to visible focus canvas
@@ -960,7 +981,6 @@ export default function ChromatogramView(rawProps: unknown) {
         width,
         contextH,
         ctxPadding,
-        { x: xLabel, y: yLabel },
         {
           showY: false,
           showYLabel: false,
@@ -972,6 +992,7 @@ export default function ChromatogramView(rawProps: unknown) {
           lineAlpha: 0.65,
           lineWidth: 1.2,
         },
+        { x: xLabel, y: yLabel },
       );
 
       // Context viewport overlay
@@ -1372,6 +1393,7 @@ export default function ChromatogramView(rawProps: unknown) {
       dragRef.current = {
         kind: 'boxZoom',
         startPx: px,
+        startPy: e.clientY - rect.top,
         lastPx: px,
         isActive: true,
       };
