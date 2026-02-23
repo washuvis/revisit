@@ -737,14 +737,6 @@ export default function ChromatogramView(rawProps: unknown) {
 
   const activeDragPeakId = peakDragRef.current?.peakId ?? null;
 
-  // Focus drag state for pan/box zoom (separate from peak drag)
-  type ContextWindowDrag = {
-    kind: 'contextWindow';
-    // add fields you actually store, e.g.:
-    startPx: number;
-    startDomainX: [number, number];
-  };
-
   type PanDrag = {
     kind: 'pan';
     startPx: number;
