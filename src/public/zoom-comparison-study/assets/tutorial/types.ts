@@ -1,13 +1,18 @@
 export type ZoomMode = 'scroll' | 'clickToZoom' | 'magnifier' | 'boxZoom' | 'rangeBrush';
 
+export type LogEvent = {
+  type: string;
+  t: number;
+  [key: string]: unknown;
+};
+
 export type TutorialContext = {
   participantId?: string;
   trialId?: string;
   stimulusId?: string;
   zoomMode: ZoomMode;
 
-  // optional: pass your study logger
-  // onLogEvent?: (evt: Record<string, any>) => void;
+  onLogEvent?: (evt: LogEvent) => void;
 
   // practice completion flags, etc.
   practice?: {
