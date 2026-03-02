@@ -1293,6 +1293,11 @@ export default function ChromatogramView(rawProps: unknown) {
     e.preventDefault();
   }, [onLogEvent]);
 
+  const onFocusPointerLeave = useCallback(() => {
+    setHoverPx(null);
+    setLensPx(null);
+  }, []);
+
   // ----------------------------
   // Focus interactions (pan/zoom) — disabled while editing peaks
   // ----------------------------
@@ -2222,12 +2227,7 @@ export default function ChromatogramView(rawProps: unknown) {
           onWheel={onFocusWheel}
           onClick={onFocusClick}
           // onDoubleClick={onFocusDoubleClick}
-          onPointerLeave={() => {
-            if (lensPx) {
-              setLensPx(null);
-              requestDraw();
-            }
-          }}
+          onPointerLeave={onFocusPointerLeave}
         />
       </div>
 

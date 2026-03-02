@@ -7,6 +7,10 @@ import { ExampleFrame } from './components/ExampleFrame';
 // import peakBig from './assets/peak_big.png';
 // import tinyFull from './assets/peak_tiny_full.png';
 // import tinyZoomed from './assets/peak_tiny_zoomed.png';
+import taggingDemo from '../img/taggingDemo.mp4';
+import tinyFull from '../img/tinyFull.png';
+import tinyZoomed from '../img/tinyZoomed.png';
+import simplePeakAnnotated from '../img/simplePeakAnnotated.png';
 
 function ZoomHowItWorks({ mode }: { mode: ZoomMode }) {
   // Keep wording parallel across conditions for fairness.
@@ -85,11 +89,11 @@ export const tutorialPages: TutorialPageDef[] = [
         <p>
           You will look at a line chart and mark important
           <b> peaks </b>
-          in the line.
+          on the line.
         </p>
-        <p>Your job is to find bumps and mark:</p>
+        <p>Your job is to find the peaks and mark:</p>
         <ul>
-          <li>where the bump starts</li>
+          <li>where the peak starts</li>
           <li>its highest point</li>
           <li>where it ends</li>
         </ul>
@@ -107,6 +111,7 @@ export const tutorialPages: TutorialPageDef[] = [
     label: 'Peak',
     render: () => (
       <>
+        <p> Each chart will show time (in seconds) on the x-axis and intensity on the y-axis.</p>
         <p>
           A
           <b> peak </b>
@@ -135,8 +140,10 @@ export const tutorialPages: TutorialPageDef[] = [
             </li>
           </ol>
           {/* Replace with an image or an inline SVG later */}
-          <div style={{ height: 180, borderRadius: 12, border: '1px dashed rgba(0,0,0,0.25)' }}>
-            <div style={{ padding: 12, opacity: 0.8 }}>Example graphic goes here</div>
+          <div style={{ height: '200%', borderRadius: 12, border: '1px dashed rgba(0,0,0,0.25)' }}>
+            <div style={{ padding: 12, opacity: 0.8 }}>
+              <img src={simplePeakAnnotated} style={{ width: '100%' }} />
+            </div>
           </div>
         </ExampleFrame>
       </>
@@ -150,7 +157,11 @@ export const tutorialPages: TutorialPageDef[] = [
     render: () => (
       <>
         <p>Some peaks are big and obvious. Others are small and subtle.</p>
-        <p>Small peaks can be easy to miss unless you zoom in.</p>
+        <p>
+          Small peaks like the one shown below at
+          <b> 2.410 seconds </b>
+          can be easy to miss unless you zoom in.
+        </p>
 
         <ExampleFrame title="Why zoom helps">
           <div
@@ -164,23 +175,23 @@ export const tutorialPages: TutorialPageDef[] = [
               style={{
                 borderRadius: 12,
                 border: '1px dashed rgba(0,0,0,0.25)',
-                height: 180,
+                height: '150%',
                 padding: 12,
               }}
             >
               Full view (tiny bump is hard to see)
-              {/* <img src={tinyFull} style={{ width: '100%' }} /> */}
+              <img src={tinyFull} style={{ width: '100%' }} />
             </div>
             <div
               style={{
                 borderRadius: 12,
                 border: '1px dashed rgba(0,0,0,0.25)',
-                height: 180,
+                height: '150%',
                 padding: 12,
               }}
             >
               Zoomed-in view (tiny bump becomes clear)
-              {/* <img src={tinyZoomed} style={{ width: '100%' }} /> */}
+              <img src={tinyZoomed} style={{ width: '100%' }} />
             </div>
           </div>
         </ExampleFrame>
@@ -217,13 +228,16 @@ export const tutorialPages: TutorialPageDef[] = [
         <ExampleFrame title="Tagging demo">
           <div
             style={{
-              height: 220,
+              height: '250%',
               borderRadius: 12,
               border: '1px dashed rgba(0,0,0,0.25)',
               padding: 12,
             }}
           >
-            Animation or interactive demo goes here
+            <video style={{ width: '100%' }} controls>
+              <source src={taggingDemo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </ExampleFrame>
       </>
