@@ -10,6 +10,7 @@
 <li>For each statement, you will be asked <strong>if the statement is accurate or not</strong>.</li>
 <li>Some statements will be explicitly stating <strong>information found within the chart</strong>, such as the chart type or values within the chart, while other statements may <strong>use outside information to contextualize or understand the chart</strong>.</li>
 <li>For the purposes of your response, <strong>assume that the chart and its data are accurate</strong>. If the statement uses outside information, <strong>use your outside knowledge of the topic for your answer</strong>.</li>
+<li>If a statement contains one or more <strong>fallacies</strong>, then mark the statement as <strong>inaccurate</strong>. Specifically look out for <strong>correlation-causation fallacies</strong> where one factor is assumed to cause another unrelated factor, <strong>cherry-picking</strong> by applying one specific value to a broader category (such as saying that a German data point can be applied to all of Europe), or <strong>setting an arbitrary threshold</strong> by saying that some arbitrary number is "too much" or "too little" without basis.</li>
 <li>If you believe an answer may be correct, you may use your judgement to guess. If you are completely unsure, you may select "I don't know" and continue with the rest of the items.</li>
 <br>
 <p>After completing Part 1, you will then be given instructions to complete <strong>Part 2</strong>.</p>
