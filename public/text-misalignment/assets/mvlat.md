@@ -12,6 +12,6 @@
 
 <p><strong>Important: You will have a time limit for each question in Part 2. If the time limit is exceeded, you will not be able to submit your answer for that question. You may skip questions instead of guessing if you are unsure.</strong></p>
 
-<p>When you are ready, you may click "Next" to continue.</p>
+<p>When you are ready, you may <strong>click "Next" to continue</strong>, which is found on the <strong>bottom-right of the page</strong>.</p>
 </div>
 
