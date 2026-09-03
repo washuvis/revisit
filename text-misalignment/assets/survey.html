@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" style="width:100%;">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Part 1 Instructions</title>
+</head>
+<body style="
+  margin:0;
+  padding:24px 28px 40px 28px;
+  box-sizing:border-box;
+  width:100%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.45;
+  color:#111;
+  overflow:hidden;
+">
+  <div id="survey-content" style="margin:0 auto; max-width:900px;">
+    <h1 style="margin-top:0;">Part 1 Instructions</h1>
+
+    <p>You will now begin the <strong>first of two parts</strong> of this survey.</p>
+
+    <p>
+      In <strong>Part 1</strong>, you will be presented <strong>brief statements</strong>
+      accompanied by <strong>24 charts</strong>. If a chart is too small or hard to read,
+      you can <strong>zoom in</strong> by <strong>clicking the image</strong>. There is an
+      example image below to practice this interaction, if you would like.
+    </p>
+
+    <p>
+      Your completion time will be measured, but <strong>there is no time limit on your
+      responses</strong>. For each statement, you will be asked <strong>if the statement
+      is accurate or not</strong>.
+    </p>
+
+    <p>
+      Some statements will explicitly state <strong>information found within the chart</strong>,
+      such as the chart type or values within the chart, while other statements may
+      <strong>use outside information to contextualize or understand the chart</strong>.
+    </p>
+
+    <p>
+      For the purposes of your response, <strong>assume that the chart and its data are
+      accurate</strong>. If the statement uses outside information, <strong>use your outside
+      knowledge of the topic for your answer</strong>.
+    </p>
+
+    <p>
+      If a statement contains one or more <strong>fallacies</strong>, then mark the statement
+      as <strong>inaccurate</strong>. Specifically look out for:
+    </p>
+
+    <ul style="padding-left:24px;">
+      <li>
+        <strong>Correlation-causation fallacies</strong>, where one factor is assumed to cause
+        another unrelated factor.
+      </li>
+      <li>
+        <strong>Cherry-picking</strong>, by applying one specific value to a broader category
+        (such as saying that a German data point can be applied to all of Europe).
+      </li>
+      <li>
+        <strong>Setting an arbitrary threshold</strong>, by saying that some arbitrary number
+        is "too much" or "too little" without basis.
+      </li>
+    </ul>
+
+    <p>
+      If you believe an answer may be correct, you may use your judgement to guess. If you are
+      completely unsure, you may select "I don't know" and continue with the rest of the items.
+    </p>
+
+    <div style="width:100%; text-align:center; margin-top:34px;">
+      <p style="margin-bottom:12px;">
+        <strong>Example:</strong> Click the image below to practice zooming.
+      </p>
+
+      <img
+        id="survey-example-image"
+        src="example.png"
+        alt="Example visualization"
+        title="Click to zoom"
+        style="
+          display:block;
+          max-width:80%;
+          max-height:420px;
+          width:auto;
+          height:auto;
+          object-fit:contain;
+          margin:0 auto;
+          cursor:zoom-in;
+          user-select:none;
+          -webkit-user-drag:none;
+        "
+      >
+    </div>
+
+    <br>
+
+    <p>
+      After completing Part 1, you will then be given instructions to complete
+      <strong>Part 2</strong>.
+    </p>
+
+    <p>
+      When you are ready to continue, <strong>press the "Next" button</strong>.
+      This button is found on the <strong>bottom of the page</strong>.
+    </p>
+  </div>
+
+  <div
+    id="survey-zoom-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Full size example visualization"
+    style="
+      display:none;
+      position:fixed;
+      inset:0;
+      z-index:9999;
+      background:rgba(0,0,0,0.88);
+      overflow:hidden;
+    "
+  >
+    <div style="
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      z-index:10000;
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      padding:10px;
+      background:rgba(0,0,0,0.78);
+    ">
+      <button id="survey-zoom-out" type="button"
+              style="min-width:54px; height:38px; font-size:18px; cursor:pointer;">−</button>
+      <button id="survey-zoom-reset" type="button"
+              style="min-width:80px; height:38px; cursor:pointer;">Reset</button>
+      <button id="survey-zoom-in" type="button"
+              style="min-width:54px; height:38px; font-size:18px; cursor:pointer;">+</button>
+      <button id="survey-close-zoom" type="button"
+              style="min-width:80px; height:38px; cursor:pointer; background:#d32f2f; color:white; border:1px solid #b71c1c; border-radius:4px; font-weight:600;">Close</button>
+    </div>
+
+    <div
+      id="survey-zoom-stage"
+      style="
+        position:absolute;
+        top:58px;
+        left:0;
+        right:0;
+        bottom:0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        overflow:hidden;
+        cursor:grab;
+        touch-action:none;
+        user-select:none;
+        padding:20px;
+        box-sizing:border-box;
+      "
+    >
+      <img
+        id="survey-zoom-image"
+        src="example.png"
+        alt="Full size example visualization"
+        style="
+          display:block;
+          width:calc(100vw - 80px);
+          height:calc(100vh - 150px);
+          max-width:none;
+          max-height:none;
+          object-fit:contain;
+          transform-origin:center center;
+          transition:transform 120ms ease;
+          user-select:none;
+          -webkit-user-drag:none;
+          pointer-events:none;
+        "
+      >
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      // Size and center the ReVISit iframe itself.
+      //
+      // In the normal survey view, size the iframe to the full HTML content
+      // height so the iframe itself does not scroll and ReVISit's Next button
+      // appears after the entire instruction/example section.
+      //
+      // During zoom, temporarily expand the iframe to nearly the full viewport.
+      function sizeSurveyFrame(expanded = false) {
+        if (!window.frameElement) {
+          return;
+        }
+
+        if (expanded) {
+          const height = 'calc(100vh - 100px)';
+          window.frameElement.style.height = height;
+          window.frameElement.style.maxHeight = height;
+        } else {
+          // Measure only the actual survey content. Measuring the whole
+          // document creates a feedback loop because the document height
+          // changes when the iframe height changes.
+          const content = document.getElementById('survey-content');
+          const contentHeight = content
+            ? Math.ceil(content.getBoundingClientRect().height + 64)
+            : 800;
+
+          window.frameElement.style.height = `${contentHeight}px`;
+          window.frameElement.style.maxHeight = `${contentHeight}px`;
+        }
+
+        window.frameElement.style.width = '92vw';
+        window.frameElement.style.maxWidth = '1000px';
+        window.frameElement.style.display = 'block';
+        window.frameElement.style.marginLeft = 'auto';
+        window.frameElement.style.marginRight = 'auto';
+      }
+
+      // Wait until images/layout have resolved before taking the final height.
+      function sizeSurveyToContent() {
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => sizeSurveyFrame(false));
+        });
+      }
+
+      sizeSurveyToContent();
+
+      const exampleImage = document.getElementById('survey-example-image');
+      const overlay = document.getElementById('survey-zoom-overlay');
+      const zoomStage = document.getElementById('survey-zoom-stage');
+      const zoomImage = document.getElementById('survey-zoom-image');
+
+      let scale = 1;
+      let translateX = 0;
+      let translateY = 0;
+      let isDragging = false;
+      let dragStartX = 0;
+      let dragStartY = 0;
+      let dragOriginX = 0;
+      let dragOriginY = 0;
+
+      function applyTransform() {
+        zoomImage.style.transform =
+          `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      }
+
+      function resetView() {
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      }
+
+      function setScale(nextScale, anchorX = null, anchorY = null) {
+        const oldScale = scale;
+        const clampedScale = Math.min(4, Math.max(0.5, nextScale));
+
+        if (clampedScale === oldScale) {
+          return;
+        }
+
+        if (anchorX !== null && anchorY !== null) {
+          const rect = zoomStage.getBoundingClientRect();
+          const localX = anchorX - rect.left - rect.width / 2;
+          const localY = anchorY - rect.top - rect.height / 2;
+
+          const ratio = clampedScale / oldScale;
+          translateX = localX - (localX - translateX) * ratio;
+          translateY = localY - (localY - translateY) * ratio;
+        }
+
+        scale = clampedScale;
+        applyTransform();
+      }
+
+      function openOverlay() {
+        resetView();
+        sizeSurveyFrame(true);
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeOverlay() {
+        isDragging = false;
+        zoomStage.style.cursor = 'grab';
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'hidden';
+        sizeSurveyToContent();
+      }
+
+      exampleImage.addEventListener('click', openOverlay);
+
+      document.getElementById('survey-close-zoom')
+        .addEventListener('click', closeOverlay);
+
+      document.getElementById('survey-zoom-in')
+        .addEventListener('click', () => setScale(scale + 0.25));
+
+      document.getElementById('survey-zoom-out')
+        .addEventListener('click', () => setScale(scale - 0.25));
+
+      document.getElementById('survey-zoom-reset')
+        .addEventListener('click', resetView);
+
+      zoomStage.addEventListener('wheel', (event) => {
+        event.preventDefault();
+
+        const zoomFactor = Math.exp(-event.deltaY * 0.0015);
+        setScale(
+          scale * zoomFactor,
+          event.clientX,
+          event.clientY
+        );
+      }, { passive:false });
+
+      zoomStage.addEventListener('pointerdown', (event) => {
+        if (event.button !== 0) {
+          return;
+        }
+
+        isDragging = true;
+        dragStartX = event.clientX;
+        dragStartY = event.clientY;
+        dragOriginX = translateX;
+        dragOriginY = translateY;
+
+        zoomStage.setPointerCapture(event.pointerId);
+        zoomStage.style.cursor = 'grabbing';
+      });
+
+      zoomStage.addEventListener('pointermove', (event) => {
+        if (!isDragging) {
+          return;
+        }
+
+        translateX = dragOriginX + (event.clientX - dragStartX);
+        translateY = dragOriginY + (event.clientY - dragStartY);
+        applyTransform();
+      });
+
+      function stopDragging(event) {
+        if (!isDragging) {
+          return;
+        }
+
+        isDragging = false;
+        zoomStage.style.cursor = 'grab';
+
+        if (zoomStage.hasPointerCapture(event.pointerId)) {
+          zoomStage.releasePointerCapture(event.pointerId);
+        }
+      }
+
+      zoomStage.addEventListener('pointerup', stopDragging);
+      zoomStage.addEventListener('pointercancel', stopDragging);
+
+      overlay.addEventListener('click', (event) => {
+        if (event.target === overlay) {
+          closeOverlay();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && overlay.style.display !== 'none') {
+          closeOverlay();
+        }
+      });
+
+      exampleImage.addEventListener('load', () => {
+        if (overlay.style.display === 'none') {
+          sizeSurveyToContent();
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        if (overlay.style.display !== 'none') {
+          sizeSurveyFrame(true);
+        } else {
+          sizeSurveyToContent();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
