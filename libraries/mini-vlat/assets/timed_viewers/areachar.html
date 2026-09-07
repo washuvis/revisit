@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-VLAT areachar</title>
+</head>
+<body style="margin:0; padding:0; overflow:hidden; font-family:Arial, Helvetica, sans-serif; background:white;">
+  <div id="viewer-content"
+       style="margin:0 auto; width:80vw; max-width:1000px; text-align:center; padding:8px 0 4px 0;">
+    <img
+      src="/libraries/mini-vlat/assets/AreaChart.png"
+      alt="Mini-VLAT visualization"
+      style="display:block; margin:0 auto; max-width:100%; max-height:440px; width:auto; height:auto; object-fit:contain; border:1px solid #d9d9d9;"
+    >
+
+    <div style="width:100%; border-top:1px solid #d9d9d9; margin:8px 0;"></div>
+
+    <div id="countdown"
+         aria-live="polite"
+         style="font-size:12pt; font-weight:600; line-height:1.4; text-align:center;">
+      Time remaining: <span id="countdown-value">24 seconds</span>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const TOTAL_MS = 24000;
+      const start = Date.now();
+      const countdownValue = document.getElementById('countdown-value');
+
+      function updateTimer() {
+        const elapsed = Date.now() - start;
+        const remainingMs = Math.max(0, TOTAL_MS - elapsed);
+        const seconds = Math.ceil(remainingMs / 1000);
+
+        countdownValue.textContent = `${seconds} second${seconds === 1 ? '' : 's'}`;
+
+        if (seconds < 10) {
+          countdownValue.style.color = 'red';
+        } else {
+          countdownValue.style.color = '';
+        }
+
+        if (seconds <= 0) {
+          clearInterval(timerId);
+        }
+      }
+
+      function sizeFrame() {
+        try {
+          if (!window.frameElement) return;
+          const content = document.getElementById('viewer-content');
+          const h = Math.ceil(content.getBoundingClientRect().height + 16);
+          window.frameElement.style.width = '80vw';
+          window.frameElement.style.maxWidth = '1000px';
+          window.frameElement.style.height = `${h}px`;
+          window.frameElement.style.maxHeight = `${h}px`;
+          window.frameElement.style.margin = '0 auto';
+          window.frameElement.style.display = 'block';
+          window.frameElement.style.border = '0';
+        } catch (e) {}
+      }
+
+      const timerId = setInterval(updateTimer, 100);
+      updateTimer();
+
+      const img = document.querySelector('img');
+      if (img) {
+        if (img.complete) {
+          requestAnimationFrame(sizeFrame);
+        } else {
+          img.addEventListener('load', () => requestAnimationFrame(sizeFrame), { once: true });
+        }
+      }
+
+      window.addEventListener('resize', sizeFrame);
+      requestAnimationFrame(() => requestAnimationFrame(sizeFrame));
+    })();
+  </script>
+</body>
+</html>
