@@ -95,24 +95,17 @@ export function NextButton({
         seconds.
       </Alert>
       )}
-      {nextButtonDisableTime && timer && (nextButtonDisableTime - timer) < 1 && (
-        (nextButtonDisableTime - timer) > 0
-          ? (
-            <Alert mt="md" title="Next button disables soon" color="yellow" icon={<IconAlertTriangle />}>
-              The next button disables in
-              {' '}
-              {Math.ceil((nextButtonDisableTime - timer) / 1000)}
-              {' '}
-              seconds.
-            </Alert>
-          ) : !studyConfig.uiConfig.timeoutReject && (
-            <Alert mt="md" title="Next button disabled" color="red" icon={<IconAlertTriangle />}>
-              The next button has timed out and is now disabled.
-              <Group justify="right" mt="sm">
-                <Button onClick={() => goToNextStep(false)} variant="link" color="red">Proceed</Button>
-              </Group>
-            </Alert>
-          ))}
+      {nextButtonDisableTime && timer && (nextButtonDisableTime - timer) <= 0
+        && !studyConfig.uiConfig.timeoutReject && (
+          <Alert mt="md" title="Next button disabled" color="red" icon={<IconAlertTriangle />}>
+            The next button has timed out and is now disabled.
+            <Group justify="right" mt="sm">
+              <Button onClick={() => goToNextStep(false)} variant="link" color="red">
+                Proceed
+              </Button>
+            </Group>
+          </Alert>
+      )}
     </>
   );
 }
