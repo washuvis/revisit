@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/LibraryConfigSchema.json",
   "description": "Mini-VLAT is a short and effective measure of visualization literacy. Mini-VLAT has 12 questions and participants should answer each question within 25 seconds. This library contains 12 components. Each component contains one question of the Mini-VLAT. This library also contains a sequence of all 12 components (the full Mini-VLAT).",
-  "reference": "S. Pandey and A. Ottley, \u201cMini\u2010VLAT: A Short and Effective Measure of Visualization Literacy,\u201d Computer Graphics Forum, vol. 42, no. 3, pp. 1\u201311, Jun. 2023",
+  "reference": "S. Pandey and A. Ottley, “Mini‐VLAT: A Short and Effective Measure of Visualization Literacy,” Computer Graphics Forum, vol. 42, no. 3, pp. 1–11, Jun. 2023",
   "doi": "10.1111/cgf.14809",
   "components": {
     "treemap": {
@@ -9,13 +9,17 @@
         "trueAnswer": 1,
         "chartType": "treemap"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/treemap.html",
+      "instruction": "eBay is nested in the Software category.",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/TreeMap.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-treemap",
-          "prompt": "eBay is nested in the Software category.",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -37,13 +41,17 @@
         "trueAnswer": 0,
         "chartType": "stackedBar100"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/stackedBar100.html",
+      "instruction": "Which country has the lowest proportion of Gold medals?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/Stacked100.png",
+      "style": {
+        "width": "600px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-stackedBar100",
-          "prompt": "Which country has the lowest proportion of Gold medals?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -67,13 +75,17 @@
         "trueAnswer": 1,
         "chartType": "histogram"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/histogram.html",
+      "instruction": "What distance have customers traveled in the taxi the most?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/Histogram.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-histogram",
-          "prompt": "What distance have customers traveled in the taxi the most?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -97,13 +109,17 @@
         "trueAnswer": 0,
         "chartType": "choropleth"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/choropleth.html",
+      "instruction": "In 2020, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI)?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/Choropleth.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-choropleth",
-          "prompt": "In 2020, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI)?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -125,13 +141,17 @@
         "trueAnswer": 0,
         "chartType": "piechart"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/piechart.html",
+      "instruction": "What is the approximate global smartphone market share of Samsung?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/PieChart.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-piechart",
-          "prompt": "What is the approximate global smartphone market share of Samsung?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -155,13 +175,17 @@
         "trueAnswer": 1,
         "chartType": "bubblechart"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/bubblechart.html",
+      "instruction": "Which city's metro system has the largest number of stations?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/BubbleChart.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-bubblechart",
-          "prompt": "Which city's metro system has the largest number of stations?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -185,13 +209,17 @@
         "trueAnswer": 1,
         "chartType": "stackedbar"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/stackedbar.html",
+      "instruction": "What is the cost of peanuts in Seoul?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/StackedBar.png",
+      "style": {
+        "width": "600px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-stackedbar",
-          "prompt": "What is the cost of peanuts in Seoul?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -215,13 +243,17 @@
         "trueAnswer": 0,
         "chartType": "linechart"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/linechart.html",
+      "instruction": "What was the price of a barrel of oil in February 2020?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/LineChart.png",
+      "style": {
+        "width": "550px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-linechart",
-          "prompt": "What was the price of a barrel of oil in February 2020?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -245,13 +277,17 @@
         "trueAnswer": 1,
         "chartType": "barchart"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/barchart.html",
+      "instruction": "What is the average internet speed in Japan?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/BarChart.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-barchart",
-          "prompt": "What is the average internet speed in Japan?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -275,13 +311,17 @@
         "trueAnswer": 0,
         "chartType": "areachart"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/areachar.html",
+      "instruction": "What was the average price of a pound of coffee in October 2019?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/AreaChart.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-areachar",
-          "prompt": "What was the average price of a pound of coffee in October 2019?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -305,13 +345,17 @@
         "trueAnswer": 1,
         "chartType": "stackedarea"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/stackedarea.html",
+      "instruction": "What was the ratio of girls named \"Isla\" to girls named \"Amelia\" in 2012 in the UK?",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/StackedArea.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-stackedarea",
-          "prompt": "What was the ratio of girls named \"Isla\" to girls named \"Amelia\" in 2012 in the UK?",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [
@@ -335,13 +379,17 @@
         "trueAnswer": 1,
         "chartType": "scatterplot"
       },
-      "type": "website",
-      "path": "libraries/mini-vlat/assets/timed_viewers/scatterplot.html",
+      "instruction": "There is a negative relationship between the height and the weight of the 85 males.",
+      "type": "image",
+      "path": "libraries/mini-vlat/assets/Scatterplot.png",
+      "style": {
+        "width": "500px"
+      },
       "nextButtonDisableTime": 25000,
       "response": [
         {
           "id": "res-scatterplot",
-          "prompt": "There is a negative relationship between the height and the weight of the 85 males.",
+          "prompt": "Your answer",
           "required": true,
           "type": "radio",
           "options": [

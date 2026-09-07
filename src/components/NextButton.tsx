@@ -95,7 +95,7 @@ export function NextButton({
         seconds.
       </Alert>
       )}
-      {nextButtonDisableTime && timer && (nextButtonDisableTime - timer) < 10000 && (
+      {nextButtonDisableTime && timer && (nextButtonDisableTime - timer) < 1 && (
         (nextButtonDisableTime - timer) > 0
           ? (
             <Alert mt="md" title="Next button disables soon" color="yellow" icon={<IconAlertTriangle />}>
