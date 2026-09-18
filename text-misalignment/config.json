@@ -15,8 +15,8 @@
   },
   "uiConfig": {
     "contactEmail": "m.oen@wustl.edu",
-    "helpTextPath": "text-misalignment-human-baseline/assets/help.md",
-    "logoPath": "text-misalignment-human-baseline/assets/logo_b.png",
+    "helpTextPath": "text-misalignment/assets/help.md",
+    "logoPath": "text-misalignment/assets/logo_b.png",
     "withProgressBar": true,
     "autoDownloadStudy": false,
     "sidebar": false,
@@ -28,7 +28,7 @@
   "components": {
     "introduction": {
       "type": "markdown",
-      "path": "text-misalignment-human-baseline/assets/introduction.md",
+      "path": "text-misalignment/assets/introduction.md",
       "response": []
     },
     "prolific": {
@@ -47,17 +47,17 @@
     },
     "survey": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/survey.html",
+      "path": "text-misalignment/assets/survey.html",
       "response": []
     },
     "mvlat": {
       "type": "markdown",
-      "path": "text-misalignment-human-baseline/assets/mvlat.md",
+      "path": "text-misalignment/assets/mvlat.md",
       "response": []
     },
     "item-155_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/155.html",
+      "path": "text-misalignment/assets/image_viewers/155.html",
       "response": [
         {
           "id": "item-155_3_false",
@@ -81,7 +81,7 @@
     },
     "item-260_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/260.html",
+      "path": "text-misalignment/assets/image_viewers/260.html",
       "response": [
         {
           "id": "item-260_3_false",
@@ -105,7 +105,7 @@
     },
     "item-274_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/274.html",
+      "path": "text-misalignment/assets/image_viewers/274.html",
       "response": [
         {
           "id": "item-274_3_true",
@@ -129,7 +129,7 @@
     },
     "item-282_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/282.html",
+      "path": "text-misalignment/assets/image_viewers/282.html",
       "response": [
         {
           "id": "item-282_3_true",
@@ -153,7 +153,7 @@
     },
     "item-139_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/139.html",
+      "path": "text-misalignment/assets/image_viewers/139.html",
       "response": [
         {
           "id": "item-139_4_false",
@@ -177,7 +177,7 @@
     },
     "item-144_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/144.html",
+      "path": "text-misalignment/assets/image_viewers/144.html",
       "response": [
         {
           "id": "item-144_4_false",
@@ -201,7 +201,7 @@
     },
     "item-210_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/210.html",
+      "path": "text-misalignment/assets/image_viewers/210.html",
       "response": [
         {
           "id": "item-210_4_true",
@@ -225,7 +225,7 @@
     },
     "item-299_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/299.html",
+      "path": "text-misalignment/assets/image_viewers/299.html",
       "response": [
         {
           "id": "item-299_4_true",
@@ -249,7 +249,7 @@
     },
     "item-291_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/291.html",
+      "path": "text-misalignment/assets/image_viewers/291.html",
       "response": [
         {
           "id": "item-291_max_false",
@@ -273,7 +273,7 @@
     },
     "item-33_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/33.html",
+      "path": "text-misalignment/assets/image_viewers/33.html",
       "response": [
         {
           "id": "item-33_max_false",
@@ -297,7 +297,7 @@
     },
     "item-232_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/232.html",
+      "path": "text-misalignment/assets/image_viewers/232.html",
       "response": [
         {
           "id": "item-232_max_true",
@@ -321,7 +321,7 @@
     },
     "item-279_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/279.html",
+      "path": "text-misalignment/assets/image_viewers/279.html",
       "response": [
         {
           "id": "item-279_max_true",
@@ -345,7 +345,7 @@
     },
     "item-165_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/165.html",
+      "path": "text-misalignment/assets/image_viewers/165.html",
       "response": [
         {
           "id": "item-165_min_false",
@@ -369,7 +369,7 @@
     },
     "item-226_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/226.html",
+      "path": "text-misalignment/assets/image_viewers/226.html",
       "response": [
         {
           "id": "item-226_min_false",
@@ -393,7 +393,7 @@
     },
     "item-171_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/171.html",
+      "path": "text-misalignment/assets/image_viewers/171.html",
       "response": [
         {
           "id": "item-171_min_true",
@@ -417,7 +417,7 @@
     },
     "item-63_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/63.html",
+      "path": "text-misalignment/assets/image_viewers/63.html",
       "response": [
         {
           "id": "item-63_min_true",
@@ -441,7 +441,7 @@
     },
     "item-180_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/180.html",
+      "path": "text-misalignment/assets/image_viewers/180.html",
       "response": [
         {
           "id": "item-180_title_false",
@@ -465,7 +465,7 @@
     },
     "item-292_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/292.html",
+      "path": "text-misalignment/assets/image_viewers/292.html",
       "response": [
         {
           "id": "item-292_title_false",
@@ -489,7 +489,7 @@
     },
     "item-184_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/184.html",
+      "path": "text-misalignment/assets/image_viewers/184.html",
       "response": [
         {
           "id": "item-184_title_true",
@@ -513,7 +513,7 @@
     },
     "item-193_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/193.html",
+      "path": "text-misalignment/assets/image_viewers/193.html",
       "response": [
         {
           "id": "item-193_title_true",
@@ -537,7 +537,7 @@
     },
     "item-157_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/157.html",
+      "path": "text-misalignment/assets/image_viewers/157.html",
       "response": [
         {
           "id": "item-157_type_false",
@@ -561,7 +561,7 @@
     },
     "item-53_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/53.html",
+      "path": "text-misalignment/assets/image_viewers/53.html",
       "response": [
         {
           "id": "item-53_type_false",
@@ -585,7 +585,7 @@
     },
     "item-113_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/113.html",
+      "path": "text-misalignment/assets/image_viewers/113.html",
       "response": [
         {
           "id": "item-113_type_true",
@@ -609,7 +609,7 @@
     },
     "item-9_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/9.html",
+      "path": "text-misalignment/assets/image_viewers/9.html",
       "response": [
         {
           "id": "item-9_type_true",
@@ -633,7 +633,7 @@
     },
     "item-256_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/256.html",
+      "path": "text-misalignment/assets/image_viewers/256.html",
       "response": [
         {
           "id": "item-256_3_false",
@@ -657,7 +657,7 @@
     },
     "item-265_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/265.html",
+      "path": "text-misalignment/assets/image_viewers/265.html",
       "response": [
         {
           "id": "item-265_3_false",
@@ -681,7 +681,7 @@
     },
     "item-233_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/233.html",
+      "path": "text-misalignment/assets/image_viewers/233.html",
       "response": [
         {
           "id": "item-233_3_true",
@@ -705,7 +705,7 @@
     },
     "item-6_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/6.html",
+      "path": "text-misalignment/assets/image_viewers/6.html",
       "response": [
         {
           "id": "item-6_3_true",
@@ -729,7 +729,7 @@
     },
     "item-48_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/48.html",
+      "path": "text-misalignment/assets/image_viewers/48.html",
       "response": [
         {
           "id": "item-48_4_false",
@@ -753,7 +753,7 @@
     },
     "item-82_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/82.html",
+      "path": "text-misalignment/assets/image_viewers/82.html",
       "response": [
         {
           "id": "item-82_4_false",
@@ -777,7 +777,7 @@
     },
     "item-151_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/151.html",
+      "path": "text-misalignment/assets/image_viewers/151.html",
       "response": [
         {
           "id": "item-151_4_true",
@@ -801,7 +801,7 @@
     },
     "item-187_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/187.html",
+      "path": "text-misalignment/assets/image_viewers/187.html",
       "response": [
         {
           "id": "item-187_4_true",
@@ -825,7 +825,7 @@
     },
     "item-275_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/275.html",
+      "path": "text-misalignment/assets/image_viewers/275.html",
       "response": [
         {
           "id": "item-275_max_false",
@@ -849,7 +849,7 @@
     },
     "item-297_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/297.html",
+      "path": "text-misalignment/assets/image_viewers/297.html",
       "response": [
         {
           "id": "item-297_max_false",
@@ -873,7 +873,7 @@
     },
     "item-201_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/201.html",
+      "path": "text-misalignment/assets/image_viewers/201.html",
       "response": [
         {
           "id": "item-201_max_true",
@@ -897,7 +897,7 @@
     },
     "item-284_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/284.html",
+      "path": "text-misalignment/assets/image_viewers/284.html",
       "response": [
         {
           "id": "item-284_max_true",
@@ -921,7 +921,7 @@
     },
     "item-139_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/139.html",
+      "path": "text-misalignment/assets/image_viewers/139.html",
       "response": [
         {
           "id": "item-139_min_false",
@@ -945,7 +945,7 @@
     },
     "item-289_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/289.html",
+      "path": "text-misalignment/assets/image_viewers/289.html",
       "response": [
         {
           "id": "item-289_min_false",
@@ -969,7 +969,7 @@
     },
     "item-176_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/176.html",
+      "path": "text-misalignment/assets/image_viewers/176.html",
       "response": [
         {
           "id": "item-176_min_true",
@@ -993,7 +993,7 @@
     },
     "item-220_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/220.html",
+      "path": "text-misalignment/assets/image_viewers/220.html",
       "response": [
         {
           "id": "item-220_min_true",
@@ -1017,7 +1017,7 @@
     },
     "item-254_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/254.html",
+      "path": "text-misalignment/assets/image_viewers/254.html",
       "response": [
         {
           "id": "item-254_title_false",
@@ -1041,7 +1041,7 @@
     },
     "item-286_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/286.html",
+      "path": "text-misalignment/assets/image_viewers/286.html",
       "response": [
         {
           "id": "item-286_title_false",
@@ -1065,7 +1065,7 @@
     },
     "item-156_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/156.html",
+      "path": "text-misalignment/assets/image_viewers/156.html",
       "response": [
         {
           "id": "item-156_title_true",
@@ -1089,7 +1089,7 @@
     },
     "item-97_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/97.html",
+      "path": "text-misalignment/assets/image_viewers/97.html",
       "response": [
         {
           "id": "item-97_title_true",
@@ -1113,7 +1113,7 @@
     },
     "item-193_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/193.html",
+      "path": "text-misalignment/assets/image_viewers/193.html",
       "response": [
         {
           "id": "item-193_type_false",
@@ -1137,7 +1137,7 @@
     },
     "item-266_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/266.html",
+      "path": "text-misalignment/assets/image_viewers/266.html",
       "response": [
         {
           "id": "item-266_type_false",
@@ -1161,7 +1161,7 @@
     },
     "item-260_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/260.html",
+      "path": "text-misalignment/assets/image_viewers/260.html",
       "response": [
         {
           "id": "item-260_type_true",
@@ -1185,7 +1185,7 @@
     },
     "item-87_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/87.html",
+      "path": "text-misalignment/assets/image_viewers/87.html",
       "response": [
         {
           "id": "item-87_type_true",
@@ -1209,7 +1209,7 @@
     },
     "item-269_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/269.html",
+      "path": "text-misalignment/assets/image_viewers/269.html",
       "response": [
         {
           "id": "item-269_3_false",
@@ -1233,7 +1233,7 @@
     },
     "item-287_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/287.html",
+      "path": "text-misalignment/assets/image_viewers/287.html",
       "response": [
         {
           "id": "item-287_3_false",
@@ -1257,7 +1257,7 @@
     },
     "item-243_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/243.html",
+      "path": "text-misalignment/assets/image_viewers/243.html",
       "response": [
         {
           "id": "item-243_3_true",
@@ -1281,7 +1281,7 @@
     },
     "item-263_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/263.html",
+      "path": "text-misalignment/assets/image_viewers/263.html",
       "response": [
         {
           "id": "item-263_3_true",
@@ -1305,7 +1305,7 @@
     },
     "item-167_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/167.html",
+      "path": "text-misalignment/assets/image_viewers/167.html",
       "response": [
         {
           "id": "item-167_4_false",
@@ -1329,7 +1329,7 @@
     },
     "item-299_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/299.html",
+      "path": "text-misalignment/assets/image_viewers/299.html",
       "response": [
         {
           "id": "item-299_4_false",
@@ -1353,7 +1353,7 @@
     },
     "item-17_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/17.html",
+      "path": "text-misalignment/assets/image_viewers/17.html",
       "response": [
         {
           "id": "item-17_4_true",
@@ -1377,7 +1377,7 @@
     },
     "item-203_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/203.html",
+      "path": "text-misalignment/assets/image_viewers/203.html",
       "response": [
         {
           "id": "item-203_4_true",
@@ -1401,7 +1401,7 @@
     },
     "item-208_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/208.html",
+      "path": "text-misalignment/assets/image_viewers/208.html",
       "response": [
         {
           "id": "item-208_max_false",
@@ -1425,7 +1425,7 @@
     },
     "item-259_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/259.html",
+      "path": "text-misalignment/assets/image_viewers/259.html",
       "response": [
         {
           "id": "item-259_max_false",
@@ -1449,7 +1449,7 @@
     },
     "item-105_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/105.html",
+      "path": "text-misalignment/assets/image_viewers/105.html",
       "response": [
         {
           "id": "item-105_max_true",
@@ -1473,7 +1473,7 @@
     },
     "item-238_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/238.html",
+      "path": "text-misalignment/assets/image_viewers/238.html",
       "response": [
         {
           "id": "item-238_max_true",
@@ -1497,7 +1497,7 @@
     },
     "item-274_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/274.html",
+      "path": "text-misalignment/assets/image_viewers/274.html",
       "response": [
         {
           "id": "item-274_min_false",
@@ -1521,7 +1521,7 @@
     },
     "item-282_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/282.html",
+      "path": "text-misalignment/assets/image_viewers/282.html",
       "response": [
         {
           "id": "item-282_min_false",
@@ -1545,7 +1545,7 @@
     },
     "item-139_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/139.html",
+      "path": "text-misalignment/assets/image_viewers/139.html",
       "response": [
         {
           "id": "item-139_min_true",
@@ -1569,7 +1569,7 @@
     },
     "item-191_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/191.html",
+      "path": "text-misalignment/assets/image_viewers/191.html",
       "response": [
         {
           "id": "item-191_min_true",
@@ -1593,7 +1593,7 @@
     },
     "item-182_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/182.html",
+      "path": "text-misalignment/assets/image_viewers/182.html",
       "response": [
         {
           "id": "item-182_title_false",
@@ -1617,7 +1617,7 @@
     },
     "item-44_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/44.html",
+      "path": "text-misalignment/assets/image_viewers/44.html",
       "response": [
         {
           "id": "item-44_title_false",
@@ -1641,7 +1641,7 @@
     },
     "item-281_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/281.html",
+      "path": "text-misalignment/assets/image_viewers/281.html",
       "response": [
         {
           "id": "item-281_title_true",
@@ -1665,7 +1665,7 @@
     },
     "item-288_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/288.html",
+      "path": "text-misalignment/assets/image_viewers/288.html",
       "response": [
         {
           "id": "item-288_title_true",
@@ -1689,7 +1689,7 @@
     },
     "item-25_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/25.html",
+      "path": "text-misalignment/assets/image_viewers/25.html",
       "response": [
         {
           "id": "item-25_type_false",
@@ -1713,7 +1713,7 @@
     },
     "item-283_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/283.html",
+      "path": "text-misalignment/assets/image_viewers/283.html",
       "response": [
         {
           "id": "item-283_type_false",
@@ -1737,7 +1737,7 @@
     },
     "item-179_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/179.html",
+      "path": "text-misalignment/assets/image_viewers/179.html",
       "response": [
         {
           "id": "item-179_type_true",
@@ -1761,7 +1761,7 @@
     },
     "item-215_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/215.html",
+      "path": "text-misalignment/assets/image_viewers/215.html",
       "response": [
         {
           "id": "item-215_type_true",
@@ -1785,7 +1785,7 @@
     },
     "item-147_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/147.html",
+      "path": "text-misalignment/assets/image_viewers/147.html",
       "response": [
         {
           "id": "item-147_3_false",
@@ -1809,7 +1809,7 @@
     },
     "item-291_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/291.html",
+      "path": "text-misalignment/assets/image_viewers/291.html",
       "response": [
         {
           "id": "item-291_3_false",
@@ -1833,7 +1833,7 @@
     },
     "item-270_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/270.html",
+      "path": "text-misalignment/assets/image_viewers/270.html",
       "response": [
         {
           "id": "item-270_3_true",
@@ -1857,7 +1857,7 @@
     },
     "item-284_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/284.html",
+      "path": "text-misalignment/assets/image_viewers/284.html",
       "response": [
         {
           "id": "item-284_3_true",
@@ -1881,7 +1881,7 @@
     },
     "item-247_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/247.html",
+      "path": "text-misalignment/assets/image_viewers/247.html",
       "response": [
         {
           "id": "item-247_4_false",
@@ -1905,7 +1905,7 @@
     },
     "item-290_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/290.html",
+      "path": "text-misalignment/assets/image_viewers/290.html",
       "response": [
         {
           "id": "item-290_4_false",
@@ -1929,7 +1929,7 @@
     },
     "item-22_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/22.html",
+      "path": "text-misalignment/assets/image_viewers/22.html",
       "response": [
         {
           "id": "item-22_4_true",
@@ -1953,7 +1953,7 @@
     },
     "item-296_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/296.html",
+      "path": "text-misalignment/assets/image_viewers/296.html",
       "response": [
         {
           "id": "item-296_4_true",
@@ -1977,7 +1977,7 @@
     },
     "item-142_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/142.html",
+      "path": "text-misalignment/assets/image_viewers/142.html",
       "response": [
         {
           "id": "item-142_max_false",
@@ -2001,7 +2001,7 @@
     },
     "item-165_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/165.html",
+      "path": "text-misalignment/assets/image_viewers/165.html",
       "response": [
         {
           "id": "item-165_max_false",
@@ -2025,7 +2025,7 @@
     },
     "item-265_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/265.html",
+      "path": "text-misalignment/assets/image_viewers/265.html",
       "response": [
         {
           "id": "item-265_max_true",
@@ -2049,7 +2049,7 @@
     },
     "item-46_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/46.html",
+      "path": "text-misalignment/assets/image_viewers/46.html",
       "response": [
         {
           "id": "item-46_max_true",
@@ -2073,7 +2073,7 @@
     },
     "item-259_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/259.html",
+      "path": "text-misalignment/assets/image_viewers/259.html",
       "response": [
         {
           "id": "item-259_min_false",
@@ -2097,7 +2097,7 @@
     },
     "item-269_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/269.html",
+      "path": "text-misalignment/assets/image_viewers/269.html",
       "response": [
         {
           "id": "item-269_min_false",
@@ -2121,7 +2121,7 @@
     },
     "item-169_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/169.html",
+      "path": "text-misalignment/assets/image_viewers/169.html",
       "response": [
         {
           "id": "item-169_min_true",
@@ -2145,7 +2145,7 @@
     },
     "item-286_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/286.html",
+      "path": "text-misalignment/assets/image_viewers/286.html",
       "response": [
         {
           "id": "item-286_min_true",
@@ -2169,7 +2169,7 @@
     },
     "item-170_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/170.html",
+      "path": "text-misalignment/assets/image_viewers/170.html",
       "response": [
         {
           "id": "item-170_title_false",
@@ -2193,7 +2193,7 @@
     },
     "item-222_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/222.html",
+      "path": "text-misalignment/assets/image_viewers/222.html",
       "response": [
         {
           "id": "item-222_title_false",
@@ -2217,7 +2217,7 @@
     },
     "item-32_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/32.html",
+      "path": "text-misalignment/assets/image_viewers/32.html",
       "response": [
         {
           "id": "item-32_title_true",
@@ -2241,7 +2241,7 @@
     },
     "item-99_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/99.html",
+      "path": "text-misalignment/assets/image_viewers/99.html",
       "response": [
         {
           "id": "item-99_title_true",
@@ -2265,7 +2265,7 @@
     },
     "item-146_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/146.html",
+      "path": "text-misalignment/assets/image_viewers/146.html",
       "response": [
         {
           "id": "item-146_type_false",
@@ -2289,7 +2289,7 @@
     },
     "item-168_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/168.html",
+      "path": "text-misalignment/assets/image_viewers/168.html",
       "response": [
         {
           "id": "item-168_type_false",
@@ -2313,7 +2313,7 @@
     },
     "item-109_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/109.html",
+      "path": "text-misalignment/assets/image_viewers/109.html",
       "response": [
         {
           "id": "item-109_type_true",
@@ -2337,7 +2337,7 @@
     },
     "item-132_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/132.html",
+      "path": "text-misalignment/assets/image_viewers/132.html",
       "response": [
         {
           "id": "item-132_type_true",
@@ -2361,7 +2361,7 @@
     },
     "item-206_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/206.html",
+      "path": "text-misalignment/assets/image_viewers/206.html",
       "response": [
         {
           "id": "item-206_3_false",
@@ -2385,7 +2385,7 @@
     },
     "item-283_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/283.html",
+      "path": "text-misalignment/assets/image_viewers/283.html",
       "response": [
         {
           "id": "item-283_3_false",
@@ -2409,7 +2409,7 @@
     },
     "item-116_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/116.html",
+      "path": "text-misalignment/assets/image_viewers/116.html",
       "response": [
         {
           "id": "item-116_3_true",
@@ -2433,7 +2433,7 @@
     },
     "item-75_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/75.html",
+      "path": "text-misalignment/assets/image_viewers/75.html",
       "response": [
         {
           "id": "item-75_3_true",
@@ -2457,7 +2457,7 @@
     },
     "item-180_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/180.html",
+      "path": "text-misalignment/assets/image_viewers/180.html",
       "response": [
         {
           "id": "item-180_4_false",
@@ -2481,7 +2481,7 @@
     },
     "item-198_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/198.html",
+      "path": "text-misalignment/assets/image_viewers/198.html",
       "response": [
         {
           "id": "item-198_4_false",
@@ -2505,7 +2505,7 @@
     },
     "item-178_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/178.html",
+      "path": "text-misalignment/assets/image_viewers/178.html",
       "response": [
         {
           "id": "item-178_4_true",
@@ -2529,7 +2529,7 @@
     },
     "item-260_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/260.html",
+      "path": "text-misalignment/assets/image_viewers/260.html",
       "response": [
         {
           "id": "item-260_4_true",
@@ -2553,7 +2553,7 @@
     },
     "item-143_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/143.html",
+      "path": "text-misalignment/assets/image_viewers/143.html",
       "response": [
         {
           "id": "item-143_max_false",
@@ -2577,7 +2577,7 @@
     },
     "item-289_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/289.html",
+      "path": "text-misalignment/assets/image_viewers/289.html",
       "response": [
         {
           "id": "item-289_max_false",
@@ -2601,7 +2601,7 @@
     },
     "item-211_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/211.html",
+      "path": "text-misalignment/assets/image_viewers/211.html",
       "response": [
         {
           "id": "item-211_max_true",
@@ -2625,7 +2625,7 @@
     },
     "item-272_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/272.html",
+      "path": "text-misalignment/assets/image_viewers/272.html",
       "response": [
         {
           "id": "item-272_max_true",
@@ -2649,7 +2649,7 @@
     },
     "item-121_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/121.html",
+      "path": "text-misalignment/assets/image_viewers/121.html",
       "response": [
         {
           "id": "item-121_min_false",
@@ -2673,7 +2673,7 @@
     },
     "item-49_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/49.html",
+      "path": "text-misalignment/assets/image_viewers/49.html",
       "response": [
         {
           "id": "item-49_min_false",
@@ -2697,7 +2697,7 @@
     },
     "item-269_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/269.html",
+      "path": "text-misalignment/assets/image_viewers/269.html",
       "response": [
         {
           "id": "item-269_min_true",
@@ -2721,7 +2721,7 @@
     },
     "item-296_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/296.html",
+      "path": "text-misalignment/assets/image_viewers/296.html",
       "response": [
         {
           "id": "item-296_min_true",
@@ -2745,7 +2745,7 @@
     },
     "item-147_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/147.html",
+      "path": "text-misalignment/assets/image_viewers/147.html",
       "response": [
         {
           "id": "item-147_title_false",
@@ -2769,7 +2769,7 @@
     },
     "item-204_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/204.html",
+      "path": "text-misalignment/assets/image_viewers/204.html",
       "response": [
         {
           "id": "item-204_title_false",
@@ -2793,7 +2793,7 @@
     },
     "item-21_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/21.html",
+      "path": "text-misalignment/assets/image_viewers/21.html",
       "response": [
         {
           "id": "item-21_title_true",
@@ -2817,7 +2817,7 @@
     },
     "item-82_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/82.html",
+      "path": "text-misalignment/assets/image_viewers/82.html",
       "response": [
         {
           "id": "item-82_title_true",
@@ -2841,7 +2841,7 @@
     },
     "item-155_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/155.html",
+      "path": "text-misalignment/assets/image_viewers/155.html",
       "response": [
         {
           "id": "item-155_type_false",
@@ -2865,7 +2865,7 @@
     },
     "item-247_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/247.html",
+      "path": "text-misalignment/assets/image_viewers/247.html",
       "response": [
         {
           "id": "item-247_type_false",
@@ -2889,7 +2889,7 @@
     },
     "item-169_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/169.html",
+      "path": "text-misalignment/assets/image_viewers/169.html",
       "response": [
         {
           "id": "item-169_type_true",
@@ -2913,7 +2913,7 @@
     },
     "item-297_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/297.html",
+      "path": "text-misalignment/assets/image_viewers/297.html",
       "response": [
         {
           "id": "item-297_type_true",
@@ -2937,7 +2937,7 @@
     },
     "item-190_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/190.html",
+      "path": "text-misalignment/assets/image_viewers/190.html",
       "response": [
         {
           "id": "item-190_3_false",
@@ -2961,7 +2961,7 @@
     },
     "item-259_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/259.html",
+      "path": "text-misalignment/assets/image_viewers/259.html",
       "response": [
         {
           "id": "item-259_3_false",
@@ -2985,7 +2985,7 @@
     },
     "item-273_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/273.html",
+      "path": "text-misalignment/assets/image_viewers/273.html",
       "response": [
         {
           "id": "item-273_3_true",
@@ -3009,7 +3009,7 @@
     },
     "item-277_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/277.html",
+      "path": "text-misalignment/assets/image_viewers/277.html",
       "response": [
         {
           "id": "item-277_3_true",
@@ -3033,7 +3033,7 @@
     },
     "item-285_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/285.html",
+      "path": "text-misalignment/assets/image_viewers/285.html",
       "response": [
         {
           "id": "item-285_4_false",
@@ -3057,7 +3057,7 @@
     },
     "item-291_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/291.html",
+      "path": "text-misalignment/assets/image_viewers/291.html",
       "response": [
         {
           "id": "item-291_4_false",
@@ -3081,7 +3081,7 @@
     },
     "item-179_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/179.html",
+      "path": "text-misalignment/assets/image_viewers/179.html",
       "response": [
         {
           "id": "item-179_4_true",
@@ -3105,7 +3105,7 @@
     },
     "item-43_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/43.html",
+      "path": "text-misalignment/assets/image_viewers/43.html",
       "response": [
         {
           "id": "item-43_4_true",
@@ -3129,7 +3129,7 @@
     },
     "item-284_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/284.html",
+      "path": "text-misalignment/assets/image_viewers/284.html",
       "response": [
         {
           "id": "item-284_max_false",
@@ -3153,7 +3153,7 @@
     },
     "item-287_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/287.html",
+      "path": "text-misalignment/assets/image_viewers/287.html",
       "response": [
         {
           "id": "item-287_max_false",
@@ -3177,7 +3177,7 @@
     },
     "item-228_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/228.html",
+      "path": "text-misalignment/assets/image_viewers/228.html",
       "response": [
         {
           "id": "item-228_max_true",
@@ -3201,7 +3201,7 @@
     },
     "item-59_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/59.html",
+      "path": "text-misalignment/assets/image_viewers/59.html",
       "response": [
         {
           "id": "item-59_max_true",
@@ -3225,7 +3225,7 @@
     },
     "item-141_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/141.html",
+      "path": "text-misalignment/assets/image_viewers/141.html",
       "response": [
         {
           "id": "item-141_min_false",
@@ -3249,7 +3249,7 @@
     },
     "item-56_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/56.html",
+      "path": "text-misalignment/assets/image_viewers/56.html",
       "response": [
         {
           "id": "item-56_min_false",
@@ -3273,7 +3273,7 @@
     },
     "item-265_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/265.html",
+      "path": "text-misalignment/assets/image_viewers/265.html",
       "response": [
         {
           "id": "item-265_min_true",
@@ -3297,7 +3297,7 @@
     },
     "item-276_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/276.html",
+      "path": "text-misalignment/assets/image_viewers/276.html",
       "response": [
         {
           "id": "item-276_min_true",
@@ -3321,7 +3321,7 @@
     },
     "item-12_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/12.html",
+      "path": "text-misalignment/assets/image_viewers/12.html",
       "response": [
         {
           "id": "item-12_title_false",
@@ -3345,7 +3345,7 @@
     },
     "item-280_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/280.html",
+      "path": "text-misalignment/assets/image_viewers/280.html",
       "response": [
         {
           "id": "item-280_title_false",
@@ -3369,7 +3369,7 @@
     },
     "item-143_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/143.html",
+      "path": "text-misalignment/assets/image_viewers/143.html",
       "response": [
         {
           "id": "item-143_title_true",
@@ -3393,7 +3393,7 @@
     },
     "item-221_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/221.html",
+      "path": "text-misalignment/assets/image_viewers/221.html",
       "response": [
         {
           "id": "item-221_title_true",
@@ -3417,7 +3417,7 @@
     },
     "item-152_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/152.html",
+      "path": "text-misalignment/assets/image_viewers/152.html",
       "response": [
         {
           "id": "item-152_type_false",
@@ -3441,7 +3441,7 @@
     },
     "item-194_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/194.html",
+      "path": "text-misalignment/assets/image_viewers/194.html",
       "response": [
         {
           "id": "item-194_type_false",
@@ -3465,7 +3465,7 @@
     },
     "item-206_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/206.html",
+      "path": "text-misalignment/assets/image_viewers/206.html",
       "response": [
         {
           "id": "item-206_type_true",
@@ -3489,7 +3489,7 @@
     },
     "item-251_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/251.html",
+      "path": "text-misalignment/assets/image_viewers/251.html",
       "response": [
         {
           "id": "item-251_type_true",
@@ -3513,7 +3513,7 @@
     },
     "item-290_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/290.html",
+      "path": "text-misalignment/assets/image_viewers/290.html",
       "response": [
         {
           "id": "item-290_3_false",
@@ -3537,7 +3537,7 @@
     },
     "item-298_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/298.html",
+      "path": "text-misalignment/assets/image_viewers/298.html",
       "response": [
         {
           "id": "item-298_3_false",
@@ -3561,7 +3561,7 @@
     },
     "item-148_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/148.html",
+      "path": "text-misalignment/assets/image_viewers/148.html",
       "response": [
         {
           "id": "item-148_3_true",
@@ -3585,7 +3585,7 @@
     },
     "item-159_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/159.html",
+      "path": "text-misalignment/assets/image_viewers/159.html",
       "response": [
         {
           "id": "item-159_3_true",
@@ -3609,7 +3609,7 @@
     },
     "item-152_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/152.html",
+      "path": "text-misalignment/assets/image_viewers/152.html",
       "response": [
         {
           "id": "item-152_4_false",
@@ -3633,7 +3633,7 @@
     },
     "item-297_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/297.html",
+      "path": "text-misalignment/assets/image_viewers/297.html",
       "response": [
         {
           "id": "item-297_4_false",
@@ -3657,7 +3657,7 @@
     },
     "item-249_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/249.html",
+      "path": "text-misalignment/assets/image_viewers/249.html",
       "response": [
         {
           "id": "item-249_4_true",
@@ -3681,7 +3681,7 @@
     },
     "item-51_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/51.html",
+      "path": "text-misalignment/assets/image_viewers/51.html",
       "response": [
         {
           "id": "item-51_4_true",
@@ -3705,7 +3705,7 @@
     },
     "item-188_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/188.html",
+      "path": "text-misalignment/assets/image_viewers/188.html",
       "response": [
         {
           "id": "item-188_max_false",
@@ -3729,7 +3729,7 @@
     },
     "item-2_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/2.html",
+      "path": "text-misalignment/assets/image_viewers/2.html",
       "response": [
         {
           "id": "item-2_max_false",
@@ -3753,7 +3753,7 @@
     },
     "item-136_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/136.html",
+      "path": "text-misalignment/assets/image_viewers/136.html",
       "response": [
         {
           "id": "item-136_max_true",
@@ -3777,7 +3777,7 @@
     },
     "item-97_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/97.html",
+      "path": "text-misalignment/assets/image_viewers/97.html",
       "response": [
         {
           "id": "item-97_max_true",
@@ -3801,7 +3801,7 @@
     },
     "item-146_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/146.html",
+      "path": "text-misalignment/assets/image_viewers/146.html",
       "response": [
         {
           "id": "item-146_min_false",
@@ -3825,7 +3825,7 @@
     },
     "item-178_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/178.html",
+      "path": "text-misalignment/assets/image_viewers/178.html",
       "response": [
         {
           "id": "item-178_min_false",
@@ -3849,7 +3849,7 @@
     },
     "item-26_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/26.html",
+      "path": "text-misalignment/assets/image_viewers/26.html",
       "response": [
         {
           "id": "item-26_min_true",
@@ -3873,7 +3873,7 @@
     },
     "item-71_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/71.html",
+      "path": "text-misalignment/assets/image_viewers/71.html",
       "response": [
         {
           "id": "item-71_min_true",
@@ -3897,7 +3897,7 @@
     },
     "item-276_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/276.html",
+      "path": "text-misalignment/assets/image_viewers/276.html",
       "response": [
         {
           "id": "item-276_title_false",
@@ -3921,7 +3921,7 @@
     },
     "item-278_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/278.html",
+      "path": "text-misalignment/assets/image_viewers/278.html",
       "response": [
         {
           "id": "item-278_title_false",
@@ -3945,7 +3945,7 @@
     },
     "item-194_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/194.html",
+      "path": "text-misalignment/assets/image_viewers/194.html",
       "response": [
         {
           "id": "item-194_title_true",
@@ -3969,7 +3969,7 @@
     },
     "item-235_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/235.html",
+      "path": "text-misalignment/assets/image_viewers/235.html",
       "response": [
         {
           "id": "item-235_title_true",
@@ -3993,7 +3993,7 @@
     },
     "item-165_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/165.html",
+      "path": "text-misalignment/assets/image_viewers/165.html",
       "response": [
         {
           "id": "item-165_type_false",
@@ -4017,7 +4017,7 @@
     },
     "item-238_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/238.html",
+      "path": "text-misalignment/assets/image_viewers/238.html",
       "response": [
         {
           "id": "item-238_type_false",
@@ -4041,7 +4041,7 @@
     },
     "item-277_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/277.html",
+      "path": "text-misalignment/assets/image_viewers/277.html",
       "response": [
         {
           "id": "item-277_type_true",
@@ -4065,7 +4065,7 @@
     },
     "item-295_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/295.html",
+      "path": "text-misalignment/assets/image_viewers/295.html",
       "response": [
         {
           "id": "item-295_type_true",
@@ -4089,7 +4089,7 @@
     },
     "item-150_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/150.html",
+      "path": "text-misalignment/assets/image_viewers/150.html",
       "response": [
         {
           "id": "item-150_3_false",
@@ -4113,7 +4113,7 @@
     },
     "item-278_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/278.html",
+      "path": "text-misalignment/assets/image_viewers/278.html",
       "response": [
         {
           "id": "item-278_3_false",
@@ -4137,7 +4137,7 @@
     },
     "item-266_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/266.html",
+      "path": "text-misalignment/assets/image_viewers/266.html",
       "response": [
         {
           "id": "item-266_3_true",
@@ -4161,7 +4161,7 @@
     },
     "item-298_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/298.html",
+      "path": "text-misalignment/assets/image_viewers/298.html",
       "response": [
         {
           "id": "item-298_3_true",
@@ -4185,7 +4185,7 @@
     },
     "item-156_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/156.html",
+      "path": "text-misalignment/assets/image_viewers/156.html",
       "response": [
         {
           "id": "item-156_4_false",
@@ -4209,7 +4209,7 @@
     },
     "item-202_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/202.html",
+      "path": "text-misalignment/assets/image_viewers/202.html",
       "response": [
         {
           "id": "item-202_4_false",
@@ -4233,7 +4233,7 @@
     },
     "item-198_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/198.html",
+      "path": "text-misalignment/assets/image_viewers/198.html",
       "response": [
         {
           "id": "item-198_4_true",
@@ -4257,7 +4257,7 @@
     },
     "item-297_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/297.html",
+      "path": "text-misalignment/assets/image_viewers/297.html",
       "response": [
         {
           "id": "item-297_4_true",
@@ -4281,7 +4281,7 @@
     },
     "item-17_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/17.html",
+      "path": "text-misalignment/assets/image_viewers/17.html",
       "response": [
         {
           "id": "item-17_max_false",
@@ -4305,7 +4305,7 @@
     },
     "item-18_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/18.html",
+      "path": "text-misalignment/assets/image_viewers/18.html",
       "response": [
         {
           "id": "item-18_max_false",
@@ -4329,7 +4329,7 @@
     },
     "item-182_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/182.html",
+      "path": "text-misalignment/assets/image_viewers/182.html",
       "response": [
         {
           "id": "item-182_max_true",
@@ -4353,7 +4353,7 @@
     },
     "item-208_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/208.html",
+      "path": "text-misalignment/assets/image_viewers/208.html",
       "response": [
         {
           "id": "item-208_max_true",
@@ -4377,7 +4377,7 @@
     },
     "item-162_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/162.html",
+      "path": "text-misalignment/assets/image_viewers/162.html",
       "response": [
         {
           "id": "item-162_min_false",
@@ -4401,7 +4401,7 @@
     },
     "item-286_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/286.html",
+      "path": "text-misalignment/assets/image_viewers/286.html",
       "response": [
         {
           "id": "item-286_min_false",
@@ -4425,7 +4425,7 @@
     },
     "item-232_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/232.html",
+      "path": "text-misalignment/assets/image_viewers/232.html",
       "response": [
         {
           "id": "item-232_min_true",
@@ -4449,7 +4449,7 @@
     },
     "item-289_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/289.html",
+      "path": "text-misalignment/assets/image_viewers/289.html",
       "response": [
         {
           "id": "item-289_min_true",
@@ -4473,7 +4473,7 @@
     },
     "item-132_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/132.html",
+      "path": "text-misalignment/assets/image_viewers/132.html",
       "response": [
         {
           "id": "item-132_title_false",
@@ -4497,7 +4497,7 @@
     },
     "item-143_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/143.html",
+      "path": "text-misalignment/assets/image_viewers/143.html",
       "response": [
         {
           "id": "item-143_title_false",
@@ -4521,7 +4521,7 @@
     },
     "item-245_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/245.html",
+      "path": "text-misalignment/assets/image_viewers/245.html",
       "response": [
         {
           "id": "item-245_title_true",
@@ -4545,7 +4545,7 @@
     },
     "item-73_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/73.html",
+      "path": "text-misalignment/assets/image_viewers/73.html",
       "response": [
         {
           "id": "item-73_title_true",
@@ -4569,7 +4569,7 @@
     },
     "item-254_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/254.html",
+      "path": "text-misalignment/assets/image_viewers/254.html",
       "response": [
         {
           "id": "item-254_type_false",
@@ -4593,7 +4593,7 @@
     },
     "item-88_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/88.html",
+      "path": "text-misalignment/assets/image_viewers/88.html",
       "response": [
         {
           "id": "item-88_type_false",
@@ -4617,7 +4617,7 @@
     },
     "item-186_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/186.html",
+      "path": "text-misalignment/assets/image_viewers/186.html",
       "response": [
         {
           "id": "item-186_type_true",
@@ -4641,7 +4641,7 @@
     },
     "item-70_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/70.html",
+      "path": "text-misalignment/assets/image_viewers/70.html",
       "response": [
         {
           "id": "item-70_type_true",
@@ -4665,7 +4665,7 @@
     },
     "item-123_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/123.html",
+      "path": "text-misalignment/assets/image_viewers/123.html",
       "response": [
         {
           "id": "item-123_3_false",
@@ -4689,7 +4689,7 @@
     },
     "item-143_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/143.html",
+      "path": "text-misalignment/assets/image_viewers/143.html",
       "response": [
         {
           "id": "item-143_3_false",
@@ -4713,7 +4713,7 @@
     },
     "item-287_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/287.html",
+      "path": "text-misalignment/assets/image_viewers/287.html",
       "response": [
         {
           "id": "item-287_3_true",
@@ -4737,7 +4737,7 @@
     },
     "item-293_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/293.html",
+      "path": "text-misalignment/assets/image_viewers/293.html",
       "response": [
         {
           "id": "item-293_3_true",
@@ -4761,7 +4761,7 @@
     },
     "item-208_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/208.html",
+      "path": "text-misalignment/assets/image_viewers/208.html",
       "response": [
         {
           "id": "item-208_4_false",
@@ -4785,7 +4785,7 @@
     },
     "item-292_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/292.html",
+      "path": "text-misalignment/assets/image_viewers/292.html",
       "response": [
         {
           "id": "item-292_4_false",
@@ -4809,7 +4809,7 @@
     },
     "item-266_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/266.html",
+      "path": "text-misalignment/assets/image_viewers/266.html",
       "response": [
         {
           "id": "item-266_4_true",
@@ -4833,7 +4833,7 @@
     },
     "item-272_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/272.html",
+      "path": "text-misalignment/assets/image_viewers/272.html",
       "response": [
         {
           "id": "item-272_4_true",
@@ -4857,7 +4857,7 @@
     },
     "item-156_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/156.html",
+      "path": "text-misalignment/assets/image_viewers/156.html",
       "response": [
         {
           "id": "item-156_max_false",
@@ -4881,7 +4881,7 @@
     },
     "item-49_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/49.html",
+      "path": "text-misalignment/assets/image_viewers/49.html",
       "response": [
         {
           "id": "item-49_max_false",
@@ -4905,7 +4905,7 @@
     },
     "item-152_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/152.html",
+      "path": "text-misalignment/assets/image_viewers/152.html",
       "response": [
         {
           "id": "item-152_max_true",
@@ -4929,7 +4929,7 @@
     },
     "item-178_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/178.html",
+      "path": "text-misalignment/assets/image_viewers/178.html",
       "response": [
         {
           "id": "item-178_max_true",
@@ -4953,7 +4953,7 @@
     },
     "item-209_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/209.html",
+      "path": "text-misalignment/assets/image_viewers/209.html",
       "response": [
         {
           "id": "item-209_min_false",
@@ -4977,7 +4977,7 @@
     },
     "item-253_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/253.html",
+      "path": "text-misalignment/assets/image_viewers/253.html",
       "response": [
         {
           "id": "item-253_min_false",
@@ -5001,7 +5001,7 @@
     },
     "item-148_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/148.html",
+      "path": "text-misalignment/assets/image_viewers/148.html",
       "response": [
         {
           "id": "item-148_min_true",
@@ -5025,7 +5025,7 @@
     },
     "item-197_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/197.html",
+      "path": "text-misalignment/assets/image_viewers/197.html",
       "response": [
         {
           "id": "item-197_min_true",
@@ -5049,7 +5049,7 @@
     },
     "item-113_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/113.html",
+      "path": "text-misalignment/assets/image_viewers/113.html",
       "response": [
         {
           "id": "item-113_title_false",
@@ -5073,7 +5073,7 @@
     },
     "item-299_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/299.html",
+      "path": "text-misalignment/assets/image_viewers/299.html",
       "response": [
         {
           "id": "item-299_title_false",
@@ -5097,7 +5097,7 @@
     },
     "item-199_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/199.html",
+      "path": "text-misalignment/assets/image_viewers/199.html",
       "response": [
         {
           "id": "item-199_title_true",
@@ -5121,7 +5121,7 @@
     },
     "item-297_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/297.html",
+      "path": "text-misalignment/assets/image_viewers/297.html",
       "response": [
         {
           "id": "item-297_title_true",
@@ -5145,7 +5145,7 @@
     },
     "item-112_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/112.html",
+      "path": "text-misalignment/assets/image_viewers/112.html",
       "response": [
         {
           "id": "item-112_type_false",
@@ -5169,7 +5169,7 @@
     },
     "item-281_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/281.html",
+      "path": "text-misalignment/assets/image_viewers/281.html",
       "response": [
         {
           "id": "item-281_type_false",
@@ -5193,7 +5193,7 @@
     },
     "item-189_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/189.html",
+      "path": "text-misalignment/assets/image_viewers/189.html",
       "response": [
         {
           "id": "item-189_type_true",
@@ -5217,7 +5217,7 @@
     },
     "item-258_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/258.html",
+      "path": "text-misalignment/assets/image_viewers/258.html",
       "response": [
         {
           "id": "item-258_type_true",
@@ -5241,7 +5241,7 @@
     },
     "item-10_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/10.html",
+      "path": "text-misalignment/assets/image_viewers/10.html",
       "response": [
         {
           "id": "item-10_3_false",
@@ -5265,7 +5265,7 @@
     },
     "item-87_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/87.html",
+      "path": "text-misalignment/assets/image_viewers/87.html",
       "response": [
         {
           "id": "item-87_3_false",
@@ -5289,7 +5289,7 @@
     },
     "item-185_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/185.html",
+      "path": "text-misalignment/assets/image_viewers/185.html",
       "response": [
         {
           "id": "item-185_3_true",
@@ -5313,7 +5313,7 @@
     },
     "item-191_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/191.html",
+      "path": "text-misalignment/assets/image_viewers/191.html",
       "response": [
         {
           "id": "item-191_3_true",
@@ -5337,7 +5337,7 @@
     },
     "item-134_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/134.html",
+      "path": "text-misalignment/assets/image_viewers/134.html",
       "response": [
         {
           "id": "item-134_4_false",
@@ -5361,7 +5361,7 @@
     },
     "item-53_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/53.html",
+      "path": "text-misalignment/assets/image_viewers/53.html",
       "response": [
         {
           "id": "item-53_4_false",
@@ -5385,7 +5385,7 @@
     },
     "item-144_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/144.html",
+      "path": "text-misalignment/assets/image_viewers/144.html",
       "response": [
         {
           "id": "item-144_4_true",
@@ -5409,7 +5409,7 @@
     },
     "item-265_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/265.html",
+      "path": "text-misalignment/assets/image_viewers/265.html",
       "response": [
         {
           "id": "item-265_4_true",
@@ -5433,7 +5433,7 @@
     },
     "item-203_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/203.html",
+      "path": "text-misalignment/assets/image_viewers/203.html",
       "response": [
         {
           "id": "item-203_max_false",
@@ -5457,7 +5457,7 @@
     },
     "item-214_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/214.html",
+      "path": "text-misalignment/assets/image_viewers/214.html",
       "response": [
         {
           "id": "item-214_max_false",
@@ -5481,7 +5481,7 @@
     },
     "item-269_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/269.html",
+      "path": "text-misalignment/assets/image_viewers/269.html",
       "response": [
         {
           "id": "item-269_max_true",
@@ -5505,7 +5505,7 @@
     },
     "item-35_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/35.html",
+      "path": "text-misalignment/assets/image_viewers/35.html",
       "response": [
         {
           "id": "item-35_max_true",
@@ -5529,7 +5529,7 @@
     },
     "item-142_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/142.html",
+      "path": "text-misalignment/assets/image_viewers/142.html",
       "response": [
         {
           "id": "item-142_min_false",
@@ -5553,7 +5553,7 @@
     },
     "item-186_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/186.html",
+      "path": "text-misalignment/assets/image_viewers/186.html",
       "response": [
         {
           "id": "item-186_min_false",
@@ -5577,7 +5577,7 @@
     },
     "item-284_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/284.html",
+      "path": "text-misalignment/assets/image_viewers/284.html",
       "response": [
         {
           "id": "item-284_min_true",
@@ -5601,7 +5601,7 @@
     },
     "item-291_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/291.html",
+      "path": "text-misalignment/assets/image_viewers/291.html",
       "response": [
         {
           "id": "item-291_min_true",
@@ -5625,7 +5625,7 @@
     },
     "item-215_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/215.html",
+      "path": "text-misalignment/assets/image_viewers/215.html",
       "response": [
         {
           "id": "item-215_title_false",
@@ -5649,7 +5649,7 @@
     },
     "item-28_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/28.html",
+      "path": "text-misalignment/assets/image_viewers/28.html",
       "response": [
         {
           "id": "item-28_title_false",
@@ -5673,7 +5673,7 @@
     },
     "item-206_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/206.html",
+      "path": "text-misalignment/assets/image_viewers/206.html",
       "response": [
         {
           "id": "item-206_title_true",
@@ -5697,7 +5697,7 @@
     },
     "item-285_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/285.html",
+      "path": "text-misalignment/assets/image_viewers/285.html",
       "response": [
         {
           "id": "item-285_title_true",
@@ -5721,7 +5721,7 @@
     },
     "item-195_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/195.html",
+      "path": "text-misalignment/assets/image_viewers/195.html",
       "response": [
         {
           "id": "item-195_type_false",
@@ -5745,7 +5745,7 @@
     },
     "item-298_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/298.html",
+      "path": "text-misalignment/assets/image_viewers/298.html",
       "response": [
         {
           "id": "item-298_type_false",
@@ -5769,7 +5769,7 @@
     },
     "item-261_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/261.html",
+      "path": "text-misalignment/assets/image_viewers/261.html",
       "response": [
         {
           "id": "item-261_type_true",
@@ -5793,7 +5793,7 @@
     },
     "item-270_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/270.html",
+      "path": "text-misalignment/assets/image_viewers/270.html",
       "response": [
         {
           "id": "item-270_type_true",
@@ -5817,7 +5817,7 @@
     },
     "item-268_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/268.html",
+      "path": "text-misalignment/assets/image_viewers/268.html",
       "response": [
         {
           "id": "item-268_3_false",
@@ -5841,7 +5841,7 @@
     },
     "item-74_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/74.html",
+      "path": "text-misalignment/assets/image_viewers/74.html",
       "response": [
         {
           "id": "item-74_3_false",
@@ -5865,7 +5865,7 @@
     },
     "item-199_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/199.html",
+      "path": "text-misalignment/assets/image_viewers/199.html",
       "response": [
         {
           "id": "item-199_3_true",
@@ -5889,7 +5889,7 @@
     },
     "item-296_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/296.html",
+      "path": "text-misalignment/assets/image_viewers/296.html",
       "response": [
         {
           "id": "item-296_3_true",
@@ -5913,7 +5913,7 @@
     },
     "item-96_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/96.html",
+      "path": "text-misalignment/assets/image_viewers/96.html",
       "response": [
         {
           "id": "item-96_4_false",
@@ -5937,7 +5937,7 @@
     },
     "item-99_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/99.html",
+      "path": "text-misalignment/assets/image_viewers/99.html",
       "response": [
         {
           "id": "item-99_4_false",
@@ -5961,7 +5961,7 @@
     },
     "item-200_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/200.html",
+      "path": "text-misalignment/assets/image_viewers/200.html",
       "response": [
         {
           "id": "item-200_4_true",
@@ -5985,7 +5985,7 @@
     },
     "item-282_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/282.html",
+      "path": "text-misalignment/assets/image_viewers/282.html",
       "response": [
         {
           "id": "item-282_4_true",
@@ -6009,7 +6009,7 @@
     },
     "item-146_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/146.html",
+      "path": "text-misalignment/assets/image_viewers/146.html",
       "response": [
         {
           "id": "item-146_max_false",
@@ -6033,7 +6033,7 @@
     },
     "item-149_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/149.html",
+      "path": "text-misalignment/assets/image_viewers/149.html",
       "response": [
         {
           "id": "item-149_max_false",
@@ -6057,7 +6057,7 @@
     },
     "item-195_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/195.html",
+      "path": "text-misalignment/assets/image_viewers/195.html",
       "response": [
         {
           "id": "item-195_max_true",
@@ -6081,7 +6081,7 @@
     },
     "item-63_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/63.html",
+      "path": "text-misalignment/assets/image_viewers/63.html",
       "response": [
         {
           "id": "item-63_max_true",
@@ -6105,7 +6105,7 @@
     },
     "item-108_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/108.html",
+      "path": "text-misalignment/assets/image_viewers/108.html",
       "response": [
         {
           "id": "item-108_min_false",
@@ -6129,7 +6129,7 @@
     },
     "item-256_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/256.html",
+      "path": "text-misalignment/assets/image_viewers/256.html",
       "response": [
         {
           "id": "item-256_min_false",
@@ -6153,7 +6153,7 @@
     },
     "item-150_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/150.html",
+      "path": "text-misalignment/assets/image_viewers/150.html",
       "response": [
         {
           "id": "item-150_min_true",
@@ -6177,7 +6177,7 @@
     },
     "item-262_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/262.html",
+      "path": "text-misalignment/assets/image_viewers/262.html",
       "response": [
         {
           "id": "item-262_min_true",
@@ -6201,7 +6201,7 @@
     },
     "item-111_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/111.html",
+      "path": "text-misalignment/assets/image_viewers/111.html",
       "response": [
         {
           "id": "item-111_title_false",
@@ -6225,7 +6225,7 @@
     },
     "item-291_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/291.html",
+      "path": "text-misalignment/assets/image_viewers/291.html",
       "response": [
         {
           "id": "item-291_title_false",
@@ -6249,7 +6249,7 @@
     },
     "item-172_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/172.html",
+      "path": "text-misalignment/assets/image_viewers/172.html",
       "response": [
         {
           "id": "item-172_title_true",
@@ -6273,7 +6273,7 @@
     },
     "item-298_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/298.html",
+      "path": "text-misalignment/assets/image_viewers/298.html",
       "response": [
         {
           "id": "item-298_title_true",
@@ -6297,7 +6297,7 @@
     },
     "item-232_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/232.html",
+      "path": "text-misalignment/assets/image_viewers/232.html",
       "response": [
         {
           "id": "item-232_type_false",
@@ -6321,7 +6321,7 @@
     },
     "item-278_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/278.html",
+      "path": "text-misalignment/assets/image_viewers/278.html",
       "response": [
         {
           "id": "item-278_type_false",
@@ -6345,7 +6345,7 @@
     },
     "item-145_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/145.html",
+      "path": "text-misalignment/assets/image_viewers/145.html",
       "response": [
         {
           "id": "item-145_type_true",
@@ -6369,7 +6369,7 @@
     },
     "item-279_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/279.html",
+      "path": "text-misalignment/assets/image_viewers/279.html",
       "response": [
         {
           "id": "item-279_type_true",
@@ -6393,7 +6393,7 @@
     },
     "item-146_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/146.html",
+      "path": "text-misalignment/assets/image_viewers/146.html",
       "response": [
         {
           "id": "item-146_3_false",
@@ -6417,7 +6417,7 @@
     },
     "item-264_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/264.html",
+      "path": "text-misalignment/assets/image_viewers/264.html",
       "response": [
         {
           "id": "item-264_3_false",
@@ -6441,7 +6441,7 @@
     },
     "item-237_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/237.html",
+      "path": "text-misalignment/assets/image_viewers/237.html",
       "response": [
         {
           "id": "item-237_3_true",
@@ -6465,7 +6465,7 @@
     },
     "item-92_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/92.html",
+      "path": "text-misalignment/assets/image_viewers/92.html",
       "response": [
         {
           "id": "item-92_3_true",
@@ -6489,7 +6489,7 @@
     },
     "item-201_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/201.html",
+      "path": "text-misalignment/assets/image_viewers/201.html",
       "response": [
         {
           "id": "item-201_4_false",
@@ -6513,7 +6513,7 @@
     },
     "item-238_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/238.html",
+      "path": "text-misalignment/assets/image_viewers/238.html",
       "response": [
         {
           "id": "item-238_4_false",
@@ -6537,7 +6537,7 @@
     },
     "item-122_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/122.html",
+      "path": "text-misalignment/assets/image_viewers/122.html",
       "response": [
         {
           "id": "item-122_4_true",
@@ -6561,7 +6561,7 @@
     },
     "item-221_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/221.html",
+      "path": "text-misalignment/assets/image_viewers/221.html",
       "response": [
         {
           "id": "item-221_4_true",
@@ -6585,7 +6585,7 @@
     },
     "item-229_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/229.html",
+      "path": "text-misalignment/assets/image_viewers/229.html",
       "response": [
         {
           "id": "item-229_max_false",
@@ -6609,7 +6609,7 @@
     },
     "item-298_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/298.html",
+      "path": "text-misalignment/assets/image_viewers/298.html",
       "response": [
         {
           "id": "item-298_max_false",
@@ -6633,7 +6633,7 @@
     },
     "item-184_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/184.html",
+      "path": "text-misalignment/assets/image_viewers/184.html",
       "response": [
         {
           "id": "item-184_max_true",
@@ -6657,7 +6657,7 @@
     },
     "item-52_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/52.html",
+      "path": "text-misalignment/assets/image_viewers/52.html",
       "response": [
         {
           "id": "item-52_max_true",
@@ -6681,7 +6681,7 @@
     },
     "item-280_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/280.html",
+      "path": "text-misalignment/assets/image_viewers/280.html",
       "response": [
         {
           "id": "item-280_min_false",
@@ -6705,7 +6705,7 @@
     },
     "item-297_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/297.html",
+      "path": "text-misalignment/assets/image_viewers/297.html",
       "response": [
         {
           "id": "item-297_min_false",
@@ -6729,7 +6729,7 @@
     },
     "item-215_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/215.html",
+      "path": "text-misalignment/assets/image_viewers/215.html",
       "response": [
         {
           "id": "item-215_min_true",
@@ -6753,7 +6753,7 @@
     },
     "item-270_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/270.html",
+      "path": "text-misalignment/assets/image_viewers/270.html",
       "response": [
         {
           "id": "item-270_min_true",
@@ -6777,7 +6777,7 @@
     },
     "item-152_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/152.html",
+      "path": "text-misalignment/assets/image_viewers/152.html",
       "response": [
         {
           "id": "item-152_title_false",
@@ -6801,7 +6801,7 @@
     },
     "item-251_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/251.html",
+      "path": "text-misalignment/assets/image_viewers/251.html",
       "response": [
         {
           "id": "item-251_title_false",
@@ -6825,7 +6825,7 @@
     },
     "item-149_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/149.html",
+      "path": "text-misalignment/assets/image_viewers/149.html",
       "response": [
         {
           "id": "item-149_title_true",
@@ -6849,7 +6849,7 @@
     },
     "item-88_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/88.html",
+      "path": "text-misalignment/assets/image_viewers/88.html",
       "response": [
         {
           "id": "item-88_title_true",
@@ -6873,7 +6873,7 @@
     },
     "item-150_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/150.html",
+      "path": "text-misalignment/assets/image_viewers/150.html",
       "response": [
         {
           "id": "item-150_type_false",
@@ -6897,7 +6897,7 @@
     },
     "item-285_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/285.html",
+      "path": "text-misalignment/assets/image_viewers/285.html",
       "response": [
         {
           "id": "item-285_type_false",
@@ -6921,7 +6921,7 @@
     },
     "item-181_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/181.html",
+      "path": "text-misalignment/assets/image_viewers/181.html",
       "response": [
         {
           "id": "item-181_type_true",
@@ -6945,7 +6945,7 @@
     },
     "item-193_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/193.html",
+      "path": "text-misalignment/assets/image_viewers/193.html",
       "response": [
         {
           "id": "item-193_type_true",
@@ -6969,7 +6969,7 @@
     },
     "item-188_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/188.html",
+      "path": "text-misalignment/assets/image_viewers/188.html",
       "response": [
         {
           "id": "item-188_3_false",
@@ -6993,7 +6993,7 @@
     },
     "item-289_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/289.html",
+      "path": "text-misalignment/assets/image_viewers/289.html",
       "response": [
         {
           "id": "item-289_3_false",
@@ -7017,7 +7017,7 @@
     },
     "item-170_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/170.html",
+      "path": "text-misalignment/assets/image_viewers/170.html",
       "response": [
         {
           "id": "item-170_3_true",
@@ -7041,7 +7041,7 @@
     },
     "item-62_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/62.html",
+      "path": "text-misalignment/assets/image_viewers/62.html",
       "response": [
         {
           "id": "item-62_3_true",
@@ -7065,7 +7065,7 @@
     },
     "item-163_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/163.html",
+      "path": "text-misalignment/assets/image_viewers/163.html",
       "response": [
         {
           "id": "item-163_4_false",
@@ -7089,7 +7089,7 @@
     },
     "item-51_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/51.html",
+      "path": "text-misalignment/assets/image_viewers/51.html",
       "response": [
         {
           "id": "item-51_4_false",
@@ -7113,7 +7113,7 @@
     },
     "item-148_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/148.html",
+      "path": "text-misalignment/assets/image_viewers/148.html",
       "response": [
         {
           "id": "item-148_4_true",
@@ -7137,7 +7137,7 @@
     },
     "item-283_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/283.html",
+      "path": "text-misalignment/assets/image_viewers/283.html",
       "response": [
         {
           "id": "item-283_4_true",
@@ -7161,7 +7161,7 @@
     },
     "item-150_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/150.html",
+      "path": "text-misalignment/assets/image_viewers/150.html",
       "response": [
         {
           "id": "item-150_max_false",
@@ -7185,7 +7185,7 @@
     },
     "item-299_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/299.html",
+      "path": "text-misalignment/assets/image_viewers/299.html",
       "response": [
         {
           "id": "item-299_max_false",
@@ -7209,7 +7209,7 @@
     },
     "item-234_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/234.html",
+      "path": "text-misalignment/assets/image_viewers/234.html",
       "response": [
         {
           "id": "item-234_max_true",
@@ -7233,7 +7233,7 @@
     },
     "item-90_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/90.html",
+      "path": "text-misalignment/assets/image_viewers/90.html",
       "response": [
         {
           "id": "item-90_max_true",
@@ -7257,7 +7257,7 @@
     },
     "item-200_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/200.html",
+      "path": "text-misalignment/assets/image_viewers/200.html",
       "response": [
         {
           "id": "item-200_min_false",
@@ -7281,7 +7281,7 @@
     },
     "item-231_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/231.html",
+      "path": "text-misalignment/assets/image_viewers/231.html",
       "response": [
         {
           "id": "item-231_min_false",
@@ -7305,7 +7305,7 @@
     },
     "item-174_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/174.html",
+      "path": "text-misalignment/assets/image_viewers/174.html",
       "response": [
         {
           "id": "item-174_min_true",
@@ -7329,7 +7329,7 @@
     },
     "item-178_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/178.html",
+      "path": "text-misalignment/assets/image_viewers/178.html",
       "response": [
         {
           "id": "item-178_min_true",
@@ -7353,7 +7353,7 @@
     },
     "item-258_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/258.html",
+      "path": "text-misalignment/assets/image_viewers/258.html",
       "response": [
         {
           "id": "item-258_title_false",
@@ -7377,7 +7377,7 @@
     },
     "item-264_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/264.html",
+      "path": "text-misalignment/assets/image_viewers/264.html",
       "response": [
         {
           "id": "item-264_title_false",
@@ -7401,7 +7401,7 @@
     },
     "item-280_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/280.html",
+      "path": "text-misalignment/assets/image_viewers/280.html",
       "response": [
         {
           "id": "item-280_title_true",
@@ -7425,7 +7425,7 @@
     },
     "item-7_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/7.html",
+      "path": "text-misalignment/assets/image_viewers/7.html",
       "response": [
         {
           "id": "item-7_title_true",
@@ -7449,7 +7449,7 @@
     },
     "item-233_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/233.html",
+      "path": "text-misalignment/assets/image_viewers/233.html",
       "response": [
         {
           "id": "item-233_type_false",
@@ -7473,7 +7473,7 @@
     },
     "item-279_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/279.html",
+      "path": "text-misalignment/assets/image_viewers/279.html",
       "response": [
         {
           "id": "item-279_type_false",
@@ -7497,7 +7497,7 @@
     },
     "item-144_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/144.html",
+      "path": "text-misalignment/assets/image_viewers/144.html",
       "response": [
         {
           "id": "item-144_type_true",
@@ -7521,7 +7521,7 @@
     },
     "item-262_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/262.html",
+      "path": "text-misalignment/assets/image_viewers/262.html",
       "response": [
         {
           "id": "item-262_type_true",
@@ -7545,7 +7545,7 @@
     },
     "item-225_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/225.html",
+      "path": "text-misalignment/assets/image_viewers/225.html",
       "response": [
         {
           "id": "item-225_3_false",
@@ -7569,7 +7569,7 @@
     },
     "item-276_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/276.html",
+      "path": "text-misalignment/assets/image_viewers/276.html",
       "response": [
         {
           "id": "item-276_3_false",
@@ -7593,7 +7593,7 @@
     },
     "item-200_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/200.html",
+      "path": "text-misalignment/assets/image_viewers/200.html",
       "response": [
         {
           "id": "item-200_3_true",
@@ -7617,7 +7617,7 @@
     },
     "item-291_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/291.html",
+      "path": "text-misalignment/assets/image_viewers/291.html",
       "response": [
         {
           "id": "item-291_3_true",
@@ -7641,7 +7641,7 @@
     },
     "item-259_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/259.html",
+      "path": "text-misalignment/assets/image_viewers/259.html",
       "response": [
         {
           "id": "item-259_4_false",
@@ -7665,7 +7665,7 @@
     },
     "item-34_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/34.html",
+      "path": "text-misalignment/assets/image_viewers/34.html",
       "response": [
         {
           "id": "item-34_4_false",
@@ -7689,7 +7689,7 @@
     },
     "item-233_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/233.html",
+      "path": "text-misalignment/assets/image_viewers/233.html",
       "response": [
         {
           "id": "item-233_4_true",
@@ -7713,7 +7713,7 @@
     },
     "item-295_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/295.html",
+      "path": "text-misalignment/assets/image_viewers/295.html",
       "response": [
         {
           "id": "item-295_4_true",
@@ -7737,7 +7737,7 @@
     },
     "item-176_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/176.html",
+      "path": "text-misalignment/assets/image_viewers/176.html",
       "response": [
         {
           "id": "item-176_max_false",
@@ -7761,7 +7761,7 @@
     },
     "item-39_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/39.html",
+      "path": "text-misalignment/assets/image_viewers/39.html",
       "response": [
         {
           "id": "item-39_max_false",
@@ -7785,7 +7785,7 @@
     },
     "item-156_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/156.html",
+      "path": "text-misalignment/assets/image_viewers/156.html",
       "response": [
         {
           "id": "item-156_max_true",
@@ -7809,7 +7809,7 @@
     },
     "item-159_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/159.html",
+      "path": "text-misalignment/assets/image_viewers/159.html",
       "response": [
         {
           "id": "item-159_max_true",
@@ -7833,7 +7833,7 @@
     },
     "item-145_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/145.html",
+      "path": "text-misalignment/assets/image_viewers/145.html",
       "response": [
         {
           "id": "item-145_min_false",
@@ -7857,7 +7857,7 @@
     },
     "item-179_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/179.html",
+      "path": "text-misalignment/assets/image_viewers/179.html",
       "response": [
         {
           "id": "item-179_min_false",
@@ -7881,7 +7881,7 @@
     },
     "item-131_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/131.html",
+      "path": "text-misalignment/assets/image_viewers/131.html",
       "response": [
         {
           "id": "item-131_min_true",
@@ -7905,7 +7905,7 @@
     },
     "item-32_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/32.html",
+      "path": "text-misalignment/assets/image_viewers/32.html",
       "response": [
         {
           "id": "item-32_min_true",
@@ -7929,7 +7929,7 @@
     },
     "item-1_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/1.html",
+      "path": "text-misalignment/assets/image_viewers/1.html",
       "response": [
         {
           "id": "item-1_title_false",
@@ -7953,7 +7953,7 @@
     },
     "item-261_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/261.html",
+      "path": "text-misalignment/assets/image_viewers/261.html",
       "response": [
         {
           "id": "item-261_title_false",
@@ -7977,7 +7977,7 @@
     },
     "item-265_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/265.html",
+      "path": "text-misalignment/assets/image_viewers/265.html",
       "response": [
         {
           "id": "item-265_title_true",
@@ -8001,7 +8001,7 @@
     },
     "item-283_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/283.html",
+      "path": "text-misalignment/assets/image_viewers/283.html",
       "response": [
         {
           "id": "item-283_title_true",
@@ -8025,7 +8025,7 @@
     },
     "item-262_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/262.html",
+      "path": "text-misalignment/assets/image_viewers/262.html",
       "response": [
         {
           "id": "item-262_type_false",
@@ -8049,7 +8049,7 @@
     },
     "item-282_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/282.html",
+      "path": "text-misalignment/assets/image_viewers/282.html",
       "response": [
         {
           "id": "item-282_type_false",
@@ -8073,7 +8073,7 @@
     },
     "item-237_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/237.html",
+      "path": "text-misalignment/assets/image_viewers/237.html",
       "response": [
         {
           "id": "item-237_type_true",
@@ -8097,7 +8097,7 @@
     },
     "item-25_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/25.html",
+      "path": "text-misalignment/assets/image_viewers/25.html",
       "response": [
         {
           "id": "item-25_type_true",
@@ -8121,7 +8121,7 @@
     },
     "item-238_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/238.html",
+      "path": "text-misalignment/assets/image_viewers/238.html",
       "response": [
         {
           "id": "item-238_3_false",
@@ -8145,7 +8145,7 @@
     },
     "item-57_3_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/57.html",
+      "path": "text-misalignment/assets/image_viewers/57.html",
       "response": [
         {
           "id": "item-57_3_false",
@@ -8169,7 +8169,7 @@
     },
     "item-272_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/272.html",
+      "path": "text-misalignment/assets/image_viewers/272.html",
       "response": [
         {
           "id": "item-272_3_true",
@@ -8193,7 +8193,7 @@
     },
     "item-299_3_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/299.html",
+      "path": "text-misalignment/assets/image_viewers/299.html",
       "response": [
         {
           "id": "item-299_3_true",
@@ -8217,7 +8217,7 @@
     },
     "item-273_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/273.html",
+      "path": "text-misalignment/assets/image_viewers/273.html",
       "response": [
         {
           "id": "item-273_4_false",
@@ -8241,7 +8241,7 @@
     },
     "item-94_4_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/94.html",
+      "path": "text-misalignment/assets/image_viewers/94.html",
       "response": [
         {
           "id": "item-94_4_false",
@@ -8265,7 +8265,7 @@
     },
     "item-217_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/217.html",
+      "path": "text-misalignment/assets/image_viewers/217.html",
       "response": [
         {
           "id": "item-217_4_true",
@@ -8289,7 +8289,7 @@
     },
     "item-279_4_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/279.html",
+      "path": "text-misalignment/assets/image_viewers/279.html",
       "response": [
         {
           "id": "item-279_4_true",
@@ -8313,7 +8313,7 @@
     },
     "item-295_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/295.html",
+      "path": "text-misalignment/assets/image_viewers/295.html",
       "response": [
         {
           "id": "item-295_max_false",
@@ -8337,7 +8337,7 @@
     },
     "item-62_max_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/62.html",
+      "path": "text-misalignment/assets/image_viewers/62.html",
       "response": [
         {
           "id": "item-62_max_false",
@@ -8361,7 +8361,7 @@
     },
     "item-175_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/175.html",
+      "path": "text-misalignment/assets/image_viewers/175.html",
       "response": [
         {
           "id": "item-175_max_true",
@@ -8385,7 +8385,7 @@
     },
     "item-294_max_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/294.html",
+      "path": "text-misalignment/assets/image_viewers/294.html",
       "response": [
         {
           "id": "item-294_max_true",
@@ -8409,7 +8409,7 @@
     },
     "item-169_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/169.html",
+      "path": "text-misalignment/assets/image_viewers/169.html",
       "response": [
         {
           "id": "item-169_min_false",
@@ -8433,7 +8433,7 @@
     },
     "item-293_min_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/293.html",
+      "path": "text-misalignment/assets/image_viewers/293.html",
       "response": [
         {
           "id": "item-293_min_false",
@@ -8457,7 +8457,7 @@
     },
     "item-144_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/144.html",
+      "path": "text-misalignment/assets/image_viewers/144.html",
       "response": [
         {
           "id": "item-144_min_true",
@@ -8481,7 +8481,7 @@
     },
     "item-195_min_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/195.html",
+      "path": "text-misalignment/assets/image_viewers/195.html",
       "response": [
         {
           "id": "item-195_min_true",
@@ -8505,7 +8505,7 @@
     },
     "item-172_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/172.html",
+      "path": "text-misalignment/assets/image_viewers/172.html",
       "response": [
         {
           "id": "item-172_title_false",
@@ -8529,7 +8529,7 @@
     },
     "item-91_title_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/91.html",
+      "path": "text-misalignment/assets/image_viewers/91.html",
       "response": [
         {
           "id": "item-91_title_false",
@@ -8553,7 +8553,7 @@
     },
     "item-292_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/292.html",
+      "path": "text-misalignment/assets/image_viewers/292.html",
       "response": [
         {
           "id": "item-292_title_true",
@@ -8577,7 +8577,7 @@
     },
     "item-56_title_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/56.html",
+      "path": "text-misalignment/assets/image_viewers/56.html",
       "response": [
         {
           "id": "item-56_title_true",
@@ -8601,7 +8601,7 @@
     },
     "item-12_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/12.html",
+      "path": "text-misalignment/assets/image_viewers/12.html",
       "response": [
         {
           "id": "item-12_type_false",
@@ -8625,7 +8625,7 @@
     },
     "item-186_type_false": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/186.html",
+      "path": "text-misalignment/assets/image_viewers/186.html",
       "response": [
         {
           "id": "item-186_type_false",
@@ -8649,7 +8649,7 @@
     },
     "item-139_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/139.html",
+      "path": "text-misalignment/assets/image_viewers/139.html",
       "response": [
         {
           "id": "item-139_type_true",
@@ -8673,7 +8673,7 @@
     },
     "item-283_type_true": {
       "type": "website",
-      "path": "text-misalignment-human-baseline/assets/image_viewers/283.html",
+      "path": "text-misalignment/assets/image_viewers/283.html",
       "response": [
         {
           "id": "item-283_type_true",
